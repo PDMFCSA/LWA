@@ -32,8 +32,11 @@
             <div class="product-description" tabindex="0"></div>
         </div>
         <div class="modal-content">
-            <div class="leaflet-content-wrapper">
+            <div class="leaflet-content-wrapper"> 
                 <div id="leaflet-content">
+                </div>
+                <div class="reccalled-bar">
+                    <p id="recalled-bar-content" translate="leaflet_recalled_product"></p>
                 </div>
                 <button id="scan-again-button" class="scan-button go-home-button"
                         translate="scan_again"></button>
@@ -70,8 +73,11 @@
         </div>
         <div class="modal-content" role="alert">
             <div class="recalled-message-container" translate="recalled_product_message">
-
             </div>
+            <br />
+            <br />
+            <button id="recalled-modal-procced" class="proceed-button has-leaflets" translate="lang_proceed"></button>
+            <button id="recalled-modal-exit" class="go-back-button go-home-button" translate="go_home"></button>
         </div>
     </div>
 </div>

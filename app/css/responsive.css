@@ -23,6 +23,9 @@ body {
 button {
     font-family: "Noto Sans";
 }
+button:not([disabled]) {
+    cursor: pointer !important;
+}
 
 body[app-lang="ko"],
 body[app-lang="ko"] button {

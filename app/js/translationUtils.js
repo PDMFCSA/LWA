@@ -91,14 +91,28 @@ export async function translate() {
     });
 }
 
-export function getTranslation(key) {
+export function getTranslation(key, ...args) {
     setDefaultLanguage();
     if (!currentAppTranslation) {
         fetchTranslation(localStorage.getItem(constants.APP_LANG)).then(result => {
             currentAppTranslation = result;
-            return currentAppTranslation[key];
+            return parseResult(currentAppTranslation[key], args);
         });
     } else {
-        return currentAppTranslation[key];
+        return parseResult(currentAppTranslation[key], args);
     }
 }
+
+function parseResult(key, ...args) {
+    if(!args)
+        return key;
+    return stringFormat(key, args);
+};
+
+export function stringFormat(text, ...args) {
+    return text.replace(/{(\d+)}/g, function(match, number) {
+        return typeof args[number] !== 'undefined'
+            ? args[number]
+            : match;
+    });
+};

@@ -5,7 +5,7 @@ import constants from "../../../constants.js";
 import LeafletService from "../services/LeafletService.js";
 import environment from "../../../environment.js";
 import {focusModalHeader, renderLeaflet, showExpired, showIncorrectDate} from "../utils/leafletUtils.js"
-import {translate} from "../translationUtils.js";
+import {translate, getTranslation} from "../translationUtils.js";
 
 enableConsolePersistence();
 
@@ -60,14 +60,20 @@ function LeafletController() {
                     goToErrorPage(e.errorCode, e)
                 }
             }
-            if (result.resultStatus === "no_xml_for_lang") {
-                showAvailableLanguages(result)
-            }
-            let recalled = false; // to replace with flag from product data. set to true in order to test product recall
-            if (recalled) {
-                showRecalledMessage(result);
-            }
+
+            if(result.resultStatus === "no_xml_for_lang") 
+                return showAvailableLanguages(result)
+            
+            showRecalledMessage(result);
+            // if (result.resultStatus === "no_xml_for_lang") {
+            //     showAvailableLanguages(result)
+            // }
+            // let recalled = false; // to replace with flag from product data. set to true in order to test product recall
+            // if (recalled) {
+            //     showRecalledMessage(result);
+            // }
         }).catch(err => {
+            console.error(err);
             goToErrorPage(err.errorCode, err)
         })
     };
@@ -185,23 +191,39 @@ function LeafletController() {
     }
 
     let showRecalledMessage = function (result) {
-        const recalled = false; // set to true to display recalled popup
+        const {productData} = result;
+        const {productRecall, batchData} = productData; 
+        const recalled = productRecall || batchData?.batchRecall;
+        const recalledContainer = document.querySelector("#recalled-modal");
+        const modalLeaflet = document.getElementById("settings-modal");
+        modalLeaflet.classList.remove('recalled');
         if (recalled) {
-            let recalledContainer = document.querySelector("#recalled-modal");
+            const batchRecalled = batchData?.batchRecall; 
+            const recalledMessageContainer = document.querySelector(".recalled-message-container");
+            const recallInformation = document.createElement("p");
+            modalLeaflet.classList.add('recalled');
             recalledContainer.classList.remove("hiddenElement");
-            let recalledMessageContainer = document.querySelector(".recalled-message-container");
-            let productData = document.createElement("p");
-            productData.innerText = "Product Name: " + result.productData.nameMedicinalProduct;
-            recalledMessageContainer.appendChild(productData);
-            let batchRecalled = false; // set to true to display batch number
-            if (batchRecalled) {
-                document.querySelector("#recalled-title").setAttribute("translate", "recalled_batch_title");
-                document.querySelector(".recalled-message-container").setAttribute("translate", "recalled_batch_message");
-                let batchData = document.createElement("p");
-                batchData.innerText = "Batch Number: " + result.productData.batchData.batch;
-                recalledMessageContainer.appendChild(batchData);
+
+            if (batchRecalled) { 
+                recalledContainer.querySelector("#recalled-title").textContent = getTranslation('recalled_batch_title');
+                recalledContainer.querySelector(".recalled-message-container").textContent = getTranslation("recalled_batch_message");
+                recallInformation.innerHTML = getTranslation('recalled_batch_name',  `<strong>${batchData?.batch || batchData.batchNumber}</strong>`);
+                document.querySelector('#recalled-bar-content').textContent =  getTranslation('leaflet_recalled_batch');
+            } else {
+                recallInformation.innerHTML = getTranslation('recalled_product_name', `<strong>${result.productData.nameMedicinalProduct}</strong>`);
             }
+
+            recalledMessageContainer.appendChild(recallInformation);
+
+            recalledContainer.querySelector("#recalled-modal-procced").onclick = function() { 
+                recalledContainer.classList.add("hiddenElement");
+                modalLeaflet.classList.remove('recalled');
+            }; 
+            recalledContainer.querySelector("#recalled-modal-exit").onclick = function() { 
+                goToPage("/main.html")
+            }; 
         }
+        
     }
 
     let addEventListeners = () => {

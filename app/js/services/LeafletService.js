@@ -204,6 +204,7 @@ class LeafletService {
       try {
         ownerDomain = await this.detectGTINOwner(this.gtin, bdns, gto_TimePerCall, gto_TotalWaitTime);
       } catch (e) {
+        console.error(e);
         let errorCode = e.code ? e.code : constants.errorCodes.gtin_not_created;
         reject({errorCode});
         return;
