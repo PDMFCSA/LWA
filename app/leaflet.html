@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--<html moznomarginboxes mozdisallowselectionprint>-->
 <head>
     <script src="js/cacheControl.js"></script>
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/print.css" media="print" rel="stylesheet"></link>
     <title>PharmaLedger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +15,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="../favicon/favicon.ico">
     <link rel="manifest" href="../favicon/site.webmanifest">
-
+    <script src="lib/jspdf/jspdf.umd.js"></script>
+    <script src="lib/html2canvas/html2canvas.js"></script>
 </head>
 
 <body>
@@ -22,14 +25,16 @@
     <div class="loader"></div>
 </div>
 
-<div id="settings-modal" class="page-container fill-available-width leaflet-page info-modal hiddenElement">
+<div id="settings-modal" class="page-container fill-available-width leaflet-page info-modal hiddenElement print">
     <div class="modal-body">
-        <div class="page-header modal-header left-aligned-header">
-            <div class="icon-title-container" tabindex="0">
-                <h1 class="product-name bold-title"></h1>
-                <!--<div class="modal-icon leaflet-title-icon hiddenElement"></div>-->
+        <div class="page-header modal-header centered-header leaftlet-header">
+            <div class="icon-title-container" tabindex="1">
+                <div>
+                    <h1 class="product-name bold-title"></h1>
+                    <div class="product-description" tabindex="2"></div>
+                </div>
+                <div id="print-modal-button" class="modal-icon menu-print-icon" aria-label="print-icon" role="img" tabindex="2"></div>
             </div>
-            <div class="product-description" tabindex="0"></div>
         </div>
         <div class="modal-content">
             <div class="leaflet-content-wrapper"> 
@@ -121,6 +126,28 @@
                  translate="scan_again"></div>
             <button id="go-back-button" class="go-back-button go-home-button"
                     translate="go_home"></button>
+        </div>
+
+    </div>
+</div>
+<div id="print-modal" class="modal-container popup-modal warning-modal hiddenElement">
+    <div class="modal-body" tabindex="0">
+        <div class="modal-header centered-header">
+            <div class="icon-title-container">
+                <div class="modal-icon print-icon" aria-label="print-icon" role="img" tabindex="2"></div>
+                <h1 class="modal-title bold-title" role="heading" aria-level="1"
+                    translate="leaflet_print_title" role="alert"
+                    tabindex="3"></h1>
+            </div>
+
+        </div>
+        <div class="modal-content" role="alert">
+             <div class="text-section" translate="leaflet_print_description"></div>
+             <div class="text-section" translate="leaflet_print_description2"></div>
+            <div id="modal-print-button" class="proceed-button print-button" modal-id="print-modal"
+                 translate="leaflet_print_button"></div>
+            <button id="modal-print-go-back-button" modal-id="print-modal" class="go-back-button go-home-button"
+                    translate="leaflet_print_button_back"></button>
         </div>
 
     </div>

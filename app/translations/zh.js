@@ -6,6 +6,7 @@ const data = {
   "cancel": "取消",
   "change_camera": "改变相机",
   "scan_again": "再次扫描",
+  "leaflet_print": "打印",
   "product_not_found_title": "未被识别",
   "product_not_loaded_title": "产品信息不可用",
   "error_subtitle": "未验证的产品",
@@ -40,13 +41,15 @@ const data = {
   "terms_content": "<p>PharmaLedger协会电子产品信息网站和应用的条款和条件</p><p>通过访问或使用PharmaLedger协会的电子产品信息网站和应用程序（以下简称\"服务\"），即表示您同意受这些条款和条件（以下简称\"条款\"）的约束。如果您不同意这些条款，则不能访问或使用本服务。该服务由PharmaLedger协会（以下简称\"协会\"）运营，并旨在供有关其药物的信息的个人使用。多方网络提供服务，并且药品制造商通过服务提供产品信息。协会是此信息的数据控制器。</p><h2>使用服务</h2><p>您同意仅出于合法目的使用本服务，不会侵犯任何第三方的权利或限制或阻止第三方对本服务的使用和享受。此类限制或阻止包括但不限于非法行为，或可能骚扰或给任何人带来烦恼或不便的行为，以及传输淫秽或攻击性内容或干扰服务内对话的正常流程。</p><h2>知识产权</h2><p>服务的内容，包括但不限于文本，图形，图像和软件，是协会或其许可人和成员公司的财产，受版权和其他知识产权法律的保护。未经协会明确书面同意，您不得将服务中的任何内容用于任何商业用途。</p><h2>责任</h2><p>协会不作任何明示或暗示的保证，不保证服务的运作或服务中包含的信息，内容，材料或产品的准确性或适用性。协会对因使用服务而产生的任何损害，包括但不限于直接，间接，偶然，惩罚性和后果性损害，概不负责。</p><h2>管辖法律</h2><p>这些条款以及您使用本服务将受瑞士法律管辖并解释，并且任何争议将在瑞士巴塞尔的法院解决。</p><h2>条款更改</h2><p>协会保留随时更改这些条款的权利，您负责定期检查这些条款是否有变更。任何更改后您继续使用服务将表示您接受修改后的条款。</p><p><br></p>",
   "about_modal_subtitle": "关于",
   "about_modal_title": "Pharmaledger",
-  "about_content": "<p>We are a global not-for-profit association bringing small and large organizations together to build a Digital Trust Ecosystem in Healthcare (DTE-H).</p>" +
-    "<p> We collaborate to build digital healthcare solutions not to replace but to connect, by putting patients first and creating added value for all.</p>" +
-    "<p>We know that the problems we face in healthcare today cannot be solved by a single organization, which is why we are membership-based, open-source, and ecosystem-led.</p>" +
-    "<p>Our members represent the diverse stakeholders in healthcare, and together we work to connect, protect, empower, build and sustain Healthcare 4.0.</p>",
+  "about_content": "<p>We are a global not-for-profit association bringing small and large organizations together to build a Digital Trust Ecosystem in Healthcare (DTE-H).</p><p> We collaborate to build digital healthcare solutions not to replace but to connect, by putting patients first and creating added value for all.</p><p>We know that the problems we face in healthcare today cannot be solved by a single organization, which is why we are membership-based, open-source, and ecosystem-led.</p><p>Our members represent the diverse stakeholders in healthcare, and together we work to connect, protect, empower, build and sustain Healthcare 4.0.</p>",
   "help_modal_title": "帮助",
   "help_modal_subtitle": "常见问题解答",
-  "help_content": "<div><p><b>EPI是什么？</b></p><p><b>EPI</b>是电子产品说明书的缩写。它是药品包装内通常包含的纸质说明书的电子版。在某些情况下，<b>EPI</b>可能已经取代了纸质说明书。</p><p><b>PharmaLedger是什么？</b></p><p>PharmaLedger协会（PLA）是一个位于瑞士的非盈利性协会，旨在通过标准化和可信的开源平台，在医疗保健领域实现数字信任生态系统的建立和发展。PLA促进协作，加速创新和采用，为患者和其他利益相关者在医疗保健和生命科学领域实现共同利益。PLA成立于2022年，旨在继续PharmaLedger项目的工作，该项目是由欧洲委员会和制药行业资助的为期3年的项目，旨在证明区块链解决方案的价值。更多信息可在 https://pharmaledger.org/ 获得。</p><p><b>DataMatrix是什么？</b></p><p>它是产品包装上的一种条形码。它是一个黑白方块形的条形码，看起来类似于这个:<br> <img src=\"./images/barcode_example.png\" alt='DataMatrix 条形码示例'></p><p><b>如何使用应用程序？</b></p><p>按照<b>应用程序</b>的首页面上的说明……它会显示在您的产品包装上找到<b>DataMatrix</b>的图片。一旦您找到了<b>DataMatrix</b>，点击\"扫描<b>DataMatrix</b>\"按钮。允许应用程序使用相机扫描<b>DataMatrix</b>。使用相机对焦于<b>DataMatrix</b>上。扫描包装成功后，将显示<b>EPI</b>。您可以点击\"详情\"按钮以获取更多详细信息。</p><p><b>为什么我的DataMatrix扫描没有结果？</b></p><p>您的包装上的<b>DataMatrix</b>可能无法提供<b>EPI</b>的原因有很多。其中一个原因可能是相机的对焦。请在光线充足的地方尝试扫描代码，并使代码在屏幕上清晰可见。如果您难以保持手稳定，可以尝试使用桌子来支撑双手。</p></div>"
+  "help_content": "<div><p><b>EPI是什么？</b></p><p><b>EPI</b>是电子产品说明书的缩写。它是药品包装内通常包含的纸质说明书的电子版。在某些情况下，<b>EPI</b>可能已经取代了纸质说明书。</p><p><b>PharmaLedger是什么？</b></p><p>PharmaLedger协会（PLA）是一个位于瑞士的非盈利性协会，旨在通过标准化和可信的开源平台，在医疗保健领域实现数字信任生态系统的建立和发展。PLA促进协作，加速创新和采用，为患者和其他利益相关者在医疗保健和生命科学领域实现共同利益。PLA成立于2022年，旨在继续PharmaLedger项目的工作，该项目是由欧洲委员会和制药行业资助的为期3年的项目，旨在证明区块链解决方案的价值。更多信息可在 https://pharmaledger.org/ 获得。</p><p><b>DataMatrix是什么？</b></p><p>它是产品包装上的一种条形码。它是一个黑白方块形的条形码，看起来类似于这个:<br> <img src=\"./images/barcode_example.png\" alt='DataMatrix 条形码示例'></p><p><b>如何使用应用程序？</b></p><p>按照<b>应用程序</b>的首页面上的说明……它会显示在您的产品包装上找到<b>DataMatrix</b>的图片。一旦您找到了<b>DataMatrix</b>，点击\"扫描<b>DataMatrix</b>\"按钮。允许应用程序使用相机扫描<b>DataMatrix</b>。使用相机对焦于<b>DataMatrix</b>上。扫描包装成功后，将显示<b>EPI</b>。您可以点击\"详情\"按钮以获取更多详细信息。</p><p><b>为什么我的DataMatrix扫描没有结果？</b></p><p>您的包装上的<b>DataMatrix</b>可能无法提供<b>EPI</b>的原因有很多。其中一个原因可能是相机的对焦。请在光线充足的地方尝试扫描代码，并使代码在屏幕上清晰可见。如果您难以保持手稳定，可以尝试使用桌子来支撑双手。</p></div>",
+  "leaflet_print_title": "打印信息",
+  "leaflet_print_description": "当前选定的信息将以PDF打印。",
+  "leaflet_print_description2": "你想继续吗？",
+  "leaflet_print_button": "继续",
+  "leaflet_print_button_back": "回去"
 }
 
 export default data;

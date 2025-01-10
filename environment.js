@@ -1,5 +1,5 @@
 export default {
-  "epiDomain": "preqa.epi",
+  "epiDomain": "local.epi",
   "epiProtocolVersion": 1,
   "appBuildVersion": "LWA2.0.2",
   "timePerCall": 10000,
@@ -8,5 +8,5 @@ export default {
   "gto_TotalWaitTime": 15000,
   "enableEpiDomain": true,
   "enableRootVersion": false,
-  "bdnsUrl": "https://raw.githubusercontent.com/PharmaLedger-IMI/mobile-bdns/master/bdns.json"
+  "bdnsUrl": "http://localhost:8080/bdns"
 }

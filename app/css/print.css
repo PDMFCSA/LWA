@@ -1,0 +1,60 @@
+@media print {
+    /*@page {*/
+    /*    margin: 0.3in 1in 0.3in 1in !important*/
+    /*}*/
+
+    @page
+    {
+        size: portrait;
+        margin: 0.3in 1in 0.3in 1in !important;
+        /*margin: 0mm;  !* this affects the margin in the printer settings *!*/
+    }
+
+    body
+    {
+        /*background-color:#FFFFFF;*/
+        /*border: solid 1px black ;*/
+        margin: 0px;  /* the margin on the content before printing */
+        height: unset
+    }
+    * {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+
+    .leaflet-accordion-item-content {
+        height: fit-content;
+        display: block;
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        overflow-x: auto;
+    }
+
+    button {
+        display: none !important;
+    }
+    .page-container:not(.print) {
+        display: none !important;
+    }
+    .page-header:not(.print) {
+        display: none !important;
+    }
+
+    .modal-container:not(.print) {
+        display: none !important;
+    }
+
+    table {
+        max-width: 80% !important;
+    }
+
+    image {
+        max-width: 80% !important;
+    }
+
+}

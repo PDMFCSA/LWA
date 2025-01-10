@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node ./node_modules/octopus/scripts/run dependencies devmode"
+    "postinstall": "node ./node_modules/octopus/scripts/run dependencies devmode",
+    "translate": "node bin/translations.cjs"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/pharmaledgerassoc/LWA#readme",
   "dependencies": {
     "octopus": "git+http://github.com/opendsu/octopus.git"
+  },
+  "devDependencies": {
+    "google-translate-api-x": "10.7.2"
   }
 }

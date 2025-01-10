@@ -6,6 +6,7 @@ const data = {
   "cancel": "Cancel",
   "change_camera": "Change camera",
   "scan_again": "Scan Again",
+  "leaflet_print": "Print",
   "product_not_found_title": "Not Recognized",
   "product_not_loaded_title": "Product information not available.",
   "error_subtitle": "Unverified Product",
@@ -48,54 +49,15 @@ const data = {
   "terms_content": "<h2>Terms and Conditions for the PharmaLedger Association's Electronic Product Information Website and Application </h2><p>By accessing or using the PharmaLedger Association's Electronic Product Information website and application (the \"Services\"), you agree to be bound by these terms and conditions (the \"Terms\"). You may not access or use the Services if you do not agree to these Terms. The Services are operated by the PharmaLedger Association (the \"Association\") and are intended for use by individuals seeking information about their medication. A multiparty network delivers the Services, and your drug manufacturer supplies the product information displayed through the Services. The Association acts as the data controller for this information. </p><h2>Use of the Services </h2><p>You agree to use the Services only for lawful purposes, and in a manner that does not infringe the rights of, or restrict or inhibit the use and enjoyment of the Services by any third party. Such restriction or inhibition includes, without limitation, conduct that is unlawful, or which may harass or cause distress or inconvenience to any person, and the transmission of obscene or offensive content or disruption of the normal flow of dialogue within the Services. </p><h2>Intellectual Property </h2><p>The content of the Services, including, but not limited to, text, graphics, images, and software, is the property of the Association or its licensors and member companies and is protected by copyright and other intellectual property laws. You may not use any content from the Services for any commercial purpose without the express written consent of the Association. </p><h2>Liability</h2><p>The Association makes no representations or warranties of any kind, express or implied, as to the operation of the Services or the information, content, materials, or products included in the Services. The Association will not be liable for any damages of any kind arising from the use of the Services, including, but not limited to, direct, indirect, incidental, punitive, and consequential damages. </p><h2>Governing Law </h2><p>These Terms and your use of the Services will be governed by and construed in accordance with the laws of Switzerland and any disputes will be resolved in the courts of Basel, Switzerland. </p><h2>Changes to the Terms </h2><p>The Association reserves the right to change these Terms at any time, and you are responsible for checking these Terms periodically for any changes. Your continued use of the Services after any changes to the Terms have been made will constitute your acceptance of the revised Terms.</p><p><br></p>",
   "about_modal_subtitle": "About",
   "about_modal_title": "PharmaLedger",
-  "about_content": "<h2>About this App</h2>\n" +
-      "<p>This app is provided to you by PharmaLedger®. It was jointly developed by patient-representative organizations, pharmaceutical companies, and technology experts.</p>" +
-      "<p>It allows users of the app to view information about their medicine by scanning the barcode on the product package.</p>" +
-      "<p>The information shown is provided by the product Marketing Authorization Holder.</p>" +
-      "<h2>About PharmaLedger</h2>" +
-      "<p>PharmaLedger® is the brand name of the PharmaLedger Association (PLA).</p>" +
-      "<p>PLA is a global not-for-profit, neutral association. The purpose of the Association is to create and promote a digital trust ecosystem in healthcare.</p>" +
-      "<p>The Association promotes cooperation in the healthcare and life science sectors and promotes innovations and their implementation for the mutual benefit of patients and other stakeholders.</p>",
+  "about_content": "<h2>About this App</h2>\n<p>This app is provided to you by PharmaLedger®. It was jointly developed by patient-representative organizations, pharmaceutical companies, and technology experts.</p><p>It allows users of the app to view information about their medicine by scanning the barcode on the product package.</p><p>The information shown is provided by the product Marketing Authorization Holder.</p><h2>About PharmaLedger</h2><p>PharmaLedger® is the brand name of the PharmaLedger Association (PLA).</p><p>PLA is a global not-for-profit, neutral association. The purpose of the Association is to create and promote a digital trust ecosystem in healthcare.</p><p>The Association promotes cooperation in the healthcare and life science sectors and promotes innovations and their implementation for the mutual benefit of patients and other stakeholders.</p>",
   "help_modal_title": "Help",
   "help_modal_subtitle": "FAQs",
-  "help_content": "<div><p><b><h2>What is EPI?</h2></b></p>" +
-    "<p>" +
-    "    <b>EPI</b> is an abbreviation for <b>electronic product information.</b> It is an electronic version of the paper" +
-    "    Product Information leaflet you typically find inside a pharmaceutical product package. In some cases, the" +
-    "    <b>EPI</b> may have replaced the paper leaflet." +
-    "</p>" +
-    "<p>" +
-    "    <b><h2>What is PharmaLedger?</h2></b>" +
-    "</p>" +
-    "<p>The PharmaLedger Association (PLA) is a not-for-profit association based in Switzerland with the purpose to enable" +
-    "    and foster a Digital Trust Ecosystem in healthcare through a standardized and trusted open-source platform. PLA" +
-    "    promotes collaboration and accelerates innovation and adoption to achieve mutual benefits in the healthcare and life" +
-    "    science domains for patients and other stakeholders. PLA was formed in 2022 to continue the work of the PharmaLedger" +
-    "    project, a 3-year project funded by the European Commission and the pharmaceutical industry aimed at proving the" +
-    "    value of blockchain solutions. Further information is available at https://pharmaledger.org." +
-    "</p>" +
-    "<p><b><h2>What is the DataMatrix?</h2></b></p>" +
-    "<p>It's a type of barcode on your product package. It is a black and white square box barcode and will look similar to" +
-    "    this:<br>" +
-    "    <img src=\"./images/barcode_example.png\" alt='DataMatrix barcode example'>" +
-    "</p>" +
-    "<p>" +
-    "    <b><h2>How to use the App?</h2></b>" +
-    "</p>" +
-    "<p>" +
-    "    Follow the instructions on the landing page of the <b>App...</b> it shows a picture of where to find the" +
-    "    <b>DataMatrix</b> on your" +
-    "    Product Package. Once you have found the <b>DataMatrix</b>, click the button 'Scan <b>DataMatrix</b>'. Allow the" +
-    "    application to" +
-    "    use the camera so the <b>DataMatrix</b> can be scanned. Use the camera to focus on the <b>DataMatrix</b>. Once the" +
-    "    pack is scanned" +
-    "    successfully, the <b>EPI</b> will be displayed. You can click the '+' button to get more details." +
-    "</p><p><b><h2>Why does my DataMatrix scan not give a result?</h2></b></p><p>" +
-    "    There are several reasons why the <b>DataMatrix</b> on your package may not give an EPI. One of the reasons could be" +
-    "    the" +
-    "    focus for the camera. Please try to scan the code in a well lit place and code clearly visible on the screen. If you" +
-    "    are struggling to keep your hand steady, you could try using a table to support your hands." +
-    "</p></div>"
+  "help_content": "<div><p><b><h2>What is EPI?</h2></b></p><p>    <b>EPI</b> is an abbreviation for <b>electronic product information.</b> It is an electronic version of the paper    Product Information leaflet you typically find inside a pharmaceutical product package. In some cases, the    <b>EPI</b> may have replaced the paper leaflet.</p><p>    <b><h2>What is PharmaLedger?</h2></b></p><p>The PharmaLedger Association (PLA) is a not-for-profit association based in Switzerland with the purpose to enable    and foster a Digital Trust Ecosystem in healthcare through a standardized and trusted open-source platform. PLA    promotes collaboration and accelerates innovation and adoption to achieve mutual benefits in the healthcare and life    science domains for patients and other stakeholders. PLA was formed in 2022 to continue the work of the PharmaLedger    project, a 3-year project funded by the European Commission and the pharmaceutical industry aimed at proving the    value of blockchain solutions. Further information is available at https://pharmaledger.org.</p><p><b><h2>What is the DataMatrix?</h2></b></p><p>It's a type of barcode on your product package. It is a black and white square box barcode and will look similar to    this:<br>    <img src=\"./images/barcode_example.png\" alt='DataMatrix barcode example'></p><p>    <b><h2>How to use the App?</h2></b></p><p>    Follow the instructions on the landing page of the <b>App...</b> it shows a picture of where to find the    <b>DataMatrix</b> on your    Product Package. Once you have found the <b>DataMatrix</b>, click the button 'Scan <b>DataMatrix</b>'. Allow the    application to    use the camera so the <b>DataMatrix</b> can be scanned. Use the camera to focus on the <b>DataMatrix</b>. Once the    pack is scanned    successfully, the <b>EPI</b> will be displayed. You can click the '+' button to get more details.</p><p><b><h2>Why does my DataMatrix scan not give a result?</h2></b></p><p>    There are several reasons why the <b>DataMatrix</b> on your package may not give an EPI. One of the reasons could be    the    focus for the camera. Please try to scan the code in a well lit place and code clearly visible on the screen. If you    are struggling to keep your hand steady, you could try using a table to support your hands.</p></div>",
+  "leaflet_print_title": "Print Information",
+  "leaflet_print_description": "The current selected information will be printed as PDF.",
+  "leaflet_print_description2": "Do you want to proceed?",
+  "leaflet_print_button": "Proceed",
+  "leaflet_print_button_back": "Go back"
 }
 
 export default data;

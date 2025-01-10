@@ -958,3 +958,24 @@ body[dir="RTL"] .modal-content .languages-container .language-item-container .la
         font-size: calc(100% + 1.3vmin);
     }
 }*/
+
+.info-modal .modal-header .modal-icon.menu-print-icon {
+    background: url(./../images/menu-print-icon.svg) no-repeat;
+}
+
+.info-modal .modal-header .modal-icon.menu-print-icon {
+    background: url(./../images/menu-print-icon.svg) no-repeat;
+}
+
+#print-modal .modal-icon {
+    background: url(./../images/simple-print-icon.svg) no-repeat;
+    background-position: center;
+}
+
+.modal-header.centered-header {
+    padding: min(3vh, 3vw);
+}
+
+.proceed-button.print-button {
+    width: unset;
+}
