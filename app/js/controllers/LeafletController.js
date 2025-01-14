@@ -218,14 +218,15 @@ function LeafletController() {
             const recallInformation = document.createElement("p");
             modalLeaflet.classList.add('recalled');
             recalledContainer.classList.remove("hiddenElement");
-            recallInformation.innerHTML = getTranslation('recalled_product_name', `<strong>${result.productData.nameMedicinalProduct}</strong>`);
 
             if (batchRecalled) { 
                 recalledContainer.querySelector("#recalled-title").textContent = getTranslation('recalled_batch_title');
                 recalledContainer.querySelector(".recalled-message-container").innerHTML = getTranslation("recalled_batch_message"); 
-                recallInformation.innerHTML += '<br />'+getTranslation('recalled_batch_name',  `<strong>${batchData?.batch || batchData.batchNumber}</strong>`);
+                recallInformation.innerHTML += getTranslation('recalled_batch_name',  `<strong>${batchData?.batch || batchData.batchNumber}</strong><br />`);
                 document.querySelector('#recalled-bar-content').textContent =  getTranslation('leaflet_recalled_batch');
             } 
+
+            recallInformation.innerHTML += getTranslation('recalled_product_name', `<strong>${result.productData.nameMedicinalProduct}</strong>`);
 
             recalledMessageContainer.appendChild(recallInformation);
 

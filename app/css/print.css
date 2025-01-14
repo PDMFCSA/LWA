@@ -70,4 +70,25 @@
         max-height: 80% !important;
     }
 
+    /* table {
+        width: 100%;
+        border-collapse: collapse !important;
+        display: table !important;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+    colgroup,
+    theadm
+    tbody,
+    caption { 
+        width: 100%; 
+    } 
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    } */
+
 }
