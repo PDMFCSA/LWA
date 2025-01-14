@@ -161,3 +161,21 @@ button:not([disabled]) {
     text-align: center;
     background-position: center top;
 }
+
+.leaflet-page .reccalled-bar {
+    background: #058798;
+    position: fixed;
+    bottom: 9vh;
+    width: calc(100% - 20px);
+    left: 0;
+    overflow-x: hidden;
+    border: 3px solid #27494e;
+} 
+
+.leaflet-page .reccalled-bar  p {
+    font-size: 3rem;
+    line-height: 0px;
+    font-weight: 500;
+    color: white;
+    text-align: center;  
+}
