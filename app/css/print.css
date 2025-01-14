@@ -1,19 +1,15 @@
 @media print {
-    /*@page {*/
-    /*    margin: 0.3in 1in 0.3in 1in !important*/
-    /*}*/
 
     @page
     {
         size: portrait;
-        margin: 0.3in 1in 0.3in 1in !important;
-        /*margin: 0mm;  !* this affects the margin in the printer settings *!*/
+        /* Changing the margin to show the page numbers works mostly perfect,
+        but on chrome it causes truncation for some reason...*/
+        margin: 0;  /* this affects the margin in the printer settings */
     }
 
     body
     {
-        /*background-color:#FFFFFF;*/
-        /*border: solid 1px black ;*/
         margin: 0px;  /* the margin on the content before printing */
         height: unset
     }
@@ -49,12 +45,29 @@
         display: none !important;
     }
 
-    table {
-        max-width: 80% !important;
-    }
+    /*table {*/
+    /*    max-width: 100%;*/
+    /*    display: block;*/
+    /*    margin-left: auto;*/
+    /*    !* text-align: center; *!*/
+    /*    margin-right: auto;*/
+    /*}*/
 
-    image {
+    /*tbody {*/
+    /*    display: block;*/
+    /*}*/
+
+    /*tr {*/
+    /*    display: block;*/
+    /*}*/
+
+    /*td {*/
+    /*    word-break: break-word;*/
+    /*}*/
+
+    img {
         max-width: 80% !important;
+        max-height: 80% !important;
     }
 
 }
