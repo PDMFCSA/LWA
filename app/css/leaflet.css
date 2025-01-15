@@ -162,6 +162,14 @@ button:not([disabled]) {
     background-position: center top;
 }
 
+#settings-modal.recalled {
+    filter: blur(5px) !important;
+}
+
+#settings-modal:not(.recalled) .reccalled-bar  {
+    display: none;
+}
+
 .leaflet-page .reccalled-bar {
     background: #058798;
     position: fixed;

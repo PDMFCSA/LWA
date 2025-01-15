@@ -216,9 +216,10 @@ function LeafletController() {
             const batchRecalled = batchData?.batchRecall; 
             const recalledMessageContainer = document.querySelector(".recalled-message-container");
             const recallInformation = document.createElement("p");
+
             modalLeaflet.classList.add('recalled');
             recalledContainer.classList.remove("hiddenElement");
-
+            
             if (batchRecalled) { 
                 recalledContainer.querySelector("#recalled-title").textContent = getTranslation('recalled_batch_title');
                 recalledContainer.querySelector(".recalled-message-container").innerHTML = getTranslation("recalled_batch_message"); 
