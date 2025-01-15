@@ -91,4 +91,7 @@
         text-align: left;
     } */
 
+    #recalled-bar {
+        display: none;
+    }
 }
