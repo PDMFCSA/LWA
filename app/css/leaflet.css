@@ -162,15 +162,16 @@ button:not([disabled]) {
     background-position: center top;
 }
 
+/* Blur leaft left of recalled product/batch until user confirm  */
 #settings-modal.recalled {
     filter: blur(5px) !important;
 }
 
-#settings-modal:not(.recalled) .reccalled-bar  {
+#recalled-bar:not(.visible)  {
     display: none;
 }
-
-.leaflet-page .reccalled-bar {
+ 
+.leaflet-page #recalled-bar {
     background: #058798;
     position: fixed;
     bottom: 9vh;
@@ -180,7 +181,7 @@ button:not([disabled]) {
     border: 3px solid #27494e;
 } 
 
-.leaflet-page .reccalled-bar  p {
+.leaflet-page #recalled-bar  p {
     font-size: 3rem;
     line-height: 0px;
     font-weight: 500;

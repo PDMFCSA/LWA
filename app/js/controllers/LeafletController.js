@@ -211,6 +211,7 @@ function LeafletController() {
         const recalled = productRecall || batchData?.batchRecall;
         const recalledContainer = document.querySelector("#recalled-modal");
         const modalLeaflet = document.getElementById("settings-modal");
+        const recalledBar = document.querySelector('#reccccccalled-bar');
         modalLeaflet.classList.remove('recalled');
         if (recalled) {
             const batchRecalled = batchData?.batchRecall; 
@@ -218,15 +219,16 @@ function LeafletController() {
             const recallInformation = document.createElement("p");
 
             modalLeaflet.classList.add('recalled');
+            recalledBar.classList.add('visible');
             recalledContainer.classList.remove("hiddenElement");
             
             if (batchRecalled) { 
                 recalledContainer.querySelector("#recalled-title").textContent = getTranslation('recalled_batch_title');
                 recalledContainer.querySelector(".recalled-message-container").innerHTML = getTranslation("recalled_batch_message"); 
                 recallInformation.innerHTML += getTranslation('recalled_batch_name',  `<strong>${batchData?.batch || batchData.batchNumber}</strong><br />`);
-                document.querySelector('#recalled-bar-content').textContent =  getTranslation('leaflet_recalled_batch');
+                recalledBar.querySelector('#recalled-bar-content').textContent =  getTranslation('leaflet_recalled_batch');
             } 
-
+ 
             recallInformation.innerHTML += getTranslation('recalled_product_name', `<strong>${result.productData.nameMedicinalProduct}</strong>`);
 
             recalledMessageContainer.appendChild(recallInformation);

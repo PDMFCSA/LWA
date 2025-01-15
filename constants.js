@@ -1,4 +1,5 @@
 const constants = {
+  LAST_ERROR: "_lastError_",
   DEV_DEBUG: "_epiLog_",
   EPI_DOMAIN: "_epiDomain_",
   FONT_ZOOM: "_fontZoom_",
