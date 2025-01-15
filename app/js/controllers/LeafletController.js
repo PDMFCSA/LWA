@@ -211,7 +211,7 @@ function LeafletController() {
         const recalled = productRecall || batchData?.batchRecall;
         const recalledContainer = document.querySelector("#recalled-modal");
         const modalLeaflet = document.getElementById("settings-modal");
-        const recalledBar = document.querySelector('#reccccccalled-bar');
+        const recalledBar = document.querySelector('#recalled-bar');
         modalLeaflet.classList.remove('recalled');
         if (recalled) {
             const batchRecalled = batchData?.batchRecall; 
