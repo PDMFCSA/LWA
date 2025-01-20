@@ -67,11 +67,26 @@ export default data;`;
 }
 
 async function addKey(lang, key, str){
+  const certified = getCertified();
+  const certifiedKeys = Object.keys(certified);
+  if (certifiedKeys.includes(key))
+    throw new Error(`Trying to modify a certified translation ${key}`);
+
+  const nonCertified = getCertified(false);
+  const nonCertifiedKeys = Object.keys(nonCertified);
+
+
   const languages = getAvailableLanguages();
   let json = getDataForLang(lang);
   json[key] = str;
 
   saveFile(lang, json);
+  if (!nonCertifiedKeys.includes(key)){
+    let latest = getLatest(certified, nonCertified);
+    latest = incrementLatest(latest, nonCertified, key)
+    console.log(`Added new key ${key} with code ${latest}`);
+    updateCertificationTracker(nonCertified, false);
+  }
 
   for (const otherLang of languages){
     if (otherLang === lang){
@@ -129,15 +144,27 @@ function updateCertificationTracker(data,  certified = false){
   }
 }
 
+function getLatest(certified, nonCertified){
+  const certifiedKeys = Object.keys(certified || {});
+  const nonCertifiedKeys = Object.keys(nonCertified || {});
+
+  if (!nonCertifiedKeys.length)
+    return certified[certifiedKeys[certifiedKeys.length -1]];
+  return nonCertified[nonCertifiedKeys[nonCertifiedKeys.length -1]];
+}
+
+function incrementLatest(latest, nonCertified, key){
+  latest++;
+  nonCertified[key] = latest
+  return latest;
+}
+
 function getCodeJson(lang, certified, nonCertified){
   const data = getDataForLang(lang);
-  const certifiedKeys = Object.keys(certified);
-  const nonCertifiedKeys = Object.keys(nonCertified);
-  let latest = nonCertifiedKeys.length ? nonCertified[nonCertifiedKeys.length -1] : certified[certifiedKeys[certifiedKeys.length -1]];
+  let latest, code
   return Object.entries(data).map(([key, value], i) => {
-    const code = certified[key] || nonCertified[key] || ++latest;
-    if (!certified[key] && !nonCertified[key])
-      nonCertified[key] = latest
+    latest = getLatest(certified, nonCertified)
+    code = certified[key] || nonCertified[key] || incrementLatest(latest, nonCertified, key)
     return ({
       code: code,
       text: value,
