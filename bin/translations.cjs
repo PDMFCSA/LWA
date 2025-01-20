@@ -40,8 +40,7 @@ async function translateString(fromLang, toLang, str, force = false){
   }
 }
 
-async function addKey(lang, key, str){
-  const languages = getAvailableLanguages();
+function getDataForLang(lang){
   let file = fs.readFileSync(path.join(root, "app", "translations", `${lang.toLowerCase()}.js`)).toString();
 
   function parseFile(f){
@@ -57,14 +56,20 @@ async function addKey(lang, key, str){
   }
 
   let json = parseFile(file);
-  json[key] = str;
+  return json;
+}
 
-  function saveFile(l, j){
-    const content = `const data = ${JSON.stringify(j, undefined, 2)}
+function saveFile(lang, data){
+  const content = `const data = ${JSON.stringify(data, undefined, 2)}
 
 export default data;`;
-    fs.writeFileSync(path.join(root, "app", "translations", `${l.toLowerCase()}.js`), content);
-  }
+  fs.writeFileSync(path.join(root, "app", "translations", `${lang.toLowerCase()}.js`), content);
+}
+
+async function addKey(lang, key, str){
+  const languages = getAvailableLanguages();
+  let json = getDataForLang(lang);
+  json[key] = str;
 
   saveFile(lang, json);
 
@@ -82,14 +87,104 @@ export default data;`;
     }
 
     console.log(`translated \"${str}\" from ${lang} to ${otherLang}: ${translated}`);
-    file = fs.readFileSync(path.join(root, "app", "translations", `${otherLang.toLowerCase()}.js`)).toString();
-    json = parseFile(file);
+    json = getDataForLang(otherLang)
     json[key] = translated;
     saveFile(otherLang, json);
   }
 }
 
+function getDataForLang(lang){
+  let file = fs.readFileSync(path.join(root, "app", "translations", `${lang.toLowerCase()}.js`)).toString();
+
+  function parseFile(f){
+    const regexp = /const data = (.*)export default data;/gms
+    const match = regexp.exec(f);
+    if (!match)
+      throw new Error(`Invalid file content ${key}.js`);
+    try {
+      return eval("exports = " + match[1]);
+    } catch (e){
+      throw new Error(`Unparsable file content ${key}.js`);
+    }
+  }
+
+  let json = parseFile(file);
+  return json;
+}
+
+function getCertified(certified = true){
+  let file = fs.readFileSync(path.join(root, "lang-codes", "tracker", `${certified ? "" : "non-"}certified.json`)).toString();
+  try {
+    return JSON.parse(file);
+  } catch (e) {
+    throw new Error(`Could not read certified strings file: ${e}`)
+  }
+}
+
+function updateCertificationTracker(data,  certified = false){
+  try {
+    let file = fs.writeFileSync(path.join(root, "lang-codes", "tracker", `${certified ? "" : "non-"}certified.json`),  JSON.stringify(data, undefined, 2));
+  } catch (e) {
+    throw new Error(`Could not update non certified strings file: ${e}`)
+  }
+}
+
+function getCodeJson(lang, certified, nonCertified){
+  const data = getDataForLang(lang);
+  const certifiedKeys = Object.keys(certified);
+  const nonCertifiedKeys = Object.keys(nonCertified);
+  let latest = nonCertifiedKeys.length ? nonCertified[nonCertifiedKeys.length -1] : certified[certifiedKeys[certifiedKeys.length -1]];
+  return Object.entries(data).map(([key, value], i) => {
+    const code = certified[key] || nonCertified[key] || ++latest;
+    if (!certified[key] && !nonCertified[key])
+      nonCertified[key] = latest
+    return ({
+      code: code,
+      text: value,
+      status: certified[key] ? "ok" : "",
+      key: key
+    })
+  })
+}
+
+function toText(json){
+  return json;
+}
+/**
+ *
+ * @param {{}[]} json
+ * @param {string} lang
+ * @param {"json" | "text"} [format]
+ */
+function saveCodeFile(json, lang, format){
+  fs.writeFileSync(path.join(root, "lang-codes", `${lang.toLowerCase()}.json`), format === "json" ? JSON.stringify(json, undefined, 2) : toText(json))
+}
+
+/**
+ *
+ * @param {string[]} [langs]
+ * @param {"json" | "text"} [format]
+ * @returns {Promise<void>}
+ */
+function generateCodeSheet(langs, format = "json"){
+  langs = langs && langs.length ? langs : getAvailableLanguages()
+  const certified = getCertified();
+  const nonCertified = getCertified(false);
+  for (const lang of langs) {
+    const result = getCodeJson(lang, certified, nonCertified)
+    result.sort((a, b) => {
+      return a.code - b.code
+    })
+    saveCodeFile(result, lang, format);
+    updateCertificationTracker(nonCertified,  false);
+  }
+}
+
 switch (command) {
+  case "codes":
+    const langs = args;
+    generateCodeSheet(langs, "json")
+    break
   // TODO: handle html
   case 'key':
     const lang = args.shift();

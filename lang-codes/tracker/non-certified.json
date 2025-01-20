@@ -1,0 +1,20 @@
+{
+  "leaflet_print": 48,
+  "error_subtitle": 49,
+  "leaflet_incorrect_date_title": 50,
+  "leaflet_incorrect_date_subtitle": 51,
+  "leaflet_incorrect_date_message": 52,
+  "leaflet_recalled_product": 53,
+  "leaflet_recalled_batch": 54,
+  "recalled_product_title": 55,
+  "recalled_product_message": 56,
+  "recalled_product_name": 57,
+  "recalled_batch_title": 58,
+  "recalled_batch_name": 59,
+  "recalled_batch_message": 60,
+  "leaflet_print_title": 61,
+  "leaflet_print_description": 62,
+  "leaflet_print_description2": 63,
+  "leaflet_print_button": 64,
+  "leaflet_print_button_back": 65
+}

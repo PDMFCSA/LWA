@@ -12,7 +12,6 @@ const data = {
     "product_not_loaded": "Infelizmente, nenhum folheto informativo foi carregado.",
     "system_busy": "O sistema está ocupado, por favor tente novamente mais tarde.",
     "err_code": "Código de erro",
-    "err_code": "Error code", 
     "leaflet_incorrect_date_title": "Incorrect date",
     "leaflet_incorrect_date_subtitle": "Scanned date is incorrect",
     "leaflet_incorrect_date_message": "<b> This product's date is incorrect</b>.",
