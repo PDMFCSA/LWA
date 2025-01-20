@@ -174,9 +174,43 @@ function getCodeJson(lang, certified, nonCertified){
   })
 }
 
-function toText(json){
-  return json;
+function toText(json, lang){
+
+  const text = []
+
+  function pushHeader(txt) {
+    text.push({h3: txt})
+  }
+
+  function pushParagraph(txt) {
+    text.push({p: txt});
+  }
+
+  function pushTable(){
+    text.push({table: {
+        headers: ["Key", "Text", "Status", "Code"],
+        rows: json.reduce((accum, val) => {
+          accum.push([val.key, val.text
+            .replaceAll("\n", "<br/>")
+            // .replaceAll("\n", "&#10;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;"), val.status, val.code])
+          return accum;
+        }, [])
+      }
+    })
+  }
+
+  pushHeader(`${lang} translations`);
+  pushParagraph("To ease the translation the Code refers where it is used on our app screen, see section wireframing")
+  pushTable()
+
+
+  const json2md = require("json2md");
+
+  return json2md(text);
 }
+
 /**
  *
  * @param {{}[]} json
@@ -184,14 +218,13 @@ function toText(json){
  * @param {"json" | "text"} [format]
  */
 function saveCodeFile(json, lang, format){
-  fs.writeFileSync(path.join(root, "lang-codes", `${lang.toLowerCase()}.json`), format === "json" ? JSON.stringify(json, undefined, 2) : toText(json))
+  fs.writeFileSync(path.join(root, `lang-codes${format === "json" ? "" : "/reports"}`, `${lang.toLowerCase()}.${format === "json" ? "json" : "md"}`), format === "json" ? JSON.stringify(json, undefined, 2) : toText(json, lang))
 }
 
 /**
  *
  * @param {string[]} [langs]
  * @param {"json" | "text"} [format]
- * @returns {Promise<void>}
  */
 function generateCodeSheet(langs, format = "json"){
   langs = langs && langs.length ? langs : getAvailableLanguages()
@@ -209,8 +242,10 @@ function generateCodeSheet(langs, format = "json"){
 
 switch (command) {
   case "codes":
-    const langs = args;
-    generateCodeSheet(langs, "json")
+    const format = args.shift()
+    if (!["json", "md"].includes(format))
+      throw new Error(`Invalid format provided. expects 'json' or 'md'`)
+    generateCodeSheet(args, format)
     break
   // TODO: handle html
   case 'key':

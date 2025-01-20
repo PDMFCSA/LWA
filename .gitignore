@@ -2,3 +2,4 @@ node_modules
 lib
 latest-change-set.txt
 .idea
+#lang-codes/*.json
