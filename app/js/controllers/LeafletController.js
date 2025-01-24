@@ -34,7 +34,8 @@ function LeafletController() {
     this.defaultLanguage;
     this.selectedLanguage;
     this.selectedDocument;
-    
+    this.lastModal;
+
     function generateFileName(){
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -159,7 +160,6 @@ function LeafletController() {
     }
 
     const showDocumentModal = (result, hasLeaflet = true) => {
-       
         try {
             if(this.selectedDocument === DocumentsTypes.LEAFLET) {
                 this.showModal("settings-modal");
@@ -191,6 +191,9 @@ function LeafletController() {
         
         if(!documents?.length)
             return goToErrorPage(constants.errorCodes.no_uploaded_epi, new Error(`Has not documents for product`));
+
+        if(documents.length === 1) 
+            return this.setSelectedDocument(documents[0].value);
 
         const modal = document.querySelector('#documents-modal');
         const container = modal.querySelector("#content-container");
@@ -254,12 +257,13 @@ function LeafletController() {
         return documents; 
     };
 
-    this.setSelectedDocument = async function (evt) {
-        
-        this.selectedDocument = document.querySelector("input[name='documents']:checked")?.value;
+    this.setSelectedDocument = async function (selectedDocument = null) {
+
+        this.selectedDocument = selectedDocument ? 
+            selectedDocument : document.querySelector("input[name='documents']:checked")?.value;
+
         if(this.selectedDocument === DocumentsTypes.INFO) {
             const browserLanguage = navigator.language;
-
             this.selectedLanguage = this.defaultLanguage = browserLanguage.includes('en') ? 
                 'en' : browserLanguage;
 
