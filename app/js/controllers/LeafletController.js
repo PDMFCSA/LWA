@@ -258,13 +258,19 @@ function LeafletController() {
         
         this.selectedDocument = document.querySelector("input[name='documents']:checked")?.value;
         if(this.selectedDocument === DocumentsTypes.INFO) {
-            this.selectedLanguage = this.defaultLanguage = 'en';
-            // force show product information in english
-            return showAvailableLanguages({availableLanguages: [{
-                "label": "English",
-                "value": "en",
-                "nativeName": "English"
-            }]}) 
+            const browserLanguage = navigator.language;
+
+            this.selectedLanguage = this.defaultLanguage = browserLanguage.includes('en') ? 
+                'en' : browserLanguage;
+
+            if(!this.selectedLanguage.includes('en')) {
+                // force show product information in english
+                return showAvailableLanguages({availableLanguages: [{
+                    "label": "English",
+                    "value": "en",
+                    "nativeName": "English"
+                }]}) 
+            }
         }   
           
         getLeaflet(this.defaultLanguage);
@@ -276,7 +282,6 @@ function LeafletController() {
         this.showLoader(false);
         
         if (result.availableLanguages.length >= 1) {
-                
             const modal = this.showModal('leaflet-lang-select');
             if(this.selectedDocument === DocumentsTypes.INFO) {
                 modal.querySelector('#language-message').textContent = getTranslation("document_lang_select_message")
