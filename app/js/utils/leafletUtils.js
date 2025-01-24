@@ -226,7 +226,6 @@ const renderProductInformation = function (result, hasLeaflet = true) {
         }
         return new Date(dateString).toLocaleString('pt', {dateStyle: 'short'}).replace(/\//g, '.');
     }
-
     elements.forEach(element => {
         const attr = element.getAttribute('data-attr');
         const isBatch = element.hasAttribute('data-batch');
