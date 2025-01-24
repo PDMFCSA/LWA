@@ -186,8 +186,6 @@ function LeafletController() {
         
         const {markets} = result?.productData;
 
-        markets.push({marketId: "IN"});
-
         if(!markets || markets.length < 1 || !markets.some(market => constants.MARKETS_WITH_PRODUCT_INFORMATION.includes(market.marketId)))
             documents = documents.filter(doc => doc.value !== DocumentsTypes.INFO);
         
