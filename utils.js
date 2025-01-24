@@ -126,7 +126,7 @@ function goToErrorPage(errorCode, error) {
     const parseError = JSON.stringify(error, Object.getOwnPropertyNames(error));
     localStorage.setItem(constants.LAST_ERROR, parseError);
     window.history.pushState({}, "", "index.html");
-    // goToPage(`/error.html?errorCode=${errCode}`)
+    goToPage(`/error.html?errorCode=${errCode}`)
 }
 
 function setTextDirectionForLanguage(lang, selector) {
