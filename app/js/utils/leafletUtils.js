@@ -241,18 +241,6 @@ const renderProductInformation = function (result, hasLeaflet = true) {
     focusModalHeader();
 }
 
-const getContentFromTitle = function(xmlContent, text){
-
-}
-
-const getListOfExcipients = function(xmlContent) {
-  return getContentFromTitle(xmlContent, TITLES.LIST_OF_EXCIPIENTS);
-}
-
-const getGenericName = function(xmlContent) {
-  return getContentFromTitle(xmlContent, TITLES.GENERIC_NAME);
-}
-
 async function getFileContent(file, methodName = "readAsText") {
   let fileReader = new FileReader();
   return new Promise((resolve, reject) => {
