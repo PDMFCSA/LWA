@@ -174,8 +174,8 @@ const renderProductInformation = function (result, hasLeaflet = true) {
         let resultDocument = xmlService.getHTMLFromXML(result.xmlContent);
         let resultXml = xmlService.parseXmlstring(result.xmlContent);
 
-        list = xmlService.getElementsWithClass(resultXml, resultDocument, CLASSES.LIST_OF_EXCIPIENTS);
-        genericName = xmlService.getElementsWithClass(resultXml, resultDocument, CLASSES.GENERIC_NAME);
+        list = xmlService.getElementsWithClass(resultXml, CLASSES.LIST_OF_EXCIPIENTS);
+        genericName = xmlService.getElementsWithClass(resultXml, CLASSES.GENERIC_NAME);
 
         if(!!list && Array.isArray(list) && list.length > 0)
           list = list[0]; 
