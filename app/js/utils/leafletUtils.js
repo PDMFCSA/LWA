@@ -174,8 +174,8 @@ const renderProductInformation = function (result, hasLeaflet = true) {
         let resultDocument = xmlService.getHTMLFromXML(result.xmlContent);
         let resultXml = xmlService.parseXmlstring(result.xmlContent);
 
-        list = xmlService.getElementsWithClass(resultXml, CLASSES.LIST_OF_EXCIPIENTS);
-        genericName = xmlService.getElementsWithClass(resultXml, CLASSES.GENERIC_NAME);
+        list = xmlService.getElementsWithClass(resultXml, resultDocument, CLASSES.LIST_OF_EXCIPIENTS);
+        genericName = xmlService.getElementsWithClass(resultXml, resultDocument, CLASSES.GENERIC_NAME);
 
         if(!!list && Array.isArray(list) && list.length > 0)
           list = list[0]; 
@@ -184,10 +184,10 @@ const renderProductInformation = function (result, hasLeaflet = true) {
           genericName = genericName[0];
 
         if(!genericName || !genericName?.textContent?.length)
-          genericName = getGenericName(resultDocument);
+          genericName = xmlService.getItemFromParsedHtml(resultDocument, TITLES.GENERIC_NAME);
 
-        if(!list || !list?.length)
-          list = getListOfExcipients(resultDocument);
+        if(!list || !list?.textContent?.length)
+          list = xmlService.getItemFromParsedHtml(resultDocument, TITLES.LIST_OF_EXCIPIENTS);
      }
 
     const container = modal.querySelector('.product-information-wrapper');
@@ -242,20 +242,7 @@ const renderProductInformation = function (result, hasLeaflet = true) {
 }
 
 const getContentFromTitle = function(xmlContent, text){
-  const sections = xmlContent.querySelectorAll(".leaflet-accordion-item");
-  for(let section of sections) {
-      const title = section.querySelector('h2')?.textContent;
-      if(title) {
-          const titleString = title.trimEnd().replace(/\s+/g, ' ').replace(/\s/g, '_').toLowerCase();
-          if(titleString.includes(text)) {
-              const list = section.querySelector('.leaflet-accordion-item-content');
-              if(list?.innerHTML) {
-                  return list;
-                  break;
-              }
-          } 
-      }
-  }
+
 }
 
 const getListOfExcipients = function(xmlContent) {

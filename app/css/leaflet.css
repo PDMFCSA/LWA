@@ -212,8 +212,8 @@ button:not([disabled]) {
     font-weight: bold;
 }
 
-#list-of-excipients {
-    margin-top: -10px !important;
+#list-of-excipients > p {
+    margin-top: 0px !important;
     /* margin-left: 1rem; */
 }
 
