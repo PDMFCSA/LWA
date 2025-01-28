@@ -19,7 +19,7 @@ class XMLDisplayService {
     }
   }
 
-  parseXmlstring(xmlString, text){
+  parseXmlstring(xmlString){
     let parser = new DOMParser();
     return parser.parseFromString(xmlString, 'application/xml');
   }
@@ -67,7 +67,7 @@ class XMLDisplayService {
     }
   }
 
-  getElementsWithClass(xmlDoc, xmlContent, className){
+  getElementsWithClass(xmlDoc, className){
     const itemsWithClass = Array.from(xmlDoc.querySelectorAll('[class]'));
 
     return itemsWithClass.reduce((acc, el) => {
