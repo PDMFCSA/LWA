@@ -199,6 +199,13 @@ button:not([disabled]) {
 .data-wrapper {
     margin-bottom: 1.5rem !important;
 }
+
+/* remove margin top (vitor)
+.data-wrapper + .data-wrapper {
+    margin-top: -1.5rem;
+} */
+
+
 .data-wrapper h2, .data-wrapper h3 {
     margin-top: 0px !important;
 }
