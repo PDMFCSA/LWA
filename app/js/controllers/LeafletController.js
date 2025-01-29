@@ -118,7 +118,7 @@ function LeafletController() {
 
         this.showLoader(true);
 
-        if (this.selectedDocument)
+        if (this.selectedDocument && this.selectedDocument !== DocumentsTypes.INFO)
             leafletService.leafletType = this.selectedDocument;
 
         leafletService.getLeafletUsingCache(timePerCall, totalWaitTime, gto_TimePerCall, gto_TotalWaitTime).then((result) => {

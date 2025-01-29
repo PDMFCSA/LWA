@@ -61,7 +61,7 @@ class LeafletService {
     this.leafletLang = leafletLang;
     this.epiDomain = epiDomain;
     this.epiMarket = epiMarket;
-    this.leafletType = "leaflet";
+    this.leafletType = "prescribingInfo";
 
     let gtinValidationResult = validateGTIN(this.gtin);
     if (!gtinValidationResult.isValid) {
