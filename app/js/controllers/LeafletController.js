@@ -290,7 +290,7 @@ function LeafletController() {
 
     const showAvailableDocuments = (result) => {
 
-        let hasLeaflet = result.availableLanguages?.length || result?.resultStatus === 'xml_found' || false;
+        let hasLeaflet = result.availableTypes?.length || result?.resultStatus === 'xml_found' || false;
 
         if(result?.availableTypes?.length && !result?.availableTypes?.includes(DocumentsTypes.LEAFLET))
             hasLeaflet = false;
