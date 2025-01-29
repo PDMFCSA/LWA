@@ -290,7 +290,11 @@ function LeafletController() {
 
     const showAvailableDocuments = (result) => {
 
-        const hasLeaflet = result.availableLanguages?.length || result?.resultStatus === 'xml_found' || result?.availableTypes?.includes(DocumentsTypes.LEAFLET) || false;
+        let hasLeaflet = result.availableLanguages?.length || result?.resultStatus === 'xml_found' || false;
+
+        if(result?.availableTypes?.length && !result?.availableTypes?.includes(DocumentsTypes.LEAFLET))
+            hasLeaflet = false;
+        
         const hasPrescribingInfo  = result?.availableTypes?.includes(DocumentsTypes.PRESCRIBING_INFO);
         let documents = [
             {text: 'document_product_info', value: DocumentsTypes.INFO},
