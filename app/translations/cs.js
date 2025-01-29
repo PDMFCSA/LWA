@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Oznámení",
   "document_prescribing_info": "Předepisování informací pro zdravotnické pracovníky",
   "epi_markets_modal_title": "Vyberte trh",
-  "epi_markets_modal_message": "Vyberte prosím svůj trh"
+  "epi_markets_modal_message": "Vyberte prosím svůj trh",
+  "epi_markets_modal_no_market": "Žádný trh"
 }
 
 export default data;

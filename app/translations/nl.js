@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "Kennisgeving",
   "document_prescribing_info": "Informatie voorschrijven voor professionals in de gezondheidszorg",
   "epi_markets_modal_title": "Selecteer markt",
-  "epi_markets_modal_message": "Selecteer uw markt"
+  "epi_markets_modal_message": "Selecteer uw markt",
+  "epi_markets_modal_no_market": "Geen markt"
 }
 
 export default data;

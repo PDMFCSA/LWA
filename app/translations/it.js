@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Avviso",
   "document_prescribing_info": "Prescrivere informazioni per gli operatori sanitari",
   "epi_markets_modal_title": "Seleziona mercato",
-  "epi_markets_modal_message": "Seleziona il tuo mercato"
+  "epi_markets_modal_message": "Seleziona il tuo mercato",
+  "epi_markets_modal_no_market": "Nessun mercato"
 }
 
 export default data;

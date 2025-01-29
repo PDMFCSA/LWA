@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "يلاحظ",
   "document_prescribing_info": "وصف المعلومات لأخصائيي الرعاية الصحية",
   "epi_markets_modal_title": "حدد السوق",
-  "epi_markets_modal_message": "الرجاء تحديد السوق الخاص بك"
+  "epi_markets_modal_message": "الرجاء تحديد السوق الخاص بك",
+  "epi_markets_modal_no_market": "لا سوق"
 }
 
 export default data;

@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Huomautus",
   "document_prescribing_info": "Tietojen määrääminen terveydenhuollon ammattilaisille",
   "epi_markets_modal_title": "Valitse markkinat",
-  "epi_markets_modal_message": "Valitse markkinat"
+  "epi_markets_modal_message": "Valitse markkinat",
+  "epi_markets_modal_no_market": "Ei markkinoita"
 }
 
 export default data;

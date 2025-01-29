@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "Avis",
   "document_prescribing_info": "Prescription des informations pour les professionnels de la santé",
   "epi_markets_modal_title": "Sélectionner le marché",
-  "epi_markets_modal_message": "Veuillez sélectionner votre marché"
+  "epi_markets_modal_message": "Veuillez sélectionner votre marché",
+  "epi_markets_modal_no_market": "Pas de marché"
 }
 
 export default data;

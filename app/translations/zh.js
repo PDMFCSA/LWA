@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "注意",
   "document_prescribing_info": "为医疗保健专业人员开出信息",
   "epi_markets_modal_title": "选择市场",
-  "epi_markets_modal_message": "请选择您的市场"
+  "epi_markets_modal_message": "请选择您的市场",
+  "epi_markets_modal_no_market": "没有市场"
 }
 
 export default data;

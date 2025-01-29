@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "Obvestilo",
   "document_prescribing_info": "Predpisovanje informacij za zdravstvene delavce",
   "epi_markets_modal_title": "Izberi trg",
-  "epi_markets_modal_message": "Izberite svoj trg"
+  "epi_markets_modal_message": "Izberite svoj trg",
+  "epi_markets_modal_no_market": "Brez trga"
 }
 
 export default data;

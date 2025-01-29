@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Ανακοίνωση",
   "document_prescribing_info": "ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΗΝ ΥΠΟΔΟΤΗΤΑΣ",
   "epi_markets_modal_title": "Επιλέξτε αγορά",
-  "epi_markets_modal_message": "Επιλέξτε την αγορά σας"
+  "epi_markets_modal_message": "Επιλέξτε την αγορά σας",
+  "epi_markets_modal_no_market": "Χωρίς αγορά"
 }
 
 export default data;

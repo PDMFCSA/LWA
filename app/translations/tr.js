@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Fark etme",
   "document_prescribing_info": "Sağlık uzmanları için bilgi reçete etmek",
   "epi_markets_modal_title": "Piyasa Seçin",
-  "epi_markets_modal_message": "Lütfen pazarınızı seçin"
+  "epi_markets_modal_message": "Lütfen pazarınızı seçin",
+  "epi_markets_modal_no_market": "Piyasa Yok"
 }
 
 export default data;

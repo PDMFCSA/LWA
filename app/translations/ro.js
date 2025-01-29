@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Observa",
   "document_prescribing_info": "Prescrierea informațiilor pentru profesioniștii din domeniul sănătății",
   "epi_markets_modal_title": "Selectați piața",
-  "epi_markets_modal_message": "Vă rugăm să selectați piața dvs."
+  "epi_markets_modal_message": "Vă rugăm să selectați piața dvs.",
+  "epi_markets_modal_no_market": "Fără piață"
 }
 
 export default data;

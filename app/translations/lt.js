@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "Pranešimas",
   "document_prescribing_info": "Informacijos skyrimas sveikatos priežiūros specialistams",
   "epi_markets_modal_title": "Pasirinkite rinką",
-  "epi_markets_modal_message": "Pasirinkite savo rinką"
+  "epi_markets_modal_message": "Pasirinkite savo rinką",
+  "epi_markets_modal_no_market": "Nėra rinkos"
 }
 
 export default data;

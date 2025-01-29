@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Teade",
   "document_prescribing_info": "Tervishoiutöötajatele mõeldud teabe väljakirjutamine",
   "epi_markets_modal_title": "Valitud turg",
-  "epi_markets_modal_message": "Valige oma turg"
+  "epi_markets_modal_message": "Valige oma turg",
+  "epi_markets_modal_no_market": "Pole turg"
 }
 
 export default data;

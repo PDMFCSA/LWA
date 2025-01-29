@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "Beachten",
   "document_prescribing_info": "Verschreibung von Informationen für Angehörige der Gesundheitsberufe",
   "epi_markets_modal_title": "Markt auswählen",
-  "epi_markets_modal_message": "Bitte wählen Sie Ihren Markt aus"
+  "epi_markets_modal_message": "Bitte wählen Sie Ihren Markt aus",
+  "epi_markets_modal_no_market": "Kein Markt"
 }
 
 export default data;

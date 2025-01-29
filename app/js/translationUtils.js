@@ -67,7 +67,7 @@ async function fetchTranslation(langCode) {
     }
 }
 
-let currentAppTranslation;
+let currentAppTranslation, fallbackTranslation;
 
 function setDefaultLanguage() {
     const queryString = window.location.search;
@@ -86,8 +86,10 @@ export async function translate() {
     setDefaultLanguage();
     let matches = document.querySelectorAll("[translate]");
     currentAppTranslation = await fetchTranslation(localStorage.getItem(constants.APP_LANG));
+    if(!fallbackTranslation)
+        fallbackTranslation = await fetchTranslation("en");
     matches.forEach((item) => {
-        item.innerHTML = currentAppTranslation[item.getAttribute('translate')];
+        item.innerHTML = currentAppTranslation[item.getAttribute('translate')] || fallbackTranslation[item.getAttribute('translate')];
     });
 }
 
@@ -96,17 +98,21 @@ export function getTranslation(key, ...args) {
     if (!currentAppTranslation) {
         fetchTranslation(localStorage.getItem(constants.APP_LANG)).then(result => {
             currentAppTranslation = result;
-            return parseResult(currentAppTranslation[key], args);
+            return parseResult(currentAppTranslation[key], key, args);
         });
     } else {
-        return parseResult(currentAppTranslation[key], args);
+        return parseResult(currentAppTranslation[key], key, args);
     }
 }
 
-function parseResult(key, ...args) {
+function parseResult(result, key, ...args) {
+    if(!result || result === undefined) 
+       return parseResult(fallbackTranslation[key], key, args);
+
     if(!args)
-        return key;
-    return stringFormat(key, args);
+        return result;
+    return stringFormat(result, args);
+    
 };
 
 export function stringFormat(text, ...args) {

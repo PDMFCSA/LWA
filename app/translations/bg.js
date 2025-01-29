@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Забележете",
   "document_prescribing_info": "Предписване на информация за здравни специалисти",
   "epi_markets_modal_title": "Изберете пазар",
-  "epi_markets_modal_message": "Моля, изберете вашия пазар"
+  "epi_markets_modal_message": "Моля, изберете вашия пазар",
+  "epi_markets_modal_no_market": "Няма пазар"
 }
 
 export default data;

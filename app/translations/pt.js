@@ -15,16 +15,8 @@ const data = {
   "leaflet_incorrect_date_title": "Incorrect date",
   "leaflet_incorrect_date_subtitle": "Scanned date is incorrect",
   "leaflet_incorrect_date_message": "<b> This product's date is incorrect</b>.",
-  "leaflet_recalled_product": "Produto recolhido",
-  "leaflet_recalled_batch": "Lote recolhido",
   "leaflet_expired_title": "Expirado",
   "leaflet_expired_message": "<p> <b>Este produto foi identificado como expirado. </b> </p>",
-  "recalled_product_title": "Produto recolhido",
-  "recalled_product_message": "Este produto foi recolhido. Por favor, devolva o pacote de medicamentos ao seu emissor.",
-  "recalled_product_name": "Nome do produto: {0}",
-  "recalled_batch_title": "Lote recolhido",
-  "recalled_batch_message": "Este lote foi recolhido, por favor, devolva a embalagem do medicamento ao seu emissor.",
-  "recalled_batch_name": "Nome do lote: {0}",
   "select_lang_title": "Língua indisponível",
   "scan_error_title": "Erro de digitalização",
   "camera_error_message": "Algo correu mal e a câmera selecionada não pode ser acedida corretamente. Por favor, verifique as configurações da câmera do seu  dispositivo ou tente alterar a câmera no menu.",
@@ -59,7 +51,8 @@ const data = {
   "document_lang_select_title": "Perceber",
   "document_prescribing_info": "Prescrição de informações para profissionais de saúde",
   "epi_markets_modal_title": "Selecione mercado",
-  "epi_markets_modal_message": "Selecione seu mercado"
+  "epi_markets_modal_message": "Selecione seu mercado",
+  "epi_markets_modal_no_market": "Sem mercado"
 }
 
 export default data;

@@ -25,5 +25,6 @@
   "document_lang_select_title": 71,
   "document_prescribing_info": 72,
   "epi_markets_modal_title": 73,
-  "epi_markets_modal_message": 74
+  "epi_markets_modal_message": 74,
+  "epi_markets_modal_no_market": 75
 }

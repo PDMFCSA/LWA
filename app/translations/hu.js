@@ -52,7 +52,8 @@ const data = {
   "document_lang_select_title": "Értesítés",
   "document_prescribing_info": "Információ előírása az egészségügyi szakemberek számára",
   "epi_markets_modal_title": "Válassza ki a piacot",
-  "epi_markets_modal_message": "Kérjük, válassza ki a piacát"
+  "epi_markets_modal_message": "Kérjük, válassza ki a piacát",
+  "epi_markets_modal_no_market": "Nincs piac"
 }
 
 export default data;

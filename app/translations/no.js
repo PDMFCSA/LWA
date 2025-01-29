@@ -48,7 +48,8 @@ const data = {
   "document_lang_select_title": "Legg merke til",
   "document_prescribing_info": "Foreskrive informasjon for helsepersonell",
   "epi_markets_modal_title": "Velg marked",
-  "epi_markets_modal_message": "Vennligst velg markedet ditt"
+  "epi_markets_modal_message": "Vennligst velg markedet ditt",
+  "epi_markets_modal_no_market": "Ingen marked"
 }
 
 export default data;

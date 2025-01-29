@@ -66,7 +66,8 @@ const data = {
   "document_lang_select_title": "Aviso",
   "document_prescribing_info": "Prescrição de informações para profissionais de saúde",
   "epi_markets_modal_title": "Selecione mercado",
-  "epi_markets_modal_message": "Selecione seu mercado"
+  "epi_markets_modal_message": "Selecione seu mercado",
+  "epi_markets_modal_no_market": "Sem mercado"
 }
 
 export default data;
