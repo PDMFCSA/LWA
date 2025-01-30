@@ -98,6 +98,7 @@ async function addKey(lang, key, str){
     try {
       translated = await translateString(lang, otherLang, str);
     } catch (e) {
+        console.error(e);
       translated = `${str} - MISSING TRANSLATION`
     }
 

@@ -1,3 +1,5 @@
+import {translate, getTranslation} from "./translationUtils.js";
+
 const countries = [
     {"name": "No Market", "code": ""},
     {"name": "Afghanistan", "code": "AF"},
@@ -245,6 +247,8 @@ const countries = [
     {"name": "Zimbabwe", "code": "ZW"}
 ];
 
-export function getCountry(code) {
+export function getCountry(code, translate = false) {
+    if(translate)
+        return getTranslation(`country_${code.toLowercase()}`)
     return countries.find(country => country.code === code)?.name;
 }
