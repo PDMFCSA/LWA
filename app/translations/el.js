@@ -177,7 +177,14 @@ const data = {
   "country_ly": "Λιβυκός Αραβικός Jamahiriya",
   "country_li": "Λιχτενστάιν",
   "country_lt": "Λιθουανία",
-  "country_lu": "Λουξεμβούργο"
+  "country_lu": "Λουξεμβούργο",
+  "country_mo": "Μακάο",
+  "country_mk": "Η Μακεδονία, η πρώην Γιουγκοσλαβική Δημοκρατία της",
+  "country_mg": "Μαδαγασκάρη",
+  "country_mw": "Μαλάουι",
+  "country_my": "Μαλαισία",
+  "country_mv": "Μαλδίβες",
+  "country_ml": "Μάλι"
 }
 
 export default data;

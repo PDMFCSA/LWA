@@ -181,7 +181,14 @@ const data = {
   "country_ly": "العربية الليبية Jamahiriya",
   "country_li": "ليختنشتاين",
   "country_lt": "ليتوانيا",
-  "country_lu": "لوكسمبورغ"
+  "country_lu": "لوكسمبورغ",
+  "country_mo": "ماكاو",
+  "country_mk": "مقدونيا ، جمهورية يوغسلاف السابقة",
+  "country_mg": "مدغشقر",
+  "country_mw": "ملاوي",
+  "country_my": "ماليزيا",
+  "country_mv": "جزر المالديف",
+  "country_ml": "مالي"
 }
 
 export default data;

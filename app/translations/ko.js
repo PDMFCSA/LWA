@@ -181,7 +181,14 @@ const data = {
   "country_ly": "리비아 아랍 자마 이리 야",
   "country_li": "리히텐슈타인",
   "country_lt": "리투아니아",
-  "country_lu": "룩셈부르크"
+  "country_lu": "룩셈부르크",
+  "country_mo": "마카오",
+  "country_mk": "마케도니아, 전 유고 슬라비아 공화국",
+  "country_mg": "마다가스카르",
+  "country_mw": "말라위",
+  "country_my": "말레이시아",
+  "country_mv": "몰디브",
+  "country_ml": "말리"
 }
 
 export default data;

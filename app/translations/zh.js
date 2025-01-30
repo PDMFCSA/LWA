@@ -181,7 +181,14 @@ const data = {
   "country_ly": "利比亚阿拉伯Jamahiriya",
   "country_li": "列支敦士登",
   "country_lt": "立陶宛",
-  "country_lu": "卢森堡"
+  "country_lu": "卢森堡",
+  "country_mo": "澳门",
+  "country_mk": "马其顿，前南斯拉夫共和国",
+  "country_mg": "马达加斯加",
+  "country_mw": "马拉维",
+  "country_my": "马来西亚",
+  "country_mv": "马尔代夫",
+  "country_ml": "马里"
 }
 
 export default data;

@@ -181,7 +181,14 @@ const data = {
   "country_ly": "Лівійська арабська Джамахірія",
   "country_li": "Ліхтенштейн",
   "country_lt": "Литва",
-  "country_lu": "Люксембург"
+  "country_lu": "Люксембург",
+  "country_mo": "Макао",
+  "country_mk": "Македонія, колишня Югославська республіка",
+  "country_mg": "Мадагаскар",
+  "country_mw": "Малаві",
+  "country_my": "Малайзія",
+  "country_mv": "Мальдіви",
+  "country_ml": "Малі"
 }
 
 export default data;
