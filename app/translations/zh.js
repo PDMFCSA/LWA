@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "为医疗保健专业人员开出信息",
   "epi_markets_modal_title": "选择市场",
   "epi_markets_modal_message": "请选择您的市场",
-  "epi_markets_modal_no_market": "没有市场",
+  "epi_markets_modal_no_market": "没有国家",
   "country_af": "阿富汗",
   "country_ax": "Åland群岛",
   "country_al": "阿尔巴尼亚",

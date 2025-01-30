@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "Призначення інформації для медичних працівників",
   "epi_markets_modal_title": "Виберіть ринок",
   "epi_markets_modal_message": "Будь ласка, виберіть свій ринок",
-  "epi_markets_modal_no_market": "Немає ринку",
+  "epi_markets_modal_no_market": "Жодних країн",
   "country_af": "Афганістан",
   "country_ax": "Острови Оланд",
   "country_al": "Албанія",

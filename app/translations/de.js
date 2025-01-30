@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "Verschreibung von Informationen für Angehörige der Gesundheitsberufe",
   "epi_markets_modal_title": "Markt auswählen",
   "epi_markets_modal_message": "Bitte wählen Sie Ihren Markt aus",
-  "epi_markets_modal_no_market": "Kein Markt",
+  "epi_markets_modal_no_market": "Keine Länder",
   "country_af": "Afghanistan",
   "country_ax": "Ålandinseln",
   "country_al": "Albanien",

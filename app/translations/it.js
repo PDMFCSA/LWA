@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Prescrivere informazioni per gli operatori sanitari",
   "epi_markets_modal_title": "Seleziona mercato",
   "epi_markets_modal_message": "Seleziona il tuo mercato",
-  "epi_markets_modal_no_market": "Nessun mercato",
+  "epi_markets_modal_no_market": "Nessun paesi",
   "country_af": "Afghanistan",
   "country_ax": "Isole Åland",
   "country_al": "Albania",

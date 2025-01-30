@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "Információ előírása az egészségügyi szakemberek számára",
   "epi_markets_modal_title": "Válassza ki a piacot",
   "epi_markets_modal_message": "Kérjük, válassza ki a piacát",
-  "epi_markets_modal_no_market": "Nincs piac",
+  "epi_markets_modal_no_market": "Nincs ország",
   "country_af": "Afganisztán",
   "country_ax": "Åland -szigetek",
   "country_al": "Albánia",

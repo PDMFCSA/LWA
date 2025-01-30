@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "의료 전문가를위한 처방 정보",
   "epi_markets_modal_title": "시장 선택",
   "epi_markets_modal_message": "시장을 선택하십시오",
-  "epi_markets_modal_no_market": "시장 없음",
+  "epi_markets_modal_no_market": "국가 없음",
   "country_af": "아프가니스탄",
   "country_ax": "Åland Islands",
   "country_al": "알바니아",

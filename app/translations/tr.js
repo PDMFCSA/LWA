@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Sağlık uzmanları için bilgi reçete etmek",
   "epi_markets_modal_title": "Piyasa Seçin",
   "epi_markets_modal_message": "Lütfen pazarınızı seçin",
-  "epi_markets_modal_no_market": "Piyasa Yok",
+  "epi_markets_modal_no_market": "Ülke yok",
   "country_af": "Afganistan",
   "country_ax": "Åland Adaları",
   "country_al": "Arnavutluk",

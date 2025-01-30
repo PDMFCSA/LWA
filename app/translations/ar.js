@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "وصف المعلومات لأخصائيي الرعاية الصحية",
   "epi_markets_modal_title": "حدد السوق",
   "epi_markets_modal_message": "الرجاء تحديد السوق الخاص بك",
-  "epi_markets_modal_no_market": "لا سوق",
+  "epi_markets_modal_no_market": "لا توجد دول",
   "country_af": "أفغانستان",
   "country_ax": "جزر Åland",
   "country_al": "ألبانيا",

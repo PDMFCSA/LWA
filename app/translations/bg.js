@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Предписване на информация за здравни специалисти",
   "epi_markets_modal_title": "Изберете пазар",
   "epi_markets_modal_message": "Моля, изберете вашия пазар",
-  "epi_markets_modal_no_market": "Няма пазар",
+  "epi_markets_modal_no_market": "Няма страни",
   "country_af": "Афганистан",
   "country_ax": "Острови Åland",
   "country_al": "Албания",

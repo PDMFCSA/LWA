@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Przeznaczenie informacji dla pracowników służby zdrowia",
   "epi_markets_modal_title": "Wybierz rynek",
   "epi_markets_modal_message": "Wybierz swój rynek",
-  "epi_markets_modal_no_market": "Brak rynku",
+  "epi_markets_modal_no_market": "Żadnych krajów",
   "country_af": "Afganistan",
   "country_ax": "Wyspy Åland",
   "country_al": "Albania",

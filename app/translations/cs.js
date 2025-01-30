@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Předepisování informací pro zdravotnické pracovníky",
   "epi_markets_modal_title": "Vyberte trh",
   "epi_markets_modal_message": "Vyberte prosím svůj trh",
-  "epi_markets_modal_no_market": "Žádný trh",
+  "epi_markets_modal_no_market": "Žádné země",
   "country_af": "Afghánistán",
   "country_ax": "Ålandské ostrovy",
   "country_al": "Albánie",

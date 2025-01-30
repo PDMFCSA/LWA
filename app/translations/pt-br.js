@@ -67,7 +67,7 @@ const data = {
   "document_prescribing_info": "Prescrição de informações para profissionais de saúde",
   "epi_markets_modal_title": "Selecione mercado",
   "epi_markets_modal_message": "Selecione seu mercado",
-  "epi_markets_modal_no_market": "Sem mercado",
+  "epi_markets_modal_no_market": "Sem países",
   "country_af": "Afeganistão",
   "country_ax": "Åland Ilhas",
   "country_al": "Albânia",

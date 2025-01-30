@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "Informatie voorschrijven voor professionals in de gezondheidszorg",
   "epi_markets_modal_title": "Selecteer markt",
   "epi_markets_modal_message": "Selecteer uw markt",
-  "epi_markets_modal_no_market": "Geen markt",
+  "epi_markets_modal_no_market": "Geen landen",
   "country_af": "Afghanistan",
   "country_ax": "Åland -eilanden",
   "country_al": "Albanië",

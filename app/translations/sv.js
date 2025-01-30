@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "Förskriva information för sjukvårdspersonal",
   "epi_markets_modal_title": "Välj marknad",
   "epi_markets_modal_message": "Välj din marknad",
-  "epi_markets_modal_no_market": "Ingen marknad",
+  "epi_markets_modal_no_market": "Inga länder",
   "country_af": "Afghanistan",
   "country_ax": "Ålandöarna",
   "country_al": "Albanien",

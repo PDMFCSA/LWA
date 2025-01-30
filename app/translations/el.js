@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΗΝ ΥΠΟΔΟΤΗΤΑΣ",
   "epi_markets_modal_title": "Επιλέξτε αγορά",
   "epi_markets_modal_message": "Επιλέξτε την αγορά σας",
-  "epi_markets_modal_no_market": "Χωρίς αγορά",
+  "epi_markets_modal_no_market": "Χωρίς χώρες",
   "country_af": "Αφγανιστάν",
   "country_ax": "Νησιά Åland",
   "country_al": "Αλβανία",

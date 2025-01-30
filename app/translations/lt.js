@@ -53,7 +53,7 @@ const data = {
   "document_prescribing_info": "Informacijos skyrimas sveikatos priežiūros specialistams",
   "epi_markets_modal_title": "Pasirinkite rinką",
   "epi_markets_modal_message": "Pasirinkite savo rinką",
-  "epi_markets_modal_no_market": "Nėra rinkos",
+  "epi_markets_modal_no_market": "Jokių šalių",
   "country_af": "Afganistanas",
   "country_ax": "Åland salos",
   "country_al": "Albanija",

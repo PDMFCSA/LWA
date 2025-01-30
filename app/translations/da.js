@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Ordinering af oplysninger til sundhedspersonale",
   "epi_markets_modal_title": "Vælg marked",
   "epi_markets_modal_message": "Vælg dit marked",
-  "epi_markets_modal_no_market": "Intet marked",
+  "epi_markets_modal_no_market": "Ingen lande",
   "country_af": "Afghanistan",
   "country_ax": "Ålandsøer",
   "country_al": "Albanien",

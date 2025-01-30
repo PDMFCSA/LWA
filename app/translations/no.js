@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Foreskrive informasjon for helsepersonell",
   "epi_markets_modal_title": "Velg marked",
   "epi_markets_modal_message": "Vennligst velg markedet ditt",
-  "epi_markets_modal_no_market": "Ingen marked",
+  "epi_markets_modal_no_market": "Ingen land",
   "country_af": "Afghanistan",
   "country_ax": "Ålands øyer",
   "country_al": "Albania",

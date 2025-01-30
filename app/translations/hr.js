@@ -49,7 +49,7 @@ const data = {
   "document_prescribing_info": "Propisivanje informacija zdravstvenim radnicima",
   "epi_markets_modal_title": "Odaberite tržište",
   "epi_markets_modal_message": "Molimo odaberite svoje tržište",
-  "epi_markets_modal_no_market": "Nema tržišta",
+  "epi_markets_modal_no_market": "Nijedna zemlja",
   "country_af": "Afganistan",
   "country_ax": "Åland Islands",
   "country_al": "Albanija",
