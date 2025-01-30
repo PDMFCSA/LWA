@@ -214,7 +214,7 @@ function LeafletController() {
             radioInput.defaultChecked = index === 0;
 
             // Create the div element for the label
-            const label = item.length ? getCountry(item.toUpperCase()) : getTranslation("epi_markets_modal_no_market");
+            const label = item.length ? getCountry(item, true) : getTranslation("epi_markets_modal_no_market");
 
             const labelDiv = document.createElement('div');
             labelDiv.classList.add("radio-label");

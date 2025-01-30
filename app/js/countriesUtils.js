@@ -249,6 +249,6 @@ const countries = [
 
 export function getCountry(code, translate = false) {
     if(translate)
-        return getTranslation(`country_${code.toLowercase()}`)
+        return getTranslation(`country_${code.toLowerCase()}`)
     return countries.find(country => country.code === code)?.name;
 }
