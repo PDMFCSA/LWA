@@ -23,6 +23,9 @@ body {
 button {
     font-family: "Noto Sans";
 }
+button:not([disabled]) {
+    cursor: pointer !important;
+}
 
 body[app-lang="ko"],
 body[app-lang="ko"] button {
@@ -73,6 +76,10 @@ p,
 }
 
 b {
+    font-weight: 700;
+}
+
+.bold {
     font-weight: 700;
 }
 
@@ -454,12 +461,14 @@ b {
     max-height: 100%;
 }
 
+#product-modal  .modal-header,
 #settings-modal .modal-header {
     background-color: var(--olivegreen);
     color: #fff;
     display: block;
 }
 
+#product-modal .modal-header .close-modal ,
 #settings-modal .modal-header .close-modal {
     background: url(./../images/close-modal-white.svg) no-repeat center;
     background-size: contain;
@@ -483,7 +492,7 @@ b {
 }
 
 .warning-modal .modal-header {
-    background: #FFFAED;
+    background: #FFFAED !important;
 }
 
 .error-modal .modal-header {
@@ -608,7 +617,7 @@ b {
     font-weight: 400;
 }
 
-.modal-content .languages-container .language-item-container {
+.modal-content  .radio-item-container {
     font-weight: 500;
     font-size: var(--font-size--basic);
     border: 0.5px solid var(--grey);
@@ -621,17 +630,17 @@ b {
     overflow: auto;
 }
 
-.modal-content .languages-container .language-item-container:has(input[name='languages']:checked) {
+.modal-content .radio-item-container:has(input[type='radio']:checked) {
     background: var(--grey);
 }
 
-.modal-content .languages-container .language-item-container .language-label {
+.modal-content .radio-item-container .radio-label {
     flex-grow: 1;
     word-break: keep-all;
     text-align: left;
 }
 
-.modal-content .languages-container .language-item-container input {
+.modal-content .radio-item-container input {
     width: 10%;
     position: relative;
     height: fit-content;
@@ -706,6 +715,11 @@ b {
 
 /*RTL rules*/
 
+[dir="RTL"] .radio-item-container:has(input[type='radio']) {
+    padding-left: 1rem !important;
+    padding-right: 1rem;
+}
+
 body[dir="RTL"] .loader {
     right: calc(50% - 51px);
 }
@@ -770,6 +784,9 @@ body[dir="RTL"] .modal-content .languages-container .language-item-container inp
 body[dir="RTL"] .modal-content .languages-container .language-item-container .language-label {
     margin-left: 10px;
 }
+
+
+
 
 /*---------------------------------------------*/
 /*@media only screen and (min-device-width: 1281px) {

@@ -5,17 +5,23 @@
         size: portrait;
         /* Changing the margin to show the page numbers works mostly perfect,
         but on chrome it causes truncation for some reason...*/
-        margin: 0;  /* this affects the margin in the printer settings */
+        /* margin: 50px 20px;  */
+        margin: 0.3in 1in 0.3in 1in !important;
+        page-break-before: always !important;
     }
 
-    body
+    body 
     {
         margin: 0px;  /* the margin on the content before printing */
-        height: unset
+        height: unset;
+        color: black !important;
     }
     * {
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;  /* Firefox */
+    }
+    div, p, span {
+        color: black !important;
     }
 
     .container::-webkit-scrollbar {
@@ -34,6 +40,7 @@
     button {
         display: none !important;
     }
+    /* */
     .page-container:not(.print) {
         display: none !important;
     }
@@ -45,29 +52,43 @@
         display: none !important;
     }
 
-    /*table {*/
-    /*    max-width: 100%;*/
-    /*    display: block;*/
-    /*    margin-left: auto;*/
-    /*    !* text-align: center; *!*/
-    /*    margin-right: auto;*/
-    /*}*/
+    #print-content {
+        display: block;
+    }
 
-    /*tbody {*/
-    /*    display: block;*/
-    /*}*/
-
-    /*tr {*/
-    /*    display: block;*/
-    /*}*/
-
-    /*td {*/
-    /*    word-break: break-word;*/
-    /*}*/
+    table {
+        page-break-inside: auto;
+        border: 2px solid black !important;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    thead { 
+        display: table-header-group; 
+    }
+    th {
+        font-weight: bold;
+        font-size: 12px;
+        padding: 8px;
+    }
+    td {
+        font-size: 12px;
+        border: 1px solid black;
+        padding: 8px;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
 
     img {
         max-width: 80% !important;
         max-height: 80% !important;
+        display: block;
+        margin: 0 auto;
     }
 
+
+    #recalled-bar {
+        display: none;
+    }
 }
+

@@ -85,7 +85,8 @@ function ScanController() {
     let gs1Fields = null;
     try {
       gs1Fields = parseGS1Code(scanResultText);
-      goToPage(`/leaflet.html?gtin=${gs1Fields.gtin}&batch=${gs1Fields.batchNumber}&expiry=${gs1Fields.expiry}`);
+      const page = `/leaflet.html?gtin=${gs1Fields.gtin}&batch=${gs1Fields.batchNumber}&expiry=${gs1Fields.expiry}`;
+      goToPage(page);
     } catch (err) {
       if (err.message) {
         if (err.message.includes("INVALID CHECK DIGIT:")) {

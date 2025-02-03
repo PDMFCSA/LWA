@@ -16,8 +16,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="../favicon/favicon.ico">
     <link rel="manifest" href="../favicon/site.webmanifest">
-    <script src="lib/jspdf/jspdf.umd.js"></script>
-    <script src="lib/html2canvas/html2canvas.js"></script>
 </head>
 
 <body>
@@ -26,7 +24,9 @@
     <div class="loader"></div>
 </div>
 
-<div id="settings-modal" class="page-container fill-available-width leaflet-page info-modal hiddenElement print">
+<div id="print-content">To Print</div>
+
+<div id="settings-modal" class="page-container fill-available-width leaflet-page info-modal hiddenElement">
     <div class="modal-body">
         <div class="page-header modal-header centered-header leaftlet-header">
             <div class="icon-title-container" tabindex="1">
@@ -38,16 +38,141 @@
             </div>
         </div>
         <div class="modal-content">
-            <div class="leaflet-content-wrapper">
-                <div id="leaflet-content">
+            <div class="leaflet-content-wrapper"> 
+                <div id="leaflet-content" class="content-to-print">
                 </div>
-                <button id="scan-again-button" class="scan-button go-home-button"
+                <div id="recalled-bar">
+                    <p id="recalled-bar-content" translate="leaflet_recalled_product"></p>
+                </div>
+                <button id="scan-again-button" class="scan-button go-home-button preserve-position"
                         translate="scan_again"></button>
             </div>
-
         </div>
     </div>
 </div>
+
+<div id="product-modal" class="page-container fill-available-width leaflet-page info-modal hiddenElement">
+    <div class="modal-body">
+        <div class="page-header modal-header centered-header leaftlet-header">
+            <div class="icon-title-container" tabindex="1">
+                <div>
+                    <h1 class="product-name bold-title"></h1>
+                    <div class="product-description" tabindex="2"></div>
+                </div>
+                <div id="print-modal-button" class="modal-icon menu-print-icon" aria-label="print-icon" role="img" tabindex="2"></div>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="product-information-wrapper content-to-print" id="product-content">
+                <h2>Product Information</h2>
+                <div class="data-wrapper">
+                    <div class="row">
+                        <div>Product Code:</div>
+                        <div data-attr="productCode"></div>
+                    </div>
+                    <div class="row">
+                        <div>Name of Drug:</div>
+                        <div data-attr="nameMedicinalProduct"></div>
+                    </div>
+                    <div class="row">
+                        <div>Brand Name:</div>
+                        <div data-attr="inventedName"></div>
+                    </div>
+                    <div class="row">
+                        <div>Generic Name:</div>
+                        <div id="generic-name"></div>
+                    </div>
+                </div>
+                <div class="data-wrapper" hidden>
+                    <div>
+                        <div class="bold">List Of Excipients:</div>
+                        <div id="list-of-excipients"></div>
+                    </div>
+                </div>
+
+                <div class="data-wrapper">
+                    <div>
+                        <div class="bold">Name and Address of Manufacturer:</div>
+                        <div id="manufacturer-data" class="width-1-1">
+                            <div data-attr="manufacturerName" data-batch="true"></div>
+                            <div>
+                                <div data-attr="manufacturerAddress1" data-batch="true"></div>
+                                <div data-attr="manufacturerAddress2" data-batch="true"></div>
+                                <div data-attr="manufacturerAddress3" data-batch="true"></div>
+                                <div data-attr="manufacturerAddress4" data-batch="true"></div>
+                                <div data-attr="manufacturerAddress5" data-batch="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-wrapper">
+                    <div class="row">
+                        <div>Batch:</div>
+                        <div data-attr="batchNumber" data-batch="true"></div>
+                    </div>
+                    <div class="row">
+                        <div>Date of Manufacturing:</div>
+                        <div data-attr="dateOfManufacturing" data-batch="true"></div>
+                    </div>
+                    <div class="row">
+                        <div>Date of Expiry:</div>
+                        <div data-attr="expiryDate" data-batch="true"></div>
+                    </div>
+                    <div class="row">
+                        <div>Import License Number:</div>
+                        <div data-attr="importLicenseNumber" data-batch="true"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="button-exit" class="scan-button go-home-button">Back</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="documents-modal" class="modal-container popup-modal warning-modal hiddenElement">
+    <div class="modal-body" tabindex="0">
+        <div class="modal-header centered-header">
+            <button class="close-modal" modal-id="documents-modal"
+                    aria-label="close" tabindex="1"></button>`
+            <div class="icon-title-container">
+                <div class="modal-icon" aria-label="alert-icon" role="img" tabindex="2"></div>
+                <h1 class="modal-title bold-title" id="lang-title" role="heading" aria-level="1"
+                    translate="document_modal_title" role="alert"
+                    tabindex="3"></h1>
+            </div>
+
+        </div>
+        <div class="modal-content" role="alert">
+            <div class="text-section has-leaflets" role="heading" aria-level="2" translate="document_modal_message"></div>
+            <div id="content-container" role="radiogroup" aria-label="leaflet available documents" tabindex="2"></div>
+            <button id="proceed-button" class="proceed-button has-leaflets" translate="lang_proceed"></button>
+            <button id="go-back-button" class="go-back-button go-home-button"  translate="go_home"></button>
+        </div>
+
+    </div>
+</div>
+
+<div id="epi-markets-modal" class="modal-container popup-modal warning-modal hiddenElement">
+    <div class="modal-body" tabindex="0">
+        <div class="modal-header centered-header">
+            <button class="close-modal" modal-id="epi-markets-modal" aria-label="close" tabindex="1"></button>`
+            <div class="icon-title-container">
+                <div class="modal-icon" aria-label="alert-icon" role="img" tabindex="2"></div>
+                <h1 class="modal-title bold-title" id="epi-market-title" role="heading" aria-level="1"
+                    translate="epi_markets_modal_title" role="alert" tabindex="3"
+                ></h1>
+            </div>
+        </div>
+        <div class="modal-content" role="alert">
+            <div class="text-section has-leaflets" role="heading" aria-level="2" translate="epi_markets_modal_message"></div>
+            <div id="content-container" role="radiogroup" aria-label="leaflet available documents" tabindex="2"></div>
+            <button id="epi-market-proceed-button" class="proceed-button has-leaflets" translate="lang_proceed"></button>
+            <button id="epi-market-go-back-button" class="go-back-button go-home-button"  translate="go_home"></button>
+        </div>
+    </div>
+</div>
+
 <div id="expired-modal" class="modal-container popup-modal error-modal hiddenElement">
     <div class="modal-body">
         <div class="modal-header centered-header">
@@ -63,7 +188,7 @@
     </div>
 </div>
 
-<div id="recalled-modal" class="modal-container popup-modal error-modal hiddenElement">
+<div id="recalled-modal" class="modal-container popup-modal warning-modal hiddenElement">
     <div class="modal-body">
         <div class="modal-header centered-header">
             <div class="icon-title-container">
@@ -75,9 +200,11 @@
                     aria-label="close error message"></button>
         </div>
         <div class="modal-content" role="alert">
-            <div class="recalled-message-container" translate="recalled_product_message">
-
-            </div>
+            <div class="recalled-message-container"></div>
+            <br />
+            <br />
+            <button id="recalled-modal-procced" class="proceed-button has-leaflets" translate="lang_proceed"></button>
+            <button id="recalled-modal-exit" class="go-back-button go-home-button" translate="go_home"></button>
         </div>
     </div>
 </div>
@@ -100,7 +227,7 @@
     <div class="modal-body" tabindex="0">
         <div class="modal-header centered-header">
             <button class="close-modal" modal-id="leaflet-lang-select"
-                    aria-label="close" tabindex="1"></button>
+                    aria-label="close" tabindex="1"></button>`
             <div class="icon-title-container">
                 <div class="modal-icon" aria-label="alert-icon" role="img" tabindex="2"></div>
                 <h1 class="modal-title bold-title" id="lang-title" role="heading" aria-level="1"
@@ -110,7 +237,7 @@
 
         </div>
         <div class="modal-content" role="alert">
-            <div class="text-section has-leaflets" role="heading" aria-level="2"
+            <div class="text-section has-leaflets" id="language-message" role="heading" aria-level="2"
                  translate="leaflet_lang_select_message"></div>
             <!-- <div class="text-section no-leaflet" translate="no_leaflet_message"></div>-->
             <div class="languages-container" role="radiogroup" aria-label="leaflet available languages"
@@ -147,6 +274,6 @@
 
     </div>
 </div>
-</body>
 <script src="./js/controllers/LeafletController.js" type="module"></script>
+</body>
 </html>

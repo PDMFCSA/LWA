@@ -117,13 +117,15 @@ function goToPage(pageName) {
 }
 
 function goToErrorPage(errorCode, error) {
+    console.error(error);
+
     let errCode = errorCode || "010";
     if (!error) {
         error = new Error("goToErrorPage called with partial args!")
     }
-    console.log(JSON.stringify(error, Object.getOwnPropertyNames(error)));
+    const parseError = JSON.stringify(error, Object.getOwnPropertyNames(error));
+    localStorage.setItem(constants.LAST_ERROR, parseError);
     window.history.pushState({}, "", "index.html");
-
     goToPage(`/error.html?errorCode=${errCode}`)
 }
 
@@ -160,35 +162,35 @@ function updateLocalStorage(consoleArgs, nrToKeep = 20) {
 }
 
 function enableConsolePersistence() {
-    console.originalLogFnc = console.log;
-    console.originalErrorFnc = console.error;
-    console.originalWarnFnc = console.warn;
+    // console.originalLogFnc = console.log;
+    // console.originalErrorFnc = console.error;
+    // console.originalWarnFnc = console.warn;
 
-    sessionStorage.tabID ? sessionStorage.tabID : sessionStorage.tabID = Math.random();
+    // sessionStorage.tabID ? sessionStorage.tabID : sessionStorage.tabID = Math.random();
 
-    if (!JSON.parse(localStorage.getItem(constants.DEV_DEBUG))) {
-        localStorage.setItem(constants.DEV_DEBUG, JSON.stringify([]))
-    }
+    // if (!JSON.parse(localStorage.getItem(constants.DEV_DEBUG))) {
+    //     localStorage.setItem(constants.DEV_DEBUG, JSON.stringify([]))
+    // }
 
-    console.log = function () {
-        // default &  console.log()
-        console.originalLogFnc.apply(console, arguments);
-        // new & array data
-        updateLocalStorage(arguments);
-    }
-    console.error = function () {
-        // default &  console.error()
-        console.originalErrorFnc.apply(console, arguments);
-        // new & array data
-        updateLocalStorage(arguments);
+    // console.log = function () {
+    //     // default &  console.log()
+    //     console.originalLogFnc.apply(console, arguments);
+    //     // new & array data
+    //     updateLocalStorage(arguments);
+    // }
+    // console.error = function () {
+    //     // default &  console.error()
+    //     console.originalErrorFnc.apply(console, arguments);
+    //     // new & array data
+    //     updateLocalStorage(arguments);
 
-    }
-    console.warn = function () {
-        // default &  console.warn()
-        console.originalWarnFnc.apply(console, arguments);
-        // new & array data
-        updateLocalStorage(arguments);
-    }
+    // }
+    // console.warn = function () {
+    //     // default &  console.warn()
+    //     console.originalWarnFnc.apply(console, arguments);
+    //     // new & array data
+    //     updateLocalStorage(arguments);
+    // }
 
 }
 

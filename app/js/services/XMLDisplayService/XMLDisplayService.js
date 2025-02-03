@@ -19,6 +19,71 @@ class XMLDisplayService {
     }
   }
 
+  parseXmlstring(xmlString){
+    let parser = new DOMParser();
+    return parser.parseFromString(xmlString, 'application/xml');
+  }
+
+  getItemFromParsedHtml(xmlContent, text){
+    const sections = xmlContent.querySelectorAll(".leaflet-accordion-item");
+    for(let section of sections) {
+        const title = section.querySelector('h2')?.textContent;
+        if(title) {
+            const titleString = title.trimEnd().replace(/\s+/g, ' ').replace(/\s/g, '_').toLowerCase();
+            if(titleString.includes(text)) {
+                const element = section.querySelector('.leaflet-accordion-item-content');
+                if(element?.innerHTML) {
+                    return element;
+                    break;
+                }
+            } 
+        }     
+    }
+
+    for(let section of sections){
+      const pList = section.querySelectorAll('p');
+      const div = document.createElement('div');
+
+      let foundContent = false;
+      let firstPass = true;
+
+      for(let p of pList){
+        const textContent = p.textContent.trimEnd().replace(/\s+/g, ' ').replace(/\s/g, '_').toLowerCase();
+
+        if(textContent.includes(text)) {
+          foundContent = true;
+        }
+
+        if(!firstPass && foundContent)
+          div.appendChild(p)
+
+        if(!!firstPass && foundContent)
+          firstPass = false;
+      }
+
+      if(foundContent)
+        return div;
+
+    }
+  }
+
+  getElementsWithClass(xmlDoc, className){
+    const itemsWithClass = Array.from(xmlDoc.querySelectorAll('[class]'));
+
+    return itemsWithClass.reduce((acc, el) => {
+      const clazz = el.getAttribute('class');
+
+      if(!clazz)
+        return acc;
+
+      if(clazz.toLowerCase() === className)
+        acc.push(el);
+
+      return acc;
+    }, []);
+
+  }
+
   getHTMLFromXML = function (xmlContent) {
     let xsltProcessor = new XSLTProcessor();
     xsltProcessor.setParameter(null, "resources_path", "");

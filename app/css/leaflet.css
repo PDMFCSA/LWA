@@ -1,13 +1,26 @@
 @import "prerequisites.css";
 
+[class*="-button"],
+button:not([disabled]) {
+    cursor: pointer !important;
+}
+
+
 .product-name {
     font-size: var(--font-size--XL);
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    -ms-text-overflow:ellipsis;
     margin: 0;
 }
+
+[dir="RTL"] .product-name {
+    direction: rtl !important;    
+}
+
+
 
 /*.product-description {
     font-size: var(--font-size--L);
@@ -165,3 +178,111 @@
     text-align: center;
     background-position: center top;
 }
+
+/* Blur leaft left of recalled product/batch until user confirm  */
+#settings-modal.recalled {
+    filter: blur(5px) !important;
+}
+
+#recalled-bar:not(.visible)  {
+    display: none;
+}
+ 
+.leaflet-page #recalled-bar {
+    background: #058798;
+    position: fixed;
+    bottom: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    overflow-x: hidden;
+    border: 3px solid #27494e;
+} 
+
+.leaflet-page #recalled-bar p {
+    font-size: 3rem;
+    line-height: 0px;
+    font-weight: 500;
+    color: white;
+    text-align: center;  
+}
+
+#print-content {
+    display: none;
+}
+
+.data-wrapper {
+    margin-bottom: 1.5rem !important;
+}
+
+/* remove margin top (vitor)
+.data-wrapper + .data-wrapper {
+    margin-top: -1.5rem;
+} */
+
+
+.data-wrapper h2, .data-wrapper h3 {
+    margin-top: 0px !important;
+}
+.data-wrapper div.row {
+    display: flex;
+}
+.data-wrapper div.row > div {
+    width: 50% !important;
+}
+.data-wrapper div.row > div:nth-child(1) {
+    font-weight: bold;
+}
+
+#list-of-excipients > p {
+    margin-top: 0px !important;
+    /* margin-left: 1rem; */
+}
+
+#list-of-excipients b {
+    font-size: 16px !important;
+}
+
+#manufacturer-data {
+    /* margin-left: 1rem; */
+}
+#manufacturer-data > div:nth-child(1) {
+    margin: 5px 0 !important;
+}
+
+
+
+
+/* .modal-container:not(#print-modal).hiddenElement > div,
+.page-container.hiddenElement > div{
+    animation: fadeOut .2s forwards;
+}
+
+.modal-container:not(#print-modal):not(.hiddenElement) > div,
+.page-container:not(.hiddenElement) > div{
+    animation: fadeIn .4s forwards;
+}
+
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .25;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: .25;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+/* #recalled-modal.warning-modal .modal-header .modal-icon {
+    background: url(./../images/modal-info-icon.svg) no-repeat center;
+} */

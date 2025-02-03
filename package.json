@@ -25,6 +25,7 @@
     "octopus": "git+http://github.com/opendsu/octopus.git"
   },
   "devDependencies": {
-    "google-translate-api-x": "10.7.2"
+    "google-translate-api-x": "10.7.2",
+    "json2md": "2.0.1"
   }
 }

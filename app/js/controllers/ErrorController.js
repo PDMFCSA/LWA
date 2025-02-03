@@ -1,5 +1,7 @@
 import {goToPage, escapeHTML} from "../../../utils.js"
 import {getTranslation, translate} from "../translationUtils.js";
+import constants from "../../../constants.js"
+
 
 window.onload = async (event) => {
     await translate();
@@ -41,7 +43,6 @@ window.onload = async (event) => {
         this.goHomeHandler = function () {
             goToPage("/main.html")
         }
-
         let scanAgainButton = document.getElementById("scan-again-button");
         scanAgainButton.addEventListener("click", this.scanAgainHandler);
         scanAgainButton.addEventListener("keydown", (event) => {
@@ -51,6 +52,11 @@ window.onload = async (event) => {
         });
     }
 
+    const error = localStorage.getItem(constants.LAST_ERROR);
+    if(error) {
+        console.error(JSON.parse(error)?.message || JSON.parse(error)); 
+        localStorage.removeItem(constants.LAST_ERROR);
+    }
     const errorController = new ErrorController();
     document.querySelector(".loader-container").setAttribute('style', 'display:none');
 
