@@ -126,7 +126,15 @@
     height: 100%;
 }
 
-*[dir="RTL"] .leaflet-page .page-content {
+.settings-modal[dir="RTL"] .icon-title-container {
+    direction: rtl !important;  
+}
+
+.settings-modal[dir="RTL"] .product-name {
+    direction: rtl !important;    
+}
+
+.settings-modal[dir="RTL"] .leaflet-page .page-content {
     text-align: right;
 }
 
