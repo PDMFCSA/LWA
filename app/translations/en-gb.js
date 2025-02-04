@@ -50,7 +50,7 @@ const data = {
   "document_product_info": "Product Information for Patients",
   "document_lang_select_message": "Product information are only available in English",
   "document_lang_select_title": "Notice",
-  "document_prescribing_info": "Prescribing information for Healthcare professionals",
+  "document_prescribing_info": "Prescribing information for Healthcare Professionals",
   "epi_markets_modal_title": "Select Market",
   "epi_markets_modal_message": "Please select your market",
   "epi_markets_modal_no_market": "No country",
