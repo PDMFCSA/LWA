@@ -547,6 +547,8 @@ function LeafletController() {
         const content =  document.querySelector(`#${modal} .content-to-print`);
         const printContent =  document.querySelector('#print-content');
         window.onbeforeprint = (evt) => {
+            if(!evt.target.document)
+                evt.target.document = {title: ""};
             evt.target.document.title = generateFileName();
             // removing html attributes to make table not responsive
             content.querySelectorAll('[style], [nowrap]').forEach(element => {
@@ -559,6 +561,8 @@ function LeafletController() {
         }
         window.print();
         window.onafterprint = (evt) => {
+            if(!evt.target.document)
+                evt.target.document = {title: ""};
             evt.target.document.title = windowName;
             printContent.innerHTML = "";
         }
