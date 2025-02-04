@@ -16,12 +16,6 @@ button:not([disabled]) {
     margin: 0;
 }
 
-[dir="RTL"] .product-name {
-    direction: rtl !important;    
-}
-
-
-
 /*.product-description {
     font-size: var(--font-size--L);
 }*/
@@ -143,6 +137,7 @@ button:not([disabled]) {
     direction: rtl !important;  
 }
 
+.settings-modal[dir="RTL"] .product-description,
 .settings-modal[dir="RTL"] .product-name {
     direction: rtl !important;    
 }
@@ -163,6 +158,7 @@ button:not([disabled]) {
     margin-block-start: unset;
     padding-left: 10%;
 }
+
 
 .leaflet-page .icon-title-container {
     flex-direction: row !important;
