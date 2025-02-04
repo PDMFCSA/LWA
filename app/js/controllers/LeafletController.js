@@ -171,7 +171,14 @@ function LeafletController() {
         container.innerHTML = "";
         let selectedItem = null;
         const radionParent = document.createElement('div');
-        availableMarkets.forEach((item, index) => {
+        availableMarkets.slice().sort((a, b) => { 
+            if(a === "unspecified")
+                return a;
+            if(b === "unspecified")
+                return b;
+
+            return a.localeCompare(b);
+        }).forEach((item, index) => {
             const radioInput = document.createElement('input');
             radioInput.setAttribute("type", "radio");
             radioInput.setAttribute("name", "epi-market");
