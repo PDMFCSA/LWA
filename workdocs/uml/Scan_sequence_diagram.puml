@@ -1,0 +1,97 @@
+@startuml
+hide footbox
+autonumber
+hide unlinked
+
+box "User Actions" #E6F3FF
+actor Patient as p #FFD1DC
+
+participant "LWA\n(Browser)" as l #A7C7E7
+
+participant "Any\nApi Hub" as a #98D8C8
+participant "MAH\nApiHub" as b #F6BD60
+
+title Leaflet Scan Sequence Diagram
+
+activate p #FFD1DC
+p o-> l: 2d Matrix  Scanned
+deactivate p
+
+activate l #A7C7E7
+l o-> a : Detect MAH  Domain Owner
+deactivate  l
+
+activate a #98D8C8
+return Returns BDNS Domain
+deactivate a
+
+activate l #A7C7E7
+l o-> b : Request metadata for product/batch
+deactivate l
+
+activate b #F6BD60
+return Product/Batch metadata
+note left of b
+{
+    "productData": {
+        "productCode",
+        (...)
+    },
+    "availableDocuments": {
+        "<doc type>": {
+            "<market>": [
+                {
+                    "label": "<English language label>",
+                    "value": "<language code>",
+                    "nativeName": "<Native language label>"
+                },
+                (...)
+            ],
+            (...)
+        },
+        (...)
+    }
+}
+end note
+deactivate b
+
+activate l #A7C7E7
+
+alt there is more than one document type
+l o-> p #FFD1DC: Display document type selection modal
+activate p #FFD1DC
+p o-> l #A7C7E7: Choose document type
+deactivate p
+end
+
+alt Document type is 'leaflet'\nand there is more than one market available for the select
+l o-> p #FFD1DC: Display market selection modal
+activate p #FFD1DC
+p o-> l #A7C7E7: Choose market
+deactivate p
+end
+
+alt Document type is 'leaflet' and there is more than one\nlanguage available for selection (and none match the browser's)
+l o-> p #FFD1DC: Display language selection modal
+activate p #FFD1DC
+p o-> l #A7C7E7: Choose language
+deactivate p
+end
+l o-> b #F6BD60: Request leaflet for product/batch/market/type/language
+deactivate l
+
+activate b #F6BD60
+return selected Leaflet XML
+deactivate b
+
+activate l #A7C7E7
+
+l o-> l #A7C7E7: XML to HTML conversion
+activate l #A7C7E7
+deactivate l
+l -> p #FFD1DC: Display HTML for the Leaflet
+deactivate l
+activate p #FFD1DC
+end box
+
+@enduml

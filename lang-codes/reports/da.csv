@@ -1,0 +1,300 @@
+code,text,status,key
+1,Velkommen til PharmaLedger,ok,welcome
+2,Find DataMatrix-stregkoden på din medicin for at scanne og se information.,ok,scan_explain
+3,Scan DataMatrix,ok,scan_button
+4,Skift kamera,ok,change_camera
+5,Annuller,ok,cancel
+6,Scan igen,ok,scan_again
+7,Ikke genkendt,ok,product_not_found_title
+9,Dette produkt kan ikke findes,ok,product_not_found
+10,Udløbet,ok,leaflet_expired_title
+11,App-version:,ok,app_version
+12,<p> <b>Dette produkt er blevet identificeret som udløbet.</b> </p>,ok,leaflet_expired_message
+13,Sprog utilgængeligt,ok,select_lang_title
+14,Om,ok,about_modal_subtitle
+15,PharmaLedger,ok,about_modal_title
+16,"<h2>Om denne app</h2><p>Denne app tilbydes til dig af PharmaLedger®. Den blev udviklet fællesskab af patientrepræsentantionsorganisationer, medicinalvirksomheder og teknologieksperter.</p><p>Den giver brugerne af appen mulighed for at læse information om deres medicin ved at scanne stregkoden på produktets emballage.</p><p>Den viste information leveres af produktets markedsføringstilladelsesindehaver.</p><h2>Om PharmaLedger</h2><p>PharmaLedger® er varemærket for PharmaLedger Association (PLA).</p><p>PLA er en global nonprofit, neutral forening. Foreningens formål er at skabe og fremme et digitalt tillidsøkosystem i sundhedssektoren.</p><p>Foreningen fremmer samarbejde i sundheds- og life science-sektoren og fremmer innovationer og deres implementering til gensidig fordel for patienter og andre interessenter.</p>",ok,about_content
+18,Scan-fejl,ok,scan_error_title
+20,"Noget gik galt, og det valgte kamera kan ikke tilgås korrekt. Tjek venligst enhedens kameraindstillinger, eller prøv at ændre på kamerafunktioner fra menuen.",ok,camera_error_message
+21,Indlægssedlen er ikke tilgængelig på dit foretrukne sprog. Du kan vælge fra den tilgængelige sprogliste.,ok,leaflet_lang_select_message
+22,Fortsæt,ok,lang_proceed
+24,Gå tilbage til start,ok,go_home
+25,Næsten færdig! Venligst læs og accepter vilkårene og betingelserne.,ok,onboarding_welcome
+26,Afvis,ok,disagree
+27,Accepter,ok,agree
+28,"PharmaLedger-appen vil ikke fungere, før du accepterer vilkårene og betingelserne. Læs venligst vilkår og betingelser.",ok,disagree_extra_text
+29,Fortrolighedspolitik,ok,fwd_privacy
+30,Vilkår og betingelser,ok,fwd_terms
+31,Hjælp,ok,fwd_help
+32,Om,ok,fwd_about
+33,Vores principper for privatliv og sikkerhed,ok,privacy_modal_subtitle
+34,Fortrolighedspolitik,ok,privacy_modal_title
+35,"<h2>Fortrolighedsmeddelelse</h2> <p>Denne fortrolighedsmeddelelse er gældende for brugen af PharmaLedger Association Electronic Product Information produktet. </p> <h2>Kontakter</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) Identitet og kontaktpersoner for den/de dataansvarlige eller fælles dataansvarlige.</b><p>Den dataansvarlige for dine data er PharmaLedger Association.</p></li><li role=""listitem""><b>b) Kontakter til databeskyttelsesansvarlige</b><p>PharmaLedger Associations databeskyttelseskontor kan kontaktes på dpo@pharmaledger.org.</p></li></ul><h2>Hvilke persondata bruger vi</h2><p>Vi indsamler kun de tekniske data, der er nødvendige for at levere din elektroniske indlægsseddel. Dette inkluderer din IP-adresse og tekniske identifikatorer for den enhed og browser, du bruger til at få adgang til vores applikation.</p> <p><em>I detaljer indsamler vi følgende dataelementer:</em></p><ul><li><p><em>Adgang til mobil enhed.</em> Vi kan anmode om adgang eller tilladelse til visse funktioner fra din mobile enhed, herunder din mobile enheds kamera men også andre funktioner. Hvis du ønsker at ændre vores adgang eller tilladelser, kan du gøre det i din enheds indstillinger. </p></li><li><p><em>Mobilenhedsdata.</em> Vi indsamler automatisk enhedsoplysninger (såsom din mobile enheds ID, model og producent), operativsystem, versionsoplysninger og systemkonfigurationsoplysninger, enheds- og applikationsidentifikationsnumre, browsertype og -version, hardwaremodel, internetudbyder og/eller mobiloperatør, og internetprotokol (IP)-adresse (eller proxyserver). Hvis du bruger vores applikation(er), kan vi også indsamle oplysninger om det telefonnetværk, der er tilknyttet din mobile enhed, din mobile enheds operativsystem eller platform, typen af den mobile enhed, du bruger, din mobile enheds unikke enheds-ID, og oplysninger om de funktioner i vores applikation(er), du har fået adgang til. </p></li></ul><h2>Hvorfor indsamler vi dine persondata</h2><h3>Formål</h3><p>Vi indsamler dine tekniske data med det formål at give dig en elektronisk produktindlægsseddel til din medicin. </p><p>Som sådan kan vi påberåbe os følgende retsgrundlag for at behandle dine personlige oplysninger: </p><ul><li><p><b>Opfyldelse af en kontrakt. </b> Vi kan behandle dine personoplysninger, når vi mener, at det er nødvendigt for at opfylde kontraktlige forpligtelser over for dig, herunder at yde vores tjenester, eller efter din anmodning, inden indgåelse af en kontrakt med dig.</p></li><li><p><b>Juridiske forpligtelser.</b> Vi kan behandle dine oplysninger, hvis vi mener, at det er nødvendigt for at overholde vores juridiske forpligtelser, f.eks. for at opfylde vores forpligtelser i henhold til sundhedsforskrifter og folkesundhedslovgivning.</p></li></ul><h2>Hvem deler vi dine persondata med</h2><p>Medlemsvirksomheder og tredjeparts serviceudbydere.</p><p>Vi deler dine data med tredjepartsleverandører, serviceudbydere, entreprenører og/eller agenter ('tredjeparter'), der udfører tjenester for os, eller på vores vegne, og kræver adgang til sådanne oplysninger for at udføre det arbejde. Vi har indgået kontrakter med vores tredjeparter, som er designet til at hjælpe med at beskytte dine personoplysninger. Dette betyder, at de ikke kan gøre noget med dine personoplysninger, medmindre vi har instrueret dem i at gøre det. De vil heller ikke dele dine personoplysninger med nogen organisation ud over os. De forpligter sig også til at beskytte de data, de opbevarer på vores vegne, og til at beholde dem i den periode, vi anviser. De kategorier af tredjeparter, vi kan dele personoplysninger med, er som følger: </p><ul><li><p>Lægemiddelproducenter (Medlemsvirksomheder)</p></li><li><p>Tekniske serviceudbydere</p></li></ul><h2>Hvor længe opbevarer vi dine persondata </h2><p>PharmaLedger Association opbevarer kun dine tekniske data, så længe det er nødvendigt for at behandle din indlægsseddelanmodning i op til 30 dage. </p><p>Din lægemiddelproducent vil også opbevare dine data i en defineret periode, som er fastsat af deres politikker om dataopbevaring. For yderligere information om denne opbevaring, bedes du kontakte din lægemiddelproducent. </p><h2>Hvis du ikke giver os dine persondata </h2><p>Hvis du vælger ikke at give os dine tekniske data, vil vi ikke være i stand til at opfylde din anmodning om indlægsseddel.</p><h2>Dine rettigheder</h2><p>Hvis du har anmodninger vedrørende dine personoplysninger i henhold til GDPR, såsom en anmodning om at få adgang til - eller slette dine data, kan du kontakte os på dpo@pharmaledger.org.</p><p>Vi vil behandle sådanne anmodninger inden for 30 dage.</p><h2>Tilbagekaldelse af samtykke </h2><p>Hvis du har anmodninger vedrørende dine personoplysninger i henhold til GDPR, såsom en anmodning om at få adgang til - eller slette dine data, kan du kontakte os på dpo@pharmaledger.org.</p><p>Vi vil behandle sådanne anmodninger inden for 30 dage. </p><h2>Automatiske beslutninger</h2><p>Vi anvender ikke automatiske beslutninger i vores levering af denne service til dig.</p><h2>International overførsel af personoplysninger </h2><p>Hvis din lægemiddelproducent kræver, at vi overfører dine data uden for Den Europæiske Union, bruger vi standardkontraktbestemmelser til at beskytte dine data.</p><h2>Sådan klager du</h2><p>Hvis du har anmodninger vedrørende dine personoplysninger i henhold til GDPR, såsom en anmodning om at få adgang til - eller slette dine data, kan du kontakte os på dpo@pharmaledger.org.</p><p>Vi vil behandle sådanne anmodninger inden for 30 dage. Derudover kan du kontakte din lokale tilsynsmyndighed, hvis du føler, at dine rettigheder ikke bliver opfyldt.</p>",ok,privacy_content
+36,Vilkår og betingelser,ok,terms_modal_title
+37,"Vilkår og betingelser, der gælder, når du bruger PharmaLedger- applikationen.",ok,terms_modal_subtitle
+38,"<h2>Vilkår og betingelser for PharmaLedger Association's Electronic Product Information-websted og -applikation </h2><p>Ved at få adgang til eller bruge PharmaLedger Association's Electronic Product Information-websted og -applikation (""Tjenesterne"") accepterer du at være bundet af disse vilkår og betingelser (""Vilkårene""). Du må ikke få adgang til eller bruge tjenesterne, hvis du ikke accepterer disse vilkår. Tjenesterne drives af PharmaLedger Association (""Foreningen"") og er beregnet til brug af personer, der søger oplysninger om deres medicin. Et flerpartsnetværk leverer tjenesterne, og din lægemiddelproducent leverer de produktoplysninger, der vises via tjenesterne. Foreningen fungerer som dataansvarlig for disse oplysninger. </p><h2>Brug af tjenesterne </h2><p>Du accepterer kun at bruge tjenesterne til lovlige formål og på en måde, der ikke krænker tredjeparters rettigheder eller begrænser eller hæmmer deres brug og fornøjelse af tjenesterne. En sådan begrænsning eller hindring omfatter, uden begrænsning, adfærd, der er ulovlig, eller som kan chikanere eller forårsage ubehag eller ulejlighed for nogen person, og transmission af uanstændigt eller stødende indhold eller afbrydelse af den normale dialogstrøm inden for tjenesterne. </p><h2>Intellektuel ejendom </h2><p>Indholdet af tjenesterne, herunder, men ikke begrænset til, tekst, grafik, billeder og software, tilhører foreningen eller dens licensgivere og medlemsvirksomheder og er beskyttet af ophavsret og andre love om intellektuel ejendomsret. Du må ikke bruge noget indhold fra tjenesterne til noget kommercielt formål uden udtrykkeligt skriftligt samtykke fra foreningen. </p><h2>Ansvar</h2><p>Foreningen fremsætter ingen erklæringer eller garantier af nogen art, hverken udtrykkeligt eller underforstået, vedrørende driften af tjenesterne eller de oplysninger, det indhold, de materialer eller de produkter, der er inkluderet i tjenesterne. Foreningen er ikke ansvarlig for skader af nogen art, der opstår som følge af brugen af tjenesterne, herunder, men ikke begrænset til, direkte, indirekte, tilfældige, straffende og følgeskader. </p><h2>Gældende lov </h2><p>Disse vilkår og din brug af tjenesterne er underlagt og fortolkes i overensstemmelse med lovgivningen i Schweiz, og eventuelle tvister vil blive løst ved domstolene i Basel, Schweiz. </p><h2>Ændringer af vilkårene </h2><p>Foreningen forbeholder sig ret til at ændre disse vilkår til enhver tid, og du er ansvarlig for at kontrollere disse vilkår med jævne mellemrum for eventuelle ændringer. Din fortsatte brug af tjenesterne, efter at der er foretaget ændringer i vilkårene, vil udgøre din accept af de reviderede vilkår.</p><p><br></p>",ok,terms_content
+39,Hjælp,ok,help_modal_title
+40,FAQ,ok,help_modal_subtitle
+41,"<div><p><b><h2>Hvad er EPI?</h2></b></p><p> <b>EPI</b> er en forkortelse for <b> elektronisk produktinformation.</b> Det er en elektronisk version af den papirbaserede produktinformation, du typisk finder inde i en lægemiddelpakning. I nogle tilfælde kan <b>EPI'</b> en have erstattet den papirbaserede indlægsseddel.</p><p><b><h2>Hvad er PharmaLedger?</h2></b></p><p>PharmaLedger Association (PLA) er en nonprofit-forening med base i Schweiz med det formål at muliggøre og fremme et digitalt tillidsøkosystem inden for sundhedssektoren gennem en standardiseret og betroet open-source platform. PLA fremmer samarbejde og fremskynder innovation og inkorporering for at opnå gensidige fordele inden for sundheds- og life science- domænerne for patienter og andre interessenter. PLA blev dannet i 2022 for at fortsætte arbejdet med PharmaLedger-projektet, som er et 3-årigt projekt finansieret af Europa-Kommissionen og lægemiddelindustrien med det formål at bevise værdien af blockchain-løsninger. Yderligere information er tilgængelig på https://pharmaledger.org.</p><p><b><h2>Hvad er DataMatrix?</h2></b></p><p>Det er en type stregkode på din produktpakke. Det er en sort-hvid firkantet stregkode og vil se ud som dette:<br><img src=""./images/barcode_example.png"" alt='DataMatrix barcode example'></p><p><b><h2>Sådan bruger du appen?</h2></b></p><p>Følg instruktionerne på <b>appens startside</b>... Den viser et billede af, hvor du finder <b>DataMatrix</b> på din produktpakke. Når du har fundet <b>DataMatrix</b>, klik på knappen 'Scan <b>DataMatrix</b>'. Tillad applikationen at bruge kameraet, så <b>DataMatrix</b> kan scannes. Brug kameraet til at fokusere på <b>DataMatrix</b>. Når pakken er scannet succesfuldt, vil <b>EPI'</b> en blive vist. Du kan klikke på '+' knappen for at få flere detaljer.</p><p><b><h2>Hvorfor giver min DataMatrix-scanning ikke et resultat?</h2></b></p><p>Der kan være flere årsager til, at <b>DataMatrix</b> på din pakke ikke giver en EPI. En af årsagerne kunne være fokus for kameraet. Prøv venligst at scanne koden et godt oplyst sted, og sørg for, at koden er tydeligt synlig på skærmen. Hvis du har svært ved at holde hånden stille, kan du prøve at bruge et bord til at støtte dine hænder.</p></div>",ok,help_content
+44,Produktinformation er ikke tilgængelig.,ok,product_not_loaded_title
+45,Desværre er der ikke indlæst nogen produktinformation.,ok,product_not_loaded
+46,Fejlkode,ok,err_code
+47,"Systemet er optaget, prøv venligst igen senere.",ok,system_busy
+61,Udskriv information,,leaflet_print_title
+62,De aktuelle valgte oplysninger udskrives som PDF.,,leaflet_print_description
+63,Vil du fortsætte?,,leaflet_print_description2
+64,Fortsætte,,leaflet_print_button
+65,Gå tilbage,,leaflet_print_button_back
+66,Vælg venligst,,document_modal_title
+67,Vælg hvilket dokument der skal vises,,document_modal_message
+68,Patientinformation,,document_patient_info
+69,Produktoplysninger til patienter,,document_product_info
+70,Produktoplysninger er kun tilgængelige på engelsk,,document_lang_select_message
+71,Meddelelse,,document_lang_select_title
+72,Ordinering af oplysninger til sundhedspersonale,,document_prescribing_info
+73,Vælg land,,epi_markets_modal_title
+74,Vælg dit land,,epi_markets_modal_message
+75,Intet land,,epi_markets_modal_no_market
+76,Afghanistan,,country_af
+77,Ålandsøer,,country_ax
+78,Albanien,,country_al
+79,Algeriet,,country_dz
+80,Amerikansk samoa,,country_as
+81,Andorra,,country_ad
+82,Angola,,country_ao
+83,Anguilla,,country_ai
+84,Antarktis,,country_aq
+85,Antigua og Barbuda,,country_ag
+86,Argentina,,country_ar
+87,Armenien,,country_am
+88,Aruba,,country_aw
+89,Australien,,country_au
+90,Østrig,,country_at
+91,Aserbajdsjan,,country_az
+92,Bahamas,,country_bs
+93,Bahrain,,country_bh
+94,Bangladesh,,country_bd
+95,Barbados,,country_bb
+96,Hviderusland,,country_by
+97,Belgien,,country_be
+98,Belize,,country_bz
+99,Benin,,country_bj
+100,Bermuda,,country_bm
+101,Bhutan,,country_bt
+102,Bolivia,,country_bo
+103,Bosnien -Hercegovina,,country_ba
+104,Botswana,,country_bw
+105,Bouvet Island,,country_bv
+106,Brasilien,,country_br
+107,Det britiske territorium i Det Indiske Ocean,,country_io
+108,Brunei Darussalam,,country_bn
+109,Bulgarien,,country_bg
+110,Burkina Faso,,country_bf
+111,Burundi,,country_bi
+112,Cambodja,,country_kh
+113,Kamerun,,country_cm
+114,Canada,,country_ca
+115,Kap Verde,,country_cv
+116,Cayman Islands,,country_ky
+117,Centralafrikansk republik,,country_cf
+118,Tchad,,country_td
+119,Chile,,country_cl
+120,Kina,,country_cn
+121,Julø,,country_cx
+122,Cocos (Keeling) øer,,country_cc
+123,Colombia,,country_co
+124,Comoros,,country_km
+125,Congo,,country_cg
+126,"Congo, Den Demokratiske Republik",,country_cd
+127,Cook Islands,,country_ck
+128,Costa Rica,,country_cr
+129,Cote d'Ivoire,,country_ci
+130,Kroatien,,country_hr
+131,Cuba,,country_cu
+132,Cypern,,country_cy
+133,Tjekkiet,,country_cz
+134,Danmark,,country_dk
+135,Djibouti,,country_dj
+136,Dominica,,country_dm
+137,Den Dominikanske Republik,,country_do
+138,Ecuador,,country_ec
+139,Egypten,,country_eg
+140,El Salvador,,country_sv
+141,Ækvatorial Guinea,,country_gq
+142,Eritrea,,country_er
+143,Estland,,country_ee
+144,Etiopien,,country_et
+145,Falkland Islands (Malvinas),,country_fk
+146,Færøer,,country_fo
+147,Fiji,,country_fj
+148,Finland,,country_fi
+149,Frankrig,,country_fr
+150,Fransk Guyana,,country_gf
+151,Fransk Polynesien,,country_pf
+152,Franske sydlige territorier,,country_tf
+153,Gabon,,country_ga
+154,Gambia,,country_gm
+155,Georgien,,country_ge
+156,Tyskland,,country_de
+157,Ghana,,country_gh
+158,Gibraltar,,country_gi
+159,Grækenland,,country_gr
+160,Grønland,,country_gl
+161,Grenada,,country_gd
+162,Guadeloupe,,country_gp
+163,Guam,,country_gu
+164,Guatemala,,country_gt
+165,Guernsey,,country_gg
+166,Guinea,,country_gn
+167,Guinea-Bissau,,country_gw
+168,Guyana,,country_gy
+169,Haiti,,country_ht
+170,Hørte ø- og McDonald -øer,,country_hm
+171,Holy See (Vatikanstat),,country_va
+172,Honduras,,country_hn
+173,Hong Kong,,country_hk
+174,Ungarn,,country_hu
+175,Island,,country_is
+176,Indien,,country_in
+177,Indonesien,,country_id
+178,"Iran, Islamisk Republik",,country_ir
+179,Irak,,country_iq
+180,Irland,,country_ie
+181,Isle of Man,,country_im
+182,Israel,,country_il
+183,Italien,,country_it
+184,Jamaica,,country_jm
+185,Japan,,country_jp
+186,Jersey,,country_je
+187,Jordan,,country_jo
+188,Kasakhstan,,country_kz
+189,Kenya,,country_ke
+190,Kiribati,,country_ki
+191,"Korea, demokratiske folks republik over",,COUNTRY_KP
+192,"Korea, Republic of",,COUNTRY_KR
+193,Kuwait,,country_kw
+194,Kirgisistan,,country_kg
+195,Lao People's Democratic Republic,,COUNTRY_LA
+196,Letland,,COUNTRY_LV
+197,Libanon,,country_lb
+198,Lesotho,,country_ls
+199,Liberia,,country_lr
+200,Libyske arabiske Jamahiriya,,country_ly
+201,Liechtenstein,,country_li
+202,Litauen,,country_lt
+203,Luxembourg,,country_lu
+204,Macao,,country_mo
+205,"Makedonien, den tidligere jugoslaviske republik",,country_mk
+206,Madagaskar,,country_mg
+207,Malawi,,country_mw
+208,Malaysia,,country_my
+209,Maldiverne,,country_mv
+210,Mali,,country_ml
+211,Malta,,country_mt
+212,Marshall Islands,,country_mh
+213,Martinique,,country_mq
+214,Mauretanien,,country_mr
+215,Mauritius,,country_mu
+216,Mayotte,,country_yt
+217,Mexico,,country_mx
+218,"Mikronesien, fødererede stater af",,country_fm
+219,"Moldova, Republikken",,country_md
+220,Monaco,,country_mc
+221,Mongoliet,,country_mn
+222,Montserrat,,country_ms
+223,Marokko,,country_ma
+224,Mozambique,,country_mz
+225,Myanmar,,country_mm
+226,Namibia,,country_na
+227,Nauru,,country_nr
+228,Nepal,,country_np
+229,Holland,,country_nl
+230,Holland Antiller,,country_an
+231,Ny Caledonia,,country_nc
+232,New Zealand,,country_nz
+233,Nicaragua,,country_ni
+234,Niger,,country_ne
+235,Nigeria,,country_ng
+236,Niue,,country_nu
+237,Norfolk Island,,country_nf
+238,Nordlige Mariana -øer,,country_mp
+239,Norge,,country_no
+240,Oman,,country_om
+241,Pakistan,,country_pk
+242,Palau,,country_pw
+243,"Palæstinensisk territorium, besat",,country_ps
+244,Panama,,country_pa
+245,Papua Ny Guinea,,country_pg
+246,Paraguay,,country_py
+247,Peru,,country_pe
+248,Filippinerne,,country_ph
+249,Pitcairn,,country_pn
+250,Polen,,country_pl
+251,Portugal,,country_pt
+252,Puerto Rico,,country_pr
+253,Qatar,,country_qa
+254,Genforening,,country_re
+255,Rumænien,,country_ro
+256,Russisk føderation,,country_ru
+257,Rwanda,,country_rw
+258,Saint Helena,,country_sh
+259,Saint Kitts og Nevis,,country_kn
+260,Saint Lucia,,country_lc
+261,Saint Pierre og Miquelon,,country_pm
+262,Saint Vincent og Grenadinerne,,country_vc
+263,Samoa,,country_ws
+264,San Marino,,country_sm
+265,Sao Tome og Principe,,country_st
+266,Saudi -Arabien,,country_sa
+267,Senegal,,country_sn
+268,Serbien og Montenegro,,country_cs
+269,Seychellerne,,country_sc
+270,Sierra Leone,,country_sl
+271,Singapore,,country_sg
+272,Slovakiet,,country_sk
+273,Slovenien,,country_si
+274,Solomonøer,,country_sb
+275,Somalia,,country_so
+276,Sydafrika,,country_za
+277,South Georgia og South Sandwich Islands,,country_gs
+278,Spanien,,country_es
+279,Sri Lanka,,country_lk
+280,Sudan,,country_sd
+281,Suriname,,country_sr
+282,Svalbard og Jan Mayen,,country_sj
+283,Swaziland,,country_sz
+284,Sverige,,country_se
+285,Schweiz,,country_ch
+286,Den syriske arabiske republik,,country_sy
+287,"Taiwan, provinsen Kina",,country_tw
+288,Tadsjikistan,,country_tj
+289,"Tanzania, United Republic of",,country_tz
+290,Thailand,,country_th
+291,Timor-Leste,,country_tl
+292,Togo,,country_tg
+293,Tokelau,,country_tk
+294,Tonga,,country_to
+295,Trinidad og Tobago,,country_tt
+296,Tunesien,,country_tn
+297,Kalkun,,country_tr
+298,Turkmenistan,,country_tm
+299,Turks og Caicos -øer,,country_tc
+300,Tuvalu,,country_tv
+301,Uganda,,country_ug
+302,Ukraine,,country_ua
+303,De Forenede Arabiske Emirater,,country_ae
+304,Storbritannien,,country_gb
+305,USA,,country_us
+306,USAs mindre afgrænsede øer,,country_um
+307,Uruguay,,country_uy
+308,Uzbekistan,,country_uz
+309,Vanuatu,,country_vu
+310,Venezuela,,country_ve
+311,Vietnam,,country_vn
+312,"Jomfruøer, britiske",,country_vg
+313,"Jomfruøer, U.S.",,country_vi
+314,Wallis og Futuna,,country_wf
+315,Western Sahara,,country_eh
+316,Yemen,,country_ye
+317,Zambia,,country_zm
+318,Zimbabwe,,country_zw

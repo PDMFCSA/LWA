@@ -1,0 +1,305 @@
+code,text,status,key
+1,Sveiki atvykę į „PharmaLedger“,ok,welcome
+2,Raskite „DataMatrix“ brūkšninį kodą ant vaisto ir nuskaitykite bei peržiūrėkite informaciją.,ok,scan_explain
+3,Nuskaityti „DataMatrix“,ok,scan_button
+4,Keisti kamerą,ok,change_camera
+5,Atšaukti,ok,cancel
+6,Dar kartą nuskaityti,ok,scan_again
+7,Neatpažintas,ok,product_not_found_title
+9,Šio produkto negalima rasti.,ok,product_not_found
+10,Pasibaigęs galiojimo laikas,ok,leaflet_expired_title
+11,Programėlės versija: ,ok,app_version
+12,"<p> <b>Nustatyta, kad šio produkto galiojimo laikas pasibaigęs. </b> </p> ",ok,leaflet_expired_message
+13,Kalba neprieinama,ok,select_lang_title
+14,Apie,ok,about_modal_subtitle
+15, „PharmaLedger“,ok,about_modal_title
+16,"<h2>Apie šią programėlę</h2>
+<p>Šią programėlę Jums teikia „PharmaLedger®“. Ją kartu sukūrė pacientus atstovaujančios organizacijos, farmacijos bendrovės ir technologijų ekspertai.</p><p>Programėlės naudotojai gali peržiūrėti informaciją apie savo vaistą nuskaitydami brūkšninį kodą ant vaisto pakuotės.</p><p>Rodomą informaciją pateikia vaisto registruotojas.</p><h2>Apie „PharmaLedger“</h2><p>„PharmaLedger®“ yra „PharmaLedger“ asociacijos (PLA) prekės ženklas.</p><p>PLA yra pasaulinė ne pelno siekianti, neutrali asociacija. Asociacijos tikslas – kurti ir skatinti skaitmeninio pasitikėjimo ekosistemą sveikatos priežiūros srityje.</p><p>Asociacija skatina bendradarbiavimą sveikatos priežiūros ir gyvybės mokslų sektoriuose, skatina inovacijas ir jų diegimą, siekiant abipusės naudos pacientams ir kitoms suinteresuotosioms šalims.</p>",ok,about_content
+18,Nuskaitymo klaida,ok,scan_error_title
+20,Kažkas nutiko ne taip ir prie pasirinkto fotoaparato negalima tinkamai prisijungti. Patikrinkite įrenginio kameros nustatymus arba pabandykite pakeisti kamerą iš meniu.,ok,camera_error_message
+21,Pakuotės lapelio Jūsų pageidaujama kalba nėra. Galite pasirinkti iš galimų kalbų sąrašo.,ok,leaflet_lang_select_message
+22,Tęsti,ok,lang_proceed
+24,Grįžti į pradžią,ok,go_home
+25,Beveik pasiekta! Perskaitykite ir sutikite su taisyklėmis ir sąlygomis.,ok,onboarding_welcome
+26,Nesutikti,ok,disagree
+27,Sutikti,ok,agree
+28,"„PharmaLedger“ programėlė neveiks, kol nesutiksite su taisyklėmis ir sąlygomis. Perskaitykite taisykles ir sąlygas.",ok,disagree_extra_text
+29,Privatumo politika,ok,fwd_privacy
+30,Taisyklės ir sąlygos,ok,fwd_terms
+31,Pagalba,ok,fwd_help
+32,Apie,ok,fwd_about
+33,Mūsų privatumo ir saugumo principai,ok,privacy_modal_subtitle
+34,Privatumo politika,ok,privacy_modal_title
+35,"<h2>Privatumo pranešimas</h2> <p>Šis privatumo pranešimas taikomas „PharmaLedger“ asociacijos elektroninės produkto informacijos produkto naudojimui.</p> <h2>Kontaktai</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) Duomenų valdytojo arba bendrų duomenų valdytojų tapatybė ir kontaktai</b><p>Jūsų duomenų valdytojas yra „PharmaLedger“ asociacija.</p></li><li role=""listitem""><b>b) Duomenų apsaugos pareigūno kontaktai</b><p>Su „PharmaLedger“ asociacijos duomenų apsaugos tarnyba galima susisiekti šiuo adresu dpo@pharmaledger.org.</p></li></ul><h2>Kokius asmeninius duomenis naudojame</h2><p>Mes renkame tik techninius duomenis, reikalingus Jūsų elektroniniam pakuotės lapeliui pateikti. Tai apima Jūsų IP adresą ir techninius įrenginio bei naršyklės, kuriuos naudojate mūsų programėlei pasiekti, identifikatorius.</p> <p><em>Renkame šiuos duomenis: </em></p><ul><li><p><em>Prieiga per mobilųjį įrenginį.</em> Galime prašyti prieigos ar leidimo naudotis tam tikromis Jūsų mobiliojo įrenginio funkcijomis, įskaitant Jūsų mobiliojo įrenginio kamerą ir kitas funkcijas. Jei norite pakeisti mūsų prieigą ar leidimus, tai galite padaryti savo įrenginio nustatymuose.</p></li><li><p><em>Mobiliojo įrenginio duomenys.</em> Automatiškai renkame informaciją apie įrenginį (pvz., Jūsų mobiliojo įrenginio ID, modelį ir gamintoją), operacinę sistemą, versijos informaciją ir sistemos konfigūracijos informaciją, įrenginio ir programos identifikacinius numerius, naršyklės tipą ir versiją, aparatinės įrangos modelį, interneto paslaugų teikėją ir (arba) mobiliojo ryšio operatorių, interneto protokolo (IP) adresą (arba proxy serverį). Jei naudojate mūsų programėlę (-es), taip pat galime rinkti informaciją apie telefono tinklą, susijusį su Jūsų mobiliuoju įrenginiu, Jūsų mobiliojo įrenginio operacinę sistemą arba platformą, naudojamo mobiliojo įrenginio tipą, unikalų Jūsų mobiliojo įrenginio ID ir informaciją apie mūsų programėlės (-ių) funkcijas, kuriomis naudojotės.</p></li></ul><h2>Kodėl renkame Jūsų asmens duomenis</h2><h3>Tikslai</h3><p>Jūsų techninius duomenis renkame tam, kad galėtume Jums pateikti elektroninį vaisto pakuotės lapelį. </p><p>Todėl tvarkydami Jūsų asmeninę informaciją galime remtis šiais teisiniais pagrindais:</p><ul><li><p><b>Sutarties vykdymas.</b> Jūsų asmeninę informaciją galime tvarkyti, kai manome, kad tai būtina norint įvykdyti sutartinius įsipareigojimus Jums, įskaitant paslaugų teikimą, arba Jūsų prašymu prieš sudarant sutartį su Jumis.</p></li><li><p><b>Teisiniai įsipareigojimai.</b> Jūsų informaciją galime tvarkyti, jei manome, kad tai būtina mūsų teisiniams įsipareigojimams įvykdyti, pavyzdžiui, vykdyti savo įsipareigojimus pagal sveikatos priežiūros reglamentavimą ir visuomenės sveikatos teisės aktus.</p></li></ul><h2>Su kuo dalijamės Jūsų asmeniniais duomenimis</h2><p>Bendrovės Narės Ir Trečiųjų Salių Paslaugų Teikėjai.</p><p>Jūsų duomenimis dalijamės su trečiųjų šalių pardavėjais, paslaugų teikėjais, rangovais ar atstovais (toliau – trečiosios šalys), kurie teikia paslaugas mums arba mūsų vardu ir kuriems reikia prieigos prie tokios informacijos, kad galėtų atlikti šį darbą. Su trečiosiomis šalimis esame sudarę sutartis, kurių tikslas – padėti apsaugoti Jūsų asmeninę informaciją. Tai reiškia, kad jie negali nieko daryti su Jūsų asmenine informacija, nebent mes jiems nurodome tai daryti. Be to, jie nesidalins Jūsų asmenine informacija su jokia kita organizacija, išskyrus mus. Jos taip pat įsipareigoja saugoti mūsų vardu turimus duomenis ir saugoti juos mūsų nurodytu laikotarpiu. Trečiųjų šalių, su kuriomis galime dalytis asmenine informacija, kategorijos yra šios:</p><ul><li><p>Vaistų gamintojai (įmonės narės)</p></li><li><p>Techninių Paslaugų Teikėjai </p></li></ul><h2>Kiek laiko saugome Jūsų asmeninius duomenis</h2><p>„PharmaLedger“ asociacija saugo Jūsų techninius duomenis tik tiek, kiek reikia Jūsų pakuotės lapelio užklausai apdoroti, bet ne ilgiau kaip 30 dienų. </p><p>Jūsų vaistų gamintojas taip pat saugo Jūsų duomenis nustatytą laiką, kaip nurodyta jo duomenų saugojimo politikoje; norėdami gauti daugiau informacijos apie duomenų saugojimą, susisiekite su savo vaistų gamintoju.</p><h2>Jei nepateikiate mums savo asmens duomenų</h2><p>Jei nuspręsite nepateikti mums savo techninių duomenų, negalėsime įvykdyti Jūsų pakuotės lapelio prašymo.</p><h2>Jūsų teisės</h2><p>Jei turite prašymų, susijusių su Jūsų asmens duomenimis pagal BDAR, pvz., norėdami susipažinti su savo duomenimis arba juos ištrinti, galite susisiekti su mumis adresu dpo@pharmaledger.org.</p><p>Tokius prašymus išnagrinėsime per 30 dienų.</p><h2>Sutikimo atšaukimas</h2><p>Jei turite prašymų, susijusių su Jūsų asmens duomenimis pagal BDAR, pvz., norėdami susipažinti su savo duomenimis arba juos ištrinti, galite susisiekti su mumis adresu dpo@pharmaledger.org.</p><p>Tokius prašymus išnagrinėsime per 30 dienų.</p><h2>Automatizuotas sprendimų priėmimas</h2><p>Teikdami Jums šią paslaugą nenaudojame jokio automatizuoto sprendimų priėmimo.</p><h2>Tarptautinis asmens duomenų perdavimas</h2><p>Jei vaisto gamintojas reikalauja, kad Jūsų duomenis perduotume už Europos Sąjungos ribų, Jūsų duomenims apsaugoti naudojame standartines sutarčių sąlygas.</p><h2>Kaip pateikti skundą</h2><p>Jei turite prašymų, susijusių su Jūsų asmens duomenimis pagal BDAR, pvz., norėdami susipažinti susavo duomenimis arba juos ištrinti, galite susisiekti su mumis adresu dpo@pharmaledger.org.</p><p>Tokius prašymus išnagrinėsime per 30 dienų. Be to, galite kreiptis į vietinę priežiūros instituciją, jei manote, kad Jūsų teisės nėra užtikrinamos. </p>",ok,privacy_content
+36,Taisyklės ir sąlygos,ok,terms_modal_title
+37,"Taisyklės ir sąlygos, taikomos naudojant „PharmaLedger“ programėlę.",ok,terms_modal_subtitle
+38,"<h2>„PharmaLedger“ asociacijos elektroninės produkto informacijos interneto svetainės ir programėlės naudojimo sąlygos </h2><p>Prisijungdami prie „PharmaLedger“ asociacijos elektroninės produkto informacijos svetainės ir programėlės arba jomis naudodamiesi (toliau – „Paslaugos“), Jūs sutinkate laikytis šių taisyklių ir sąlygų (toliau – „Sąlygos“). Jei nesutinkate su šiomis Sąlygomis, negalite prisijungti prie Paslaugų arba jomis naudotis. Paslaugas valdo „PharmaLedger“ asociacija (toliau – „Asociacija“) ir jos skirtos asmenims, ieškantiems informacijos apie savo vaistus. Paslaugas teikia daugiašalis tinklas, o Jūsų vaisto gamintojas teikia per Paslaugas rodomą informaciją apie vaistą. Asociacija veikia kaip šios informacijos duomenų valdytoja. </p><h2>Paslaugų naudojimas</h2><p>Sutinkate naudotis Paslaugomis tik teisėtais tikslais ir tokiu būdu, kuris nepažeidžia jokios trečiosios šalies teisių, neriboja ir netrukdo naudotis Paslaugomis. Toks ribojimas ar trukdymas apima, be kita ko, elgesį, kuris yra neteisėtas arba kuris gali priekabiauti prie bet kurio asmens, sukelti jam nerimą ar nepatogumų, taip pat nepadoraus ar įžeidžiančio turinio perdavimą arba įprasto dialogo srauto Paslaugose trikdymą. </p><h2>Intelektinė nuosavybė </h2><p>Paslaugų turinys, įskaitant, bet neapsiribojant, tekstą, grafiką, paveikslėlius ir programinę įrangą, yra Asociacijos arba jos licencijų teikėjų ir bendrovių narių nuosavybė, saugoma autorinių teisių ir kitų intelektinės nuosavybės įstatymų. Be aiškaus raštiško Asociacijos sutikimo negalite naudoti jokio Paslaugų turinio jokiais komerciniais tikslais. </p><h2>Atsakomybė</h2><p>Asociacija neteikia jokių aiškių ar numanomų pareiškimų ar garantijų dėl Paslaugų veikimo ar į Paslaugas įtrauktos informacijos, turinio, medžiagos ar produktų. Asociacija neatsako už bet kokią žalą, atsiradusią dėl naudojimosi Paslaugomis, įskaitant, bet neapsiribojant, tiesioginę, netiesioginę, atsitiktinę, baudžiamąją ir pasekminę žalą. </p><h2>Taikytina teisė </h2><p>Šioms Sąlygoms ir Jūsų naudojimuisi Paslaugomis bus taikomi Šveicarijos įstatymai ir jos bus aiškinamos pagal juos, o bet kokie ginčai bus sprendžiami Bazelio (Šveicarija) teismuose. </p><h2>Sąlygų pakeitimai </h2><p>Asociacija pasilieka teisę bet kuriuo metu keisti šias Sąlygas, o Jūs esate atsakingi už periodišką tikrinimą, ar jose nėra pakeitimų. Jei po bet kokių Sąlygų pakeitimų toliau naudositės Paslaugomis, tai reikš, kad sutinkate su pakeistomis Sąlygomis.</p><p><br></p>",ok,terms_content
+39,Pagalba,ok,help_modal_title
+40,DUK,ok,help_modal_subtitle
+41,"<div><p><b><h2>Kas yra EPI?</h2></b></p><p> <b>EPI</b> yra <b>elektroninės produkto informacijos</b> santrumpa. Tai elektroninė popierinio pakuotės lapelio, kuris paprastai būna vaisto pakuotėje, versija. Kai kuriais atvejais <b>EPI</b> gali būti pakeitusi popierinį pakuotės lapelį. </p><p><b><h2>Kas yra „PharmaLedger“? </h2></b></p><p>„PharmaLedger“ asociacija (PLA) yra Šveicarijoje įsikūrusi pelno nesiekianti asociacija, kurios tikslas – sukurti ir skatinti skaitmeninio pasitikėjimo ekosistemą sveikatos priežiūros srityje pasitelkiant standartizuotą ir patikimą atvirojo kodo platformą. PLA skatina bendradarbiavimą ir spartina inovacijų diegimą bei priėmimą, kad sveikatos priežiūros ir gyvybės mokslų srityse būtų pasiekta abipusė nauda pacientams ir kitoms suinteresuotosioms šalims. PLA buvo įsteigta 2022 m. siekiant tęsti „PharmaLedger“ projekto – Europos Komisijos ir farmacijos pramonės finansuojamo trejų metų trukmės projekto, kuriuo siekiama įrodyti blokų grandinės sprendimų vertę, darbą. Daugiau informacijos galima rasti adresu https://pharmaledger.org. </p><p><b><h2>Kas yra „DataMatrix“? </h2></b></p><p>Tai brūkšninio kodo tipas ant produkto pakuotės. Tai yra juodai baltas kvadratinės dėžutės brūkšninis kodas, atrodantis panašiai kaip šis: <br><img src=""./images/barcode_example.png"" alt='DataMatrix barcode example'></p><p><b><h2>Kaip naudotis programėle? </h2></b></p><p>Vadovaukitės <b>programėlės</b> pradžios puslapyje pateiktais nurodymais. Jame parodyta, kur rasti <b>„DataMatrix“</b> ant produkto pakuotės. Suradę <b>„DataMatrix“</b>, spustelėkite mygtuką „Nuskaityti <b>„DataMatrix“</b>”. Leiskite programėlei naudoti kamerą, kad būtų galima nuskaityti <b>„DataMatrix“</b>. Fotoaparatu sufokusuokite <b>„DataMatrix“</b>. Sėkmingai nuskaičius pakuotę, bus rodoma <b>EPI</b>. Norėdami gauti daugiau informacijos, galite spustelėti mygtuką „+“. </p><p><b><h2>Kodėl „DataMatrix“ nuskaitymas neduoda rezultatų? </h2></b></p><p>Yra kelios priežastys, dėl kurių pakuotės <b>„DataMatrix“</b> gali nepateikti EPI. Viena iš priežasčių gali būti fotoaparato fokusavimas. Pabandykite nuskaityti kodą gerai apšviestoje vietoje, kai kodas aiškiai matomas ekrane. Jei sunku išlaikyti ranką tvirtą, galite pabandyti rankas atremti į stalą. </p></div>",ok,help_content
+44,Informacijos apie produktą nėra.,ok,product_not_loaded_title
+45,"Deja, nebuvo įkelta jokia informacija apie produktą.",ok,product_not_loaded
+46,Klaidos kodas,ok,err_code
+47,"Sistema užimta, pabandykite vėliau.",ok,system_busy
+49,Unverified Product,,error_subtitle
+50,Incorrect date,,leaflet_incorrect_date_title
+51,Scanned date is incorrect,,leaflet_incorrect_date_subtitle
+52,<b> This product's date is incorrect</b>.,,leaflet_incorrect_date_message
+61,Spausdinti informaciją,,leaflet_print_title
+62,Dabartinė pasirinkta informacija bus atspausdinta kaip PDF.,,leaflet_print_description
+63,Ar norite tęsti?,,leaflet_print_description2
+64,Tęsk,,leaflet_print_button
+65,Grįžk atgal,,leaflet_print_button_back
+66,Prašau pasirinkti,,document_modal_title
+67,"Pasirinkite, kurį dokumentą rodyti",,document_modal_message
+68,Informacija apie pacientą,,document_patient_info
+69,Informacija apie produktą pacientams,,document_product_info
+70,Informacija apie produktą galima tik anglų kalba,,document_lang_select_message
+71,Pranešimas,,document_lang_select_title
+72,Informacijos skyrimas sveikatos priežiūros specialistams,,document_prescribing_info
+73,Pasirinkite Šalis,,epi_markets_modal_title
+74,Pasirinkite savo šalį,,epi_markets_modal_message
+75,Nėra šalies,,epi_markets_modal_no_market
+76,Afganistanas,,country_af
+77,Åland salos,,country_ax
+78,Albanija,,country_al
+79,Alžyras,,country_dz
+80,Amerikos Samoa,,country_as
+81,Andorra,,country_ad
+82,Angola,,country_ao
+83,Angilija,,country_ai
+84,Antarktida,,country_aq
+85,Antigva ir Barbuda,,country_ag
+86,Argentina,,country_ar
+87,Armėnija,,country_am
+88,Aruba,,country_aw
+89,Australija,,country_au
+90,Austrija,,country_at
+91,Azerbaidžanas,,country_az
+92,Bahamos,,country_bs
+93,Bahreinas,,country_bh
+94,Bangladešas,,country_bd
+95,Barbadosas,,country_bb
+96,Baltarusija,,country_by
+97,Belgija,,country_be
+98,Belizas,,country_bz
+99,Beninas,,country_bj
+100,Bermuda,,country_bm
+101,Butanas,,country_bt
+102,Bolivija,,country_bo
+103,Bosnija ir Hercegovina,,country_ba
+104,Botsvana,,country_bw
+105,Bouveto sala,,country_bv
+106,Brazilija,,country_br
+107,Britanijos Indijos vandenyno teritorija,,country_io
+108,Brunei Darussalam,,country_bn
+109,Bulgarija,,country_bg
+110,Burkina Faso,,country_bf
+111,Burundis,,country_bi
+112,Kambodža,,country_kh
+113,Kamerūnas,,country_cm
+114,Kanada,,country_ca
+115,Kyšulio kyšulys,,country_cv
+116,Kaimanų salos,,country_ky
+117,Centrinės Afrikos Respublika,,country_cf
+118,Čadas,,country_td
+119,Čilė,,country_cl
+120,Kinija,,country_cn
+121,Kalėdinė sala,,country_cx
+122,Cocos (Keeling) salos,,country_cc
+123,Kolumbija,,country_co
+124,Komoros,,country_km
+125,Kongo,,country_cg
+126,"Kongo, Demokratinė Respublika",,country_cd
+127,Kuko salos,,country_ck
+128,Kosta Rika,,country_cr
+129,Cote d'Voire,,country_ci
+130,Kroatija,,country_hr
+131,Kuba,,country_cu
+132,Kipras,,country_cy
+133,Čekija,,country_cz
+134,Danija,,country_dk
+135,Djibouti,,country_dj
+136,Dominika,,country_dm
+137,Dominikos Respublika,,country_do
+138,Ekvadoras,,country_ec
+139,Egiptas,,country_eg
+140,Salvadoras,,country_sv
+141,Pusiaujo Gvinėja,,country_gq
+142,Eritrėja,,country_er
+143,Estija,,country_ee
+144,Etiopija,,country_et
+145,Folklando salos (Malvinas),,country_fk
+146,Faroe salos,,country_fo
+147,Fiji,,country_fj
+148,Suomija,,country_fi
+149,Prancūzija,,country_fr
+150,Prancūzijos Gviana,,country_gf
+151,Prancūzijos Polinezija,,country_pf
+152,Prancūzijos pietų teritorijos,,country_tf
+153,Gabonas,,country_ga
+154,Gambija,,country_gm
+155,Gruzija,,country_ge
+156,Vokietija,,country_de
+157,Gana,,country_gh
+158,Gibraltaras,,country_gi
+159,Graikija,,country_gr
+160,Grenlandija,,country_gl
+161,Grenada,,country_gd
+162,Gvadelupė,,country_gp
+163,Guamas,,country_gu
+164,Gvatemala,,country_gt
+165,Gernsey,,country_gg
+166,Gvinėja,,country_gn
+167,Gvinėjos-Bisau,,country_gw
+168,Gajana,,country_gy
+169,Haitis,,country_ht
+170,Hear Island ir McDonald salos,,country_hm
+171,Šventasis Sostas (Vatikano miesto valstija),,country_va
+172,Hondūras,,country_hn
+173,Honkongas,,country_hk
+174,Vengrija,,country_hu
+175,Islandija,,country_is
+176,Indija,,country_in
+177,Indonezija,,country_id
+178,"Iranas, Islamo Respublika",,country_ir
+179,Irakas,,country_iq
+180,Airija,,country_ie
+181,Meno sala,,country_im
+182,Izraelis,,country_il
+183,Italija,,country_it
+184,Jamaika,,country_jm
+185,Japonija,,country_jp
+186,Džersis,,country_je
+187,Jordanija,,country_jo
+188,Kazachstanas,,country_kz
+189,Kenija,,country_ke
+190,Kiribati,,country_ki
+191,"Korėja, Demokratinės liaudies Respublika",,COUNTRY_KP
+192,"Korėja, Respublika",,COUNTRY_KR
+193,Kuveitas,,country_kw
+194,Kirgizija,,country_kg
+195,Laoso liaudies demokratinė respublika,,COUNTRY_LA
+196,Latvija,,COUNTRY_LV
+197,Libanas,,country_lb
+198,Lesotas,,country_ls
+199,Liberija,,country_lr
+200,Libijos arabų Jamahiriya,,country_ly
+201,Lichtenšteinas,,country_li
+202,Lietuva,,country_lt
+203,Liuksemburgas,,country_lu
+204,Makao,,country_mo
+205,"Makedonija, buvusi Jugoslavijos Respublika",,country_mk
+206,Madagaskaras,,country_mg
+207,Malavis,,country_mw
+208,Malaizija,,country_my
+209,Maldyvai,,country_mv
+210,Mali,,country_ml
+211,Malta,,country_mt
+212,Maršalo salos,,country_mh
+213,Martinika,,country_mq
+214,Mauritanija,,country_mr
+215,Mauricijus,,country_mu
+216,Mayotte,,country_yt
+217,Meksika,,country_mx
+218,"Mikronezija, federalinės valstybės",,country_fm
+219,"Moldova, Respublika",,country_md
+220,Monakas,,country_mc
+221,Mongolija,,country_mn
+222,Montserratas,,country_ms
+223,Marokas,,country_ma
+224,Mozambikas,,country_mz
+225,Mianmaras,,country_mm
+226,Namibija,,country_na
+227,Nauru,,country_nr
+228,Nepalas,,country_np
+229,Nyderlandai,,country_nl
+230,Nyderlandų Antilai,,country_an
+231,Naujoji Kaledonija,,country_nc
+232,Naujoji Zelandija,,country_nz
+233,Nikaragva,,country_ni
+234,Nigeris,,country_ne
+235,Nigerija,,country_ng
+236,Niuue,,country_nu
+237,Norfolko sala,,country_nf
+238,Šiaurės Marianos salos,,country_mp
+239,Norvegija,,country_no
+240,Omanas,,country_om
+241,Pakistanas,,country_pk
+242,Palau,,country_pw
+243,"Palestinos teritorija, užimta",,country_ps
+244,Panama,,country_pa
+245,Papua Naujoji Gvinėja,,country_pg
+246,Paragvajus,,country_py
+247,Peru,,country_pe
+248,Filipinai,,country_ph
+249,Pitcairnas,,country_pn
+250,Lenkija,,country_pl
+251,Portugalija,,country_pt
+252,Puerto Rikas,,country_pr
+253,Kataras,,country_qa
+254,Susivienijimas,,country_re
+255,Rumunija,,country_ro
+256,Rusijos federacija,,country_ru
+257,Ruanda,,country_rw
+258,Saint Helena,,country_sh
+259,Saint Kitts ir Nevis,,country_kn
+260,Saint Lucia,,country_lc
+261,Saint Pierre ir Miquelon,,country_pm
+262,Šventasis Vincentas ir Grenadinai,,country_vc
+263,Samoa,,country_ws
+264,San Marino,,country_sm
+265,Sao Tome ir Principe,,country_st
+266,Saudo Arabija,,country_sa
+267,Senegalas,,country_sn
+268,Serbija ir Juodkalnija,,country_cs
+269,Seišelės,,country_sc
+270,Siera Leonė,,country_sl
+271,Singapūras,,country_sg
+272,Slovakija,,country_sk
+273,Slovėnija,,country_si
+274,Saliamono salos,,country_sb
+275,Somalis,,country_so
+276,Pietų Afrika,,country_za
+277,Pietų Džordžija ir Pietų sumuštinių salos,,country_gs
+278,Ispanija,,country_es
+279,Šri Lanka,,country_lk
+280,Sudanas,,country_sd
+281,Surinamas,,country_sr
+282,Svalbardas ir Janas Mayenas,,country_sj
+283,Svazilandas,,country_sz
+284,Švedija,,country_se
+285,Šveicarija,,country_ch
+286,Sirijos Arabų Respublika,,country_sy
+287,"Taivanas, Kinijos provincija",,country_tw
+288,Tadžikistanas,,country_tj
+289,"Tanzanija, Jungtinė Respublika",,country_tz
+290,Tailandas,,country_th
+291,Timor-Leste,,country_tl
+292,Togo,,country_tg
+293,Tokelau,,country_tk
+294,Tonga,,country_to
+295,Trinidadas ir Tobagas,,country_tt
+296,Tunisas,,country_tn
+297,Turkija,,country_tr
+298,Turkmėnistanas,,country_tm
+299,Turkų ir Kaikoso salos,,country_tc
+300,Tuvalu,,country_tv
+301,Uganda,,country_ug
+302,Ukraina,,country_ua
+303,Jungtiniai Arabų Emyratai,,country_ae
+304,Jungtinė Karalystė,,country_gb
+305,JAV,,country_us
+306,Jungtinės Valstijos Mažosios atokios salos,,country_um
+307,Urugvajus,,country_uy
+308,Uzbekistanas,,country_uz
+309,Vanuatu,,country_vu
+310,Venesuela,,country_ve
+311,Vietnamas,,country_vn
+312,"Mergelių salos, britai",,country_vg
+313,"Mergelių salos, JAV",,country_vi
+314,Wallis ir Futuna,,country_wf
+315,Vakarų Sachara,,country_eh
+316,Jemenas,,country_ye
+317,Zambija,,country_zm
+318,Zimbabvė,,country_zw

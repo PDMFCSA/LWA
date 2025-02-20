@@ -557,7 +557,6 @@ function LeafletController() {
             element.removeAttribute('style');
             element.removeAttribute('nowrap');
             element.removeAttribute('xmlns');
-
         });
         printContent.innerHTML = "";
         printContent.innerHTML = content.innerHTML;

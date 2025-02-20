@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node ./node_modules/octopus/scripts/run dependencies devmode",
+    "uml": "cd workdocs/uml && for FILE in ./*.puml; do docker run --rm -v $(pwd):/work -w /work miy4/plantuml -DPLANTUML_LIMIT_SIZE=8192 -tpng $FILE; done && cd ../.. && cp -fr workdocs/uml/*.png workdocs/resources/",
     "translate": "node bin/translations.cjs"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "google-translate-api-x": "10.7.2",
+    "json-2-csv": "^5.5.8",
     "json2md": "2.0.1",
     "md-to-pdf": "5.2.4"
   }

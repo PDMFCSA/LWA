@@ -1,0 +1,300 @@
+code,text,status,key
+1,Laipni lūgti PharmaLedger,ok,welcome
+2,"Atrodiet DataMatrix svītrkodu uz savām zālēm, lai skenētu un skatītu informāciju.",ok,scan_explain
+3,DataMatrix skenēšana,ok,scan_button
+4,Mainīt kameru,ok,change_camera
+5,Atcelt,ok,cancel
+6,Vēlreiz skenēt,ok,scan_again
+7,Nav atpazīts,ok,product_not_found_title
+9,Šo produktu nevar atrast.,ok,product_not_found
+10,Derīguma termiņš beidzies,ok,leaflet_expired_title
+11,Lietotnes versija:,ok,app_version
+12,<p> <b>Šim produktam ir beidzies derīguma termiņš.</b> </p>,ok,leaflet_expired_message
+13,Valoda nav pieejama,ok,select_lang_title
+14,Par ,ok,about_modal_subtitle
+15,PharmaLedger,ok,about_modal_title
+16,"<h2>Par šo lietotni</h2><p>Šo lietotni Jums nodrošina PharmaLedger®. To kopīgi izstrādājušas pacientu pārstāvju organizācijas, farmācijas uzņēmumi un tehnoloģiju eksperti.</p><p>Tā ļauj lietotnes lietotājiem, skenējot svītrkodu uz zāļu iepakojuma, skatīt informāciju par zālēm.</p><p>Norādīto informāciju ir sniedzis produkta tirdzniecības atļaujas turētājs.</p><h2>Par PharmaLedger</h2><p>PharmaLedger® ir PharmaLedger asociācijas (PLA) zīmols.</p><p>PLA ir globāla bezpeļņas, neitrāla asociācija. Asociācijas mērķis ir izveidot un veicināt digitālās uzticības ekosistēmu veselības aprūpē.</p><p>Asociācija veicina sadarbību veselības aprūpes un biozinātņu nozarēs un sekmē inovācijas un to ieviešanu pacientu un citu ieinteresēto pušu interesēs.</p>",ok,about_content
+18,Skenēšanas kļūda,ok,scan_error_title
+20,"Kaut kas ir noticis nepareizi, un nav iespējams pareizi piekļūt izvēlētajai fotokamerai. Lūdzu, pārbaudiet ierīces kameras iestatījumus vai mēģiniet izvēlnē mainīt kameru.",ok,camera_error_message
+21,Lietošanas instrukcija nav pieejama Jums izvēlētajā valodā. Jūs varat izvēlēties no pieejamo valodu saraksta.,ok,leaflet_lang_select_message
+22,Turpināt,ok,lang_proceed
+24,Atgriezties ‘mājās’,ok,go_home
+25,"Gandrīz klāt! Lūdzu, izlasiet un piekrītiet noteikumiem un nosacījumiem.",ok,onboarding_welcome
+26,Nepiekrītu,ok,disagree
+27,Piekrītu ,ok,agree
+28,"Programmatūra ""PharmaLedger"" nedarbosies, kamēr nepiekritīsiet noteikumiem un nosacījumiem. Lūdzu, izlasiet noteikumus un nosacījumus.",ok,disagree_extra_text
+29,Konfidencialitātes politika,ok,fwd_privacy
+30,Noteikumi un nosacījumi,ok,fwd_terms
+31,Palīdzība,ok,fwd_help
+32,Par,ok,fwd_about
+33,Mūsu konfidencialitātes un drošības principi,ok,privacy_modal_subtitle
+34,Konfidencialitātes politika,ok,privacy_modal_title
+35,"<h2>Privātuma paziņojums</h2> <p>Šis privātuma paziņojums attiecas uz PharmaLedger asociācijas elektroniskās produktu informācijas produkta izmantošanu. </p> <h2>Kontakti</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) Pārziņa vai kopīgo pārziņu identitāte un kontakti</b><p>Jūsu datu pārzinis ir PharmaLedger asociācija.</p></li><li role=""listitem""><b>b) Datu aizsardzības speciālista kontakti</b><p>Ar PharmaLedger asociācijas Datu aizsardzības biroju varsazināties pa e-pastu dpo@pharmaledger.</p></li></ul><h2>Kādus personas datus mēs izmantojam</h2><p>Mēs apkopojam tikai tehniskos datus, kas nepieciešami, lai piegādātu Jums elektronisko lietošanas instrukciju. Tie ietver Jūsu IP adresi un ierīces un pārlūkprogrammas tehniskos identifikatorus, ko izmantojat, lai piekļūtu mūsu lietojumprogrammai.</p> <p><em>Sīkāk mēs vācam šādus datu elementus: </em></p><ul><li><p><em>Mobilās ierīces pieeja.</em> Mēs varam pieprasīt piekļuvi vai atļauju noteiktām funkcijām no jūsu mobilās ierīces, tostarp Jūsu mobilās ierīces kamerai un citām funkcijām. Ja vēlaties mainīt mūsu piekļuvi vai atļaujas, varat to izdarīt savas ierīces iestatījumos.</p></li><li><p><em>Mobilās ierīces dati.</em> Mēs automātiski apkopojam ierīces informāciju (piemēram, Jūsu mobilās ierīces ID, modeli un ražotāju), operētājsistēmu, informāciju par versiju un sistēmas konfigurācijas informāciju, ierīces un lietojumprogrammas identifikācijas numurus, pārlūkprogrammas veidu un versiju, aparatūras modeli, interneta pakalpojumu sniedzēju un/vai mobilo sakaru operatoru un interneta protokola (IP) adresi (vai starpniekserveri). Ja izmantojat mūsu lietojumprogrammu(-as), mēs varam arī vākt informāciju par tālruņa tīklu, kas saistīts ar Jūsu mobilo ierīci, Jūsu mobilās ierīces operētājsistēmu vai platformu, Jūsu izmantotās mobilās ierīces veidu, Jūsu mobilās ierīces unikālo ierīces ID un informāciju par mūsu lietojumprogrammas(-u) funkcijām, kurām Jūs piekļūstat.</p></li></ul><h2>Kāpēc mēs vācam Jūsu personas datus</h2><h3>Pmērķi</h3><p>Mēs vācam Jūsu tehniskos datus, lai nodrošinātu Jūs ar elektronisku zāļu lietošanas instrukciju. </p><p>Tādējādi, apstrādājot Jūsu personas datus, mēs varam izmantot šādus juridiskos pamatus:</p><ul><li><p><b>Līguma izpilde.</b>  Mēs varam apstrādāt Jūsu personas informāciju, ja uzskatām, ka tas ir nepieciešams, lai izpildītu līgumsaistības pret Jums, tostarp sniegtu mūsu Pakalpojumus, vai pēc Jūsu pieprasījuma, pirms līguma noslēgšanas ar Jums.</p></li><li><p><b>Pienākumi saskaņā ar tiesību aktiem.</b> Mēs varam apstrādāt Jūsu informāciju, ja uzskatām, ka tas ir nepieciešams, lai izpildītu mūsu juridiskos pienākumus, piemēram, izpildītu mūsu pienākumus saskaņā ar veselības aprūpes regulējumu un sabiedrības veselības tiesību aktiem.</p></li></ul><h2>Kam mēs kopīgojam Jūsu personas datus</h2><p> Dalībsabiedrībām un trešo pušu pakalpojumu sniedzējiem.</p><p> Mēs kopīgojam Jūsu datus artrešo pušu pārdevējiem, pakalpojumu sniedzējiem, darbuzņēmējiem vai aģentiem (""trešās puses""), kuri sniedz pakalpojumus mums vai mūsu vārdā un kuriem šī darba veikšanai nepieciešama piekļuve šādai informācijai. Mums ir noslēgti līgumi armūsu trešajām pusēm, kuru mērķis ir palīdzēt aizsargāt Jūsu personas informāciju. Tas nozīmē, ka tās nevar neko darīt ar Jūsu personas informāciju, ja vien mēs neesam devuši tām norādījumus to darīt. Tās arī nedalīsies ar Jūsu personisko informāciju ar citām organizācijām, izņemot mūs. Tās arī apņemas aizsargāt mūsu uzdevumā glabātos datus un saglabāt tos tik ilgi, cik mēs esam norādījuši. Trešo personu kategorijas, ar kurām mēs varam kopīgot personas informāciju, ir šādas:</p><ul><li><p>Zāļu ražotāji (dalībvalstu uzņēmumi)</p></li><li><p>Tehnisko pakalpojumu sniedzēji.</p></li></ul><h2>Cik ilgi mēs glabājam Jūsu personas datus</h2><p>PharmaLedger asociācija glabā Jūsu tehniskos datus tikai tik ilgi, cik nepieciešams, lai apstrādātu Jūsu lietošanas instrukcijas pieprasījumu, bet ne ilgāk kā 30 dienas.  </p><p>Jūsu zāļu ražotājs arī glabās Jūsu datus noteiktu laiku, ko nosaka tā datu glabāšanas noteikumi; lai iegūtu plašāku informāciju par šo glabāšanu, sazinieties ar zāļu ražotāju.</p><h2>Ja Jūs nesniegsiet mums savus personas datus</h2><p>Ja Jūs izvēlēsieties nesniegt mums savus tehniskos datus, mēs nevarēsim izpildīt Jūsu lietošanas instrukcijas pieprasījumu.</p><h2>Jūsu tiesības</h2><p>If you have any requests related to your personal data under the GDPR, such as a request to access or delete your data, you may contact us at dpo@pharmaledger.org.</p><p>We will process such requests within 30 days.</p><h2>Piekrišanas atsaukšana</h2><p>Ja Jums ir kādi pieprasījumi saistībā ar Jūsu personas datiem saskaņā ar VDAR, piemēram, pieprasījums piekļūt saviem datiem vai tos dzēst, varat sazināties ar mums pa e-pastu dpo@pharmaledger.org.</p><p>Mēs izskatīsim šādus pieprasījumus 30 dienu laikā.</p><h2>Automatizēta lēmumu pieņemšana</h2><p>Mēs neizmantojam automatizētu lēmumu pieņemšanu, sniedzot Jums šo pakalpojumu.</p><h2>Internacionāla personas datu pārsūtīšana</h2><p>Ja zāļu ražotājam ir nepieciešams pārsūtīt Jūsu datus ārpus Eiropas Savienības, mēs izmantojam standarta līguma klauzulas, lai aizsargātu Jūsu datus.</p><h2>Kā iesniegt sūdzību</h2><p>Ja Jums ir kādi pieprasījumi saistībā ar Jūsu personas datiem saskaņā ar VDAR, piemēram, pieprasījums piekļūt saviem datiem vai tos dzēst, Jūs varat sazināties ar mums, rakstot uz dpo@pharmaledger.org.</p><p>Mēs izskatīsim šādus pieprasījumus 30 dienu laikā. Turklāt Jūs varat sazināties ar vietējo uzraudzības iestādi, ja uzskatāt, ka Jūsu tiesības netiek ievērotas.</p>",ok,privacy_content
+36,Noteikumi un nosacījumi,ok,terms_modal_title
+37,"Noteikumi un nosacījumi, kas piemērojami, izmantojot PharmaLedger lietojumprogrammu.",ok,terms_modal_subtitle
+38,"<h2> PharmaLedger asociācijas elektroniskās produktu informācijas tīmekļa vietnes un lietojumprogrammas noteikumi un nosacījumi </h2><p>Piekļūstot PharmaLedger asociācijas elektroniskās produktu informācijas tīmekļa vietnei un lietojumprogrammai (""Pakalpojumi"") vai izmantojot to, Jūs piekrītat ievērot šos noteikumus un nosacījumus (""Noteikumi""). Jūs nedrīkstat piekļūt Pakalpojumiem vai tos izmantot, ja nepiekrītat šiem Noteikumiem. Pakalpojumus pārvalda PharmaLedger asociācija (turpmāk tekstā - ""Asociācija""), un tie ir paredzēti personām, kas meklē informāciju par saviem medikamentiem. Pakalpojumus nodrošina vairāku pušu tīkls, un Jūsu zāļu ražotājs piegādā informāciju par zālēm, kas tiek rādīta Pakalpojumos. Asociācija darbojas kā šīs informācijas datu pārzinis.</p><h2>Pakalpojumu lietošana </h2><p>Jūs piekrītat izmantot Pakalpojumus tikai likumīgiem mērķiem un tādā veidā, kas nepārkāpj nevienas trešās personas tiesības, neierobežo vai nekavē Pakalpojumu lietošanu un izmantošanu. Šādi ierobežojumi vai kavēšana cita starpā ietver rīcību, kas ir pretlikumīga vai kas var uzmācīgi ietekmēt vai radīt stresu vai neērtības kādai personai, kā arī nepieklājīga vai aizskaroša satura pārraidi vai normālas dialoga plūsmas traucēšanu Pakalpojumu ietvaros. </p><h2>Intelektuālais īpašums </h2><p>Pakalpojumu saturs, tostarp, bet ne tikai, teksts, grafika, attēli un programmatūra, ir Asociācijas vai tāslicences devēju un dalībsabiedrību īpašums, un to aizsargā autortiesības un citi intelektuālā īpašuma tiesību akti. Jūs nedrīkstatizmantot Pakalpojumu saturu jebkādiem komerciāliem mērķiem bez Asociācijas skaidras rakstiskas piekrišanas. </p><h2>Atbildība</h2><p> Asociācija nesniedz nekādus tiešus vai netiešus apliecinājumus vai garantijas par Pakalpojumu darbību vai Pakalpojumos iekļauto informāciju, saturu, materiāliem vai produktiem. Asociācija nav atbildīga par jebkāda veida zaudējumiem, kas radušies Pakalpojumu izmantošanas rezultātā, tostarp, bet ne tikai, par tiešiem, netiešiem, nejaušiem, soda un izrietošiem zaudējumiem. </p><h2>Pieņemtie tiesību akti </h2><p>Šos Noteikumus un Pakalpojumu izmantošanu reglamentē un interpretē saskaņā ar Šveices tiesību aktiem, un jebkādi strīdi tiks risināti Bāzeles tiesā, Šveicē. </p><h2>Noteikumu izmaiņas </h2><p>Asociācija patur tiesības jebkurā laikā mainīt šos Noteikumus, un Jūs esat atbildīgs par to, lai periodiski pārbaudītu, vai šajos Noteikumos nav veiktas izmaiņas. Turpinot izmantot Pakalpojumus pēc jebkādu izmaiņu veikšanas Noteikumos, Jūs piekrītat pārskatītajiem Noteikumiem. </p><p><br></p>",ok,terms_content
+39,Palīdzība,ok,help_modal_title
+40,Biežāk uzdotie jautājumi,ok,help_modal_subtitle
+41,"<div><p><b><h2>Kas ir EPI?</h2></b></p><p> <b>EPI</b> ir saīsinājums, kas apzīmē <b>elektronisko informāciju par produktu.</b> Tā ir produkta informācijas papīra lietošanas instrukcijas elektroniskā versija, kas parasti atrodas farmaceitiskā produkta iepakojumā. Dažos gadījumos <b>EPI</b> var būt aizstājusi papīra lietošanas instrukciju.</p><p><b><h2>Kas ir PharmaLedger?</h2></b></p><p>PharmaLedger asociācija (PLA) ir bezpeļņas asociācija, kas atrodas Šveicē un kuras mērķis ir nodrošināt un veicināt digitālās uzticamības ekosistēmu veselības aprūpē, izmantojot standartizētu un uzticamu pirmkoda platformu. PLA veicina sadarbību un paātrina inovācijas un to ieviešanu, lai pacientiem un citām ieinteresētajām personām panāktu abpusēju labumu veselības aprūpes un biozinātņu jomās. PLA tika izveidota 2022. gadā, lai turpinātu darbu pie PharmaLedger projekta, kas ir Eiropas Komisijas un farmācijas nozares finansēts trīs gadu projekts, kura mērķis ir pierādīt blokķēdes risinājumu vērtību. Plašāka informācija ir pieejama tīmekļa vietnē https://pharmaledger.org.</p><p><b><h2>Kas ir DataMatrix?</h2></b></p><p>Tas ir svītrkoda veids uz produkta iepakojuma. Tas ir melnbalts kvadrātveida svītrkods, un tas izskatās līdzīgi šim:<br><img src=""./images/barcode_example.png"" alt='DataMatrix barcode example'></p><p><b><h2>Kā lietot lietotni? </h2></b></p><p>Sekojiet norādījumiem <b>lietotnes</b> mērķlapā... tajā ir attēlots, kur atrast <b>DataMatrix</b> uzJūsu produkta iepakojuma. Kad esat atradis <b>DataMatrix</b>, noklikšķiniet uz pogas <b>""DataMatrix</b> skenēšana"". Ļaujietlietojumprogrammai izmantot kameru, lai varētu skenēt <b>DataMatrix</b>. Izmantojiet kameru, lai fokusētu uz <b>DataMatrix</b>. Kad zāļu iepakojums ir veiksmīgi noskenēts, tiks parādīta <b>EPI</b>. Varat noklikšķināt uz pogas , lai iegūtu sīkāku informāciju.</p><p><b><h2>Kāpēc mana DataMatrix skenēšana nedod rezultātu?</h2></b></p><p>Ir vairāki iemesli, kāpēc <b>DataMatrix uz</b> Jūsu zāļu iepakojuma var nesniegt EPI. Viens no iemesliem varētu būt kameras fokuss. Lūdzu, mēģiniet skenēt kodu labi apgaismotā vietā un tā, lai kods ekrānā būtu skaidri redzams. Ja Jums ir grūti noturēt roku nekustīgu, varat mēģināt roku atbalstīt uz galda.</p></div>",ok,help_content
+44,Informācija par produktu nav pieejama.,ok,product_not_loaded_title
+45,Diemžēl informācija par produktu nav ielādēta.,ok,product_not_loaded
+46,Kļūdas kods,ok,err_code
+47,"Sistēma ir aizņemta, lūdzu, mēģiniet vēlāk.",ok,system_busy
+61,Drukas informācija,,leaflet_print_title
+62,Pašreizējā atlasītā informācija tiks izdrukāta kā PDF.,,leaflet_print_description
+63,Vai vēlaties turpināt?,,leaflet_print_description2
+64,Turpināt,,leaflet_print_button
+65,Atgriezties,,leaflet_print_button_back
+66,"Lūdzu, izvēlieties",,document_modal_title
+67,"Lūdzu, atlasiet, kuru dokumentu parādīt",,document_modal_message
+68,Informācija par pacientu,,document_patient_info
+69,Informācija par produktu pacientiem,,document_product_info
+70,Informācija par produktu ir pieejama tikai angļu valodā,,document_lang_select_message
+71,Pamanīt,,document_lang_select_title
+72,Informācijas izrakstīšana veselības aprūpes speciālistiem,,document_prescribing_info
+73,Izvēlēties valsti,,epi_markets_modal_title
+74,"Lūdzu, atlasiet savu valsti",,epi_markets_modal_message
+75,Nav valsts,,epi_markets_modal_no_market
+76,Afganistāna,,country_af
+77,Åland salas,,country_ax
+78,Albānija,,country_al
+79,Alžīrija,,country_dz
+80,Amerikāņu samoa,,country_as
+81,Andorra,,country_ad
+82,Angola,,country_ao
+83,Anguilla,,country_ai
+84,Antarktīda,,country_aq
+85,Antigva un Barbuda,,country_ag
+86,Argentīna,,country_ar
+87,Armēnija,,country_am
+88,Aruba,,country_aw
+89,Austrālija,,country_au
+90,Austrija,,country_at
+91,Azerbaidžāna,,country_az
+92,Bahamu salas,,country_bs
+93,Bahreina,,country_bh
+94,Bangladeša,,country_bd
+95,Barbadosa,,country_bb
+96,Baltkrievija,,country_by
+97,Beļģija,,country_be
+98,Beliza,,country_bz
+99,Benina,,country_bj
+100,Bermudu salu,,country_bm
+101,Butāna,,country_bt
+102,Bolīvija,,country_bo
+103,Bosnija un Hercegovina,,country_ba
+104,Botsvāna,,country_bw
+105,Bouvec sala,,country_bv
+106,Brazīlija,,country_br
+107,Lielbritānijas Indijas okeāna teritorija,,country_io
+108,Bruneja Darussalam,,country_bn
+109,Bulgārija,,country_bg
+110,Burkina Faso,,country_bf
+111,Burundi,,country_bi
+112,Kambodža,,country_kh
+113,Kamerūna,,country_cm
+114,Kanāda,,country_ca
+115,Kaboverde,,country_cv
+116,Kaimanu salas,,country_ky
+117,Centrālāfrikas Republika,,country_cf
+118,Čada,,country_td
+119,Čīle,,country_cl
+120,Ķīna,,country_cn
+121,Ziemassvētku sala,,country_cx
+122,COCOS (KEELING) salas,,country_cc
+123,Kolumbija,,country_co
+124,Comoros,,country_km
+125,Kongo,,country_cg
+126,"Kongo, Demokrātiskā Republika",,country_cd
+127,Pavāra salas,,country_ck
+128,Kostarika,,country_cr
+129,Kotdivuārs,,country_ci
+130,Horvātija,,country_hr
+131,Kuba,,country_cu
+132,Kipra,,country_cy
+133,Čehija,,country_cz
+134,Dānija,,country_dk
+135,Džibutija,,country_dj
+136,Dominika,,country_dm
+137,Dominikānas Republika,,country_do
+138,Ekvadora,,country_ec
+139,Ēģipte,,country_eg
+140,Salvadora,,country_sv
+141,Ekvatoriālā Gvineja,,country_gq
+142,Eritreja,,country_er
+143,Igaunija,,country_ee
+144,Etiopija,,country_et
+145,Folklendas salas (Malvinas),,country_fk
+146,Farēru salas,,country_fo
+147,Fidži,,country_fj
+148,Somija,,country_fi
+149,Francija,,country_fr
+150,Francijas Gviāna,,country_gf
+151,Francijas Polinēzija,,country_pf
+152,Francijas dienvidu teritorijas,,country_tf
+153,Gabona,,country_ga
+154,Gambija,,country_gm
+155,Gruzija,,country_ge
+156,Vācija,,country_de
+157,Gana,,country_gh
+158,Gibraltārs,,country_gi
+159,Grieķija,,country_gr
+160,Grenlande,,country_gl
+161,Grenāda,,country_gd
+162,Gvadelupa,,country_gp
+163,Guama,,country_gu
+164,Gvatemala,,country_gt
+165,Gērnsija,,country_gg
+166,Gvineja,,country_gn
+167,Jūras bissau,,country_gw
+168,Gajāna,,country_gy
+169,Haiti,,country_ht
+170,Dzirdētās salas un Makdonalda salas,,country_hm
+171,Svētais Krēsls (Vatikāna pilsētas štats),,country_va
+172,Hondurasa,,country_hn
+173,Honkonga,,country_hk
+174,Ungārija,,country_hu
+175,Islande,,country_is
+176,Indija,,country_in
+177,Indonēzija,,country_id
+178,"Irāna, Islāma Republika",,country_ir
+179,Irāka,,country_iq
+180,Īrija,,country_ie
+181,Menas sala,,country_im
+182,Izraēla,,country_il
+183,Itālija,,country_it
+184,Jamaika,,country_jm
+185,Japāna,,country_jp
+186,Krekls,,country_je
+187,Jordānija,,country_jo
+188,Kazahstāna,,country_kz
+189,Kenija,,country_ke
+190,Kiribati,,country_ki
+191,"Koreja, demokrātu tautas republika",,COUNTRY_KP
+192,"Koreja, republika",,COUNTRY_KR
+193,Kuveita,,country_kw
+194,Kirgizstāna,,country_kg
+195,Laosas tautas demokrātiskā republika,,COUNTRY_LA
+196,Latvija,,COUNTRY_LV
+197,Libāna,,country_lb
+198,Lesoto,,country_ls
+199,Libērija,,country_lr
+200,Lībijas arābu Jamahiriya,,country_ly
+201,Lihtenšteins,,country_li
+202,Lietuva,,country_lt
+203,Luksemburga,,country_lu
+204,Makao,,country_mo
+205,"Maķedonija, bijusī Dienvidslāvijas Republika",,country_mk
+206,Madagaskara,,country_mg
+207,Malāvija,,country_mw
+208,Malaizija,,country_my
+209,Maldīvija,,country_mv
+210,Mali,,country_ml
+211,Malta,,country_mt
+212,Māršala salas,,country_mh
+213,Martinika,,country_mq
+214,Mauritānija,,country_mr
+215,Maurīcija,,country_mu
+216,Maijte,,country_yt
+217,Meksika,,country_mx
+218,"Mikronēzija, federētie stāvokļi",,country_fm
+219,"Moldova, Republika",,country_md
+220,Monako,,country_mc
+221,Mongolija,,country_mn
+222,Montserrata,,country_ms
+223,Maroka,,country_ma
+224,Mozambika,,country_mz
+225,Mjanma,,country_mm
+226,Namībija,,country_na
+227,Nauru,,country_nr
+228,Nepāla,,country_np
+229,Nīderlande,,country_nl
+230,Nīderlande Antilles,,country_an
+231,Jaunā Kaledonija,,country_nc
+232,Jaunzēlande,,country_nz
+233,Nikaragva,,country_ni
+234,Nigēra,,country_ne
+235,Nigērija,,country_ng
+236,Niue,,country_nu
+237,Norfolkas sala,,country_nf
+238,Ziemeļmariana salas,,country_mp
+239,Norvēģija,,country_no
+240,Omāna,,country_om
+241,Pakistāna,,country_pk
+242,Palau,,country_pw
+243,"Palestīnas teritorija, okupēja",,country_ps
+244,Panama,,country_pa
+245,Papua -Jaungvineja,,country_pg
+246,Paragvaja,,country_py
+247,Peru,,country_pe
+248,Filipīnas,,country_ph
+249,Pitcier,,country_pn
+250,Polija,,country_pl
+251,Portugāle,,country_pt
+252,Puertoriko,,country_pr
+253,Katara,,country_qa
+254,Atkalapvienošanās,,country_re
+255,Rumānija,,country_ro
+256,Krievijas federācija,,country_ru
+257,Ruanda,,country_rw
+258,Svētā Helēna,,country_sh
+259,Saint Kitts un Nevis,,country_kn
+260,Sentlūsija,,country_lc
+261,Svētais Pjērs un Mikelons,,country_pm
+262,Svētais Vincents un Grenadīnas,,country_vc
+263,Samoa,,country_ws
+264,Sanmarīno,,country_sm
+265,Sao Tome un Principe,,country_st
+266,Saūda Arābija,,country_sa
+267,Senegāla,,country_sn
+268,Serbija un Melnkalne,,country_cs
+269,Seišelu salas,,country_sc
+270,Sjerraleone,,country_sl
+271,Singapūra,,country_sg
+272,Slovākija,,country_sk
+273,Slovēnija,,country_si
+274,Zālamana salas,,country_sb
+275,Somālija,,country_so
+276,Dienvidāfrika,,country_za
+277,Dienviddžordžija un Dienvidu Sandvičas salas,,country_gs
+278,Spānija,,country_es
+279,Šrilanka,,country_lk
+280,Sudāna,,country_sd
+281,Surinama,,country_sr
+282,Svalbards un Jans Mejens,,country_sj
+283,Svazilenda,,country_sz
+284,Zviedrija,,country_se
+285,Šveice,,country_ch
+286,Sīrijas Arābu Republika,,country_sy
+287,"Taivāna, Ķīnas province",,country_tw
+288,Tadžikistāna,,country_tj
+289,"Tanzānija, Apvienotā Republika",,country_tz
+290,Taizeme,,country_th
+291,Timora-Leste,,country_tl
+292,Togo,,country_tg
+293,Tokelau,,country_tk
+294,Tonga,,country_to
+295,Trinidāda un Tobāgo,,country_tt
+296,Tunisija,,country_tn
+297,Tītars,,country_tr
+298,Turkmenistāna,,country_tm
+299,Turki un Kaikosas salas,,country_tc
+300,Tuvalu,,country_tv
+301,Uganda,,country_ug
+302,Ukraina,,country_ua
+303,Apvienotie Arābu Emirāti,,country_ae
+304,Apvienotā Karaliste,,country_gb
+305,Amerikas Savienotās Valstis,,country_us
+306,Amerikas Savienotās Valstis mazākas salas,,country_um
+307,Urugvaja,,country_uy
+308,Uzbekistāna,,country_uz
+309,Vanuatu,,country_vu
+310,Venecuēla,,country_ve
+311,Vjetnama,,country_vn
+312,"Virdžīnu salas, briti",,country_vg
+313,"Virdžīnu salas, ASV",,country_vi
+314,Volisa un Futuna,,country_wf
+315,Rietumu Sahara,,country_eh
+316,Jemena,,country_ye
+317,Zambija,,country_zm
+318,Zimbabve,,country_zw

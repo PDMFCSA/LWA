@@ -1,0 +1,304 @@
+code,text,status,key
+1,Bienvenido a PharmaLedger,ok,welcome
+2,Encuentre el código de Barras DataMatrix en su medicamento para escanear y ver información.,ok,scan_explain
+3,Escanear DataMatrix,ok,scan_button
+4,Cambiar cámara,ok,change_camera
+5,Cancelar,ok,cancel
+6,Escanear nuevamente,ok,scan_again
+7,No reconocido,ok,product_not_found_title
+9,Este producto no se puede encontrar.,ok,product_not_found
+10,Caducado,ok,leaflet_expired_title
+11,Versión de app: ,ok,app_version
+12,<p> <b>Este producto ha sido identificado como caducado.</b> </p> ,ok,leaflet_expired_message
+13,Idioma no disponible,ok,select_lang_title
+14,Acerca de,ok,about_modal_subtitle
+15,PharmaLedger,ok,about_modal_title
+16,"<h2>Sobre esta aplicación</h2><p>Esta aplicación le es proporcionada por PharmaLedger®. Fue desarrollada conjuntamente por organizaciones de representación de pacientes, compañías farmacéuticas y expertos en tecnología.</p><p>Permite a los usuarios de la aplicación ver información sobre su medicamento escaneando el código de barras en el paquete del producto.</p><p>La información mostrada es proporcionada por el titular de la Autorización de Comercialización del producto.</p><h2>Sobre PharmaLedger</h2><p>PharmaLedger® es la marca de PharmaLedger Association (PLA).</p><p>PLA es una asociación global sin fines de lucro y neutral. El propósito de la Asociación es crear y promover un ecosistema digital de confianza en la atención sanitaria.</p><p>La Asociación promueve la cooperación en los sectores de la salud y ciencias de la vida y promueve innovaciones y su implementación para el beneficio mutuo de los pacientes y otras partes interesadas.</p>",ok,about_content
+18,Error de escaneo,ok,scan_error_title
+20,Algo salió mal y no se tiene un correcto acceso a la cámara seleccionada. Compruebe la configuración de la cámara de su dispositivo o intente cambiar la cámara desde el menú.,ok,camera_error_message
+21,La información del medicamento no está disponible en su idioma. Puede elegir otro idioma disponible de la lista.,ok,leaflet_lang_select_message
+22,Continuar,ok,lang_proceed
+24,Volver al Inicio,ok,go_home
+25,"¡Ya casi está! Por favor, lea y acepte los términos y condiciones.",ok,onboarding_welcome
+26,En desacuerdo,ok,disagree
+27,De acuerdo,ok,agree
+28,"La aplicación ""PharmaLedger"" no funcionará hasta que acepte los términos y condiciones. Por favor, lea los términos y condiciones.",ok,disagree_extra_text
+29,Política de privacidad,ok,fwd_privacy
+30,Términos y condiciones,ok,fwd_terms
+31,Ayuda,ok,fwd_help
+32,Acerca de,ok,fwd_about
+33,Nuestros principios de privacidad y seguridad,ok,privacy_modal_subtitle
+34,Política de Privacidad,ok,privacy_modal_title
+35,"<h2>Aviso de Privacidad</h2> <p>Este aviso de privacidad es aplicable al uso de información electrónica de los productos de la Asociación PharmaLedger.</p><h2>Contactos</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) Identidad y contactos del controlador o controladores conjuntos</b><p>El controlador de sus datos es la Asociación PharmaLedger.</p></li><li role=""listitem""><b>b) Contactos del oficial de protección de datos</b><p>Se puede contactar con la Oficina de Protección de Datos de la Asociación PharmaLedger en dpo@pharmaledger.org.</p></li></ul><h2>Qué datos personales utilizamos</h2><p>Recopilamos solo los datos técnicos necesarios para entregar su prospecto electrónico. Esto incluye su dirección IP e identificadores técnicos del dispositivo y navegador que utiliza para tener acceso a nuestra aplicación.</p> <p><em>En concreto, recopilamos los siguientes elementos de datos</em></p><ul><li><p><em>Acceso Dispositivos Móviles</em> Podemos solicitar acceso o permiso a ciertas funciones desde su dispositivo móvil, incluida la cámara de su dispositivo móvil, y otras funciones. Si desea cambiar nuestro acceso o permisos, puede hacerlo en la configuración de su dispositivo.</p></li><li><p><em> Información de Dispositivo Móvil.</em> Recopilamos automáticamente información del dispositivo (como la ID de su dispositivo móvil, modelo y fabricante), sistema operativo, información de versión e información de configuración del sistema, números de identificación del dispositivo y la aplicación, tipo y versión del navegador, modelo de hardware, proveedor de servicios de Internet y/u operador de telefonía móvil, y dirección de Protocolo de Internet (IP) (o servidor proxy). Si está utilizando nuestra(s) aplicación(es), también podemos recopilar información sobre la red telefónica asociada con su dispositivo móvil, el sistema operativo o la plataforma de su dispositivo móvil, el tipo de dispositivo móvil que utiliza, la ID única de su dispositivo móvil e información sobre las características de nuestra(s) aplicación(es) a las que tuvo acceso.</p></li></ul><h2>Por qué recopilamos sus datos personales</h2><h3>Propósitos</h3><p>Recopilamos sus datos técnicos con el fin de proporcionarle un folleto electrónico de su medicamento.</p><p>Como tal, podemos confiar en las siguientes bases legales para procesar su información personal:</p><ul><li><p><b>Ejecución de un Contrato.</b> Podemos procesar su información personal cuando creamos que es necesario para cumplir con las obligaciones contractuales con usted, incluida la prestación de nuestros Servicios o a petición de usted antes de realizar un contrato con usted.</p></li><li><p><b>Obligaciones Legales.</b> Podemos procesar su información cuando creamos que es necesario para el cumplimiento de nuestras obligaciones legales, como para cumplir con nuestras obligaciones en virtud de la regulación sanitaria y la legislación de salud pública.</p></li></ul><h2>Con quién compartimos sus datos personales</h2><p> Empresas miembros y proveedores de servicios externos.</p><p>Compartimos sus datos con proveedores externos, proveedores de servicios, contratistas o agentes (""terceros"") que realizan servicios para nosotros o en nuestro nombre y requieren acceso a dicha información para realizar ese trabajo. Tenemos contratos vigentes con nuestros terceros, que están diseñados para ayudar a salvaguardar su información personal. Esto significa que no pueden hacer nada con su información personal a menos que les hayamos indicado que lo hagan. Tampoco compartirán su información personal con ninguna organización aparte de nosotros. También se comprometen a proteger los datos que tienen en nuestro nombre y a conservarlos durante el período que les indiquemos. Las categorías de terceros con los que podemos compartir información personal son las siguientes:</p><ul><li><p> Fabricantes de medicamentos (Empresas Miembro)</p></li><li><p> Proveedores de Servicios Técnicos</p></li></ul><h2>Cuánto tiempo almacenamos sus datos personales</h2><p>La Asociación PharmaLedger solo almacena sus datos técnicos durante el tiempo que sea necesario para procesar su solicitud de información del producto durante un máximo de 30 días. </p><p>Su fabricante de medicamentos también almacenará sus datos durante un período de tiempo definido según lo determinado por sus políticas de retención de datos. Para obtener más información sobre esta retención, comuníquese con el fabricante de su medicamento.</p><h2>Si no nos proporciona sus datos personales</h2><p>Si decide no proporcionarnos sus datos técnicos, no podremos cumplir con su solicitud de información del producto.</p><h2>Sus derechos</h2><p>Si tiene alguna solicitud relacionada con sus datos personales en virtud del GDPR, como una solicitud para tener acceso o eliminar sus datos, puede contactarnos en dpo@pharmaledger.org.</p><p>Procesaremos dichas solicitudes en un plazo de 30 días.</p><h2>Retiro de consentimiento</h2><p>Si tiene alguna solicitud relacionada con sus datos personales en virtud del GDPR, como una solicitud para tener acceso o eliminar sus datos, puede contactarnos en dpo@pharmaledger.org.</p><p>Procesaremos dichas solicitudes en un plazo de 30 días.</p><h2>Toma de decisiones automatizada</h2><p>No utilizamos ninguna toma de decisiones automatizada en nuestro suministro de este servicio a usted.</p><h2>Transferencia Internacional de Datos Personales</h2><p>Cuando el fabricante de su medicamento nos exige que transfiramos sus datos fuera de la Unión Europea, utilizamos cláusulas contractuales estándar para proteger sus datos.</p><h2>Cómo quejarse</h2><p>Si tiene alguna solicitud relacionada con sus datos personales en virtud del GDPR, como una solicitud para tener acceso o eliminar sus datos, puede contactarnos en dpo@pharmaledger.org.</p><p>Procesaremos dichas solicitudes en un plazo de 30 días. Además, puede ponerse en contacto con su autoridad de supervisión local si considera que no se están cumpliendo sus derechos.</p>",ok,privacy_content
+36,Términos y condiciones,ok,terms_modal_title
+37,Los términos y condiciones que aplican al usar la Aplicación PharmaLedger.,ok,terms_modal_subtitle
+38,"<h2>Términos y Condiciones para el sitio web y la aplicación de información electrónica de productos de la Asociación PharmaLedger </h2><p>Al entrar o utilizar el sitio web y la aplicación de información electrónica de productos de la Asociación PharmaLedger (los ""Servicios""), usted acepta estar sujeto a estos términos y condiciones (los ""Términos""). No puede tener acceso ni utilizar los Servicios si no está de acuerdo con estos Términos. Los Servicios son realizados por la Asociación PharmaLedger (la ""Asociación"") y están destinados a ser utilizados por personas que buscan información sobre su medicamento. Una red multiparte ofrece los Servicios, y el fabricante de su medicamento suministra la información del producto que se muestra a través de los Servicios. La Asociación actúa como controlador de datos para esta información. </p><h2> Uso de los Servicios </h2><p>Usted acepta utilizar los Servicios solo para fines legales y de una manera que no infrinja los derechos de, o restrinja o inhiba el uso y disfrute de los Servicios por parte de terceros. Dicha restricción o inhibición incluye, sin limitarse a, conductas que son ilegales, o que pueden acosar o causar angustia o inconvenientes a cualquier persona, y la transmisión de contenido obsceno u ofensivo o la interrupción del flujo normal de diálogo dentro de los Servicios. </p><h2>Propiedad intelectual </h2><p>El contenido de los Servicios, incluidos, entre otros, texto, gráficos, imágenes y software, es propiedad de la Asociación o sus licenciantes y compañías miembros y está protegido por derechos de autor y otras leyes de propiedad intelectual. No puede utilizar ningún contenido de los Servicios para ningún propósito comercial sin el consentimiento expreso por escrito de la Asociación. </p><h2>Responsabilidad</h2><p>La Asociación no hace ninguna representación o garantía de ningún tipo, expresa o implícita, en cuanto al funcionamiento de los Servicios o la información, contenido, materiales o productos incluidos en los Servicios. La Asociación no será responsable de ningún daño de ningún tipo que surja del uso de los Servicios, incluidos, entre otros, daños directos, indirectos, fortuitos, punitivos y consecuentes. </p><h2>Legislación Aplicable </h2> <p>Estos Términos y el uso de los Servicios se regirán e interpretarán de acuerdo con las leyes de Suiza y cualquier disputa se resolverá en los tribunales de Basilea, Suiza. </p><h2>Cambios en los Términos </h2><p>La Asociación se reserva el derecho de cambiar estos Términos en cualquier momento, y usted es responsable de verificar estos Términos periódicamente para detectar cualquier cambio. Su uso continuado de los Servicios después de que se hayan realizado cambios en los Términos constituirá su aceptación de los Términos revisados.</p><p><br></p>",ok,terms_content
+39,Ayuda,ok,help_modal_title
+40,Preguntas frecuentes,ok,help_modal_subtitle
+41,"<div><p><b><h2>¿Qué es EPI?</h2></b></p><p><b>EPI</b> es la abreviatura de <b>información de producto electrónica</b>. Es una versión electrónica del prospecto de información del producto en papel que normalmente se encuentra dentro del envase de un medicamento. En algunos casos, la <b>EPI</b> puede haber reemplazado a el prospecto de papel.</p><p><b><h2>¿Qué es PharmaLedger?</h2></b></p><p>La Asociación PharmaLedger (PLA) es una asociación sin fines de lucro con sede en Suiza con el propósito de habilitar y fomentar un ecosistema de confianza digital en la atención médica a través de una plataforma de código abierto estandarizada y confiable. PLA promueve la colaboración y acelera la innovación y la adopción para lograr beneficios mutuos en los dominios de la salud y las ciencias de la vida para los pacientes y otras partes interesadas. PLA se formó en 2022 para continuar el trabajo del proyecto PharmaLedger, un proyecto de 3 años financiado por la Comisión Europea y la industria farmacéutica destinado a demostrar el valor de las soluciones de blockchain. Más información disponible en https://pharmaledger.org.</p><p><b><h2>¿Qué es el DataMatrix?</h2></b></p><p>Es un tipo de código de barras en el envase de su medicamento. Es un código de barras de caja cuadrada en blanco y negro, que se verá similar a esto:<br> <img src=""./images/barcode_example.png""></p><p><b><h2>¿Cómo usar la aplicación?</h2></b></p><p>Siga las instrucciones en la página de inicio de la <b>Aplicación...</b> muestra una imagen de dónde encontrar el <b>DataMatrix</b> en el envase de su medicamento. Una vez que haya encontrado el <b>DataMatrix</b>, haga clic en el botón 'Escanear <b>DataMatrix</b>'. Permita que la aplicación use la cámara para que se pueda escanear el <b>DataMatrix</b>. Utilice la cámara para enfocar el <b>DataMatrix</b>. Una vez que el envase se escanea con éxito, se mostrará la <b>EPI</b>. Puede hacer clic en el botón ‘+’ para obtener más detalles.</p><p><b><h2>¿Por qué mi escaneo del DataMatrix no da un resultado?</h2></b></p><p> Hay varias razones por las que el <b>DataMatrix</b> en su envase puede no dar una EPI. Una de las razones podría ser el enfoque de la cámara. Por favor, intente escanear el código en un lugar bien iluminado y que el código se encuentre claramente visible en la pantalla. Si usted está teniendo problemas para mantener su mano firme, podría tratar de usar una mesa para apoyar sus manos. </p></div>",ok,help_content
+44,Información del producto no disponible.,ok,product_not_loaded_title
+45,"Lamentablemente, no se ha cargado ninguna información del producto.",ok,product_not_loaded
+46,Código de error,ok,err_code
+47,"Sobrecarga del sistema. Por favor, vuelva a intentarlo más tarde.",ok,system_busy
+49,Producto no verificado,,error_subtitle
+50,Fecha incorrecta,,leaflet_incorrect_date_title
+51,La fecha escaneada es incorrecta,,leaflet_incorrect_date_subtitle
+52,<b> La fecha de este producto es incorrecta</b>.,,leaflet_incorrect_date_message
+61,Información de impresión,,leaflet_print_title
+62,La información seleccionada actual se imprimirá como PDF.,,leaflet_print_description
+63,¿Quieres continuar?,,leaflet_print_description2
+64,Proceder,,leaflet_print_button
+65,Volver,,leaflet_print_button_back
+66,Por favor elija,,document_modal_title
+67,Seleccione qué documento mostrar,,document_modal_message
+68,Información del paciente,,document_patient_info
+69,Información del producto para pacientes,,document_product_info
+70,La información del producto solo está disponible en inglés,,document_lang_select_message
+71,Aviso,,document_lang_select_title
+72,Prescribir información para profesionales de la salud,,document_prescribing_info
+73,País seleccionado,,epi_markets_modal_title
+74,Seleccione su país,,epi_markets_modal_message
+75,No hay país,,epi_markets_modal_no_market
+76,Afganistán,,country_af
+77,Åland Islas,,country_ax
+78,Albania,,country_al
+79,Argelia,,country_dz
+80,Samoa americana,,country_as
+81,Andorra,,country_ad
+82,Angola,,country_ao
+83,Anguila,,country_ai
+84,Antártida,,country_aq
+85,Antigua y Barbuda,,country_ag
+86,Argentina,,country_ar
+87,Armenia,,country_am
+88,Aruba,,country_aw
+89,Australia,,country_au
+90,Austria,,country_at
+91,Azerbaiyán,,country_az
+92,Bahamas,,country_bs
+93,Bahrain,,country_bh
+94,Bangladesh,,country_bd
+95,Barbados,,country_bb
+96,Bielorrusia,,country_by
+97,Bélgica,,country_be
+98,Belgo,,country_bz
+99,Benin,,country_bj
+100,islas Bermudas,,country_bm
+101,Bután,,country_bt
+102,Bolivia,,country_bo
+103,Bosnia y Herzegovina,,country_ba
+104,Botswana,,country_bw
+105,Isla bouvet,,country_bv
+106,Brasil,,country_br
+107,Territorio del Océano Índico británico,,country_io
+108,Brunei Darussalam,,country_bn
+109,Bulgaria,,country_bg
+110,Burkina Faso,,country_bf
+111,Burundi,,country_bi
+112,Camboya,,country_kh
+113,Camerún,,country_cm
+114,Canadá,,country_ca
+115,Cabo Verde,,country_cv
+116,Islas Caimán,,country_ky
+117,República Centroafricana,,country_cf
+118,Chad,,country_td
+119,Chile,,country_cl
+120,Porcelana,,country_cn
+121,Isla de Navidad,,country_cx
+122,Islas Cocos (Keeling),,country_cc
+123,Colombia,,country_co
+124,Comoras,,country_km
+125,Congo,,country_cg
+126,"Congo, la República Democrática del",,country_cd
+127,Islas Cook,,country_ck
+128,Costa Rica,,country_cr
+129,Costa de Marfil,,country_ci
+130,Croacia,,country_hr
+131,Cuba,,country_cu
+132,Chipre,,country_cy
+133,República Checa,,country_cz
+134,Dinamarca,,country_dk
+135,Djibouti,,country_dj
+136,Dominio,,country_dm
+137,República Dominicana,,country_do
+138,Ecuador,,country_ec
+139,Egipto,,country_eg
+140,El Salvador,,country_sv
+141,Guinea Ecuatorial,,country_gq
+142,Eritrea,,country_er
+143,Estonia,,country_ee
+144,Etiopía,,country_et
+145,Islas Malvinas (Malvinas),,country_fk
+146,Islas Feroe,,country_fo
+147,Fiji,,country_fj
+148,Finlandia,,country_fi
+149,Francia,,country_fr
+150,Guayana Francesa,,country_gf
+151,Polinesia francesa,,country_pf
+152,Territorios del sur francés,,country_tf
+153,Gabón,,country_ga
+154,Gambia,,country_gm
+155,Georgia,,country_ge
+156,Alemania,,country_de
+157,Ghana,,country_gh
+158,Gibraltar,,country_gi
+159,Grecia,,country_gr
+160,Tierra Verde,,country_gl
+161,Granada,,country_gd
+162,Guadeloupo,,country_gp
+163,Guam,,country_gu
+164,Guatemala,,country_gt
+165,Guía,,country_gg
+166,Guinea,,country_gn
+167,Guinea-Bissau,,country_gw
+168,Guayana,,country_gy
+169,Haití,,country_ht
+170,Escuché Island y Islas McDonald,,country_hm
+171,Santa Sede (Estado de la Ciudad del Vaticano),,country_va
+172,Honduras,,country_hn
+173,Hong Kong,,country_hk
+174,Hungría,,country_hu
+175,Islandia,,country_is
+176,India,,country_in
+177,Indonesia,,country_id
+178,"Irán, República Islámica de",,country_ir
+179,Irak,,country_iq
+180,Irlanda,,country_ie
+181,Isla del hombre,,country_im
+182,Israel,,country_il
+183,Italia,,country_it
+184,Jamaica,,country_jm
+185,Japona,,country_jp
+186,Jersey,,country_je
+187,Jordán,,country_jo
+188,Kazajstán,,country_kz
+189,Kenia,,country_ke
+190,Kiribati,,country_ki
+191,"Corea, República Popular Democrática de",,COUNTRY_KP
+192,"Corea, República de",,COUNTRY_KR
+193,Kuwait,,country_kw
+194,Kirguistán,,country_kg
+195,República Democrática Popular de Lao,,COUNTRY_LA
+196,Letonia,,COUNTRY_LV
+197,Líbano,,country_lb
+198,Lesoto,,country_ls
+199,Liberia,,country_lr
+200,Árabe libio jamahiriya,,country_ly
+201,Liechtenstein,,country_li
+202,Lituania,,country_lt
+203,Luxemburgo,,country_lu
+204,Macao,,country_mo
+205,"Macedonia, la antigua república yugoslava de",,country_mk
+206,Madagascar,,country_mg
+207,Malawi,,country_mw
+208,Malasia,,country_my
+209,Maldivas,,country_mv
+210,Malí,,country_ml
+211,Malta,,country_mt
+212,Islas Marshall,,country_mh
+213,Martinica,,country_mq
+214,Mauritania,,country_mr
+215,Mauricio,,country_mu
+216,Mayotte,,country_yt
+217,México,,country_mx
+218,"Micronesia, estados federados de",,country_fm
+219,"Moldavia, República de",,country_md
+220,Mónaco,,country_mc
+221,Mongolia,,country_mn
+222,Montserrat,,country_ms
+223,Marruecos,,country_ma
+224,Mozambique,,country_mz
+225,Myanmar,,country_mm
+226,Namibia,,country_na
+227,Nauru,,country_nr
+228,Nepal,,country_np
+229,Países Bajos,,country_nl
+230,Antillas de los Países Bajos,,country_an
+231,Nueva Caledonia,,country_nc
+232,Nueva Zelanda,,country_nz
+233,Nicaragua,,country_ni
+234,Níger,,country_ne
+235,Nigeria,,country_ng
+236,Niue,,country_nu
+237,Isla Norfolk,,country_nf
+238,Islas Marianas del Norte,,country_mp
+239,Noruega,,country_no
+240,Omán,,country_om
+241,Pakistán,,country_pk
+242,Palau,,country_pw
+243,"Territorio palestino, ocupado",,country_ps
+244,Panamá,,country_pa
+245,Papúa Nueva Guinea,,country_pg
+246,Paraguay,,country_py
+247,Perú,,country_pe
+248,Filipinas,,country_ph
+249,Pitcairn,,country_pn
+250,Polonia,,country_pl
+251,Portugal,,country_pt
+252,Puerto Rico,,country_pr
+253,Katar,,country_qa
+254,Reunión,,country_re
+255,Rumania,,country_ro
+256,Federación rusa,,country_ru
+257,Ruanda,,country_rw
+258,Santa Helena,,country_sh
+259,Saint Kitts y Nevis,,country_kn
+260,Santa Lucía,,country_lc
+261,Saint Pierre y Miquelon,,country_pm
+262,San Vicente y las Granadinas,,country_vc
+263,Samoa,,country_ws
+264,San Marino,,country_sm
+265,Sao Tome y Principe,,country_st
+266,Arabia Saudita,,country_sa
+267,Senegal,,country_sn
+268,Serbia y Montenegro,,country_cs
+269,Seychelles,,country_sc
+270,Sierra Leona,,country_sl
+271,Singapur,,country_sg
+272,Eslovaquia,,country_sk
+273,Eslovenia,,country_si
+274,Islas Salomón,,country_sb
+275,Somalia,,country_so
+276,Sudáfrica,,country_za
+277,Georgia del Sur y las Islas Sándwiches del Sur,,country_gs
+278,España,,country_es
+279,Sri Lanka,,country_lk
+280,Sudán,,country_sd
+281,Surinam,,country_sr
+282,Svalbard y Jan Mayen,,country_sj
+283,Swazilandia,,country_sz
+284,Suecia,,country_se
+285,Suiza,,country_ch
+286,República Árabe Siria,,country_sy
+287,"Taiwán, provincia de China",,country_tw
+288,Tayikistán,,country_tj
+289,"Tanzania, República Unida de",,country_tz
+290,Tailandia,,country_th
+291,Timor-Leste,,country_tl
+292,Ir,,country_tg
+293,Tokelau,,country_tk
+294,Tonga,,country_to
+295,Trinidad y Tobago,,country_tt
+296,Túnez,,country_tn
+297,Pava,,country_tr
+298,Turkmenistán,,country_tm
+299,Islas Turcas y Caicos,,country_tc
+300,Tuvalu,,country_tv
+301,Uganda,,country_ug
+302,Ucrania,,country_ua
+303,Emiratos Árabes Unidos,,country_ae
+304,Reino Unido,,country_gb
+305,Estados Unidos,,country_us
+306,Islas menores de los Estados Unidos.,,country_um
+307,Uruguay,,country_uy
+308,Uzbekistán,,country_uz
+309,Vanuatu,,country_vu
+310,Venezuela,,country_ve
+311,Vietnam,,country_vn
+312,"Islas Vírgenes, Británica",,country_vg
+313,"Islas Vírgenes, EE. UU.",,country_vi
+314,Wallis y Futuna,,country_wf
+315,Sahara occidental,,country_eh
+316,Yemen,,country_ye
+317,Zambia,,country_zm
+318,Zimbabue,,country_zw

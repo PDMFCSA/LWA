@@ -1,0 +1,301 @@
+code,text,status,key
+1,Tere tulemast PharmaLedgerisse,ok,welcome
+2,"Leidke oma ravimilt DataMatrix-vöötkood, et skannida ja vaadata teavet.",ok,scan_explain
+3,Skaneeri DataMatrix,ok,scan_button
+4,Vahetage kaamerat,ok,change_camera
+5,Tühista,ok,cancel
+6,Skaneeri uuesti,ok,scan_again
+7,Ei tuvastatud,ok,product_not_found_title
+9,Seda toodet ei leitud.,ok,product_not_found
+10,Aegunud,ok,leaflet_expired_title
+11,Rakenduse versioon: ,ok,app_version
+12,<p> <b>See toode on tuvastatud aegununa.</b> </p> ,ok,leaflet_expired_message
+13,Keel pole saadaval,ok,select_lang_title
+14,Kohta,ok,about_modal_subtitle
+15,Pharmaledger,ok,about_modal_title
+16,"<h2>Selle rakenduse kohta</h2>
+<p>See rakendus on teile pakutud PharmaLedger® poolt. Seda arendasid koos patsiendi esindusorganisatsioonid, ravimifirmad ja tehnoloogia eksperdid.</p><p>Rakendus võimaldab kasutajatel skaneerida tootepakendil olevat vöötkoodi, et vaadata teavet oma ravimi kohta.</p><p>Näidatud teave on pärit toote müügiloa omanikult.</p><h2>PharmaLedger kohta</h2><p>PharmaLedger® on PharmaLedger Association (PLA) kaubamärk.</p><p>PLA on globaalne mittetulunduslik, neutraalne ühing. Ühingu eesmärk on luua ja propageerida digitaalset usaldusökosüsteemi tervishoius.</p><p>Ühing soodustab koostööd tervishoiu- ja bioteaduste sektoris ning edendab uuendusi ja nende rakendamist patsientide ja teiste sidusrühmade ühiseks hüvanguks.</p>",ok,about_content
+18,Skannimise viga,ok,scan_error_title
+20,Midagi läks valesti ja valitud kaamerale ei pääse korralikult ligi. Palun kontrollige oma seadme kaamera seadeid või proovige menüüst kaamerat vahetada.,ok,camera_error_message
+21,Infoleht ei ole saadaval teie soovitud keeles. Te saate valida olemasolevate keelte nimekirjast.,ok,leaflet_lang_select_message
+22,Jätka,ok,lang_proceed
+24,Tagasi avalehele,ok,go_home
+25,Peaaegu seal! Palun lugege ja nõustuge tingimustega,ok,onboarding_welcome
+26,Ei nõustu,ok,disagree
+27,Nõustun,ok,agree
+28,"PharmaLedger rakendus ei tööta enne, kui nõustute tingimustega. Palun lugege tingimusi.",ok,disagree_extra_text
+29,Privaatsus Poliitika,ok,fwd_privacy
+30,Kasutustingimused,ok,fwd_terms
+31,Abi,ok,fwd_help
+32,Kohta,ok,fwd_about
+33,Meie privaatsuse ja turvalisuse põhimõtted,ok,privacy_modal_subtitle
+34,Privaatsus Poliitika,ok,privacy_modal_title
+35,"<h2>Privaatsusteatis</h2><p>See privaatsusteatis kehtib PharmaLedger Association Electronic Product Information toote kasutamise kohta.</p><h2>Kontaktid</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) Andmekontrolleri või ühisandmekontrollerite isikuandmed ja kontaktid</b><p>Teie andmete kontroller on PharmaLedger Association.</p></li><li role=""listitem""><b>b) Andmekaitseametniku kontaktandmed </b><p>PharmaLedger Association'i Andmekaitseametnikuga saab ühendust võtta e-posti aadressil dpo@pharmaledger.org.</p></li></ul><h2>Milliseid isikuandmeid me kasutame</h2><p>Kogume ainult tehnilisi andmeid, mis on vajalikud teie elektroonilise infolehe edastamiseks. Nende hulka kuuluvad teie IP-aadress ja seadme ning veebibrauseri tehnilised tuvastusandmed, mida kasutate meie rakendusele juurdepääsuks.</p><p>Üksikasjalikult kogume järgmisi andmeelemente: </p><ul><li><p><em>Mobiilseadme ligipääs.</em> Võime paluda juurdepääsu või luba teatud funktsioonidele teie mobiilseadmest, sealhulgas teie mobiilseadme kaamerale ja teistele funktsioonidele. Kui soovite muuta meie juurdepääsu või lubasid, saate seda teha oma seadme seadetes.</p></li><li><p><em>Mobiilseadme andmed.</em> Kogume automaatselt seadmeandmeid (nagu teie mobiilseadme ID, mudel ja tootja), operatsioonisüsteemi, versiooniinfot ja süsteemi seadistuste teavet, seadme ja rakenduse identifitseerimisnumbreid, brauseri tüüpi ja versiooni, riistvara mudelit, internetiteenuse pakkuja ja/või mobiilsideoperaatori ning Interneti-protokolli (IP) aadressi (või puhverserveri). Kui kasutate meie rakendust, võime koguda ka teavet teie mobiilseadmega seotud telefonivõrgu kohta, teie mobiilseadme operatsioonisüsteemi või platvormi, kasutatava mobiilseadme tüübi, teie mobiilseadme unikaalse seadme ID ning teavet meie rakenduste funktsioonide kohta, millele tekasutasite.</p></li></ul><h2>Miks me kogume teie isikuandmeid</h2><h3>Eesmärgid</h3><p>Kogume teie tehnilisi andmeid eesmärgiga pakkuda teile elektroonilist tootekleepsu teie ravimi jaoks.</p><p>Sellisel juhul võime tugineda järgmistele õiguslikel alustel teie isikuandmete töötlemiseks:</p><ul><li><p><b>lepingu täitmine.</b> Me võime töödelda teie isikuandmeid, kui me usume, et see on vajalik teiega sõlmitud lepinguliste kohustuste täitmiseks, sealhulgas meie teenuste pakkumiseks või teie taotlusel enne lepingu sõlmimist teiega.</p></li><li><p><b>Õiguslikud kohustused</b>. Me võime töödelda teie teavet, kui me usume, et see on vajalik meie õiguslike kohustuste täitmiseks, näiteks meie kohustuste täitmiseks tervishoiuregulatsiooni ja rahvatervise seaduste alusel.</p></li></ul><h2>Kellega me jagame teie isikuandmeid</h2><p>Liikmesettevõtted ja kolmandate osapoolte teenusepakkujad.</p><p>Jagame teie andmeid kolmandate osapoolte müüjate, teenusepakkujate, lepingupartnerite või esindajatega ('kolmandad osapooled'), kes osutavad meile teenuseid või meie nimel ja vajavad sellise teabele juurdepääsu selle töö tegemiseks. Meil on kolmandate osapooltega sõlmitud lepingud, mis on loodud teie isikuandmete kaitseks. See tähendab, et nad ei saa teie isikuandmetega midagi teha, kui me pole neid selleks juhendanud. Samuti ei jaga nad teie isikuandmeid ühegi teise organisatsiooniga peale meie. Nad kohustuvad ka kaitsema andmeid, mida nad meie nimel hoiavad, ning säilitama neid perioodi vältel, mille me neile määrame. Kolmandate osapooltega, kellega võime isikuandmeid jagada, kategooriad on järgmised:</p><ul><li><p> Ravimitootjad (liikmesettevõtted)</p></li><li><p>Tehnilised teenusepakkujad</p></li></ul><h2>Kui kaua me teie isikuandmeid säilitame</h2><p>PharmaLedger Association säilitab teie tehnilisi andmeid ainult nii kaua, kui see on vajalik teie infolehe taotluse töötlemiseks kuni 30 päeva jooksul.</p><p>Teie ravimitootja säilitab teie andmeid määratud perioodi jooksul vastavalt nende andmete säilitamise poliitikaga, lisateabe saamiseks selle säilitamise kohta võtke ühendust oma ravimitootjaga.</p><h2>Kui te ei esita meile oma isikuandmeid</h2><p>Kui te otsustate meile oma tehnilisi andmeid mitte esitada, siis me ei saa täita teie infolehe taotlust.</p><h2>Teie õigused </h2><p>Kui teil on GDPR-i raames seotud isikuandmetega seotud taotlusi, näiteks juurdepääsu või andmete kustutamise taotlus, võite meiega ühendust võtta aadressil dpo@pharmaledger.org.</p><p>Me töötleme selliseid taotlusi 30 päeva jooksul.</p><h2>Nõusoleku tagasivõtmine</h2><p>Kui teil on GDPR-i raames seotud isikuandmetega seotud taotlusi, nagu juurdepääsu või andmete kustutamise taotlus, võite meiega ühendust võtta aadressil dpo@pharmaledger.org.</p><p>Me töötleme selliseid taotlusi 30 päeva jooksul. </p><h2>Automaatne otsuste tegemine</h2><p>Me ei kasuta teie teenindamisel ühtegi automaatset otsustusprotsessi.</p><h2>Isiklike andmete rahvusvaheline ülekanne</h2><p> Kui teie ravimitootja nõuab, et me edastaksime teie andmeid väljapoole Euroopa Liitu, kasutame teie andmete kaitsmiseks lepingu tüüptingimusi.</p><h2>Kuidas kaebust esitada</h2><p>Kui teil on GDPR-i raames seotud päringuid oma isikuandmete kohta, nagu näiteks juurdepääsu või andmete kustutamise taotlus, võite meiega ühendust võtta aadressil dpo@pharmaledger.org.</p><p>Me töötleme selliseid taotlusi 30 päeva jooksul. Lisaks võite pöörduda oma kohaliku järelevalveasutuse poole, kui tunnete, et teie õigusi ei järgita.</p>",ok,privacy_content
+36,Kasutustingimused,ok,terms_modal_title
+37,"Kasutustingimused, mis kehtivad PharmaLedgeri rakenduse kasutamisel",ok,terms_modal_subtitle
+38,"<h2>PharmaLedger Association'i elektroonilise tooteinfo veebisaidi ja rakenduse kasutustingimused</h2><p>PharmaLedger Association'i elektroonilise tooteinfo veebisaidi ja rakenduse (edaspidi ""Teenused"") kasutamisega nõustute nende kasutustingimustega (edaspidi  ""Tingimused""). Te ei tohi juurde pääseda ega kasutada Teenuseid, kui te ei nõustu nende Tingimustega. Teenuseid opereerib PharmaLedger Association (edaspidi ""Ühing"") ja need on mõeldud kasutamiseks isikutele, kes otsivad teavet oma ravimite kohta. Teenuseid edastab mitmepoolne võrk ning teie ravimitootja varustab Teenuste kaudu kuvatava toote teabega. Ühing tegutseb selle teabe andmehaldurina.</p><h2>Teenuste kasutamine</h2><p>Te nõustute kasutama Teenuseid ainult seaduslikeks eesmärkideks ning viisil, mis ei riku kolmandate isikute õigusi ega piira ega takista Teenuste kasutamist ja nautimist kolmandate isikute poolt. Selline piirang või takistus hõlmab muu hulgas ebaseaduslikku käitumist või sellist käitumist, mis võib kedagi ahistada või põhjustada ebamugavust või häirimist, ning solvava sisu edastamist või Teenustes dialoogi tavapärase voo häirimist.</p><h2>Intellektuaalomand</h2> <p> Teenuste sisu, sealhulgas, kuid mitte ainult, tekst, graafika, pildid ja tarkvara, on Ühingu või selle litsentsisaajate ja liikmesettevõtete omand ja seda kaitsevad autoriõigus ja muud intellektuaalomandi seadused. Te ei tohi kasutada ühtegi Teenuste sisu kommertseesmärkidel ilma Ühingu selgesõnalise kirjaliku loata.</p> <h2>Vastutus</h2><p>Ühing ei anna mingit tüüpi esindusi ega garantiisid, ei otseseid ega kaudseid, Teenuste toimimise või Teenustes sisalduva teabe, sisu, materjalide või toodete kohta. Ühing ei vastuta Teenuste kasutamisest tulenevate mingisuguste kahjude eest, sealhulgas, kuid mitte ainult, otsese, kaudse, juhusliku, karistava ja kaudse kahju eest.</p><h2>Kohaldatav seadus</h2><p>Need Tingimused ja Teie Teenuste kasutamine alluvad Šveitsi seadustele ning mis tahes vaidlused lahendatakse Baselis, Šveitsis.</p><h2>Muudatused tingimustes</h2><p>Ühingul on õigus neid Tingimusi igal ajal muuta ning teie vastutate nende Tingimuste perioodilise kontrollimise eest muudatuste osas. Teie Teenuste jätkuv kasutamine pärast Tingimuste muutmist tähendab muudetud Tingimuste aktsepteerimist.</p>",ok,terms_content
+39,Abi,ok,help_modal_title
+40,KKK-d,ok,help_modal_subtitle
+41,"<div><p><b>Mis on EPI?</b></p><p><b>EPI</b> on lühend elektroonilise tooteinfo kohta. See on elektrooniline versioon tavaliselt ravimipakendi sees leiduvast paberkandjal tooteinfo lehest. Mõnel juhul võib <b>EPI</b> asendada paberkandjal infolehe.</p><p><b>Mis on PharmaLedger?</b></p><p>PharmaLedger Association (PLA) on mittetulundusühing, mille peakontor asub Šveitsis, ja selle eesmärk on võimaldada ja soodustada usaldusväärset digitaalset ökosüsteemi tervishoius standardiseeritud ja usaldusväärse avatud lähtekoodiga platvormi abil. PLA soodustab koostööd, kiirendab innovatsiooni ja rakenduste kasutuselevõttu, et saavutada vastastikune kasu tervise- ja bioteaduste valdkonnas patsientidele ja teistele sidusrühmadele. PLA loodi 2022. aastal jätkama PharmaLedgeri projekti tööd, mis oli kolmeaastane projekt, mida rahastas Euroopa Komisjon ja farmaatsiatööstus ning mille eesmärk oli tõestada plokiahela lahenduste väärtust. Lisateavet leiate veebisaidilt https://pharmaledger.org.</p><p><b>Mis on DataMatrix?</b></p><p>See on üks vöötkoodi tüüp teie tootepakendil. See on mustvalge ruudukujuline vöötkood ja näeb välja sarnane sellele:<br> <img src=""./images/barcode_example.png"" alt='DataMatrix 条形码示例'></p><p><b>Kuidas rakendust kasutada?</b></p><p>Järgige <b>rakenduse</b> avalehel olevaid juhiseid... seal on näha pilt, kus leida tootepakendilt <b>DataMatrix</b>. Kui olete leidnud <b>DataMatrix</b>, klõpsake nuppu ""Skaneeri <b>DataMatrix </b>""Andke rakendusele luba kasutada kaamerat, et saaksite <b>DataMatrix</b> skannida. Kasutage kaamerat, et keskenduda <b>DataMatrix</b>. Kui pakend on edukalt skannitud, kuvatakse <b>EPI</b>. Lisateabe saamiseks saate klõpsata nuppu ‘+’.</p><p><b>Miks minu DataMatrix'i skannimine ei anna tulemust?</b></p><p>On mitmeid põhjuseid, miks teie paketis olev <b>DataMatrix</b> ei pruugi EPI-d anda. Üks põhjusi võib olla kaamera fookus. Proovige koodi skannida hästi valgustatud kohas ja kood on ekraanil selgelt nähtav. Kui teil on raskusi oma käe paigal hoidmisega, võite proovida oma käte toetamiseks kasutada lauda.</p></div>",ok,help_content
+44,Toote teave pole saadaval,ok,product_not_loaded_title
+45,Kahjuks pole laaditud ühtegi tooteinfot.,ok,product_not_loaded
+46,Viga kood,ok,err_code
+47,"Süsteem on hõivatud, palun proovige hiljem uuesti.",ok,system_busy
+61,Trükiteave,,leaflet_print_title
+62,Praegune valitud teave trükitakse PDF -na.,,leaflet_print_description
+63,Kas soovite jätkata?,,leaflet_print_description2
+64,Harima,,leaflet_print_button
+65,Tagasi minema,,leaflet_print_button_back
+66,Palun valige,,document_modal_title
+67,"Palun valige, millist dokumenti kuvada",,document_modal_message
+68,Patsientide teave,,document_patient_info
+69,Tooteteave patsientidele,,document_product_info
+70,Tooteteave on saadaval ainult inglise keeles,,document_lang_select_message
+71,Teade,,document_lang_select_title
+72,Tervishoiutöötajatele mõeldud teabe väljakirjutamine,,document_prescribing_info
+73,Vali riik,,epi_markets_modal_title
+74,Valige oma riik,,epi_markets_modal_message
+75,Riik,,epi_markets_modal_no_market
+76,Afganistan,,country_af
+77,Ålandi saared,,country_ax
+78,Albaania,,country_al
+79,Alžeeria,,country_dz
+80,Ameerika samoa,,country_as
+81,Andorra,,country_ad
+82,Angola,,country_ao
+83,Anguilla,,country_ai
+84,Antarktika,,country_aq
+85,Antigua ja Barbuda,,country_ag
+86,Argentina,,country_ar
+87,Armeenia,,country_am
+88,Aruba,,country_aw
+89,Austraalia,,country_au
+90,Austria,,country_at
+91,Aserbaidžaan,,country_az
+92,Bahama,,country_bs
+93,Bahrein,,country_bh
+94,Bangladesh,,country_bd
+95,Barbadod,,country_bb
+96,Valgevene,,country_by
+97,Belgia,,country_be
+98,Belize,,country_bz
+99,Benin,,country_bj
+100,Bermuda,,country_bm
+101,Bhutan,,country_bt
+102,Boliivia,,country_bo
+103,Bosnia ja Hertsegoviina,,country_ba
+104,Botswana,,country_bw
+105,Bouveti saar,,country_bv
+106,Brasiilia,,country_br
+107,Briti India ookeani territoorium,,country_io
+108,Brunei Daussalam,,country_bn
+109,Bulgaaria,,country_bg
+110,Burkina Faso,,country_bf
+111,Burundi,,country_bi
+112,Kambodža,,country_kh
+113,Kamerun,,country_cm
+114,Kanada,,country_ca
+115,Cape Verde,,country_cv
+116,Kaimanisaared,,country_ky
+117,Kesk -Aafrika Vabariik,,country_cf
+118,Tšaad,,country_td
+119,Tšil,,country_cl
+120,Hiina,,country_cn
+121,Jõulusaar,,country_cx
+122,Cocos (Keeling) saared,,country_cc
+123,Colombia,,country_co
+124,Comiros,,country_km
+125,Kongo,,country_cg
+126,"Kongo, The Demokraatlik Vabariik",,country_cd
+127,Koka saared,,country_ck
+128,Costa Rica,,country_cr
+129,Cote d'Ivoire,,country_ci
+130,Horvaatia,,country_hr
+131,Kuuba,,country_cu
+132,Küpros,,country_cy
+133,Tšehhi Vabariik,,country_cz
+134,Taani,,country_dk
+135,Djibouti,,country_dj
+136,Dominica,,country_dm
+137,Dominikaani Vabariik,,country_do
+138,Ecuador,,country_ec
+139,Egiptus,,country_eg
+140,El Salvador,,country_sv
+141,Ekvatoriaalne merisea,,country_gq
+142,Eritrea,,country_er
+143,Eestia,,country_ee
+144,Etioopia,,country_et
+145,Falklandi saared (Malvinas),,country_fk
+146,Fääri saared,,country_fo
+147,Fidži,,country_fj
+148,Soome,,country_fi
+149,Prantsusmaa,,country_fr
+150,Prantsuse guiaana,,country_gf
+151,Prantsuse polüneesia,,country_pf
+152,Prantsuse lõunapoolsed territooriumid,,country_tf
+153,Gabon,,country_ga
+154,Gambia,,country_gm
+155,Gruusia,,country_ge
+156,Saksamaa,,country_de
+157,Ghana,,country_gh
+158,Gibraltar,,country_gi
+159,Kreeka,,country_gr
+160,Gröönimaa,,country_gl
+161,Grenada,,country_gd
+162,Guadeloupe,,country_gp
+163,Guam,,country_gu
+164,Guatemala,,country_gt
+165,Guernsey,,country_gg
+166,Merisea,,country_gn
+167,Merisea-bissau,,country_gw
+168,Guajaana,,country_gy
+169,Haiti,,country_ht
+170,Kuulsid saare ja McDonald'i saari,,country_hm
+171,Püha See (Vatikani linna riik),,country_va
+172,Honduras,,country_hn
+173,Hongkong,,country_hk
+174,Ungari,,country_hu
+175,Island,,country_is
+176,India,,country_in
+177,Indoneesia,,country_id
+178,"Iraan, Islam Vabariik",,country_ir
+179,Iraak,,country_iq
+180,Iirimaa,,country_ie
+181,Inimese saar,,country_im
+182,Iisrael,,country_il
+183,Itaalia,,country_it
+184,Jamaica,,country_jm
+185,Jaapan,,country_jp
+186,Trikotapp,,country_je
+187,Jordaania,,country_jo
+188,Kasahstan,,country_kz
+189,Keenia,,country_ke
+190,Kiribati,,country_ki
+191,"Korea, demokraatia rahva vabariik",,COUNTRY_KP
+192,"Korea, Vabariik",,COUNTRY_KR
+193,Kuveit,,country_kw
+194,Kõrgõzstan,,country_kg
+195,Lao rahva demokraatlik vabariik,,COUNTRY_LA
+196,Läti,,COUNTRY_LV
+197,Liibanon,,country_lb
+198,Lesotho,,country_ls
+199,Libeeria,,country_lr
+200,Liibüa araabia Jamahiriya,,country_ly
+201,Liechtenstein,,country_li
+202,Leedu,,country_lt
+203,Luksemburg,,country_lu
+204,Aokao,,country_mo
+205,"Makedoonia, endine Jugoslaavia vabariik",,country_mk
+206,Madagaskaar,,country_mg
+207,Malawi,,country_mw
+208,Malaisia,,country_my
+209,Maldiivid,,country_mv
+210,Mali,,country_ml
+211,Malta,,country_mt
+212,Marshalli saared,,country_mh
+213,Martiniik,,country_mq
+214,Mauritaania,,country_mr
+215,Mauritius,,country_mu
+216,Mayotte,,country_yt
+217,Mehhiko,,country_mx
+218,"Mikroneesia, ühendatud olekud",,country_fm
+219,"Moldova, vabariik",,country_md
+220,Monaco,,country_mc
+221,Mongoolia,,country_mn
+222,Montserrat,,country_ms
+223,Maroko,,country_ma
+224,Mosambiik,,country_mz
+225,Myanmar,,country_mm
+226,Namiibia,,country_na
+227,Nauru,,country_nr
+228,Nepal,,country_np
+229,Holland,,country_nl
+230,Hollandi antillid,,country_an
+231,Uus -Kaledoonia,,country_nc
+232,Uus -Meremaa,,country_nz
+233,Nicaragua,,country_ni
+234,Niger,,country_ne
+235,Nigeeria,,country_ng
+236,Niue,,country_nu
+237,Norfolki saar,,country_nf
+238,Põhja -Mariana saared,,country_mp
+239,Norra,,country_no
+240,Omaaan,,country_om
+241,Pakistan,,country_pk
+242,Paula,,country_pw
+243,"Palestiina territoorium, hõivatud",,country_ps
+244,Panama,,country_pa
+245,Paapua Uus -Guinea,,country_pg
+246,Paraguay,,country_py
+247,Peruu,,country_pe
+248,Filipiinid,,country_ph
+249,Pitcairn,,country_pn
+250,Poola,,country_pl
+251,Portugal,,country_pt
+252,Puerto Rico,,country_pr
+253,Katar,,country_qa
+254,Taasühinemine,,country_re
+255,Rumeenia,,country_ro
+256,Venemaa föderatsioon,,country_ru
+257,Rwanda,,country_rw
+258,Püha Helena,,country_sh
+259,Saint Kitts ja Nevis,,country_kn
+260,Püha Lucia,,country_lc
+261,Püha Pierre ja Miquelon,,country_pm
+262,Püha Vincent ja Grenadiinid,,country_vc
+263,Samoa,,country_ws
+264,San Marino,,country_sm
+265,Sao Tome ja Principe,,country_st
+266,Saudi Araabia,,country_sa
+267,Senegal,,country_sn
+268,Serbia ja Montenegro,,country_cs
+269,Seišellid,,country_sc
+270,Sierra Leone,,country_sl
+271,Singapur,,country_sg
+272,Slovakkia,,country_sk
+273,Sloveenia,,country_si
+274,Saalomoni saared,,country_sb
+275,Somaalia,,country_so
+276,Lõuna -Aafrika Vabariik,,country_za
+277,Lõuna -Georgia ja South Sandwichi saared,,country_gs
+278,Hispaania,,country_es
+279,Sri Lanka,,country_lk
+280,Sudaan,,country_sd
+281,Surinanimi,,country_sr
+282,Svalbard ja Jan Mayen,,country_sj
+283,Svaasimaa,,country_sz
+284,Rootsi,,country_se
+285,Šveits,,country_ch
+286,Süüria Araabia Vabariik,,country_sy
+287,"Taiwan, Hiina provints",,country_tw
+288,Tajikistan,,country_tj
+289,"Tansaania, Ühendatud Vabariik",,country_tz
+290,Tai,,country_th
+291,Timor,,country_tl
+292,Togo,,country_tg
+293,Tokelau,,country_tk
+294,Tong,,country_to
+295,Trinidad ja Tobago,,country_tt
+296,Tuneesia,,country_tn
+297,Kalkun,,country_tr
+298,Türkmenistan,,country_tm
+299,Türklased ja Caicose saared,,country_tc
+300,Tuvalu,,country_tv
+301,Uganda,,country_ug
+302,Ukraina,,country_ua
+303,Araabia Ühendemiraadid,,country_ae
+304,Ühendkuningriik,,country_gb
+305,Ameerika Ühendriigid,,country_us
+306,Ameerika Ühendriikide väiksemad äärepoolsed saared,,country_um
+307,Uruguay,,country_uy
+308,Usbekistan,,country_uz
+309,Vanuatu,,country_vu
+310,Venezuela,,country_ve
+311,Vietnam,,country_vn
+312,"Neitsisaared, britid",,country_vg
+313,"Neitsisaared, USA",,country_vi
+314,Wallis ja Futuna,,country_wf
+315,Lääne -Sahara,,country_eh
+316,Jeemen,,country_ye
+317,Sambia,,country_zm
+318,Zimbabwe,,country_zw

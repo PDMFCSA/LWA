@@ -19,7 +19,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+a {
+    cursor: pointer;
+}
 button {
     font-family: "Noto Sans";
 }
@@ -235,6 +237,10 @@ b {
     margin: 5vh 4vh;
 }
 
+.app-menu-container a {
+    cursor: pointer;
+}
+
 .page-content-section {
     display: flex;
     flex-direction: column;
@@ -425,6 +431,11 @@ b {
     align-self: center;
     max-width: 500px;
 }
+
+.list-space {
+    padding: 0;
+    list-style: none;
+  }
 
 /*---------------------------------------------*/
 

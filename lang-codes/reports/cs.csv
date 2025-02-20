@@ -1,0 +1,300 @@
+code,text,status,key
+1,Vítejte na PharmaLedger,ok,welcome
+2,Naskenujte čárový kód DataMatrix na Vašem léčivém přípravku a přečtěte si  informace.,ok,scan_explain
+3,Naskenujte DataMatrix,ok,scan_button
+4,Zvolit jiný fotoaparát,ok,change_camera
+5,Zrušit,ok,cancel
+6,Znovu naskenovat,ok,scan_again
+7,Nenalezeno,ok,product_not_found_title
+9,Léčivý přípravek nebyl nalezen.,ok,product_not_found
+10,Platnost vypršela,ok,leaflet_expired_title
+11,Verze aplikace:,ok,app_version
+12,<p> <b>U tohoto léčivého přípravku byla zjištěna prošlá platnost.</b> </p> ,ok,leaflet_expired_message
+13,Jazyk není k dispozici,ok,select_lang_title
+14,Více o,ok,about_modal_subtitle
+15,PharmaLedger,ok,about_modal_title
+16,"<h2>O aplikaci</h2><p>Tuto aplikaci vám přináší PharmaLedger®. Na jejím vývoji se společně  podílely organizace zastupující pacienty, farmaceutické společnosti a  odborníci na vývoj technologií.</p><p>Uživatelům poskytuje možnost získat informace o svém léčivém přípravku pomocí naskenování čárového kódu, který je k nalezení na  balení výrobku.</p><p>Uvedené informace jsou zprostředkovány držitelem rozhodnutí o  registraci léčivého přípravku.</p><h2>O PharmaLedger</h2><p>PharmaLedger® je obchodní značkou Asociace PharmaLedger (PLA).</p><p>PLA je  globální, nezisková a neutrální asociace. Jejím účelem je vytvářet a kultivovat  důvěrnou atmosféru ve světě digitálního zdravotnictví.</p><p>Asociace propaguje vzájemnou spolupráci v oblasti zdravotnictví a přírodních věd, stejně tak inovace a jejich zavádění do praxe ve prospěch pacientů a ostatních zúčastněných stran.</p>",ok,about_content
+18,Při skenování došlo k chybě,ok,scan_error_title
+20,"Došlo k chybě a ke zvolenému fotoaparátu nelze získat přístup. Prosím, zkontrolujte systémové nastavení Vašeho fotoaparátu nebo zkuste zvolit jiný fotoaparát.",ok,camera_error_message
+21,"Příbalová informace není k dispozici ve Vámi požadovaném jazyce. Vyberte si, prosím, ze seznamu dostupných jazyků.",ok,leaflet_lang_select_message
+22,Pokračovat,ok,lang_proceed
+24,Vrátit se na hlavní stránku,ok,go_home
+25,"Už to skoro je! Přečtěte si, prosím, obchodní podmínky a udělte souhlas.",ok,onboarding_welcome
+26,Nesouhlasím,ok,disagree
+27,Souhlasím,ok,agree
+28,"Aplikace PharmaLedger nemůže být spuštěna bez udělení souhlasu s obchodními podmínkami. Přečtěte si, prosím, obchodní podmínky.",ok,disagree_extra_text
+29,Zásady ochrany osobních údajů,ok,fwd_privacy
+30,Obchodní podmínky,ok,fwd_terms
+31,Nápověda,ok,fwd_help
+32,Více o,ok,fwd_about
+33,Naše pravidla o ochraně soukromí a bezpečnosti,ok,privacy_modal_subtitle
+34,Zásady ochrany osobních údajů,ok,privacy_modal_title
+35," <h2>Oznámení o ochraně osobních údajů</h2> <p> Toto oznámení o ochraně osobních údajů se vztahuje na používání produktu Asociace PharmaLedger k získání informací o léčivých přípravcích v elektronické podobě.</p> <h2>Kontakty</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) Totožnost a kontakty na správce nebo na sdružení správců</b><p>Správcem vašich dat je Asociace PharmaLedger.</p></li><li role=""listitem""><b>b) Kontakty na osobu odpovědnou za ochranu osobních údajů </b><p>Osobu odpovědnou za ochranu osobních údajů u Asociace PharmaLedger je možné kontaktovat na emailové adrese dpo@pharmaledger.org.</p></li></ul><h2>Jaké osobní údaje zpracováváme</h2><p>Zpracováváme pouze technické údaje nutné k poskytnutí Vaší elektronické příbalové informace. Ty zahrnují Vaši IP adresu a technické identifikátory Vašeho zařízení a prohlížeče, které používáte pro přístup k naší aplikaci.</p> <p><em>Konkrétně zpracováváme následující údaje:</em></p><ul><li><p><em>Přístup k mobilnímu zařízení.</em> Je možné, že budeme požadovat povolení k přístupu k určitým funkcím Vašeho mobilního zařízení, včetně přístupu k fotoaparátu, a dalším funkcím. Změny v povolení k přístupu lze na Vašem zařízení provést v systémovém nastavení.</p></li><li><p><em>Údaje o mobilním zařízení.</em> Automaticky zpracováváme údaje o zařízení (jako jsou ID Vašeho mobilního zařízení, model a výrobce), operační systém, informace o verzi a konfiguraci systému, identifikační čísla zařízení a aplikace, druh a verze prohlížeče, model hardwarového zařízení poskytovatele internetových služeb a/nebo mobilního operátora, IP adresu (nebo proxy server). Pokud naši aplikaci využíváte, je možné, že budeme zpracovávat i informace o telefonní síti propojené s Vaším mobilním zařízením, o operačním systému nebo platformě Vašeho mobilního zařízení, o typu mobilního zařízení, které používáte, o unikátním ID Vašeho mobilního zařízení a o funkcích naší aplikace, které jste využili.</p></li></ul><h2>Proč zpracováváme Vaše osobní údaje</h2><p><b> Pro tyto účely </b></p><p>Vaše technické údaje zpracováváme za účelem poskytnutí elektronické příbalové informace k Vašemu léčivému přípravku. </p><p>Při zpracování Vašich osobních údajů se proto odkazujeme na následující právní předpisy:</p><ul><li><p><b>Plnění smluvních podmínek </b> Vaše osobní údaje zpracováváme pouze v případě, kdy se domníváme, že je to nezbytně nutné pro splnění našich smluvních závazků vůči Vám, včetně poskytnutí našich služeb, nebo na základě Vaší žádosti před uzavřením smlouvy.</p></li><li><p><b>Právní povinnosti</b> Vaše údaje zpracováváme pouze v případě, kdy se domníváme, že je to nezbytné pro splnění našich právních povinností, například pro splnění našich povinností vyplývajících z právních předpisů v oblasti zdravotní péče a veřejného zdraví. </p></li></ul><h2>S kým sdílíme Vaše osobní údaje </h2><p> Členské společnosti a poskytovatelé služeb třetí strany. </p><p> Vaše údaje sdílíme s dodavateli, poskytovateli služeb, smluvními partnery nebo zástupci třetích stran (dále jen ""třetí strany""), kteří pro nás anebo naším jménem poskytují služby a k této činnosti vyžadují přístup k příslušným informacím. S našimi třetími stranami byly uzavřeny smlouvy, které chrání Vaše osobní údaje. To znamená, že s Vašimi osobními údaji nemohou provádět žádné úkony, pokud jsme jim k tomu nedali pokyn. Vaše osobní údaje také nebudou sdílet s žádnou jinou organizací kromě nás. Zavazují se také, že budou chránit údaje, které naším jménem uchovávají, a že je budou uchovávat po dobu, kterou jim nařídíme. Třetí strany, se kterými můžeme sdílet osobní údaje, jsou následující: </p><ul><li><p>Výrobci léčivých přípravků (Členské společnosti) </p></li><li><p>Poskytovatelé technických služeb</p></li></ul><h2>Na jak dlouhou dobu uchováváme Vaše osobní údaje</h2><p>Asociace PharmaLedger uchovává Vaše technické údaje po dobu nezbytně nutnou k vyřízení Vašeho požadavku, a to až po dobu 30 dnů.</p><p>Výrobce léčivého přípravku také uchovává Vaše údaje, a to po dobu, která je stanovena pravidly pro uchovávání údajů. Více informací o pravidlech pro uchování údajů získáte u svého výrobce léčivého přípravku. </p><h2>V případě, že nám neposkytnete Vaše osobní údaje </h2><p>Pokud se rozhodnete, že s námi Vaše technické údaje sdílet nechcete, nebudeme schopni Váš požadavek vyřídit. </p><h2>Vaše práva </h2><p> Pokud máte jakékoliv požadavky týkající se Vašich osobních údajů podle GDPR, například budete-li žádat o přístup k Vašim údajům nebo o jejich vymazání, můžete nás kontaktovat na emailové adrese dpo@pharmaledger.org. </p><p>Takové požadavky vyřídíme do 30 dnů. <p><h2>Odstoupení od souhlasu</h2><p> Pokud máte jakékoliv požadavky týkající se Vašich osobních údajů podle GDPR, například budete-li žádat o přístup k Vašim údajům nebo o jejich vymazání, můžete nás kontaktovat na emailové adrese dpo@pharmaledger.org. </p><p> Takové požadavky vyřídíme do 30 dnů. </p><h2>Automatizované rozhodování </h2><p> Při poskytování této služby nevyužíváme automatizované rozhodování. </p><h2>Mezinárodní přenos osobních údajů </h2><p> Pokud výrobce léčivého přípravku vyžaduje, abychom Vaše údaje předali mimo území Evropské unie, využíváme k ochraně Vašich údajů standardní smluvní klauzule. </p><h2>Stížnosti</h2><p>Pokud máte jakékoliv požadavky týkající se Vašich osobních údajů podle GDPR, například budete-li žádat o přístup k Vašim údajům nebo o jejich vymazání, můžete nás kontaktovat na emailové adrese dpo@pharmaledger.org</p><p> Takové požadavky vyřídíme do 30 dnů. V případě, že se domníváte, že Vaše práva nejsou respektována, neváhejte se obrátit i na Váš místní příslušný orgán dozoru.<p>",ok,privacy_content
+36,Obchodní podmínky,ok,terms_modal_title
+37,"Obchodní podmínky, které platí pro používání aplikace PharmaLedger",ok,terms_modal_subtitle
+38,"<h2>Obchodní podmínky pro webové stránky a aplikaci Asociace PharmaLedger pro elektronické příbalové informace. </h2><p> Využíváním webových stránek a aplikace Asociace PharmaLedger pro elektronické příbalové informace (dále jen ""Služby"") souhlasíte s těmito Podmínkami (dále jen ""Podmínky""). Pokud s těmito Podmínkami nesouhlasíte, Služby nebude možné využívat. Služby provozuje Asociace PharmaLedger (dále jen ""Asociace"") a jsou určeny k používání jednotlivci, kteří hledají informace o svém léčivém přípravku. Služby poskytuje síť více stran a výrobce Vašeho léčivého přípravku dodává informace o přípravku zobrazované prostřednictvím Služeb. Asociace vystupuje jako správce těchto informací. </p><h2>Využití Služeb </h2><p> Souhlasíte s tím, že budete Služby využívat pouze k legálním účelům a způsobem, který neporušuje práva žádné třetí strany, ani neomezuje či nebrání používání a využívání Služeb jakoukoli třetí stranou. Takové omezení nebo bránění zahrnuje mimo jiné chování, které je nezákonné nebo které může obtěžovat nebo způsobovat potíže či nepříjemnosti jakékoli osobě, a šíření obscénního nebo urážlivého obsahu nebo narušování normálního průběhu dialogu v rámci Služeb. </p><h2>Duševní vlastnictví </h2><p> Obsah Služeb, který mimo jiné zahrnuje text, grafiku, obrázky a software, je majetkem Asociace nebo jejích poskytovatelů licencí a členských společností a je chráněn autorským právem a dalšími zákony o duševním vlastnictví. Bez výslovného písemného souhlasu Asociace nesmíte žádný obsah Služeb používat ke komerčním účelům. </p><h2>Odpovědnost za škody </h2><p> Asociace nepřebírá žádnou výslovnou ani předpokládanou odpovědnost za fungování Služeb nebo za informace, obsah, materiály nebo produkty obsažené ve Službách. Asociace neodpovídá za žádné škody jakéhokoli druhu vzniklé v důsledku používání Služeb, které mimo jiné zahrnují přímé, nepřímé, náhodné, sankční a následné škody.</p><h2>Rozhodné právo</h2><p> Vaše využívání Služeb a Obchodní podmínky jsou řízeny a posuzovány v souladu se švýcarským právem a veškeré spory budou řešeny švýcarskými soudy v Basileji. </p><h2>Změny obchodních podmínek </h2><p> Asociace si vyhrazuje právo tyto Podmínky kdykoli měnit, přičemž jste odpovědní za jejich pravidelnou kontrolu. Vaše další používání Služeb po provedení jakýchkoliv změn bude znamenat Váš souhlas s revidovanými Podmínkami.</p><p><br></p>",ok,terms_content
+39,Nápověda,ok,help_modal_title
+40,Často kladené otázky,ok,help_modal_subtitle
+41,"<div><p><b><h2>Co znamená EPI? </h2></b></p><p> <b>EPI</b> je zkratka pro <b>elektronickou příbalovou informaci,</b> což je elektronická  verze papírové příbalové informace, která je většinou k nalezení v balení  léčivých přípravků. V některých případech je papírová příbalová informace plně nahrazena <b>EPI.</b> </p><p><b><h2>Co je PharmaLedger? </h2></b></p><p>PharmaLedger Asociace (PLA) je nezisková asociace se sídlem ve  Švýcarsku, jejímž účelem je zpřístupnění a kultivace důvěryhodného  digitálního prostředí ve zdravotnictví prostřednictvím standardizované a volně  přístupné platformy. PLA prosazuje spolupráci a podporuje inovace a jejich  osvojení pro dosažení vzájemného prospěchu v oblastech zdravotnictví a  přírodních věd pro pacienty a ostatní zúčastněné strany. PLA byla založena v roce 2022, aby navázala na tři roky trvající projekt PharmaLedger, který byl  financován Evropskou komisí a farmaceutickým průmyslem a který měl za cíl  dokázat význam blockchainových (tj. blokové řetězce) technologií. Více  informací naleznete na https://pharmaledger.org.</p><p><b><h2>Co je DataMatrix? </h2></b></p><p>DataMatrix je druh čárového kódu, který se nachází na balení léčivého  přípravku. Je to černo-bílý čtvercový čárový kód a vypadá přibližně  takto:<br><img src=""./images/barcode_example.png"" alt='DataMatrix barcode example'></p><p><b><h2>Jak se aplikace používá?</h2></b></p><p>Postupujte podle pokynů uvedených na vstupní stránce <b>aplikace</b> – zde naleznete obrázek s instrukcemi, který Vám poradí, kde na balení léčivého  přípravku najít <b>DataMatrix.</b> Poté, co <b>DataMatrix</b> najdete, klikněte na tlačítko „Naskenovat <b>DataMatrix</b>“. Povolte aplikaci přístup k fotoaparátu, aby mohla <b>DataMatrix</b> naskenovat. Kameru fotoaparátu nasměrujte na <b>DataMatrix</b>. Hned  jak bude čárový kód úspěšně naskenován, zobrazí se <b>EPI</b>. Pro detailnější  informace klikněte na tlačítko „+“.</p><p><b><h2>Proč se mi po naskenování DataMatrix nezobrazují žádné údaje?</h2></b></p><p>Důvodů,  proč  <b>DataMatrix</b> na Vašem balení nezobrazuje EPI, může být několik. Jednou z příčin může být špatné zaostření kamery fotoaparátu. Kód, prosím, skenujte pouze v dobře osvětleném prostoru a tak, aby byl na obrazovce viditelný. Pokud Vám činí potíže udržet ruce v klidu, zkuste si je podepřít například o stůl.</p></div>",ok,help_content
+44,Informace o přípravku nejsou dostupné.,ok,product_not_loaded_title
+45,Bohužel nebyly načteny žádné informace o přípravku.,ok,product_not_loaded
+46,Chybný kód,ok,err_code
+47,"Systém je zatížený, zkuste to, prosím, později.",ok,system_busy
+61,Informace o tisku,,leaflet_print_title
+62,Aktuální vybrané informace budou vytištěny jako PDF.,,leaflet_print_description
+63,Chcete pokračovat?,,leaflet_print_description2
+64,Pokračovat,,leaflet_print_button
+65,Vraťte se,,leaflet_print_button_back
+66,Vyberte,,document_modal_title
+67,"Vyberte prosím, který dokument se má zobrazit",,document_modal_message
+68,Informace o pacientu,,document_patient_info
+69,Informace o produktu pro pacienty,,document_product_info
+70,Informace o produktu jsou k dispozici pouze v angličtině,,document_lang_select_message
+71,Oznámení,,document_lang_select_title
+72,Předepisování informací pro zdravotnické pracovníky,,document_prescribing_info
+73,Vyberte zemi,,epi_markets_modal_title
+74,Vyberte prosím svou zemi,,epi_markets_modal_message
+75,Žádná země,,epi_markets_modal_no_market
+76,Afghánistán,,country_af
+77,Ålandské ostrovy,,country_ax
+78,Albánie,,country_al
+79,Alžírsko,,country_dz
+80,Americká Samoa,,country_as
+81,Andorra,,country_ad
+82,Angola,,country_ao
+83,Anguilla,,country_ai
+84,Antarktida,,country_aq
+85,Antigua a Barbuda,,country_ag
+86,Argentina,,country_ar
+87,Arménie,,country_am
+88,Aruba,,country_aw
+89,Austrálie,,country_au
+90,Rakousko,,country_at
+91,Ázerbajdžán,,country_az
+92,Bahamy,,country_bs
+93,Bahrajn,,country_bh
+94,Bangladéš,,country_bd
+95,Barbados,,country_bb
+96,Bělorusko,,country_by
+97,Belgie,,country_be
+98,Belize,,country_bz
+99,Benin,,country_bj
+100,Bermudy,,country_bm
+101,Bhútan,,country_bt
+102,Bolívie,,country_bo
+103,Bosna a Hercegovina,,country_ba
+104,Botswana,,country_bw
+105,Ostrov Bouvet,,country_bv
+106,Brazílie,,country_br
+107,Území britského indického oceánu,,country_io
+108,Brunei Darussalam,,country_bn
+109,Bulharsko,,country_bg
+110,Burkina Faso,,country_bf
+111,Burundi,,country_bi
+112,Kambodža,,country_kh
+113,Kamerun,,country_cm
+114,Kanada,,country_ca
+115,Kap Verde,,country_cv
+116,Kajmanské ostrovy,,country_ky
+117,Střední Africká republika,,country_cf
+118,Čad,,country_td
+119,Chile,,country_cl
+120,Čína,,country_cn
+121,Vánoční ostrov,,country_cx
+122,Ostrovy Cocos (kýling),,country_cc
+123,Kolumbie,,country_co
+124,Comoros,,country_km
+125,Kongo,,country_cg
+126,"Kongo, Demokratická republika",,country_cd
+127,Cookovy ostrovy,,country_ck
+128,Kostarika,,country_cr
+129,Cote d'ivoire,,country_ci
+130,Chorvatsko,,country_hr
+131,Kuba,,country_cu
+132,Kypr,,country_cy
+133,Česká republika,,country_cz
+134,Dánsko,,country_dk
+135,Džibutské,,country_dj
+136,Dominika,,country_dm
+137,Dominikánská republika,,country_do
+138,Ekvádor,,country_ec
+139,Egypt,,country_eg
+140,Salvador,,country_sv
+141,Rovníková Guinea,,country_gq
+142,Eritrea,,country_er
+143,Estonsko,,country_ee
+144,Etiopie,,country_et
+145,Falklandské ostrovy (Malvinas),,country_fk
+146,Faorské ostrovy,,country_fo
+147,Fidži,,country_fj
+148,Finsko,,country_fi
+149,Francie,,country_fr
+150,Francouzská Guiana,,country_gf
+151,Francouzská Polynésie,,country_pf
+152,Francouzská jižní území,,country_tf
+153,Gabon,,country_ga
+154,Gambie,,country_gm
+155,Gruzie,,country_ge
+156,Německo,,country_de
+157,Ghana,,country_gh
+158,Gibraltar,,country_gi
+159,Řecko,,country_gr
+160,Grónsko,,country_gl
+161,Grenada,,country_gd
+162,Guadeloupe,,country_gp
+163,Guam,,country_gu
+164,Guatemala,,country_gt
+165,Guernsey,,country_gg
+166,Guinea,,country_gn
+167,Guinea-Bissau,,country_gw
+168,Guyana,,country_gy
+169,Haiti,,country_ht
+170,Slyšeli ostrova a ostrovy McDonald,,country_hm
+171,Holy SEK (Vatikánský městský stát),,country_va
+172,Honduras,,country_hn
+173,Hongkong,,country_hk
+174,Maďarsko,,country_hu
+175,Island,,country_is
+176,Indie,,country_in
+177,Indonésie,,country_id
+178,"Írán, Islámská republika",,country_ir
+179,Irák,,country_iq
+180,Irsko,,country_ie
+181,Isle of Man,,country_im
+182,Izrael,,country_il
+183,Itálie,,country_it
+184,Jamaica,,country_jm
+185,Japonsko,,country_jp
+186,Trikot,,country_je
+187,Jordán,,country_jo
+188,Kazachstán,,country_kz
+189,Keňa,,country_ke
+190,Kiribati,,country_ki
+191,"Korea, Demokratická lidová republika",,COUNTRY_KP
+192,"Korea, republika",,COUNTRY_KR
+193,Kuvajt,,country_kw
+194,Kyrgyzstán,,country_kg
+195,Lao lidová demokratická republika,,COUNTRY_LA
+196,Lotyšsko,,COUNTRY_LV
+197,Libanon,,country_lb
+198,Lesotho,,country_ls
+199,Libérie,,country_lr
+200,Libyjská arabská Jamahiriya,,country_ly
+201,Lichtenstein,,country_li
+202,Litva,,country_lt
+203,Lucembursko,,country_lu
+204,Macao,,country_mo
+205,"Makedonie, bývalá jugoslávská republika",,country_mk
+206,Madagaskar,,country_mg
+207,Malawi,,country_mw
+208,Malajsie,,country_my
+209,Maledivy,,country_mv
+210,Mali,,country_ml
+211,Malta,,country_mt
+212,Marshallovy ostrovy,,country_mh
+213,Martinika,,country_mq
+214,Mauritánie,,country_mr
+215,Mauricius,,country_mu
+216,Mayotte,,country_yt
+217,Mexiko,,country_mx
+218,"Mikronésie, federované státy",,country_fm
+219,"Moldavsko, republika",,country_md
+220,Monako,,country_mc
+221,Mongolsko,,country_mn
+222,Montserrat,,country_ms
+223,Maroko,,country_ma
+224,Mozambik,,country_mz
+225,Myanmar,,country_mm
+226,Namibie,,country_na
+227,Nauru,,country_nr
+228,Nepál,,country_np
+229,Nizozemí,,country_nl
+230,Nizozemsko Antilly,,country_an
+231,Nová Kaledonie,,country_nc
+232,Nový Zéland,,country_nz
+233,Nikaragua,,country_ni
+234,Niger,,country_ne
+235,Nigérie,,country_ng
+236,Niue,,country_nu
+237,Norfolk Island,,country_nf
+238,Severní ostrovy Mariana,,country_mp
+239,Norsko,,country_no
+240,Omán,,country_om
+241,Pákistán,,country_pk
+242,Palau,,country_pw
+243,"Palestinské území, obsazené",,country_ps
+244,Panama,,country_pa
+245,Papua -Nová Guinea,,country_pg
+246,Paraguay,,country_py
+247,Peru,,country_pe
+248,Filipíny,,country_ph
+249,Pitcairn,,country_pn
+250,Polsko,,country_pl
+251,Portugalsko,,country_pt
+252,Portoriko,,country_pr
+253,Katar,,country_qa
+254,Shledání,,country_re
+255,Rumunsko,,country_ro
+256,Ruská federace,,country_ru
+257,Rwanda,,country_rw
+258,Svatá Helena,,country_sh
+259,Saint Kitts a Nevis,,country_kn
+260,Svatá Lucia,,country_lc
+261,Svatý Pierre a Miquelon,,country_pm
+262,Svatý Vincent a Grenadiny,,country_vc
+263,Samoa,,country_ws
+264,San Marino,,country_sm
+265,Sao Tome a Principe,,country_st
+266,Saúdská Arábie,,country_sa
+267,Senegal,,country_sn
+268,Srbsko a Černá Hora,,country_cs
+269,Seychely,,country_sc
+270,Sierra Leone,,country_sl
+271,Singapur,,country_sg
+272,Slovensko,,country_sk
+273,Slovinsko,,country_si
+274,Šalamounovy ostrovy,,country_sb
+275,Somálsko,,country_so
+276,Jižní Afrika,,country_za
+277,Jižní Gruzie a jižní sendvičové ostrovy,,country_gs
+278,Španělsko,,country_es
+279,Srí Lanka,,country_lk
+280,Súdán,,country_sd
+281,Surinam,,country_sr
+282,Svalbard a Jan Mayen,,country_sj
+283,Svazijsko,,country_sz
+284,Švédsko,,country_se
+285,Švýcarsko,,country_ch
+286,Sýrská arabská republika,,country_sy
+287,"Tchaj -wan, provincie Čína",,country_tw
+288,Tádžikistán,,country_tj
+289,"Tanzanie, United Republic of",,country_tz
+290,Thajsko,,country_th
+291,Timor-Leste,,country_tl
+292,Togo,,country_tg
+293,Tokelau,,country_tk
+294,Tonga,,country_to
+295,Trinidad a Tobago,,country_tt
+296,Tunisko,,country_tn
+297,Turecko,,country_tr
+298,Turkmenistán,,country_tm
+299,Ostrovy Turků a Caicos,,country_tc
+300,Tuvalu,,country_tv
+301,Uganda,,country_ug
+302,Ukrajina,,country_ua
+303,Spojené arabské emiráty,,country_ae
+304,Spojené království,,country_gb
+305,Spojené státy,,country_us
+306,Milé odlehlé ostrovy Spojených států Spojené státy,,country_um
+307,Uruguay,,country_uy
+308,Uzbekistán,,country_uz
+309,Vanuatu,,country_vu
+310,Venezuela,,country_ve
+311,Vietnam,,country_vn
+312,"Panenské ostrovy, Britové",,country_vg
+313,"Panenské ostrovy, USA",,country_vi
+314,Wallis a Futuna,,country_wf
+315,Western Sahara,,country_eh
+316,Jemen,,country_ye
+317,Zambie,,country_zm
+318,Zimbabwe,,country_zw

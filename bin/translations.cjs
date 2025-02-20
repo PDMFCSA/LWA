@@ -3,6 +3,7 @@ const fs = require('fs');
 const root = process.cwd();
 const {translate} = require("google-translate-api-x");
 const {mdToPdf} = require("md-to-pdf");
+const converter = require("json-2-csv")
 
 const [command, ...args] = process.argv.slice(2);
 
@@ -236,12 +237,24 @@ async function saveToPdf(lang){
   fs.writeFileSync(p.replace(/\.md$/gm, ".pdf"), pdf.content);
 }
 
+
+/**
+ * @description converts a lang report to csv
+ * @param {string} lang
+ * @param {{code: string, text: string, key: string , status: string }[]} result
+ */
+function saveToCsv(lang, result){
+  const csv = converter.json2csv(result);
+  const p = path.join(root, "lang-codes", "reports", `${lang.toLowerCase()}.csv`);
+  fs.writeFileSync(p, csv);
+}
+
 /**
  *
  * @param {string[]} [langs]
  * @param {"json" | "text" | "pdf"} [format]
  */
-async function generateCodeSheet(langs, format = "json"){
+async function  generateCodeSheet(langs, format = "json"){
   langs = langs && langs.length ? langs : getAvailableLanguages()
   const certified = getCertified();
   const nonCertified = getCertified(false);
@@ -252,8 +265,10 @@ async function generateCodeSheet(langs, format = "json"){
     })
     saveCodeFile(result, lang, format === "pdf" ? "text" : format);
     updateCertificationTracker(nonCertified,  false);
-    if (format === "pdf")
+    if (format === "pdf"){
+      saveToCsv(lang, result)
       await saveToPdf(lang);
+    }
   }
 }
 

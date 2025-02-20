@@ -1,0 +1,311 @@
+code,text,status,key
+1,PharmaLedger에 오신 것을 환영합니다,ok,welcome
+2,의약품의 데이터 매트릭스 바코드(DataMatrix Barcode)를 스캔하여 자세한 정보를 확인할 수 있습니다.,ok,scan_explain
+3,데이터 매트릭스 스캔하기,ok,scan_button
+4,카메라를 바꾸세요,ok,change_camera
+5,취소,ok,cancel
+6,다시 스캔하기,ok,scan_again
+7,인식되지 않음.,ok,product_not_found_title
+9,이 제품을 찾을 수 없습니다.,ok,product_not_found
+10,만료됨,ok,leaflet_expired_title
+11,앱 버전:,ok,app_version
+12,<p> <b>이 제품의 유효기간이 만료된 것으로 확인되었습니다.</b> </p> ,ok,leaflet_expired_message
+13,언어를 사용할 수 없습니다,ok,select_lang_title
+14,소개,ok,about_modal_subtitle
+15,PharmaLedger,ok,about_modal_title
+16,"<h2>이 앱 정보</h2>
+<p>이 앱은 PharmaLedger®에서 제공합니다. 환자대표단체, 제약회사, 기술 전문가들이 공동으로 개발하였습니다.</p>
+<p>앱 사용자는 제품 패키지의 바코드를 스캔하여 의약품에 대한 정보를 볼 수 있습니다.</p>
+<p>표시된 정보는 제품 판매 허가 보유자가 제공한 것입니다.</p>
+<h2>PharmaLedger 소개</h2>
+<p>PharmaLedger®는 PharmaLedger Association(PLA)의 브랜드 이름입니다.</p>
+<p>PLA 는 글로벌 비영리 중립 협회입니다. 협회의 목적은 의료 분야의 디지털 신뢰 생태계를 조성하고 촉진하는 것입니다.</p>
+<p>협회는 의료 및 생명 과학 분야의 협력을 촉진하고 환자와 기타 이해관계자의 상호 이익을 위한 혁신과 구현을 촉진합니다.</p>",ok,about_content
+18,스캔 오류,ok,scan_error_title
+20,오류가 발생하여 선택한 카메라에 제대로 액세스할 수 없습니다. 장치의 카메라 설정을 확인하거나 메뉴에서 카메라를 변경해 보세요.,ok,camera_error_message
+21,본설명서는 사용자 선호 언어가 제공되지 않습니다. 사용 가능한 언어 목록 중에서 언어를 선택해주세요.,ok,leaflet_lang_select_message
+22,진행,ok,lang_proceed
+24,돌아가기,ok,go_home
+25,거의 다 끝났어요! 약관을 읽고 동의해 주세요.,ok,onboarding_welcome
+26,동의하지 않음,ok,disagree
+27,동의함,ok,agree
+28,"사용자가 약관에 동의할 때까지 ""PharmaLedger"" 앱은 작동하지 않습니다. 이용약관을 확인해주세요.",ok,disagree_extra_text
+29,개인 정보 보호 정책,ok,fwd_privacy
+30,약관,ok,fwd_terms
+31,도움,ok,fwd_help
+32,소개,ok,fwd_about
+33,개인 정보 보호 및 보안 원칙,ok,privacy_modal_subtitle
+34,개인 정보 보호 정책,ok,privacy_modal_title
+35,"<h2>개인 정보 보호 정책</h2> <p>본 개인 정보 보호 정책은 PharmaLedger Association 전자 제품 및 제품 정보의 사용에 적용됩니다. </p><h2>연락처</h2><ul class=""list-space"" role=""list""><li role=""listitem""><b>a) 관리자 또는 공동 관리자의 신원 및 연락처</b><p>데이터의 관리자는 PharmaLedger Association입니다.</p></li><li role=""listitem""><b>b) 데이터 보호 책임자의 연락처</b><p>PharmaLedger Association의 데이터 보호 책임 사무소는 다음 주소로 연락할 수 있습니다 dpo@pharmaledger.org.</p></li></ul><h2>우리가 수집하는 개인 데이터</h2><p>당사는 귀하의 전자 설명서를 제공하는 데 필요한 기술 데이터만 수집합니다. 여기에는 애플리케이션을 액세스하는 데 사용하는 장치 및 브라우저의 IP 주소와 기술 식별자가 포함됩니다.</p> <p><em>세부적으로 다음 데이터 요소를 수집합니다</em></p><ul><li><p><em>모바일 장치 액세스.</em> 모바일 장치의 카메라 및 기타 기능을 포함하여 모바일 장치에서 특정 기능에 대한 액세스 또는 권한을 요청할 수 있습니다. 액세스 또는 사용 권한을 변경하려면 장치 설정에서 변경할 수 있습니다.</p></li><li><p><em>모바일 장치 데이터.</em> 당사는 자동으로 장치 정보(예: 모바일 장치 ID, 모델 및 제조업체), 운영 체제, 버전 정보 및 시스템 구성 정보, 장치 및 애플리케이션 식별 번호, 브라우저 유형 및 버전, 하드웨어 모델 인터넷 서비스 공급자 및/또는 이동 통신사, 및 IP(인터넷 프로토콜) 주소(또는 프록시 서버). 애플리케이션을 사용하는 경우 모바일 장치와 연결된 전화 네트워크, 모바일 장치의 운영 체제 또는 플랫폼, 사용하는 모바일 장치 유형, 모바일 장치의 고유 장치 ID 및 액세스한 애플리케이션의 기능에 대한 정보도 수집할 수 있습니다.</p></li></ul><h2>개인 데이터를 수집하는 이유</h2><h3>이유</h3><p>당사는 귀하의 의약품에 대한 전자 설명서를 제공할 목적으로 귀하의 기술 데이터를 수집합니다. </p><p>따라서, 당사는 귀하의 개인 정보를 처리하기 위해 다음과 같은 법적 근거에 의존할 수 있습니다:</p><ul><li><p><b>계약의 이행.</b> 당사는 서비스 제공을 포함하여 귀하에게 계약상 의무를 이행할 필요가 있다고 판단될 때 또는 귀하와 계약을 체결하기 전에 귀하의 요청에 따라 귀하의 개인 정보를 처리할 수 있습니다.</p></li><li><p><b>법적 의무.</b> 당사는 의료 규정 및 공중 보건 법률에 따른 의무를 이행하는 것과 같은 당사의 법적 의무 준수를 위해 필요하다고 판단되는 경우 귀하의 정보를 사용할 수 있습니다.</p></li></ul><h2>귀하의 개인 데이터를 공유하는 대상</h2><p>회원사 및 제3자 서비스 제공업체.</p><p>당사를 위해 또는 당사를 대신하여 서비스를 수행하고 해당 작업을 수행하기 위해 해당 정보에 액세스해야 하는 제3자 벤더, 서비스 제공자, 계약자 또는 대리인('제3자')과 귀하의 데이터를 공유합니다. 당사는 귀하의 개인 정보를 보호하도록 설계된 제3자와 계약을 체결했습니다. 이것은 당사가 지시하지 않는 한 귀하의 개인 정보로 아무것도 할 수 없다는 것을 의미합니다. 그리고 사용자의 개인 정보를 당사를 제외한 어떤 조직과도 공유하지 않습니다. 또한 당사를 대신하여 보유하고 있는 데이터를 보호하고 우리가 지시한 기간 동안 보관할 것을 약속합니다. 당사가 개인 정보를 공유할 수 있는 제3자의 범주는 다음과 같습니다:</p><ul><li><p>제약회사 (회원사)</p></li><li><p>기술 서비스 제공업체</p></li></ul><h2>귀하의 개인 데이터를 저장하는 기간</h2><p>PharmaLedger Association 은 최대 30일 동안 귀하의설명서 요청을 처리하는 데 필요한 기간 동안만 귀하의 기술 데이터를 저장합니다. </p><p>귀하의 의약품 제조업체 또한 데이터 보존 정책에 따라 정의된 기간 동안 귀하의 데이터를 저장하며, 이 보존에 대한 자세한 내용은 귀하의 의약품 제조업체에 문의하십시오.</p><h2>개인정보를 제공하지 않는 경우</h2><p>기술 데이터를 제공하지 않기로 선택하면설명서 요청을 이행할 수 없습니다.</p><h2>귀하의 권리</h2><p>데이터 액세스 또는 삭제 요청과 같이 GDPR에 따른 개인 데이터와 관련된 요청이 있는 경우, 다음 주소로 문의할 수 있습니다 dpo@pharmaledger.org.</p><p>이러한 요청은 30일 이내에 처리됩니다.</p><h2>동의 철회</h2><p>데이터 액세스 또는 삭제 요청과 같이 GDPR에 따른 개인 데이터와 관련된 요청이 있는 경우, 다음 주소로 문의할 수 있습니다 dpo@pharmaledger.org.</p><p>이러한 요청은 30일 이내에 처리됩니다.</p><h2>자동 의사결정</h2><p>당사는 귀하에게 이 서비스를 제공할 때 자동화된 의사 결정을 사용하지 않습니다.</p><h2>개인 데이터의 국제 전송</h2><p>귀하의 의약품 제조업체가 귀하의 데이터를 유럽 연합 외부로 전송하도록 요구하는 경우 당사는 귀하의 데이터를 보호하기 위해 표준 계약 조항을 활용합니다.</p><h2>불만사항 제기</h2><p>데이터 액세스 또는 삭제 요청과 같이 GDPR에 따른 개인 데이터와 관련된 요청이 있는 경우, 다음 주소로 문의할 수 있습니다 dpo@pharmaledger.org.</p><p>이러한 요청은 30일 이내에 처리됩니다. 또한 귀하의 권리가 충족되지 않는다고 생각되는 경우 해당 지역 감독 기관에 문의할 수 있습니다.</p>",ok,privacy_content
+36,약관,ok,terms_modal_title
+37,PharmaLedger 애플리케이션을 사용할 때 적용되는 이용 약관.,ok,terms_modal_subtitle
+38,"<h2>PharmaLedger Association의 전자 제품 정보 웹사이트 및 애플리케이션에 대한 이용 약관 </h2><p>PharmaLedger Association의 전자 제품 정보 웹사이트 및 애플리케이션(""서비스"")에 액세스하거나 사용함으로써 귀하는 본 약관(""약관"")에 동의합니다. 본 약관에 동의하지 않는 경우 본 서비스에 액세스하거나 서비스를 사용할 수 없습니다. 본 서비스는 PharmaLedger Association(""협회"")에 의해 운영되며 자신의 의약품에 대한 정보를 찾는 개인이 사용할 수 있도록 고안되었습니다. 다자간 네트워크가 서비스를 제공하고 의약품 제조업체는 서비스를 통해 표시되는 제품 정보를 제공합니다. 협회는 이 정보에 대한 데이터 관리자 역할을 합니다. </p><h2>서비스 사용 </h2><p>귀하는 본 서비스를 합법적인 목적으로만 사용하는 것에 동의하며, 제3자의 권리를 침해하거나 제3자에 의한 서비스의 사용 및 향유를 제한 또는 금지하지 않습니다. 이러한 제한 또는 금지에는 불법적이거나 누구에게나 괴롭힘을 가하거나 고통을 주거나 불편을 줄 수 있는 행위, 외설적이거나 모욕적인 내용의 전송 또는 서비스 내의 정상적인 대화 흐름의 중단이 포함됩니다. </p><h2>지적 재산권 </h2><p>텍스트, 그래픽, 이미지 및 소프트웨어를 포함하되 이에 국한되지 않는 서비스의 콘텐츠는 협회 또는 라이선스 제공자 및 회원사의 재산이며 저작권 및 기타 지적 재산권법에 의해 보호됩니다. 귀하는 협회의 명시적인 서면 동의 없이 상업적 목적으로 서비스의 콘텐츠를 사용할 수 없습니다. </p><h2>책임</h2><p>협회는 서비스 운영 또는 서비스에 포함된 정보, 콘텐츠, 자료 또는 제품에 대해 명시적이든 묵시적이든 어떠한 종류의 진술이나 보증도 하지 않습니다. 협회는 서비스 이용으로 인해 발생하는 직접적, 간접적, 우발적, 징벌적, 결과적 손해를 포함하되 이에 국한되지 않는 어떠한 종류의 손해에 대해서도 책임을 지지 않습니다. </p><h2>준거법 </h2><p>본 약관 및 귀하의 서비스 사용은 스위스 법률에 따라 규율되고 해석되며 모든 분쟁은 스위스 바젤 법원에서 해결됩니다. </p><h2>약관 변경 </h2><p>협회는 언제든지 본 약관을 변경할 수 있는 권리를 보유하며 귀하는 본 약관의 변경 사항을 정기적으로 확인할 책임이 있습니다. 약관이 변경된 후에도 서비스를 계속 사용하면 개정된 약관에 동의하는 것으로 간주됩니다.</p><p><br></p>",ok,terms_content
+39,도움,ok,help_modal_title
+40,자주 묻는 질문,ok,help_modal_subtitle
+41,"<div><p><b><h2>EPI는 무엇인가요?</h2></b></p><p><b>EPI</b>는electronic product information (전자 제품 정보)의 약어입니다. 이것은 일반적으로 의약품 패키지에서 찾을 수 있는 종이로 된 제품설명서의 전자 버전입니다. 경우에 따라 <b>EPI</b>가 종이 설명서를 대체했을 수 있습니다.</p><p><b><h2>PharmaLedger는 무엇인가요?</h2></b></p><p>PLA(PharmaLedger Association)는 표준화되고 신뢰할 수 있는 오픈 소스 플랫폼을 통해 의료 분야의 디지털 신뢰 생태계를 활성화하고 육성하기 위한 목적으로 스위스에 기반을 둔 비영리 단체입니다. PLA는 협업을 촉진하고 혁신과 채택을 가속화하여, 환자 및 기타 이해 관계자를 위한 의료 및 생명 과학 분야에서 상호 이익을 달성합니다. PLA는 블록체인 솔루션의 가치를 입증하기 위해 유럽연합 집행위원회와 제약업계가 자금을 지원하는 3년 프로젝트인 PharmaLedger 프로젝트 작업을 지속하기 위해 2022년에 설립되었습니다. 자세한 내용은 https://pharmaledger.org 에서 확인할 수 있습니다.</p><p><b><h2>DataMatrix는 무엇인가요?</h2></b></p><p>제품 패키지에 있는 바코드입니다.  이 바코드는 검은색과 흰색 사각형 상자 바코드이며 다음과 유사합니다:<br><img src=""./images/barcode_example.png"" alt='DataMatrix 바코드 예'></p><p><b><h2>앱을 어떻게 사용합니까?</h2></b></p><p>앱의 랜딩 페이지에 있는 지침을 따릅니다. 여기에는 제품 패키지에서 <b>데이터 매트릭스</b>를 찾을 수 있는 위치를 나타내는 그림이 표시됩니다. <b>데이터 매트릭스</b>를 찾았으면 '<b>데이터 매트릭스</b> 스캔하기' 버튼을 클릭합니다. 응용 프로그램이 카메라를 사용하여 <b>데이터 매트릭스</b>를 스캔할 수 있도록 하십시오. 카메라를 사용하여 <b>데이터 매트릭스</b>에 초점을 맞춥니다. 팩이 성공적으로 스캔되면 <b>EPI</b>가 표시됩니다. '+' 버튼을 클릭하면 자세한 정보를 볼 수 있습니다.</p><p><b><h2>왜 데이터 매트릭스가 결과를 제공하지 않는 것입니까?</h2></b></p><p>패키지의 <b>DataMatrix</b>가 <b>EPI</b>를 제공하지 않는 것에는 몇 가지 이유가 있습니다. 그 중 하나는 카메라의 초점 때문일 수 있습니다. 화면에 잘 보이는 곳에서 코드를 스캔하고 코드가 잘 보이도록 하십시오.  만약 안정적으로 스캔하기가 어려울 경우에는 테이블을 사용해 손을 지탱해보세요.</p></div>",ok,help_content
+44,제품 정보를 볼 수 없습니다.,ok,product_not_loaded_title
+45,죄송합니다. 제품 정보가 입력되지 않았습니다.,ok,product_not_loaded
+46,코드 오류,ok,err_code
+47,시스템이 사용 중입니다. 나중에 다시 시도하십시오.,ok,system_busy
+49,인증되지 않은 제품,,error_subtitle
+50,잘못된 날짜,,leaflet_incorrect_date_title
+51,스캔한 날짜가 잘못되었습니다,,leaflet_incorrect_date_subtitle
+52,<b>이 제품의 날짜가 잘못되었습니다</b>.,,leaflet_incorrect_date_message
+61,인쇄 정보,,leaflet_print_title
+62,현재 선택된 정보는 PDF로 인쇄됩니다.,,leaflet_print_description
+63,진행 하시겠습니까?,,leaflet_print_description2
+64,진행하다,,leaflet_print_button
+65,돌아 가라,,leaflet_print_button_back
+66,선택하십시오,,document_modal_title
+67,표시 할 문서를 선택하십시오,,document_modal_message
+68,환자 정보,,document_patient_info
+69,환자를위한 제품 정보,,document_product_info
+70,제품 정보는 영어로만 제공됩니다,,document_lang_select_message
+71,알아채다,,document_lang_select_title
+72,의료 전문가를위한 처방 정보,,document_prescribing_info
+73,국가 선택,,epi_markets_modal_title
+74,국가를 선택하십시오,,epi_markets_modal_message
+75,나라도 없습니다,,epi_markets_modal_no_market
+76,아프가니스탄,,country_af
+77,Åland Islands,,country_ax
+78,알바니아,,country_al
+79,알제리,,country_dz
+80,미국 사모아,,country_as
+81,안도라,,country_ad
+82,앙골라,,country_ao
+83,앵 guilla,,country_ai
+84,남극 대륙,,country_aq
+85,안티구아와 바부 다,,country_ag
+86,아르헨티나,,country_ar
+87,아르메니아,,country_am
+88,아루바,,country_aw
+89,호주,,country_au
+90,오스트리아,,country_at
+91,아제르바이잔,,country_az
+92,바하마,,country_bs
+93,바레인,,country_bh
+94,방글라데시,,country_bd
+95,바베이도스,,country_bb
+96,벨라루스,,country_by
+97,벨기에,,country_be
+98,벨리즈,,country_bz
+99,베닌,,country_bj
+100,버뮤다,,country_bm
+101,부탄,,country_bt
+102,볼리비아,,country_bo
+103,보스니아와 헤르체고비나,,country_ba
+104,보츠와나,,country_bw
+105,Bouvet Island,,country_bv
+106,브라질,,country_br
+107,영국 인도양 영토,,country_io
+108,브루나이 다 루살람,,country_bn
+109,불가리아,,country_bg
+110,부르 키나 파소,,country_bf
+111,부룬디,,country_bi
+112,캄보디아,,country_kh
+113,카메룬,,country_cm
+114,캐나다,,country_ca
+115,케이프 베르데,,country_cv
+116,케이맨 제도,,country_ky
+117,중앙 아프리카 공화국,,country_cf
+118,차드,,country_td
+119,칠레,,country_cl
+120,중국,,country_cn
+121,크리스마스 섬,,country_cx
+122,코코 (킬링) 섬,,country_cc
+123,콜롬비아,,country_co
+124,코 모로,,country_km
+125,콩고,,country_cg
+126,"콩고, 민주 공화국",,country_cd
+127,쿡 제도,,country_ck
+128,코스타리카,,country_cr
+129,코트 디부 아르,,country_ci
+130,크로아티아,,country_hr
+131,쿠바,,country_cu
+132,키프로스,,country_cy
+133,체코 공화국,,country_cz
+134,덴마크,,country_dk
+135,지부티,,country_dj
+136,도미니카,,country_dm
+137,도미니카 공화국,,country_do
+138,에콰도르,,country_ec
+139,이집트,,country_eg
+140,엘살바도르,,country_sv
+141,적도 기니,,country_gq
+142,에리트레아,,country_er
+143,에스토니아,,country_ee
+144,에티오피아,,country_et
+145,포클랜드 제도 (Malvinas),,country_fk
+146,Faroe Islands,,country_fo
+147,피지,,country_fj
+148,핀란드,,country_fi
+149,프랑스,,country_fr
+150,프랑스 기아나,,country_gf
+151,프랑스 폴리네시아,,country_pf
+152,프랑스 남부 영토,,country_tf
+153,가봉,,country_ga
+154,감비아,,country_gm
+155,그루지야,,country_ge
+156,독일,,country_de
+157,가나,,country_gh
+158,지브롤터,,country_gi
+159,그리스,,country_gr
+160,그린란드,,country_gl
+161,그레나다,,country_gd
+162,과드루프,,country_gp
+163,괌,,country_gu
+164,과테말라,,country_gt
+165,건지,,country_gg
+166,기니,,country_gn
+167,기니 비시,,country_gw
+168,가이아나,,country_gy
+169,아이티,,country_ht
+170,섬과 맥도날드 제도가 들렸다,,country_hm
+171,거룩한 참조 (바티칸 시티 주),,country_va
+172,온두라스,,country_hn
+173,홍콩,,country_hk
+174,헝가리,,country_hu
+175,아이슬란드,,country_is
+176,인도,,country_in
+177,인도네시아 공화국,,country_id
+178,"이란, 이슬람 공화국",,country_ir
+179,이라크,,country_iq
+180,아일랜드,,country_ie
+181,사람의 섬,,country_im
+182,이스라엘,,country_il
+183,이탈리아,,country_it
+184,자메이카,,country_jm
+185,일본,,country_jp
+186,저지,,country_je
+187,요르단,,country_jo
+188,카자흐스탄,,country_kz
+189,케냐,,country_ke
+190,키리 바티,,country_ki
+191,"한국, 민주당 인민 공화국",,COUNTRY_KP
+192,"한국, 공화국",,COUNTRY_KR
+193,쿠웨이트,,country_kw
+194,키르기스스탄,,country_kg
+195,라오스 민주 공화국,,COUNTRY_LA
+196,라트비아,,COUNTRY_LV
+197,레바논,,country_lb
+198,레소토,,country_ls
+199,라이베리아,,country_lr
+200,리비아 아랍 자마 이리 야,,country_ly
+201,리히텐슈타인,,country_li
+202,리투아니아,,country_lt
+203,룩셈부르크,,country_lu
+204,마카오,,country_mo
+205,"마케도니아, 전 유고 슬라비아 공화국",,country_mk
+206,마다가스카르,,country_mg
+207,말라위,,country_mw
+208,말레이시아,,country_my
+209,몰디브,,country_mv
+210,말리,,country_ml
+211,몰타,,country_mt
+212,마샬 제도,,country_mh
+213,마르티니크,,country_mq
+214,모리타니,,country_mr
+215,모리셔스,,country_mu
+216,Mayotte,,country_yt
+217,멕시코,,country_mx
+218,"미크로네시아, 연합 상태",,country_fm
+219,"몰도바, 공화국",,country_md
+220,모나코,,country_mc
+221,몽골리아,,country_mn
+222,Montserrat,,country_ms
+223,모로코 가죽,,country_ma
+224,모잠비크,,country_mz
+225,미얀마,,country_mm
+226,나미비아,,country_na
+227,나우루,,country_nr
+228,네팔,,country_np
+229,네덜란드,,country_nl
+230,네덜란드 앤 틸리 스,,country_an
+231,뉴 칼레도니아,,country_nc
+232,뉴질랜드,,country_nz
+233,니카라과,,country_ni
+234,니제르,,country_ne
+235,나이지리아,,country_ng
+236,니우,,country_nu
+237,노퍽 섬,,country_nf
+238,북부 마리아나 제도,,country_mp
+239,노르웨이,,country_no
+240,오만,,country_om
+241,파키스탄,,country_pk
+242,팔라우,,country_pw
+243,"팔레스타인 영토, 점령",,country_ps
+244,파나마,,country_pa
+245,파푸아 뉴기니,,country_pg
+246,파라과이,,country_py
+247,페루,,country_pe
+248,필리핀 제도,,country_ph
+249,핏 케언,,country_pn
+250,폴란드,,country_pl
+251,포르투갈,,country_pt
+252,푸에르토 리코,,country_pr
+253,카타르,,country_qa
+254,재결합,,country_re
+255,루마니아,,country_ro
+256,러시아 연맹,,country_ru
+257,르완다,,country_rw
+258,세인트 헬레나,,country_sh
+259,세인트 키츠와 네비스,,country_kn
+260,세인트 루시아,,country_lc
+261,세인트 피에르와 미 킬론,,country_pm
+262,세인트 빈센트와 그레나딘,,country_vc
+263,사모아,,country_ws
+264,산 마리노,,country_sm
+265,Sao Tome과 Principe,,country_st
+266,사우디 아라비아,,country_sa
+267,세네갈,,country_sn
+268,세르비아와 몬테네그로,,country_cs
+269,세이셸,,country_sc
+270,시에라 리온,,country_sl
+271,싱가포르,,country_sg
+272,슬로바키아,,country_sk
+273,슬로베니아,,country_si
+274,솔로몬 제도,,country_sb
+275,소말리아,,country_so
+276,남아프리카,,country_za
+277,사우스 조지아와 사우스 샌드위치 제도,,country_gs
+278,스페인,,country_es
+279,스리랑카,,country_lk
+280,수단,,country_sd
+281,수리남,,country_sr
+282,Svalbard와 Jan Mayen,,country_sj
+283,스와질란드,,country_sz
+284,스웨덴,,country_se
+285,스위스,,country_ch
+286,시리아 아랍 공화국,,country_sy
+287,"대만, 중국 지방",,country_tw
+288,타지키스탄,,country_tj
+289,"탄자니아, 연합 공화국",,country_tz
+290,태국,,country_th
+291,동 티모르,,country_tl
+292,토고,,country_tg
+293,Tokelau,,country_tk
+294,통가,,country_to
+295,트리니다드 토바고,,country_tt
+296,튀니지,,country_tn
+297,칠면조,,country_tr
+298,투르크 메니스탄,,country_tm
+299,터키와 카이코스 제도,,country_tc
+300,투발루,,country_tv
+301,우간다,,country_ug
+302,우크라이나,,country_ua
+303,아랍 에미리트 연합,,country_ae
+304,영국,,country_gb
+305,미국,,country_us
+306,미국 미성년 섬,,country_um
+307,우루과이,,country_uy
+308,우즈베키스탄,,country_uz
+309,바누아투,,country_vu
+310,베네수엘라,,country_ve
+311,베트남,,country_vn
+312,"버진 아일랜드, 영국",,country_vg
+313,"버진 아일랜드, 미국",,country_vi
+314,Wallis와 Futuna,,country_wf
+315,서부 사하라,,country_eh
+316,예멘 아랍 공화국,,country_ye
+317,잠비아,,country_zm
+318,짐바브웨,,country_zw
