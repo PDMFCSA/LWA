@@ -553,7 +553,7 @@ function LeafletController() {
     this.loadPrintContent= (modal = 'settings-modal') => {
         const content =  document.querySelector(`#${modal} .content-to-print`);
         const printContent =  document.querySelector('#print-content');
-        content.querySelectorAll('[style], [nowrap]').forEach(element => {
+        content.querySelectorAll('[style], [nowrap],video').forEach(element => {
             element.removeAttribute('style');
             element.removeAttribute('nowrap');
             element.removeAttribute('xmlns');
@@ -561,6 +561,74 @@ function LeafletController() {
         });
         printContent.innerHTML = "";
         printContent.innerHTML = content.innerHTML;
+
+        // Setup the printing images of the videos
+        printContent.querySelectorAll('video').forEach(async(element) => {
+            if(element.tagName === 'VIDEO') {
+                await setVideoFramesForPrint(element);
+                // Hide the video for the print
+                element.remove();
+            }
+
+        });
+    }
+
+    const setVideoFramesForPrint = async(element) => {
+        let chapters = element.querySelectorAll('chapter');
+        for (let chapter of chapters) {
+            // get timestamp from the chapter atribute
+            let timestamp = timeToSeconds(chapter.getAttribute("timestamp"));
+            let label = chapter.getAttribute("label");
+            if(timestamp){
+                await captureFrameAtTimestamp(element, timestamp, label); // Wait for seeked event to complete
+            }
+        }
+    }
+
+    async function captureFrameAtTimestamp(element, timestamp, label) {
+        return new Promise((resolve) => {
+            element.currentTime = timestamp;
+            // onseeked function to guarantee the video is set to the correct timestamp
+            element.onseeked = () => {
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+                canvas.width = element.videoWidth;
+                canvas.height = element.videoHeight
+    
+                // Draw the video frame onto the canvas
+                ctx.drawImage(element, 0, 0, canvas.width,canvas.height );
+    
+                // Convert the canvas to an image
+                let imgData = canvas.toDataURL();
+    
+                // Create and append the img and label if exists
+                let imageDiv = document.createElement("figure");
+                let img = document.createElement('img');
+                img.setAttribute('src', imgData);
+                img.setAttribute("timestamp", timestamp);
+                imageDiv.appendChild(img);
+                if(label){
+                    let labelElement = document.createElement("figcaption");
+                    labelElement.textContent = label;
+                    imageDiv.appendChild(labelElement);
+                }
+                element.parentNode.appendChild(imageDiv);
+    
+                resolve(); // Resolve the promise when done
+            };
+        });
+    }
+
+    function timeToSeconds(timeString) {
+        const parts = timeString.split(":"); // Split into hours, minutes, and seconds.ms
+    
+        // Parse hours, minutes, and seconds
+        const hours = parseInt(parts[0], 10) || 0;
+        const minutes = parseInt(parts[1], 10) || 0;
+        const seconds = parseFloat(parts[2]) || 0;
+    
+        // Convert to total seconds
+        return hours * 3600 + minutes * 60 + seconds;
     }
 
     this.showPrintVersion = (modal = 'settings-modal') => {

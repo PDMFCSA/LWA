@@ -156,4 +156,11 @@
     #recalled-bar {
         display: none;
     }
+
+    figcaption {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 10pt;
+    }
 }

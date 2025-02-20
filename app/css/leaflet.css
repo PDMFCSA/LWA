@@ -329,6 +329,10 @@ button:not([disabled]) {
     margin: 5px 0 !important;
 }
 
+video {
+    display: block;
+    margin: 0 auto;
+}
 
 
 
