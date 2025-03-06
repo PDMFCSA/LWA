@@ -255,6 +255,17 @@ const acodisXslContent =  `<?xml version="1.0" encoding="UTF-8"?>
             <xsl:apply-templates select="node()"/>
         </img>
     </xsl:template>
+
+    <xsl:template match="video">
+        <video>
+            <xsl:copy-of select="@*"/>
+            <xsl:if test="not(@controls)">
+                <xsl:attribute name="controls">true</xsl:attribute>
+            </xsl:if>
+
+            <xsl:apply-templates/>
+        </video>
+    </xsl:template>
     
     <xsl:template match="//table">
         <table><xsl:apply-templates select="node()" /></table>
