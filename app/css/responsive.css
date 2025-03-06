@@ -668,6 +668,75 @@ b {
     max-width: 15px;
 }
 
+/* Animated gif controls */
+.content-container {
+    text-align: center;
+}
+
+/* @media(min-width: 1080px) {
+    .jsgif canvas {
+        width: 336px !important;
+        max-width: 336px !important;
+    } 
+} */
+
+.control-container {
+    display: block;
+}
+
+@media(min-width: 301px) {
+    .control-container {
+        margin: -30px auto 20px auto !important;
+    }
+    .jsgif canvas {
+        width: 324px !important;
+    } 
+}
+
+@media(max-width: 300px) {
+    .jsgif canvas {
+        width: 180px !important;
+    } 
+}
+
+/* Zoom at 250% */
+@media(max-width: 150px) {
+    .jsgif canvas {
+        width: 120px !important;
+    } 
+} 
+
+.control-container button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+    overflow: visible;
+    padding: .5rem 1.5rem;
+    text-align: center;
+}
+.control-container button .play {
+    transform: translateX(3px);
+}
+.control-container button:not(.playing) .play {
+    display: inline-block;
+}
+.control-container button:not(.playing) .pause {
+    display: none !important;
+}
+.control-container button.playing .play {
+    display: none !important;
+}
+.control-container button.playing .pause {
+    display: inline-block;
+}
+.control-container button img {
+    width: 38px;
+}
+
 /*----------------------------------------------*/
 
 .scan-header {

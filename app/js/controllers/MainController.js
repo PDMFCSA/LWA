@@ -2,9 +2,34 @@ import {goToPage} from "../../../utils.js"
 import {translate} from "../translationUtils.js";
 import environment from "../../../environment.js";
 import constants from "../../../constants.js";
-
-
+import Scanner from "./../../lib/zxing-wrapper/scanner.js";
+  
 function MainController() {
+
+    this.loadGifControl = function () {
+        const image = document.querySelector('#pack-gif');
+        const imageAlt = image.getAttribute('alt');
+        const controlGifButton = document.querySelector('#control-gif');
+        const animatedGif = new SuperGif({gif: image, show_progress_bar: false, draw_while_loading: false});
+        
+        animatedGif.load();
+
+        const gifContainer = document.querySelector('.jsgif');
+        gifContainer.setAttribute('aria-label', imageAlt);
+        function toggleAnimationState() {
+            const playing = animatedGif.get_playing();
+            controlGifButton.classList.toggle('playing');
+            if(playing) {
+                animatedGif.pause();
+            } else {
+                animatedGif.play();
+            }
+        };
+
+        gifContainer.addEventListener('mouseenter', toggleAnimationState);
+        gifContainer.addEventListener('mouseleave', toggleAnimationState);
+        controlGifButton.addEventListener('click', toggleAnimationState);
+    }
 
     this.toggleMenu = function () {
         let menuButton = document.getElementById("hamburger-menu-button");
@@ -57,6 +82,8 @@ function MainController() {
         let lastFocusableEl = focusableElements[focusableElements.length - 1];
         let KEYCODE_TAB = 9;
 
+        this.loadGifControl();
+       
         menuButton.addEventListener("keydown", (event) => {
             switch (event.key) {
                 case ' ':

@@ -3,6 +3,8 @@
 <head>
     <link href="css/responsive.css" rel="stylesheet">
     <script src="./js/controllers/MainController.js" type="module"></script>
+    <script type="text/javascript" src="./lib/libgif-js/libgif.js"></script>
+
     <title>PharmaLedger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -81,8 +83,18 @@
                 </div>
             </div>
         </div>
+
         <div class="content-container">
-            <img src="images/medicine-pack.gif" alt="How to scan animated gif"/>
+            <img id="pack-gif" src="images/medicine-pack.gif" 
+            rel:auto_play="1"
+            alt="How to scan animated gif" />
+           
+        </div>
+        <div class="control-container">
+            <button class="playing" aria-label="Play / Pause animation button" id="control-gif" type="button">
+               <img class="play" src="images/play.svg" alt="Play" title="Play"/>
+               <img class="pause" src="images/pause.svg" alt="Pause" title="Pause"/>
+            </button>
         </div>
         <div class="explain-container" tabindex="0">
             <div translate="scan_explain"></div>

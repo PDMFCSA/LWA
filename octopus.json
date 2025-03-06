@@ -12,6 +12,17 @@
           "commit": "a580226efc56ca6556060308850b43d16708ed85"
         }
       ]
-    }
+    },
+    {
+        "name": "libgif-js",
+        "src": "https://github.com/buzzfeed/libgif-js",
+        "actions": [
+          {
+            "type": "smartClone",
+            "target": "./app/lib",
+            "collectLog": false
+          }
+        ]
+      }
   ]
 }
