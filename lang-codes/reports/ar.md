@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | مرحبا بك في فارما ليدجر | ok | 1 |
-| scan_explain | ابحث عن باركود داتا ماتركس الموجود على دوائك لمسحه وعرض المعلومات الخاصة بالدواء. | ok | 2 |
+| scan_explain | ابحث عن Datamatrix على الطب الخاص بك. انظر المثال أعلاه. |  | 2 |
 | scan_button | امسح الداتا ماتركس | ok | 3 |
 | change_camera | بدل الكاميرا | ok | 4 |
 | cancel | الغاء | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | للأسف، لم يتم تحميل أي معلومات عن المنتج. | ok | 45 |
 | err_code | خطأ بالكود | ok | 46 |
 | system_busy | النظام مشغول، يرجى إعادة المحاولة لاحقا. | ok | 47 |
+| leaflet_print | مطبعة |  | 48 |
 | error_subtitle | منتج غير موثوق |  | 49 |
 | leaflet_incorrect_date_title | تاريخ خاطئ |  | 50 |
 | leaflet_incorrect_date_subtitle | تاريخ المسح غير صحيح |  | 51 |
@@ -66,18 +67,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | الرجاء تحديد بلدك |  | 74 |
 | epi_markets_modal_no_market | لا بلد |  | 75 |
 | country_af | أفغانستان |  | 76 |
-| country_ax | جزر Åland |  | 77 |
 | country_al | ألبانيا |  | 78 |
 | country_dz | الجزائر |  | 79 |
-| country_as | ساموا الأمريكية |  | 80 |
 | country_ad | أندورا |  | 81 |
 | country_ao | أنغولا |  | 82 |
-| country_ai | أنغيلا |  | 83 |
-| country_aq | أنتاركتيكا |  | 84 |
 | country_ag | أنتيغوا وبربودا |  | 85 |
 | country_ar | الأرجنتين |  | 86 |
 | country_am | أرمينيا |  | 87 |
-| country_aw | أروبا |  | 88 |
 | country_au | أستراليا |  | 89 |
 | country_at | النمسا |  | 90 |
 | country_az | أذربيجان |  | 91 |
@@ -89,15 +85,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | بلجيكا |  | 97 |
 | country_bz | بليز |  | 98 |
 | country_bj | بنين |  | 99 |
-| country_bm | برمودا |  | 100 |
 | country_bt | بوتان |  | 101 |
 | country_bo | بوليفيا |  | 102 |
 | country_ba | البوسنة والهرسك |  | 103 |
 | country_bw | بوتسوانا |  | 104 |
-| country_bv | جزيرة بوفيت |  | 105 |
 | country_br | البرازيل |  | 106 |
-| country_io | أراضي المحيط الهندي البريطاني |  | 107 |
-| country_bn | بروناي داروسالام |  | 108 |
+| country_bn | بروناي |  | 108 |
 | country_bg | بلغاريا |  | 109 |
 | country_bf | بوركينا فاسو |  | 110 |
 | country_bi | بوروندي |  | 111 |
@@ -105,20 +98,16 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | الكاميرون |  | 113 |
 | country_ca | كندا |  | 114 |
 | country_cv | كيب فيردي |  | 115 |
-| country_ky | جزر كايمان |  | 116 |
 | country_cf | جمهورية وسط إفريقيا |  | 117 |
 | country_td | تشاد |  | 118 |
 | country_cl | تشيلي |  | 119 |
 | country_cn | الصين |  | 120 |
-| country_cx | جزيرة عيد الميلاد |  | 121 |
-| country_cc | جزر كوكوس (كيلينغ) |  | 122 |
 | country_co | كولومبيا |  | 123 |
 | country_km | COMOROS |  | 124 |
-| country_cg | الكونغو |  | 125 |
+| country_cg | الكونغو ، جمهورية |  | 125 |
 | country_cd | الكونغو ، جمهورية الديمقراطية |  | 126 |
-| country_ck | كوك جزر |  | 127 |
 | country_cr | كوستاريكا |  | 128 |
-| country_ci | كوت ديفوار |  | 129 |
+| country_ci | ساحل العاج |  | 129 |
 | country_hr | كرواتيا |  | 130 |
 | country_cu | كوبا |  | 131 |
 | country_cy | قبرص |  | 132 |
@@ -134,33 +123,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | إريتريا |  | 142 |
 | country_ee | إستونيا |  | 143 |
 | country_et | أثيوبيا |  | 144 |
-| country_fk | جزر فوكلاند (مالفيناس) |  | 145 |
-| country_fo | جزر فارو |  | 146 |
 | country_fj | فيجي |  | 147 |
 | country_fi | فنلندا |  | 148 |
 | country_fr | فرنسا |  | 149 |
-| country_gf | غويانا الفرنسية |  | 150 |
-| country_pf | بولينيزيا الفرنسية |  | 151 |
-| country_tf | الأراضي الجنوبية الفرنسية |  | 152 |
 | country_ga | الجابون |  | 153 |
 | country_gm | غامبيا |  | 154 |
 | country_ge | جورجيا |  | 155 |
 | country_de | ألمانيا |  | 156 |
 | country_gh | غانا |  | 157 |
-| country_gi | جبل طارق |  | 158 |
 | country_gr | اليونان |  | 159 |
-| country_gl | غرينلاند |  | 160 |
 | country_gd | غرينادا |  | 161 |
-| country_gp | غواديلوب |  | 162 |
-| country_gu | غوام |  | 163 |
 | country_gt | غواتيمالا |  | 164 |
-| country_gg | غيرنسي |  | 165 |
 | country_gn | غينيا |  | 166 |
 | country_gw | غينيا بيساو |  | 167 |
 | country_gy | غيانا |  | 168 |
 | country_ht | هايتي |  | 169 |
-| country_hm | سمعت جزيرة وجزر ماكدونالد |  | 170 |
-| country_va | الكرسي الرسولي (ولاية مدينة الفاتيكان) |  | 171 |
 | country_hn | هندوراس |  | 172 |
 | country_hk | هونغ كونغ |  | 173 |
 | country_hu | هنغاريا |  | 174 |
@@ -170,31 +147,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | إيران ، جمهورية الإسلامية |  | 178 |
 | country_iq | العراق |  | 179 |
 | country_ie | أيرلندا |  | 180 |
-| country_im | جزيرة الإنسان |  | 181 |
 | country_il | إسرائيل |  | 182 |
 | country_it | إيطاليا |  | 183 |
 | country_jm | جامايكا |  | 184 |
 | country_jp | اليابان |  | 185 |
-| country_je | جيرسي |  | 186 |
 | country_jo | الأردن |  | 187 |
 | country_kz | كازاخستان |  | 188 |
 | country_ke | كينيا |  | 189 |
 | country_ki | كيريباتي |  | 190 |
-| COUNTRY_KP | كوريا ، جمهورية الشعب الديمقراطي |  | 191 |
-| COUNTRY_KR | كوريا ، جمهورية |  | 192 |
+| country_kp | كوريا الشمالية |  | 191 |
+| country_kr | كوريا الجنوبية |  | 192 |
 | country_kw | الكويت |  | 193 |
 | country_kg | قيرغيزستان |  | 194 |
-| COUNTRY_LA | جمهورية لاو الديمقراطية الشعبية |  | 195 |
-| COUNTRY_LV | لاتفيا |  | 196 |
+| country_la | لاوس |  | 195 |
+| country_lv | لاتفيا |  | 196 |
 | country_lb | لبنان |  | 197 |
 | country_ls | ليسوتو |  | 198 |
 | country_lr | ليبيريا |  | 199 |
-| country_ly | العربية الليبية Jamahiriya |  | 200 |
+| country_ly | ليبيا |  | 200 |
 | country_li | ليختنشتاين |  | 201 |
 | country_lt | ليتوانيا |  | 202 |
 | country_lu | لوكسمبورغ |  | 203 |
-| country_mo | ماكاو |  | 204 |
-| country_mk | مقدونيا ، جمهورية يوغسلاف السابقة |  | 205 |
+| country_mk | شمال مقدونيا |  | 205 |
 | country_mg | مدغشقر |  | 206 |
 | country_mw | ملاوي |  | 207 |
 | country_my | ماليزيا |  | 208 |
@@ -202,16 +176,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | مالي |  | 210 |
 | country_mt | مالطا |  | 211 |
 | country_mh | جزر مارشال |  | 212 |
-| country_mq | مارتينيك |  | 213 |
 | country_mr | موريتانيا |  | 214 |
 | country_mu | موريشيوس |  | 215 |
-| country_yt | مايوت |  | 216 |
 | country_mx | المكسيك |  | 217 |
 | country_fm | ميكرونيزيا ، ولايات اتحادية |  | 218 |
-| country_md | مولدوفا ، جمهورية |  | 219 |
+| country_md | مولدوفا |  | 219 |
 | country_mc | موناكو |  | 220 |
 | country_mn | منغوليا |  | 221 |
-| country_ms | مونتسيرات |  | 222 |
 | country_ma | المغرب |  | 223 |
 | country_mz | موزمبيق |  | 224 |
 | country_mm | ميانمار |  | 225 |
@@ -219,45 +190,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | ناورو |  | 227 |
 | country_np | نيبال |  | 228 |
 | country_nl | هولندا |  | 229 |
-| country_an | هولندا الأنتيل |  | 230 |
-| country_nc | كاليدونيا الجديدة |  | 231 |
 | country_nz | نيوزيلندا |  | 232 |
 | country_ni | نيكاراغوا |  | 233 |
 | country_ne | النيجر |  | 234 |
 | country_ng | نيجيريا |  | 235 |
-| country_nu | نيو |  | 236 |
-| country_nf | جزيرة نورفولك |  | 237 |
-| country_mp | جزر ماريانا الشمالية |  | 238 |
 | country_no | النرويج |  | 239 |
 | country_om | عمان |  | 240 |
 | country_pk | باكستان |  | 241 |
 | country_pw | بالاو |  | 242 |
-| country_ps | الأراضي الفلسطينية ، احتلت |  | 243 |
 | country_pa | بنما |  | 244 |
 | country_pg | بابوا غينيا الجديدة |  | 245 |
 | country_py | باراجواي |  | 246 |
 | country_pe | بيرو |  | 247 |
 | country_ph | فيلبيني |  | 248 |
-| country_pn | بيتكيرن |  | 249 |
 | country_pl | بولندا |  | 250 |
 | country_pt | البرتغال |  | 251 |
-| country_pr | بورتوريكو |  | 252 |
 | country_qa | قطر |  | 253 |
-| country_re | جمع شمل |  | 254 |
 | country_ro | رومانيا |  | 255 |
-| country_ru | الاتحاد الروسي |  | 256 |
+| country_ru | روسيا |  | 256 |
 | country_rw | رواندا |  | 257 |
-| country_sh | القديس هيلينا |  | 258 |
 | country_kn | سانت كيتس ونيفيس |  | 259 |
 | country_lc | سانت لوسيا |  | 260 |
-| country_pm | القديس بيير وميكلون |  | 261 |
 | country_vc | القديس فنسنت وجرينادين |  | 262 |
 | country_ws | ساموا |  | 263 |
 | country_sm | سان مارينو |  | 264 |
 | country_st | ساو تومي وبرينسيبي |  | 265 |
 | country_sa | المملكة العربية السعودية |  | 266 |
 | country_sn | السنغال |  | 267 |
-| country_cs | صربيا والجبل الأسود |  | 268 |
 | country_sc | سيشيل |  | 269 |
 | country_sl | سيراليون |  | 270 |
 | country_sg | سنغافورة |  | 271 |
@@ -266,45 +225,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | جزر سليمان |  | 274 |
 | country_so | الصومال |  | 275 |
 | country_za | جنوب أفريقيا |  | 276 |
-| country_gs | جنوب جورجيا وجزر ساندويتش الجنوبية |  | 277 |
 | country_es | إسبانيا |  | 278 |
 | country_lk | سري لانكا |  | 279 |
 | country_sd | السودان |  | 280 |
 | country_sr | سورينام |  | 281 |
-| country_sj | سفالبارد وجان ماين |  | 282 |
 | country_sz | سوازيلاند |  | 283 |
 | country_se | السويد |  | 284 |
 | country_ch | سويسرا |  | 285 |
-| country_sy | الجمهورية العربية السورية |  | 286 |
-| country_tw | تايوان ، مقاطعة الصين |  | 287 |
+| country_sy | سوريا |  | 286 |
+| country_tw | تايوان |  | 287 |
 | country_tj | طاجيكستان |  | 288 |
-| country_tz | تنزانيا ، جمهورية موحدة |  | 289 |
+| country_tz | تنزانيا |  | 289 |
 | country_th | تايلاند |  | 290 |
-| country_tl | تيمور-ليشتي |  | 291 |
+| country_tl | تيمور الشرقية |  | 291 |
 | country_tg | توغو |  | 292 |
-| country_tk | توكيلاو |  | 293 |
 | country_to | تونغا |  | 294 |
 | country_tt | ترينيداد وتوباغو |  | 295 |
 | country_tn | تونس |  | 296 |
 | country_tr | ديك رومى |  | 297 |
 | country_tm | تركمانستان |  | 298 |
-| country_tc | جزر الأتراك وكايكوس |  | 299 |
 | country_tv | توفالو |  | 300 |
 | country_ug | أوغندا |  | 301 |
 | country_ua | أوكرانيا |  | 302 |
 | country_ae | الإمارات العربية المتحدة |  | 303 |
 | country_gb | المملكة المتحدة |  | 304 |
 | country_us | الولايات المتحدة |  | 305 |
-| country_um | الولايات المتحدة الجزر البعيدة الصغرى |  | 306 |
 | country_uy | أوروغواي |  | 307 |
 | country_uz | أوزبكستان |  | 308 |
 | country_vu | فانواتو |  | 309 |
 | country_ve | فنزويلا |  | 310 |
 | country_vn | فيتنام |  | 311 |
-| country_vg | جزر فيرجن ، البريطانية |  | 312 |
-| country_vi | جزر فيرجن ، الولايات المتحدة |  | 313 |
-| country_wf | واليس و فوتونا |  | 314 |
-| country_eh | الصحراء الغربية |  | 315 |
 | country_ye | اليمن |  | 316 |
 | country_zm | زامبيا |  | 317 |
 | country_zw | زيمبابوي |  | 318 |
+| country_me | الجبل الأسود |  | 319 |
+| country_rs | صربيا |  | 321 |
+| country_xk | كوسوفو |  | 322 |
+| country_ss | جنوب السودان |  | 324 |

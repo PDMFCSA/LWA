@@ -1,6 +1,6 @@
 code,text,status,key
 1,Vitajte vo PharmaLedger,ok,welcome
-2,"Ak chcete naskenovať a zobraziť informácie, nájdite na svojom lieku DataMatrix kód.",ok,scan_explain
+2,Nájdite Datamatrix vo svojom lieku. Pozri príklad vyššie.,,scan_explain
 3,Naskenovať DataMatrix,ok,scan_button
 4,Zmeniť fotoaparát,ok,change_camera
 5,Zrušiť,ok,cancel
@@ -40,6 +40,7 @@ code,text,status,key
 45,"Ľutujeme, písomná informácia o lieku nebola nahraná.",ok,product_not_loaded
 46,Chybový kód,ok,err_code
 47,"Systém je zaneprázdnený, skúste neskôr.",ok,system_busy
+48,Tlač,,leaflet_print
 49,Unverified Product,,error_subtitle
 50,Incorrect date,,leaflet_incorrect_date_title
 51,Scanned date is incorrect,,leaflet_incorrect_date_subtitle
@@ -60,18 +61,13 @@ code,text,status,key
 74,Vyberte svoju krajinu,,epi_markets_modal_message
 75,Žiadna krajina,,epi_markets_modal_no_market
 76,Afganistan,,country_af
-77,Ostrovy Åland,,country_ax
 78,Albánsko,,country_al
 79,Alžírsko,,country_dz
-80,Americká samoa,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarktída,,country_aq
 85,Antigua a Barbuda,,country_ag
 86,Argentína,,country_ar
 87,Arménsko,,country_am
-88,Aruba,,country_aw
 89,Austrália,,country_au
 90,Rakúsko,,country_at
 91,Azerbajdžan,,country_az
@@ -83,15 +79,12 @@ code,text,status,key
 97,Belgicko,,country_be
 98,Búda,,country_bz
 99,Benin,,country_bj
-100,Bermuda,,country_bm
 101,Bhután,,country_bt
 102,Bolívia,,country_bo
 103,Bosna a Hercegovina,,country_ba
 104,Botswana,,country_bw
-105,Ostrov Bouvet,,country_bv
 106,Brazília,,country_br
-107,Územie britského Indického oceánu,,country_io
-108,Brunej Darussalam,,country_bn
+108,Brunej,,country_bn
 109,Bulharsko,,country_bg
 110,Burkina Faso,,country_bf
 111,Burz,,country_bi
@@ -99,20 +92,16 @@ code,text,status,key
 113,Kamerun,,country_cm
 114,Kanada,,country_ca
 115,Mys,,country_cv
-116,Kajmanské ostrovy,,country_ky
 117,Stredoafrická republika,,country_cf
 118,Čad,,country_td
 119,Chile,,country_cl
 120,Čína,,country_cn
-121,Vianočný ostrov,,country_cx
-122,Ostrovy Cocos (Keeling),,country_cc
 123,Kolumbia,,country_co
 124,Komory,,country_km
-125,Kongo,,country_cg
+125,"Kongo, republika",,country_cg
 126,"Kongo, Demokratická republika",,country_cd
-127,Kuchárové ostrovy,,country_ck
 128,Kostarika,,country_cr
-129,Cote d'Ivoire,,country_ci
+129,Pobrežie slonoviny,,country_ci
 130,Chorvátsko,,country_hr
 131,Kub,,country_cu
 132,Cyprus,,country_cy
@@ -128,33 +117,21 @@ code,text,status,key
 142,Eritrea,,country_er
 143,Estónsko,,country_ee
 144,Etiópia,,country_et
-145,Falklandské ostrovy (Malvinas),,country_fk
-146,Faerské ostrovy,,country_fo
 147,Fidži,,country_fj
 148,Fínsko,,country_fi
 149,Francúzsko,,country_fr
-150,Francúzska Guianska,,country_gf
-151,Francúzska polynézia,,country_pf
-152,Francúzske južné územia,,country_tf
 153,Gabon,,country_ga
 154,Gambie,,country_gm
 155,Gruzínsko,,country_ge
 156,Nemecko,,country_de
 157,Ghana,,country_gh
-158,Gibraltár,,country_gi
 159,Grécko,,country_gr
-160,Grónsko,,country_gl
 161,Grenada,,country_gd
-162,Guadeloupe,,country_gp
-163,Guam,,country_gu
 164,Guatemala,,country_gt
-165,Guernsey,,country_gg
 166,Guinea,,country_gn
 167,Guinejský bissau,,country_gw
 168,Guyana,,country_gy
 169,Haiti,,country_ht
-170,Počuť ostrovy Island a McDonald,,country_hm
-171,Svätá pozri (štát Vatikánske mesto),,country_va
 172,Honduras,,country_hn
 173,Hongkong,,country_hk
 174,Maďarsko,,country_hu
@@ -164,31 +141,28 @@ code,text,status,key
 178,"Irán, islamská republika",,country_ir
 179,Irak,,country_iq
 180,Írsko,,country_ie
-181,Ostrov človeka,,country_im
 182,Izrael,,country_il
 183,Taliansko,,country_it
 184,Jamajka,,country_jm
 185,Japonsko,,country_jp
-186,Dres,,country_je
 187,Jordánsko,,country_jo
 188,Kazachstan,,country_kz
 189,Keň,,country_ke
 190,Kiribati,,country_ki
-191,"Kórea, demokratická ľudová republika",,COUNTRY_KP
-192,"Kórea, republika",,COUNTRY_KR
+191,Severná Kórea,,country_kp
+192,Južná Kórea,,country_kr
 193,Kuvajt,,country_kw
 194,Kirgizsko,,country_kg
-195,Demokratická republika Lao,,COUNTRY_LA
-196,Lotyšsko,,COUNTRY_LV
+195,Laos,,country_la
+196,Lotyšsko,,country_lv
 197,Libanon,,country_lb
 198,Lesotho,,country_ls
 199,Libéria,,country_lr
-200,Líbyjský arabský jamahiriya,,country_ly
+200,Líbya,,country_ly
 201,Lichtenstein,,country_li
 202,Litva,,country_lt
 203,Luxembursko,,country_lu
-204,Macao,,country_mo
-205,"Macedónsko, bývalá Juhoslovanská republika",,country_mk
+205,Severná Macedónsko,,country_mk
 206,Madagaskar,,country_mg
 207,Malawi,,country_mw
 208,Malajzia,,country_my
@@ -196,16 +170,13 @@ code,text,status,key
 210,Malica,,country_ml
 211,Malta,,country_mt
 212,Marshallové ostrovy,,country_mh
-213,Martinik,,country_mq
 214,Mauritánia,,country_mr
 215,Maurícius,,country_mu
-216,Mayotte,,country_yt
 217,Mexiko,,country_mx
 218,"Mikronézia, federované štáty",,country_fm
-219,"Moldavsko, republika",,country_md
+219,Moldavia,,country_md
 220,Monako,,country_mc
 221,Mongolsko,,country_mn
-222,Montserrat,,country_ms
 223,Maroku,,country_ma
 224,Mozambik,,country_mz
 225,Mjanmarsko,,country_mm
@@ -213,45 +184,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepál,,country_np
 229,Holandsko,,country_nl
-230,Holandsko,,country_an
-231,Nová Kaledónia,,country_nc
 232,Nový Zéland,,country_nz
 233,Nikaragua,,country_ni
 234,Niger,,country_ne
 235,Nigéria,,country_ng
-236,Niue,,country_nu
-237,Ostrov Norfolk,,country_nf
-238,Ostrovy Severnej Mariany,,country_mp
 239,Nórsko,,country_no
 240,Omán,,country_om
 241,Pakistan,,country_pk
 242,Pažerák,,country_pw
-243,"Palestínske územie, okupované",,country_ps
 244,Panam,,country_pa
 245,Papua Nová Guinea,,country_pg
 246,Paraguaj,,country_py
 247,Peru,,country_pe
 248,Filipíny,,country_ph
-249,Pitcairn,,country_pn
 250,Poľsko,,country_pl
 251,Portugalsko,,country_pt
-252,Portoriko,,country_pr
 253,Katar,,country_qa
-254,Znovuzjednotenie,,country_re
 255,Rumunsko,,country_ro
-256,Ruská federácia,,country_ru
+256,Rusko,,country_ru
 257,Rwanda,,country_rw
-258,Svätá Helena,,country_sh
 259,Svätý Kričatá a nevis,,country_kn
 260,Svätá Lucia,,country_lc
-261,Svätý Pierre a Miquelon,,country_pm
 262,Svätý Vincent a Grenadíny,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome a Principe,,country_st
 266,Saudská Arábia,,country_sa
 267,Senegal,,country_sn
-268,Srbsko a Čierna Hora,,country_cs
 269,Seychely,,country_sc
 270,Sierra Leone,,country_sl
 271,Singapur,,country_sg
@@ -260,45 +219,40 @@ code,text,status,key
 274,Šalamúnové ostrovy,,country_sb
 275,Somálsko,,country_so
 276,Južná Afrika,,country_za
-277,Južné Gruzínsko a južné sendvičové ostrovy,,country_gs
 278,Španielsko,,country_es
 279,Srí Lanka,,country_lk
 280,Sudán,,country_sd
 281,Suriname,,country_sr
-282,Svalbard a Jan Mayen,,country_sj
 283,Svazijsko,,country_sz
 284,Švédsko,,country_se
 285,Švajčiarsko,,country_ch
-286,Sýrska arabská republika,,country_sy
-287,"Taiwan, provincia Číny",,country_tw
+286,Sýria,,country_sy
+287,Taiwan,,country_tw
 288,Tadžikistan,,country_tj
-289,"Tanzánia, Spojená republika",,country_tz
+289,Tanzánia,,country_tz
 290,Thajsko,,country_th
-291,Timor-lastický,,country_tl
+291,Východný timor,,country_tl
 292,Togo,,country_tg
-293,Tokelau,,country_tk
 294,Tonga,,country_to
 295,Trinidad a Tobago,,country_tt
 296,Tunisko,,country_tn
 297,Moriak,,country_tr
 298,Turkménsko,,country_tm
-299,Turci a Caicos Islands,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukrajina,,country_ua
 303,Spojené arabské emiráty,,country_ae
 304,Spojené kráľovstvo,,country_gb
 305,Spojené štáty,,country_us
-306,Menšie odľahlé ostrovy Spojených štátov amerických,,country_um
 307,Uruguaj,,country_uy
 308,Uzbekistan,,country_uz
 309,Vanuatu,,country_vu
 310,Venezuela,,country_ve
 311,Vietnam,,country_vn
-312,"Panenské ostrovy, Briti",,country_vg
-313,"Panenské ostrovy, USA",,country_vi
-314,Wallis a Futuna,,country_wf
-315,Západná Sahara,,country_eh
 316,Jemen,,country_ye
 317,Zambia,,country_zm
 318,Zimbabwe,,country_zw
+319,Čierna Hora,,country_me
+321,Srbsko,,country_rs
+322,Kosovo,,country_xk
+324,Južný Sudán,,country_ss

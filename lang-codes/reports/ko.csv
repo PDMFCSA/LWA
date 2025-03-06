@@ -1,6 +1,6 @@
 code,text,status,key
 1,PharmaLedger에 오신 것을 환영합니다,ok,welcome
-2,의약품의 데이터 매트릭스 바코드(DataMatrix Barcode)를 스캔하여 자세한 정보를 확인할 수 있습니다.,ok,scan_explain
+2,약에서 Datamatrix를 찾으십시오. 위의 예를 참조하십시오.,,scan_explain
 3,데이터 매트릭스 스캔하기,ok,scan_button
 4,카메라를 바꾸세요,ok,change_camera
 5,취소,ok,cancel
@@ -47,6 +47,7 @@ code,text,status,key
 45,죄송합니다. 제품 정보가 입력되지 않았습니다.,ok,product_not_loaded
 46,코드 오류,ok,err_code
 47,시스템이 사용 중입니다. 나중에 다시 시도하십시오.,ok,system_busy
+48,인쇄,,leaflet_print
 49,인증되지 않은 제품,,error_subtitle
 50,잘못된 날짜,,leaflet_incorrect_date_title
 51,스캔한 날짜가 잘못되었습니다,,leaflet_incorrect_date_subtitle
@@ -67,18 +68,13 @@ code,text,status,key
 74,국가를 선택하십시오,,epi_markets_modal_message
 75,나라도 없습니다,,epi_markets_modal_no_market
 76,아프가니스탄,,country_af
-77,Åland Islands,,country_ax
 78,알바니아,,country_al
 79,알제리,,country_dz
-80,미국 사모아,,country_as
 81,안도라,,country_ad
 82,앙골라,,country_ao
-83,앵 guilla,,country_ai
-84,남극 대륙,,country_aq
 85,안티구아와 바부 다,,country_ag
 86,아르헨티나,,country_ar
 87,아르메니아,,country_am
-88,아루바,,country_aw
 89,호주,,country_au
 90,오스트리아,,country_at
 91,아제르바이잔,,country_az
@@ -90,15 +86,12 @@ code,text,status,key
 97,벨기에,,country_be
 98,벨리즈,,country_bz
 99,베닌,,country_bj
-100,버뮤다,,country_bm
 101,부탄,,country_bt
 102,볼리비아,,country_bo
 103,보스니아와 헤르체고비나,,country_ba
 104,보츠와나,,country_bw
-105,Bouvet Island,,country_bv
 106,브라질,,country_br
-107,영국 인도양 영토,,country_io
-108,브루나이 다 루살람,,country_bn
+108,브루나이,,country_bn
 109,불가리아,,country_bg
 110,부르 키나 파소,,country_bf
 111,부룬디,,country_bi
@@ -106,20 +99,16 @@ code,text,status,key
 113,카메룬,,country_cm
 114,캐나다,,country_ca
 115,케이프 베르데,,country_cv
-116,케이맨 제도,,country_ky
 117,중앙 아프리카 공화국,,country_cf
 118,차드,,country_td
 119,칠레,,country_cl
 120,중국,,country_cn
-121,크리스마스 섬,,country_cx
-122,코코 (킬링) 섬,,country_cc
 123,콜롬비아,,country_co
 124,코 모로,,country_km
-125,콩고,,country_cg
+125,"콩고, 공화국",,country_cg
 126,"콩고, 민주 공화국",,country_cd
-127,쿡 제도,,country_ck
 128,코스타리카,,country_cr
-129,코트 디부 아르,,country_ci
+129,상아 해안,,country_ci
 130,크로아티아,,country_hr
 131,쿠바,,country_cu
 132,키프로스,,country_cy
@@ -135,33 +124,21 @@ code,text,status,key
 142,에리트레아,,country_er
 143,에스토니아,,country_ee
 144,에티오피아,,country_et
-145,포클랜드 제도 (Malvinas),,country_fk
-146,Faroe Islands,,country_fo
 147,피지,,country_fj
 148,핀란드,,country_fi
 149,프랑스,,country_fr
-150,프랑스 기아나,,country_gf
-151,프랑스 폴리네시아,,country_pf
-152,프랑스 남부 영토,,country_tf
 153,가봉,,country_ga
 154,감비아,,country_gm
 155,그루지야,,country_ge
 156,독일,,country_de
 157,가나,,country_gh
-158,지브롤터,,country_gi
 159,그리스,,country_gr
-160,그린란드,,country_gl
 161,그레나다,,country_gd
-162,과드루프,,country_gp
-163,괌,,country_gu
 164,과테말라,,country_gt
-165,건지,,country_gg
 166,기니,,country_gn
 167,기니 비시,,country_gw
 168,가이아나,,country_gy
 169,아이티,,country_ht
-170,섬과 맥도날드 제도가 들렸다,,country_hm
-171,거룩한 참조 (바티칸 시티 주),,country_va
 172,온두라스,,country_hn
 173,홍콩,,country_hk
 174,헝가리,,country_hu
@@ -171,31 +148,28 @@ code,text,status,key
 178,"이란, 이슬람 공화국",,country_ir
 179,이라크,,country_iq
 180,아일랜드,,country_ie
-181,사람의 섬,,country_im
 182,이스라엘,,country_il
 183,이탈리아,,country_it
 184,자메이카,,country_jm
 185,일본,,country_jp
-186,저지,,country_je
 187,요르단,,country_jo
 188,카자흐스탄,,country_kz
 189,케냐,,country_ke
 190,키리 바티,,country_ki
-191,"한국, 민주당 인민 공화국",,COUNTRY_KP
-192,"한국, 공화국",,COUNTRY_KR
+191,북한,,country_kp
+192,대한민국,,country_kr
 193,쿠웨이트,,country_kw
 194,키르기스스탄,,country_kg
-195,라오스 민주 공화국,,COUNTRY_LA
-196,라트비아,,COUNTRY_LV
+195,라오스,,country_la
+196,라트비아,,country_lv
 197,레바논,,country_lb
 198,레소토,,country_ls
 199,라이베리아,,country_lr
-200,리비아 아랍 자마 이리 야,,country_ly
+200,리비아,,country_ly
 201,리히텐슈타인,,country_li
 202,리투아니아,,country_lt
 203,룩셈부르크,,country_lu
-204,마카오,,country_mo
-205,"마케도니아, 전 유고 슬라비아 공화국",,country_mk
+205,노스 마케도니아,,country_mk
 206,마다가스카르,,country_mg
 207,말라위,,country_mw
 208,말레이시아,,country_my
@@ -203,16 +177,13 @@ code,text,status,key
 210,말리,,country_ml
 211,몰타,,country_mt
 212,마샬 제도,,country_mh
-213,마르티니크,,country_mq
 214,모리타니,,country_mr
 215,모리셔스,,country_mu
-216,Mayotte,,country_yt
 217,멕시코,,country_mx
 218,"미크로네시아, 연합 상태",,country_fm
-219,"몰도바, 공화국",,country_md
+219,몰도바,,country_md
 220,모나코,,country_mc
 221,몽골리아,,country_mn
-222,Montserrat,,country_ms
 223,모로코 가죽,,country_ma
 224,모잠비크,,country_mz
 225,미얀마,,country_mm
@@ -220,45 +191,33 @@ code,text,status,key
 227,나우루,,country_nr
 228,네팔,,country_np
 229,네덜란드,,country_nl
-230,네덜란드 앤 틸리 스,,country_an
-231,뉴 칼레도니아,,country_nc
 232,뉴질랜드,,country_nz
 233,니카라과,,country_ni
 234,니제르,,country_ne
 235,나이지리아,,country_ng
-236,니우,,country_nu
-237,노퍽 섬,,country_nf
-238,북부 마리아나 제도,,country_mp
 239,노르웨이,,country_no
 240,오만,,country_om
 241,파키스탄,,country_pk
 242,팔라우,,country_pw
-243,"팔레스타인 영토, 점령",,country_ps
 244,파나마,,country_pa
 245,파푸아 뉴기니,,country_pg
 246,파라과이,,country_py
 247,페루,,country_pe
 248,필리핀 제도,,country_ph
-249,핏 케언,,country_pn
 250,폴란드,,country_pl
 251,포르투갈,,country_pt
-252,푸에르토 리코,,country_pr
 253,카타르,,country_qa
-254,재결합,,country_re
 255,루마니아,,country_ro
-256,러시아 연맹,,country_ru
+256,러시아 제국,,country_ru
 257,르완다,,country_rw
-258,세인트 헬레나,,country_sh
 259,세인트 키츠와 네비스,,country_kn
 260,세인트 루시아,,country_lc
-261,세인트 피에르와 미 킬론,,country_pm
 262,세인트 빈센트와 그레나딘,,country_vc
 263,사모아,,country_ws
 264,산 마리노,,country_sm
 265,Sao Tome과 Principe,,country_st
 266,사우디 아라비아,,country_sa
 267,세네갈,,country_sn
-268,세르비아와 몬테네그로,,country_cs
 269,세이셸,,country_sc
 270,시에라 리온,,country_sl
 271,싱가포르,,country_sg
@@ -267,45 +226,40 @@ code,text,status,key
 274,솔로몬 제도,,country_sb
 275,소말리아,,country_so
 276,남아프리카,,country_za
-277,사우스 조지아와 사우스 샌드위치 제도,,country_gs
 278,스페인,,country_es
 279,스리랑카,,country_lk
 280,수단,,country_sd
 281,수리남,,country_sr
-282,Svalbard와 Jan Mayen,,country_sj
 283,스와질란드,,country_sz
 284,스웨덴,,country_se
 285,스위스,,country_ch
-286,시리아 아랍 공화국,,country_sy
-287,"대만, 중국 지방",,country_tw
+286,시리아,,country_sy
+287,대만,,country_tw
 288,타지키스탄,,country_tj
-289,"탄자니아, 연합 공화국",,country_tz
+289,탄자니아,,country_tz
 290,태국,,country_th
 291,동 티모르,,country_tl
 292,토고,,country_tg
-293,Tokelau,,country_tk
 294,통가,,country_to
 295,트리니다드 토바고,,country_tt
 296,튀니지,,country_tn
 297,칠면조,,country_tr
 298,투르크 메니스탄,,country_tm
-299,터키와 카이코스 제도,,country_tc
 300,투발루,,country_tv
 301,우간다,,country_ug
 302,우크라이나,,country_ua
 303,아랍 에미리트 연합,,country_ae
 304,영국,,country_gb
 305,미국,,country_us
-306,미국 미성년 섬,,country_um
 307,우루과이,,country_uy
 308,우즈베키스탄,,country_uz
 309,바누아투,,country_vu
 310,베네수엘라,,country_ve
 311,베트남,,country_vn
-312,"버진 아일랜드, 영국",,country_vg
-313,"버진 아일랜드, 미국",,country_vi
-314,Wallis와 Futuna,,country_wf
-315,서부 사하라,,country_eh
 316,예멘 아랍 공화국,,country_ye
 317,잠비아,,country_zm
 318,짐바브웨,,country_zw
+319,몬테네그로,,country_me
+321,세르비아,,country_rs
+322,코소보,,country_xk
+324,남 수단,,country_ss

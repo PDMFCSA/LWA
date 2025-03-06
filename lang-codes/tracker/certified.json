@@ -1,6 +1,5 @@
 {
   "welcome": 1,
-  "scan_explain": 2,
   "scan_button": 3,
   "change_camera": 4,
   "cancel": 5,
@@ -30,7 +29,7 @@
   "privacy_modal_subtitle": 33,
   "privacy_modal_title": 34,
   "privacy_content": 35,
-  "terms_modal_title":  36,
+  "terms_modal_title": 36,
   "terms_modal_subtitle": 37,
   "terms_content": 38,
   "help_modal_title": 39,

@@ -1,6 +1,6 @@
 code,text,status,key
 1,Üdvözöljük a PharmaLedger alkalmazásban!,ok,welcome
-2,Az információk megtekintéséhez olvassa be a gyógyszeren található DataMatrix kódot.,ok,scan_explain
+2,Keresse meg a datamatrixot a gyógyszerén. Lásd a fenti példát.,,scan_explain
 3,DataMatrix beolvasása,ok,scan_button
 4,Kamera váltása,ok,change_camera
 5,Mégse,ok,cancel
@@ -41,6 +41,7 @@ code,text,status,key
 45,A betegtájékoztatót nem sikerült betölteni.,ok,product_not_loaded
 46,Hibaüzenet,ok,err_code
 47,"A rendszer működésében hiba merült fel. Kérjük, próbálja meg később.",ok,system_busy
+48,Nyomtatás,,leaflet_print
 49,Unverified Product,,error_subtitle
 50,Incorrect date,,leaflet_incorrect_date_title
 51,Scanned date is incorrect,,leaflet_incorrect_date_subtitle
@@ -61,18 +62,13 @@ code,text,status,key
 74,"Kérjük, válassza ki az országát",,epi_markets_modal_message
 75,Nincs ország,,epi_markets_modal_no_market
 76,Afganisztán,,country_af
-77,Åland -szigetek,,country_ax
 78,Albánia,,country_al
 79,Algéria,,country_dz
-80,Amerikai szamoa,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarktisz,,country_aq
 85,Antigua és Barbuda,,country_ag
 86,Argentína,,country_ar
 87,Örményország,,country_am
-88,Aruba,,country_aw
 89,Ausztrália,,country_au
 90,Ausztria,,country_at
 91,Azerbajdzsán,,country_az
@@ -84,15 +80,12 @@ code,text,status,key
 97,Belgium,,country_be
 98,Belize,,country_bz
 99,Benin,,country_bj
-100,Bermuda,,country_bm
 101,Bhután,,country_bt
 102,Bolívia,,country_bo
 103,Bosznia és Hercegovina,,country_ba
 104,Botswana,,country_bw
-105,Bouvet -sziget,,country_bv
 106,Brazília,,country_br
-107,Brit Indiai -óceán területe,,country_io
-108,Brunei Darussalam,,country_bn
+108,Brunei,,country_bn
 109,Bulgária,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundi,,country_bi
@@ -100,18 +93,14 @@ code,text,status,key
 113,Kamerun,,country_cm
 114,Kanada,,country_ca
 115,Verde -fok,,country_cv
-116,Kajmán -szigetek,,country_ky
 117,Közép -afrikai Köztársaság,,country_cf
 118,Csád,,country_td
 119,Chile,,country_cl
 120,Kína,,country_cn
-121,Karácsonyi sziget,,country_cx
-122,Cocos (Keeling) szigetek,,country_cc
 123,Colombia,,country_co
 124,Komorók,,country_km
-125,Kongó,,country_cg
+125,"Kongó, a Köztársaság",,country_cg
 126,"Kongó, a Demokratikus Köztársaság",,country_cd
-127,Cook -szigetek,,country_ck
 128,Costa Rica,,country_cr
 129,Elefántcsontpart,,country_ci
 130,Horvátország,,country_hr
@@ -129,33 +118,21 @@ code,text,status,key
 142,Eritrea,,country_er
 143,Észtország,,country_ee
 144,Etiópia,,country_et
-145,Falkland -szigetek (Malvinas),,country_fk
-146,Feröerszigetek,,country_fo
 147,Fidzsi -szigetek,,country_fj
 148,Finnország,,country_fi
 149,Franciaország,,country_fr
-150,Francia guyana,,country_gf
-151,Francia Polinézia,,country_pf
-152,Francia déli területek,,country_tf
 153,Gabon,,country_ga
 154,Gambia,,country_gm
 155,Grúzia,,country_ge
 156,Németország,,country_de
 157,Ghána,,country_gh
-158,Gibraltár,,country_gi
 159,Görögország,,country_gr
-160,Grönland,,country_gl
 161,Gránada,,country_gd
-162,Guadeloupe,,country_gp
-163,Guam,,country_gu
 164,Guatemala,,country_gt
-165,Guernsey,,country_gg
 166,Guinea,,country_gn
 167,Bissau-Guinea,,country_gw
 168,Guyana,,country_gy
 169,Haiti,,country_ht
-170,Heard Island és McDonald -szigetek,,country_hm
-171,Szentszék (Vatikán városi állam),,country_va
 172,Honduras,,country_hn
 173,Hong Kong,,country_hk
 174,Magyarország,,country_hu
@@ -165,31 +142,28 @@ code,text,status,key
 178,"Irán, Iszlám Köztársaság",,country_ir
 179,Irak,,country_iq
 180,Írország,,country_ie
-181,Ember -sziget,,country_im
 182,Izrael,,country_il
 183,Olaszország,,country_it
 184,Jamaica,,country_jm
 185,Japán,,country_jp
-186,Jersey,,country_je
 187,Jordánia,,country_jo
 188,Kazahsztán,,country_kz
 189,Kenya,,country_ke
 190,Kiribati,,country_ki
-191,"Korea, Demokratikus Népköztársaság",,COUNTRY_KP
-192,"Korea, Köztársaság",,COUNTRY_KR
+191,Észak -Korea,,country_kp
+192,Dél -Korea,,country_kr
 193,Kuvait,,country_kw
 194,Kirgizisztán,,country_kg
-195,Lao Népi Demokratikus Köztársaság,,COUNTRY_LA
-196,Lettország,,COUNTRY_LV
+195,Laosz,,country_la
+196,Lettország,,country_lv
 197,Libanon,,country_lb
 198,Lesotho,,country_ls
 199,Libéria,,country_lr
-200,Líbiai arab jamahiriya,,country_ly
+200,Líbia,,country_ly
 201,Liechtenstein,,country_li
 202,Litvánia,,country_lt
 203,Luxemburg,,country_lu
-204,Makaó,,country_mo
-205,"Macedónia, a volt Jugoszláv Köztársaság",,country_mk
+205,Észak -Macedónia,,country_mk
 206,Madagaszkár,,country_mg
 207,Malawi,,country_mw
 208,Malaysia,,country_my
@@ -197,16 +171,13 @@ code,text,status,key
 210,Mali,,country_ml
 211,Málta,,country_mt
 212,Marshall -szigetek,,country_mh
-213,Martinique,,country_mq
 214,Mauritánia,,country_mr
 215,Mauritius,,country_mu
-216,Mayotte,,country_yt
 217,Mexikó,,country_mx
 218,"Mikronézia, szövetségi államok",,country_fm
-219,"Moldova, Köztársaság",,country_md
+219,Moldova,,country_md
 220,Monacói,,country_mc
 221,Mongólia,,country_mn
-222,Montserrat,,country_ms
 223,Marokkó,,country_ma
 224,Mozambik,,country_mz
 225,Mianmar,,country_mm
@@ -214,45 +185,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepál,,country_np
 229,Hollandia,,country_nl
-230,Hollandia Antillák,,country_an
-231,Új -Kaledónia,,country_nc
 232,Új -Zéland,,country_nz
 233,Nicaragua,,country_ni
 234,Niger,,country_ne
 235,Nigéria,,country_ng
-236,Niue,,country_nu
-237,Norfolk -sziget,,country_nf
-238,Észak -Mariana -szigetek,,country_mp
 239,Norvégia,,country_no
 240,Omán,,country_om
 241,Pakisztán,,country_pk
 242,Palau,,country_pw
-243,"Palesztin terület, elfoglalva",,country_ps
 244,Panama,,country_pa
 245,Pápua Új -Guinea,,country_pg
 246,Paraguay,,country_py
 247,Peru,,country_pe
 248,Fülöp -szigeteki,,country_ph
-249,Pitcairn,,country_pn
 250,Lengyelország,,country_pl
 251,Portugália,,country_pt
-252,Puerto Rico,,country_pr
 253,Katar,,country_qa
-254,Újraegyesítés,,country_re
 255,Románia,,country_ro
-256,Orosz szövetség,,country_ru
+256,Oroszország,,country_ru
 257,Ruanda,,country_rw
-258,Szent Helena,,country_sh
 259,Szent Kitts és Nevis,,country_kn
 260,Szent Lucia,,country_lc
-261,Szent Pierre és Miquelon,,country_pm
 262,Szent Vincent és a Grenadines,,country_vc
 263,Szamoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome és Principe,,country_st
 266,Szaúd -Arábia,,country_sa
 267,Szenegál,,country_sn
-268,Szerbia és Montenegró,,country_cs
 269,Seychelles,,country_sc
 270,Sierra Leone,,country_sl
 271,Szingapúr,,country_sg
@@ -261,45 +220,40 @@ code,text,status,key
 274,Salamon -szigetek,,country_sb
 275,Szomália,,country_so
 276,Dél -Afrika,,country_za
-277,Dél -Georgia és a dél -szendvicsszigetek,,country_gs
 278,Spanyolország,,country_es
 279,Srí Lanka,,country_lk
 280,Szudán,,country_sd
 281,Suriname,,country_sr
-282,Svalbard és Jan Waugen,,country_sj
 283,Szigigaföld,,country_sz
 284,Svédország,,country_se
 285,Svájc,,country_ch
-286,Szíriai Arab Köztársaság,,country_sy
-287,"Tajvan, Kína tartomány",,country_tw
+286,Szíria,,country_sy
+287,Tajvani,,country_tw
 288,Tádzsikisztán,,country_tj
-289,"Tanzánia, Egyesült Köztársaság",,country_tz
+289,Tanzánia,,country_tz
 290,Thaiföld,,country_th
-291,Timor-Leste,,country_tl
+291,Kelet -Timor,,country_tl
 292,Togó,,country_tg
-293,Tokelau,,country_tk
 294,Tonga,,country_to
 295,Trinidad és Tobago,,country_tt
 296,Tunézia,,country_tn
 297,Törökország,,country_tr
 298,Türkmenisztán,,country_tm
-299,Törökök és Caicos -szigetek,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukrajna,,country_ua
 303,Egyesült Arab Emírségek,,country_ae
 304,Egyesült Királyság,,country_gb
 305,Egyesült Államok,,country_us
-306,Egyesült Államok Kisebb távoli szigetek,,country_um
 307,Uruguay,,country_uy
 308,Üzbegisztán,,country_uz
 309,Vanuatu,,country_vu
 310,Venezuela,,country_ve
 311,Vietnam,,country_vn
-312,"Szűz -szigetek, britek",,country_vg
-313,"Virgin -szigetek, USA",,country_vi
-314,Wallis és Futuna,,country_wf
-315,Nyugat -Szahara,,country_eh
 316,Jemen,,country_ye
 317,Zambia,,country_zm
 318,Zimbabwé,,country_zw
+319,Montenegró,,country_me
+321,Szerbia,,country_rs
+322,Koszovó,,country_xk
+324,Dél -Szudán,,country_ss

@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Üdvözöljük a PharmaLedger alkalmazásban! | ok | 1 |
-| scan_explain | Az információk megtekintéséhez olvassa be a gyógyszeren található DataMatrix kódot. | ok | 2 |
+| scan_explain | Keresse meg a datamatrixot a gyógyszerén. Lásd a fenti példát. |  | 2 |
 | scan_button | DataMatrix beolvasása | ok | 3 |
 | change_camera | Kamera váltása | ok | 4 |
 | cancel | Mégse | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | A betegtájékoztatót nem sikerült betölteni. | ok | 45 |
 | err_code | Hibaüzenet | ok | 46 |
 | system_busy | A rendszer működésében hiba merült fel. Kérjük, próbálja meg később. | ok | 47 |
+| leaflet_print | Nyomtatás |  | 48 |
 | error_subtitle | Unverified Product |  | 49 |
 | leaflet_incorrect_date_title | Incorrect date |  | 50 |
 | leaflet_incorrect_date_subtitle | Scanned date is incorrect |  | 51 |
@@ -66,18 +67,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | Kérjük, válassza ki az országát |  | 74 |
 | epi_markets_modal_no_market | Nincs ország |  | 75 |
 | country_af | Afganisztán |  | 76 |
-| country_ax | Åland -szigetek |  | 77 |
 | country_al | Albánia |  | 78 |
 | country_dz | Algéria |  | 79 |
-| country_as | Amerikai szamoa |  | 80 |
 | country_ad | Andorra |  | 81 |
 | country_ao | Angola |  | 82 |
-| country_ai | Anguilla |  | 83 |
-| country_aq | Antarktisz |  | 84 |
 | country_ag | Antigua és Barbuda |  | 85 |
 | country_ar | Argentína |  | 86 |
 | country_am | Örményország |  | 87 |
-| country_aw | Aruba |  | 88 |
 | country_au | Ausztrália |  | 89 |
 | country_at | Ausztria |  | 90 |
 | country_az | Azerbajdzsán |  | 91 |
@@ -89,15 +85,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | Belgium |  | 97 |
 | country_bz | Belize |  | 98 |
 | country_bj | Benin |  | 99 |
-| country_bm | Bermuda |  | 100 |
 | country_bt | Bhután |  | 101 |
 | country_bo | Bolívia |  | 102 |
 | country_ba | Bosznia és Hercegovina |  | 103 |
 | country_bw | Botswana |  | 104 |
-| country_bv | Bouvet -sziget |  | 105 |
 | country_br | Brazília |  | 106 |
-| country_io | Brit Indiai -óceán területe |  | 107 |
-| country_bn | Brunei Darussalam |  | 108 |
+| country_bn | Brunei |  | 108 |
 | country_bg | Bulgária |  | 109 |
 | country_bf | Burkina Faso |  | 110 |
 | country_bi | Burundi |  | 111 |
@@ -105,18 +98,14 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | Kamerun |  | 113 |
 | country_ca | Kanada |  | 114 |
 | country_cv | Verde -fok |  | 115 |
-| country_ky | Kajmán -szigetek |  | 116 |
 | country_cf | Közép -afrikai Köztársaság |  | 117 |
 | country_td | Csád |  | 118 |
 | country_cl | Chile |  | 119 |
 | country_cn | Kína |  | 120 |
-| country_cx | Karácsonyi sziget |  | 121 |
-| country_cc | Cocos (Keeling) szigetek |  | 122 |
 | country_co | Colombia |  | 123 |
 | country_km | Komorók |  | 124 |
-| country_cg | Kongó |  | 125 |
+| country_cg | Kongó, a Köztársaság |  | 125 |
 | country_cd | Kongó, a Demokratikus Köztársaság |  | 126 |
-| country_ck | Cook -szigetek |  | 127 |
 | country_cr | Costa Rica |  | 128 |
 | country_ci | Elefántcsontpart |  | 129 |
 | country_hr | Horvátország |  | 130 |
@@ -134,33 +123,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | Eritrea |  | 142 |
 | country_ee | Észtország |  | 143 |
 | country_et | Etiópia |  | 144 |
-| country_fk | Falkland -szigetek (Malvinas) |  | 145 |
-| country_fo | Feröerszigetek |  | 146 |
 | country_fj | Fidzsi -szigetek |  | 147 |
 | country_fi | Finnország |  | 148 |
 | country_fr | Franciaország |  | 149 |
-| country_gf | Francia guyana |  | 150 |
-| country_pf | Francia Polinézia |  | 151 |
-| country_tf | Francia déli területek |  | 152 |
 | country_ga | Gabon |  | 153 |
 | country_gm | Gambia |  | 154 |
 | country_ge | Grúzia |  | 155 |
 | country_de | Németország |  | 156 |
 | country_gh | Ghána |  | 157 |
-| country_gi | Gibraltár |  | 158 |
 | country_gr | Görögország |  | 159 |
-| country_gl | Grönland |  | 160 |
 | country_gd | Gránada |  | 161 |
-| country_gp | Guadeloupe |  | 162 |
-| country_gu | Guam |  | 163 |
 | country_gt | Guatemala |  | 164 |
-| country_gg | Guernsey |  | 165 |
 | country_gn | Guinea |  | 166 |
 | country_gw | Bissau-Guinea |  | 167 |
 | country_gy | Guyana |  | 168 |
 | country_ht | Haiti |  | 169 |
-| country_hm | Heard Island és McDonald -szigetek |  | 170 |
-| country_va | Szentszék (Vatikán városi állam) |  | 171 |
 | country_hn | Honduras |  | 172 |
 | country_hk | Hong Kong |  | 173 |
 | country_hu | Magyarország |  | 174 |
@@ -170,31 +147,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | Irán, Iszlám Köztársaság |  | 178 |
 | country_iq | Irak |  | 179 |
 | country_ie | Írország |  | 180 |
-| country_im | Ember -sziget |  | 181 |
 | country_il | Izrael |  | 182 |
 | country_it | Olaszország |  | 183 |
 | country_jm | Jamaica |  | 184 |
 | country_jp | Japán |  | 185 |
-| country_je | Jersey |  | 186 |
 | country_jo | Jordánia |  | 187 |
 | country_kz | Kazahsztán |  | 188 |
 | country_ke | Kenya |  | 189 |
 | country_ki | Kiribati |  | 190 |
-| COUNTRY_KP | Korea, Demokratikus Népköztársaság |  | 191 |
-| COUNTRY_KR | Korea, Köztársaság |  | 192 |
+| country_kp | Észak -Korea |  | 191 |
+| country_kr | Dél -Korea |  | 192 |
 | country_kw | Kuvait |  | 193 |
 | country_kg | Kirgizisztán |  | 194 |
-| COUNTRY_LA | Lao Népi Demokratikus Köztársaság |  | 195 |
-| COUNTRY_LV | Lettország |  | 196 |
+| country_la | Laosz |  | 195 |
+| country_lv | Lettország |  | 196 |
 | country_lb | Libanon |  | 197 |
 | country_ls | Lesotho |  | 198 |
 | country_lr | Libéria |  | 199 |
-| country_ly | Líbiai arab jamahiriya |  | 200 |
+| country_ly | Líbia |  | 200 |
 | country_li | Liechtenstein |  | 201 |
 | country_lt | Litvánia |  | 202 |
 | country_lu | Luxemburg |  | 203 |
-| country_mo | Makaó |  | 204 |
-| country_mk | Macedónia, a volt Jugoszláv Köztársaság |  | 205 |
+| country_mk | Észak -Macedónia |  | 205 |
 | country_mg | Madagaszkár |  | 206 |
 | country_mw | Malawi |  | 207 |
 | country_my | Malaysia |  | 208 |
@@ -202,16 +176,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | Mali |  | 210 |
 | country_mt | Málta |  | 211 |
 | country_mh | Marshall -szigetek |  | 212 |
-| country_mq | Martinique |  | 213 |
 | country_mr | Mauritánia |  | 214 |
 | country_mu | Mauritius |  | 215 |
-| country_yt | Mayotte |  | 216 |
 | country_mx | Mexikó |  | 217 |
 | country_fm | Mikronézia, szövetségi államok |  | 218 |
-| country_md | Moldova, Köztársaság |  | 219 |
+| country_md | Moldova |  | 219 |
 | country_mc | Monacói |  | 220 |
 | country_mn | Mongólia |  | 221 |
-| country_ms | Montserrat |  | 222 |
 | country_ma | Marokkó |  | 223 |
 | country_mz | Mozambik |  | 224 |
 | country_mm | Mianmar |  | 225 |
@@ -219,45 +190,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | Nauru |  | 227 |
 | country_np | Nepál |  | 228 |
 | country_nl | Hollandia |  | 229 |
-| country_an | Hollandia Antillák |  | 230 |
-| country_nc | Új -Kaledónia |  | 231 |
 | country_nz | Új -Zéland |  | 232 |
 | country_ni | Nicaragua |  | 233 |
 | country_ne | Niger |  | 234 |
 | country_ng | Nigéria |  | 235 |
-| country_nu | Niue |  | 236 |
-| country_nf | Norfolk -sziget |  | 237 |
-| country_mp | Észak -Mariana -szigetek |  | 238 |
 | country_no | Norvégia |  | 239 |
 | country_om | Omán |  | 240 |
 | country_pk | Pakisztán |  | 241 |
 | country_pw | Palau |  | 242 |
-| country_ps | Palesztin terület, elfoglalva |  | 243 |
 | country_pa | Panama |  | 244 |
 | country_pg | Pápua Új -Guinea |  | 245 |
 | country_py | Paraguay |  | 246 |
 | country_pe | Peru |  | 247 |
 | country_ph | Fülöp -szigeteki |  | 248 |
-| country_pn | Pitcairn |  | 249 |
 | country_pl | Lengyelország |  | 250 |
 | country_pt | Portugália |  | 251 |
-| country_pr | Puerto Rico |  | 252 |
 | country_qa | Katar |  | 253 |
-| country_re | Újraegyesítés |  | 254 |
 | country_ro | Románia |  | 255 |
-| country_ru | Orosz szövetség |  | 256 |
+| country_ru | Oroszország |  | 256 |
 | country_rw | Ruanda |  | 257 |
-| country_sh | Szent Helena |  | 258 |
 | country_kn | Szent Kitts és Nevis |  | 259 |
 | country_lc | Szent Lucia |  | 260 |
-| country_pm | Szent Pierre és Miquelon |  | 261 |
 | country_vc | Szent Vincent és a Grenadines |  | 262 |
 | country_ws | Szamoa |  | 263 |
 | country_sm | San Marino |  | 264 |
 | country_st | Sao Tome és Principe |  | 265 |
 | country_sa | Szaúd -Arábia |  | 266 |
 | country_sn | Szenegál |  | 267 |
-| country_cs | Szerbia és Montenegró |  | 268 |
 | country_sc | Seychelles |  | 269 |
 | country_sl | Sierra Leone |  | 270 |
 | country_sg | Szingapúr |  | 271 |
@@ -266,45 +225,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | Salamon -szigetek |  | 274 |
 | country_so | Szomália |  | 275 |
 | country_za | Dél -Afrika |  | 276 |
-| country_gs | Dél -Georgia és a dél -szendvicsszigetek |  | 277 |
 | country_es | Spanyolország |  | 278 |
 | country_lk | Srí Lanka |  | 279 |
 | country_sd | Szudán |  | 280 |
 | country_sr | Suriname |  | 281 |
-| country_sj | Svalbard és Jan Waugen |  | 282 |
 | country_sz | Szigigaföld |  | 283 |
 | country_se | Svédország |  | 284 |
 | country_ch | Svájc |  | 285 |
-| country_sy | Szíriai Arab Köztársaság |  | 286 |
-| country_tw | Tajvan, Kína tartomány |  | 287 |
+| country_sy | Szíria |  | 286 |
+| country_tw | Tajvani |  | 287 |
 | country_tj | Tádzsikisztán |  | 288 |
-| country_tz | Tanzánia, Egyesült Köztársaság |  | 289 |
+| country_tz | Tanzánia |  | 289 |
 | country_th | Thaiföld |  | 290 |
-| country_tl | Timor-Leste |  | 291 |
+| country_tl | Kelet -Timor |  | 291 |
 | country_tg | Togó |  | 292 |
-| country_tk | Tokelau |  | 293 |
 | country_to | Tonga |  | 294 |
 | country_tt | Trinidad és Tobago |  | 295 |
 | country_tn | Tunézia |  | 296 |
 | country_tr | Törökország |  | 297 |
 | country_tm | Türkmenisztán |  | 298 |
-| country_tc | Törökök és Caicos -szigetek |  | 299 |
 | country_tv | Tuvalu |  | 300 |
 | country_ug | Uganda |  | 301 |
 | country_ua | Ukrajna |  | 302 |
 | country_ae | Egyesült Arab Emírségek |  | 303 |
 | country_gb | Egyesült Királyság |  | 304 |
 | country_us | Egyesült Államok |  | 305 |
-| country_um | Egyesült Államok Kisebb távoli szigetek |  | 306 |
 | country_uy | Uruguay |  | 307 |
 | country_uz | Üzbegisztán |  | 308 |
 | country_vu | Vanuatu |  | 309 |
 | country_ve | Venezuela |  | 310 |
 | country_vn | Vietnam |  | 311 |
-| country_vg | Szűz -szigetek, britek |  | 312 |
-| country_vi | Virgin -szigetek, USA |  | 313 |
-| country_wf | Wallis és Futuna |  | 314 |
-| country_eh | Nyugat -Szahara |  | 315 |
 | country_ye | Jemen |  | 316 |
 | country_zm | Zambia |  | 317 |
 | country_zw | Zimbabwé |  | 318 |
+| country_me | Montenegró |  | 319 |
+| country_rs | Szerbia |  | 321 |
+| country_xk | Koszovó |  | 322 |
+| country_ss | Dél -Szudán |  | 324 |

@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Добре дошли във PharmaLedger | ok | 1 |
-| scan_explain | Намерете баркода DataMatrix на Вашето лекарство, за да сканирате и видите информацията. | ok | 2 |
+| scan_explain | Намерете Datamatrix на вашето лекарство. Вижте пример по -горе. |  | 2 |
 | scan_button | Сканирайте DataMatrix | ok | 3 |
 | change_camera | Сменете камерата | ok | 4 |
 | cancel | Отказ | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | За съжаление не е заредена информация за продукта. | ok | 45 |
 | err_code | Код за грешка | ok | 46 |
 | system_busy | Системата е претоварена, моля, опитайте отново по-късно. | ok | 47 |
+| leaflet_print | Печат |  | 48 |
 | leaflet_print_title | Информация за отпечатване |  | 61 |
 | leaflet_print_description | Текущата избрана информация ще бъде отпечатана като PDF. |  | 62 |
 | leaflet_print_description2 | Искате ли да продължите? |  | 63 |
@@ -62,18 +63,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | Моля, изберете вашата страна |  | 74 |
 | epi_markets_modal_no_market | Няма държава |  | 75 |
 | country_af | Афганистан |  | 76 |
-| country_ax | Острови Åland |  | 77 |
 | country_al | Албания |  | 78 |
 | country_dz | Алжир |  | 79 |
-| country_as | Американска Самоа |  | 80 |
 | country_ad | Андора |  | 81 |
 | country_ao | Ангола |  | 82 |
-| country_ai | Ангила |  | 83 |
-| country_aq | Антарктида |  | 84 |
 | country_ag | Антигуа и Барбуда |  | 85 |
 | country_ar | Аржентина |  | 86 |
 | country_am | Армения |  | 87 |
-| country_aw | Аруба |  | 88 |
 | country_au | Австралия |  | 89 |
 | country_at | Австрия |  | 90 |
 | country_az | Азербайджан |  | 91 |
@@ -85,15 +81,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | Белгия |  | 97 |
 | country_bz | Белиз |  | 98 |
 | country_bj | Бенин |  | 99 |
-| country_bm | Бермуда |  | 100 |
 | country_bt | Бутан |  | 101 |
 | country_bo | Боливия |  | 102 |
 | country_ba | Босна и Херцеговина |  | 103 |
 | country_bw | Ботсвана |  | 104 |
-| country_bv | Остров Бувет |  | 105 |
 | country_br | Бразилия |  | 106 |
-| country_io | Британска територия на Индийския океан |  | 107 |
-| country_bn | Бруней Дарусалам |  | 108 |
+| country_bn | Бруней |  | 108 |
 | country_bg | България |  | 109 |
 | country_bf | Буркина Фасо |  | 110 |
 | country_bi | Бурунди |  | 111 |
@@ -101,20 +94,16 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | Камерун |  | 113 |
 | country_ca | Канада |  | 114 |
 | country_cv | Кабо Верде |  | 115 |
-| country_ky | Каймански острови |  | 116 |
 | country_cf | Централноафриканска република |  | 117 |
 | country_td | Чад |  | 118 |
 | country_cl | Чили |  | 119 |
 | country_cn | Китай |  | 120 |
-| country_cx | Коледният остров |  | 121 |
-| country_cc | Острови Кокос (Килинг) |  | 122 |
 | country_co | Колумбия |  | 123 |
 | country_km | Коморос |  | 124 |
-| country_cg | Конго |  | 125 |
+| country_cg | Конго, Република |  | 125 |
 | country_cd | Конго, Демократична република |  | 126 |
-| country_ck | Кук острови |  | 127 |
 | country_cr | Коста Рика |  | 128 |
-| country_ci | Кот д'Ивоар |  | 129 |
+| country_ci | Котче на слонова кост |  | 129 |
 | country_hr | Хърватия |  | 130 |
 | country_cu | Куба |  | 131 |
 | country_cy | Кипър |  | 132 |
@@ -130,33 +119,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | Еритрея |  | 142 |
 | country_ee | Естония |  | 143 |
 | country_et | Етиопия |  | 144 |
-| country_fk | Фолклендските острови (Малвинас) |  | 145 |
-| country_fo | Фарьорски острови |  | 146 |
 | country_fj | Фиджи |  | 147 |
 | country_fi | Финландия |  | 148 |
 | country_fr | Франция |  | 149 |
-| country_gf | Френска Гвиана |  | 150 |
-| country_pf | Френска Полинезия |  | 151 |
-| country_tf | Френски южни територии |  | 152 |
 | country_ga | Габон |  | 153 |
 | country_gm | Гамбия |  | 154 |
 | country_ge | Джорджия |  | 155 |
 | country_de | Германия |  | 156 |
 | country_gh | Гана |  | 157 |
-| country_gi | Гибралтар |  | 158 |
 | country_gr | Гърция |  | 159 |
-| country_gl | Гренландия |  | 160 |
 | country_gd | Гренада |  | 161 |
-| country_gp | Гваделупа |  | 162 |
-| country_gu | Гуам |  | 163 |
 | country_gt | Гватемала |  | 164 |
-| country_gg | Гърнси |  | 165 |
 | country_gn | Гвинея |  | 166 |
 | country_gw | Гвинея-Бисау |  | 167 |
 | country_gy | Гаяна |  | 168 |
 | country_ht | Хаити |  | 169 |
-| country_hm | Остров Хърд и Макдоналдските острови |  | 170 |
-| country_va | Свети прегледи (държава на Ватикана)) |  | 171 |
 | country_hn | Хондурас |  | 172 |
 | country_hk | Хонконг |  | 173 |
 | country_hu | Унгария |  | 174 |
@@ -166,31 +143,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | Иран, Ислямска република |  | 178 |
 | country_iq | Ирак |  | 179 |
 | country_ie | Ирландия |  | 180 |
-| country_im | Остров на човека |  | 181 |
 | country_il | Израел |  | 182 |
 | country_it | Италия |  | 183 |
 | country_jm | Ямайка |  | 184 |
 | country_jp | Япония |  | 185 |
-| country_je | Джърси |  | 186 |
 | country_jo | Йордания |  | 187 |
 | country_kz | Казахстан |  | 188 |
 | country_ke | Кения |  | 189 |
 | country_ki | Кирибати |  | 190 |
-| COUNTRY_KP | Корея, демократична народна република |  | 191 |
-| COUNTRY_KR | Корея, Република |  | 192 |
+| country_kp | Северна Корея |  | 191 |
+| country_kr | Южна Корея |  | 192 |
 | country_kw | Кувейт |  | 193 |
 | country_kg | Киргизстан |  | 194 |
-| COUNTRY_LA | Демократичната република на Лаото |  | 195 |
-| COUNTRY_LV | Латвия |  | 196 |
+| country_la | Лаос |  | 195 |
+| country_lv | Латвия |  | 196 |
 | country_lb | Ливан |  | 197 |
 | country_ls | Лесото |  | 198 |
 | country_lr | Либерия |  | 199 |
-| country_ly | Либийски арабски Джамахирия |  | 200 |
+| country_ly | Либия |  | 200 |
 | country_li | Лихтенщайн |  | 201 |
 | country_lt | Литва |  | 202 |
 | country_lu | Люксембург |  | 203 |
-| country_mo | Макао |  | 204 |
-| country_mk | Македония, бившата югославска република на |  | 205 |
+| country_mk | Северна Македония |  | 205 |
 | country_mg | Мадагаскар |  | 206 |
 | country_mw | Малави |  | 207 |
 | country_my | Малайзия |  | 208 |
@@ -198,16 +172,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | Мали |  | 210 |
 | country_mt | Малта |  | 211 |
 | country_mh | Маршаловите острови |  | 212 |
-| country_mq | Мартиника |  | 213 |
 | country_mr | Мавритания |  | 214 |
 | country_mu | Мавриций |  | 215 |
-| country_yt | Майота |  | 216 |
 | country_mx | Мексико |  | 217 |
 | country_fm | Микронезия, федерални държави на |  | 218 |
-| country_md | Молдова, Република |  | 219 |
+| country_md | Молдова |  | 219 |
 | country_mc | Монако |  | 220 |
 | country_mn | Монголия |  | 221 |
-| country_ms | Монсерат |  | 222 |
 | country_ma | Мароко |  | 223 |
 | country_mz | Мозамбик |  | 224 |
 | country_mm | Мианмар |  | 225 |
@@ -215,45 +186,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | Науру |  | 227 |
 | country_np | Непал |  | 228 |
 | country_nl | Холандия |  | 229 |
-| country_an | Холандия Антили |  | 230 |
-| country_nc | Нова Каледония |  | 231 |
 | country_nz | Нова Зеландия |  | 232 |
 | country_ni | Никарагуа |  | 233 |
 | country_ne | Нигер |  | 234 |
 | country_ng | Нигерия |  | 235 |
-| country_nu | Niue |  | 236 |
-| country_nf | Остров Норфолк |  | 237 |
-| country_mp | Северни острови Мариана |  | 238 |
 | country_no | Норвегия |  | 239 |
 | country_om | Оман |  | 240 |
 | country_pk | Пакистан |  | 241 |
 | country_pw | Палау |  | 242 |
-| country_ps | Палестинска територия, окупирана |  | 243 |
 | country_pa | Панама |  | 244 |
 | country_pg | Папуа Нова Гвинея |  | 245 |
 | country_py | Парагвай |  | 246 |
 | country_pe | Перу |  | 247 |
 | country_ph | Филипини |  | 248 |
-| country_pn | Pitcairn |  | 249 |
 | country_pl | Полша |  | 250 |
 | country_pt | Португалия |  | 251 |
-| country_pr | Пуерто Рико |  | 252 |
 | country_qa | Катар |  | 253 |
-| country_re | Събиране |  | 254 |
 | country_ro | Румъния |  | 255 |
-| country_ru | Руска федерация |  | 256 |
+| country_ru | Русия |  | 256 |
 | country_rw | Руанда |  | 257 |
-| country_sh | Света Елена |  | 258 |
 | country_kn | Сейнт Китс и Невис |  | 259 |
 | country_lc | Свети Лусия |  | 260 |
-| country_pm | Свети Пиер и Микелон |  | 261 |
 | country_vc | Сейнт Винсент и гренадините |  | 262 |
 | country_ws | Самоа |  | 263 |
 | country_sm | Сан Марино |  | 264 |
 | country_st | Сао Томе и Принсипи |  | 265 |
 | country_sa | Саудитска Арабия |  | 266 |
 | country_sn | Сенегал |  | 267 |
-| country_cs | Сърбия и Черна гора |  | 268 |
 | country_sc | Сейшели |  | 269 |
 | country_sl | Сиера Леоне |  | 270 |
 | country_sg | Сингапур |  | 271 |
@@ -262,45 +221,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | Соломонски острови |  | 274 |
 | country_so | Сомалия |  | 275 |
 | country_za | Южна Африка |  | 276 |
-| country_gs | Южна Джорджия и Южните сандвич острови |  | 277 |
 | country_es | Испания |  | 278 |
 | country_lk | Шри Ланка |  | 279 |
 | country_sd | Судан |  | 280 |
 | country_sr | Суринам |  | 281 |
-| country_sj | Свалбард и Ян Маййн |  | 282 |
 | country_sz | Свазиленд |  | 283 |
 | country_se | Швеция |  | 284 |
 | country_ch | Швейцария |  | 285 |
-| country_sy | Сирийска арабска република |  | 286 |
-| country_tw | Тайван, провинция Китай |  | 287 |
+| country_sy | Сирия |  | 286 |
+| country_tw | Тайван |  | 287 |
 | country_tj | Таджикистан |  | 288 |
-| country_tz | Танзания, Обединена република |  | 289 |
+| country_tz | Танзания |  | 289 |
 | country_th | Тайланд |  | 290 |
-| country_tl | Тимор-Лесте |  | 291 |
+| country_tl | Източен Тимор |  | 291 |
 | country_tg | Того |  | 292 |
-| country_tk | Токелау |  | 293 |
 | country_to | Тонга |  | 294 |
 | country_tt | Тринидад и Тобаго |  | 295 |
 | country_tn | Тунис |  | 296 |
 | country_tr | Турция |  | 297 |
 | country_tm | Туркменистан |  | 298 |
-| country_tc | Острови турци и Кайкос |  | 299 |
 | country_tv | Тувалу |  | 300 |
 | country_ug | Уганда |  | 301 |
 | country_ua | Украйна |  | 302 |
 | country_ae | Обединени арабски емирства |  | 303 |
 | country_gb | Обединеното кралство |  | 304 |
 | country_us | САЩ |  | 305 |
-| country_um | Съединените щати Незначителни острови |  | 306 |
 | country_uy | Уругвай |  | 307 |
 | country_uz | Узбекистан |  | 308 |
 | country_vu | Вануату |  | 309 |
 | country_ve | Венецуела |  | 310 |
 | country_vn | Виетнам |  | 311 |
-| country_vg | Вирджински острови, британски |  | 312 |
-| country_vi | Вирджински острови, САЩ |  | 313 |
-| country_wf | Уолис и Футуна |  | 314 |
-| country_eh | Западна Сахара |  | 315 |
 | country_ye | Йемен |  | 316 |
 | country_zm | Замбия |  | 317 |
 | country_zw | Зимбабве |  | 318 |
+| country_me | Черна гора |  | 319 |
+| country_rs | Сърбия |  | 321 |
+| country_xk | Косово |  | 322 |
+| country_ss | Южен Судан |  | 324 |

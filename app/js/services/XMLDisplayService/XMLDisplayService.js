@@ -167,6 +167,13 @@ class XMLDisplayService {
         for(let section of sections) {
             const title = section.querySelector('h2');
             if(title) {
+                // const regex = /\.{2}$|[:.]$/;
+                // // check ponctuation
+                // if(regex.test(title.textContent)) {
+                //     console.log('has ' + title.textContent)
+                //     title.querySelector('span.invisible').remove();
+
+                // }  
                 // fixing tab index
                 if(title.hasAttribute('tabindex')) {
                     title.removeAttribute('tabindex');

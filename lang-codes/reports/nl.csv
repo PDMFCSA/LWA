@@ -1,6 +1,6 @@
 code,text,status,key
 1,Welkom bij PharmaLedger,ok,welcome
-2,Zoek de DataMatrix code op uw geneesmiddel om informatie te scannen en te bekijken.,ok,scan_explain
+2,Zoek de Datamatrix op uw medicijn. Zie voorbeeld hierboven.,,scan_explain
 3,DataMatrix code scannen,ok,scan_button
 4,Camera wijzigen,ok,change_camera
 5,Annuleren,ok,cancel
@@ -40,6 +40,7 @@ code,text,status,key
 45,"Helaas, er is geen productinformatie beschikbaar.",ok,product_not_loaded
 46,Foutmelding,ok,err_code
 47,"Systeem is bezet, probeer het later nog eens.",ok,system_busy
+48,Afdrukken,,leaflet_print
 49,,,error_subtitle
 50,,,leaflet_incorrect_date_title
 51,,,leaflet_incorrect_date_subtitle
@@ -60,18 +61,13 @@ code,text,status,key
 74,Selecteer uw land,,epi_markets_modal_message
 75,Geen land,,epi_markets_modal_no_market
 76,Afghanistan,,country_af
-77,Åland -eilanden,,country_ax
 78,Albanië,,country_al
 79,Algerije,,country_dz
-80,Amerikaanse Samoa,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarctica,,country_aq
 85,Antigua en Barbuda,,country_ag
 86,Argentinië,,country_ar
 87,Armenië,,country_am
-88,Aruba,,country_aw
 89,Australië,,country_au
 90,Oostenrijk,,country_at
 91,Azerbeidzjan,,country_az
@@ -83,15 +79,12 @@ code,text,status,key
 97,België,,country_be
 98,Belize,,country_bz
 99,Benin,,country_bj
-100,Bermuda,,country_bm
 101,Bhutan,,country_bt
 102,Bolivia,,country_bo
 103,Bosnië en Herzegovina,,country_ba
 104,Botswana,,country_bw
-105,Bouvet -eiland,,country_bv
 106,Brazilië,,country_br
-107,Britse Indische Oceaan Territory,,country_io
-108,Brunei Darussalam,,country_bn
+108,Brunei,,country_bn
 109,Bulgarije,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundi,,country_bi
@@ -99,20 +92,16 @@ code,text,status,key
 113,Kameroen,,country_cm
 114,Canada,,country_ca
 115,Cape Verde,,country_cv
-116,Cayman -eilanden,,country_ky
 117,Centraal -Afrikaanse Republiek,,country_cf
 118,Tsjaad,,country_td
 119,Chili,,country_cl
 120,China,,country_cn
-121,Kersteiland,,country_cx
-122,Cocos (keeling) eilanden,,country_cc
 123,Colombia,,country_co
 124,Comoros,,country_km
-125,Congo,,country_cg
+125,"Congo, Republiek van de",,country_cg
 126,"Congo, de Democratische Republiek van de",,country_cd
-127,Kook eilanden,,country_ck
 128,Costa Rica,,country_cr
-129,Cote d'ijire,,country_ci
+129,Ivoorkust,,country_ci
 130,Kroatië,,country_hr
 131,Cuba,,country_cu
 132,Cyprus,,country_cy
@@ -128,33 +117,21 @@ code,text,status,key
 142,Eritrea,,country_er
 143,Estland,,country_ee
 144,Ethiopië,,country_et
-145,Falkland Islands (Malvinas),,country_fk
-146,Faerbeeld -eilanden,,country_fo
 147,Fiji,,country_fj
 148,Finland,,country_fi
 149,Frankrijk,,country_fr
-150,Frans Guyana,,country_gf
-151,Frans Polynesië,,country_pf
-152,Franse zuidelijke gebieden,,country_tf
 153,Gabon,,country_ga
 154,Gambia,,country_gm
 155,Georgië,,country_ge
 156,Duitsland,,country_de
 157,Ghana,,country_gh
-158,Gibraltar,,country_gi
 159,Griekenland,,country_gr
-160,Groenland,,country_gl
 161,Grenada,,country_gd
-162,Guadeloupe,,country_gp
-163,Guam,,country_gu
 164,Guatemala,,country_gt
-165,Guernsey,,country_gg
 166,Guinea,,country_gn
 167,Guinee-Bissau,,country_gw
 168,Guyana,,country_gy
 169,Haïti,,country_ht
-170,Gehoord eiland en McDonald -eilanden,,country_hm
-171,Heilige Stoel (Vaticaan Stad Staat),,country_va
 172,Honduras,,country_hn
 173,Hong Kong,,country_hk
 174,Hongarije,,country_hu
@@ -164,31 +141,28 @@ code,text,status,key
 178,"Iran, Islamitische Republiek",,country_ir
 179,Irak,,country_iq
 180,Ierland,,country_ie
-181,Isle of Man,,country_im
 182,Israël,,country_il
 183,Italië,,country_it
 184,Jamaica,,country_jm
 185,Japan,,country_jp
-186,Jersey,,country_je
 187,Jordanië,,country_jo
 188,Kazachstan,,country_kz
 189,Kenia,,country_ke
 190,Kiribati,,country_ki
-191,"Korea, Democratische Volksrepubliek",,COUNTRY_KP
-192,"Korea, Republiek van",,COUNTRY_KR
+191,Noord -Korea,,country_kp
+192,Zuid -Korea,,country_kr
 193,Koeweit,,country_kw
 194,Kirgizisch,,country_kg
-195,Lao People's Democratic Republic,,COUNTRY_LA
-196,Letland,,COUNTRY_LV
+195,Laos,,country_la
+196,Letland,,country_lv
 197,Libanon,,country_lb
 198,Lesotho,,country_ls
 199,Liberia,,country_lr
-200,Libische Arabische Jamahiriya,,country_ly
+200,Libië,,country_ly
 201,Liechtenstein,,country_li
 202,Litouwen,,country_lt
 203,Luxemburg,,country_lu
-204,Macao,,country_mo
-205,"Macedonië, de voormalige Joegoslavische Republiek van",,country_mk
+205,Noord -Macedonië,,country_mk
 206,Madagascar,,country_mg
 207,Malawi,,country_mw
 208,Maleisië,,country_my
@@ -196,16 +170,13 @@ code,text,status,key
 210,Mali,,country_ml
 211,Malta,,country_mt
 212,Marshalleilanden,,country_mh
-213,Martinique,,country_mq
 214,Mauritanië,,country_mr
 215,Mauritius,,country_mu
-216,Mayotte,,country_yt
 217,Mexico,,country_mx
 218,"Micronesia, federated staten van",,country_fm
-219,"Moldavië, Republiek van",,country_md
+219,Moldavië,,country_md
 220,Monaco,,country_mc
 221,Mongolië,,country_mn
-222,Montserrat,,country_ms
 223,Marokko,,country_ma
 224,Mozambique,,country_mz
 225,Myanmar,,country_mm
@@ -213,45 +184,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepal,,country_np
 229,Nederland,,country_nl
-230,Nederland Antilles,,country_an
-231,Nieuw -Caledonië,,country_nc
 232,Nieuw -Zeeland,,country_nz
 233,Nicaragua,,country_ni
 234,Niger,,country_ne
 235,Nigeria,,country_ng
-236,Niue,,country_nu
-237,Norfolk Island,,country_nf
-238,Noordelijke Mariana -eilanden,,country_mp
 239,Noorwegen,,country_no
 240,Oman,,country_om
 241,Pakistan,,country_pk
 242,Palau,,country_pw
-243,"Palestijns territorium, bezet",,country_ps
 244,Panama,,country_pa
 245,Papoea -Nieuw -Guinea,,country_pg
 246,Paraguay,,country_py
 247,Peru,,country_pe
 248,Filippijnen,,country_ph
-249,Pitcairn,,country_pn
 250,Polen,,country_pl
 251,Portugal,,country_pt
-252,Puerto Rico,,country_pr
 253,Qatar,,country_qa
-254,Bijeenkomst,,country_re
 255,Roemenië,,country_ro
-256,Russische Federatie,,country_ru
+256,Rusland,,country_ru
 257,Rwanda,,country_rw
-258,Sint -Helena,,country_sh
 259,Saint Kitts en Nevis,,country_kn
 260,Sint Lucia,,country_lc
-261,Saint Pierre en Miquelon,,country_pm
 262,Saint Vincent en de Grenadines,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome en Principe,,country_st
 266,Saoedi -Arabië,,country_sa
 267,Senegal,,country_sn
-268,Servië en Montenegro,,country_cs
 269,Seychellen,,country_sc
 270,Sierra Leone,,country_sl
 271,Singapore,,country_sg
@@ -260,45 +219,40 @@ code,text,status,key
 274,Solomon Islands,,country_sb
 275,Somalië,,country_so
 276,Zuid -Afrika,,country_za
-277,Zuid -Georgië en de South Sandwich Islands,,country_gs
 278,Spanje,,country_es
 279,Sri Lanka,,country_lk
 280,Soedan,,country_sd
 281,Aan de hand zijn,,country_sr
-282,Svalbard en Jan Mayen,,country_sj
 283,Swaziland,,country_sz
 284,Zweden,,country_se
 285,Zwitserland,,country_ch
-286,Syrische Arabische Republiek,,country_sy
-287,"Taiwan, provincie China",,country_tw
+286,Syrië,,country_sy
+287,Taiwan,,country_tw
 288,Tadzjikistan,,country_tj
-289,"Tanzania, Verenigde Republiek",,country_tz
+289,Tanzania,,country_tz
 290,Thailand,,country_th
-291,Timor-Leste,,country_tl
+291,Oost -Timor,,country_tl
 292,Togo,,country_tg
-293,Tokelau,,country_tk
 294,Tonga,,country_to
 295,Trinidad en Tobago,,country_tt
 296,Tunesië,,country_tn
 297,Kalkoen,,country_tr
 298,Turkmenistan,,country_tm
-299,Turken en Caicos -eilanden,,country_tc
 300,Tuvalu,,country_tv
 301,Oeganda,,country_ug
 302,Oekraïne,,country_ua
 303,Verenigde Arabische Emiraten,,country_ae
 304,Verenigd Koninkrijk,,country_gb
 305,Verenigde Staten,,country_us
-306,Verenigde Staten Minor externe eilanden,,country_um
 307,Uruguay,,country_uy
 308,Oezbekistan,,country_uz
 309,Vanuatu,,country_vu
 310,Venezuela,,country_ve
 311,Vietnam,,country_vn
-312,"Maagdeneilanden, Britten",,country_vg
-313,"Maagdeneilanden, VS",,country_vi
-314,Wallis en Futuna,,country_wf
-315,Westelijke Sahara,,country_eh
 316,Jemen,,country_ye
 317,Zambia,,country_zm
 318,Zimbabwe,,country_zw
+319,Montenegro,,country_me
+321,Servië,,country_rs
+322,Kosovo,,country_xk
+324,Zuid -Soedan,,country_ss

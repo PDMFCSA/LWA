@@ -1,6 +1,6 @@
 code,text,status,key
 1,Καλωσήρθατε στην PharmaLedger,ok,welcome
-2,Βρείτε το DataMatrix γραμμωτό κώδικα (Barcode) στο φάρμακο σας για σάρωση και προβολή πληροφοριών.,ok,scan_explain
+2,Βρείτε το DataMatrix στο φάρμακό σας. Δείτε το παραπάνω παράδειγμα.,,scan_explain
 3,Σαρώστε το DataMatrix,ok,scan_button
 4,Αλλάξτε κάμερα,ok,change_camera
 5,Ακύρωση,ok,cancel
@@ -41,6 +41,7 @@ code,text,status,key
 45,"Δυστυχώς, δεν έχει φορτωθεί καμία πληροφορία για το προϊόν.",ok,product_not_loaded
 46,Σφάλμα κωδικού,ok,err_code
 47,"Το σύστημα είναι απασχολημένο (δεν μπορεί να σας εξυπηρετήσει), δοκιμάστε ξανά αργότερα.",ok,system_busy
+48,Αποτύπωμα,,leaflet_print
 61,Πληροφορίες εκτύπωσης,,leaflet_print_title
 62,Οι τρέχουσες επιλεγμένες πληροφορίες θα εκτυπωθούν ως PDF.,,leaflet_print_description
 63,Θέλετε να προχωρήσετε;,,leaflet_print_description2
@@ -57,18 +58,13 @@ code,text,status,key
 74,Επιλέξτε τη χώρα σας,,epi_markets_modal_message
 75,Χωρίς χώρα,,epi_markets_modal_no_market
 76,Αφγανιστάν,,country_af
-77,Νησιά Åland,,country_ax
 78,Αλβανία,,country_al
 79,Αλγερία,,country_dz
-80,Αμερικανική Σαμόα,,country_as
 81,Ανδόρα,,country_ad
 82,Αγκόλα,,country_ao
-83,Αγγεία,,country_ai
-84,Ανταρκτική,,country_aq
 85,Αντίγκουα και Μπαρμπούντα,,country_ag
 86,Αργεντίνη,,country_ar
 87,Αρμενία,,country_am
-88,Αρούμπα,,country_aw
 89,Αυστραλία,,country_au
 90,Αυστρία,,country_at
 91,Αζερμπαϊτζάν,,country_az
@@ -80,15 +76,12 @@ code,text,status,key
 97,Βέλγιο,,country_be
 98,Μπελίζ,,country_bz
 99,Μπενίν,,country_bj
-100,Βερμούδα,,country_bm
 101,Μπουτάν,,country_bt
 102,Βολιβία,,country_bo
 103,Βοσνία και Ερζεγοβίνη,,country_ba
 104,Αρμονία,,country_bw
-105,Ανθοδέσμη νησιού,,country_bv
 106,Βραζιλία,,country_br
-107,Βρετανική περιοχή του Ινδικού Ωκεανού,,country_io
-108,Μπρουνέι Νταρουσαλάμ,,country_bn
+108,Μπρουνέι,,country_bn
 109,Βουλγαρία,,country_bg
 110,Μπουρκίνα Φάσο,,country_bf
 111,Μπουρούντι,,country_bi
@@ -96,20 +89,16 @@ code,text,status,key
 113,Καμερούν,,country_cm
 114,Καναδάς,,country_ca
 115,Ακρωτήριο,,country_cv
-116,Νησιά Κέιμαν,,country_ky
 117,Κεντροαφρικανική Δημοκρατία,,country_cf
 118,Τσαντ,,country_td
 119,χιλή,,country_cl
 120,Κίνα,,country_cn
-121,Χριστουγεννιάτικο νησί,,country_cx
-122,Νησιά Cocos (Keeling),,country_cc
 123,Κολομβία,,country_co
 124,Κομπόριο,,country_km
-125,Κογκό,,country_cg
+125,"Κονγκό, Δημοκρατία του",,country_cg
 126,"Κονγκό, Η Λαϊκή Δημοκρατία του",,country_cd
-127,Νησιά μαγειρικής,,country_ck
 128,Κόστα Ρίκα,,country_cr
-129,Cote d'Voire,,country_ci
+129,Ακτή του ελεφαντόδοντου,,country_ci
 130,Κροατία,,country_hr
 131,Κούβα,,country_cu
 132,Κύπρος,,country_cy
@@ -125,33 +114,21 @@ code,text,status,key
 142,Ερυθραία,,country_er
 143,Εσθονία,,country_ee
 144,Αιθιοπία,,country_et
-145,Νήσοι Φώκλαντ (Μαλβίνια),,country_fk
-146,Νήσοι Φερόε,,country_fo
 147,Φίτζι,,country_fj
 148,Φινλανδία,,country_fi
 149,Γαλλία,,country_fr
-150,Γαλλική Γουιάνα,,country_gf
-151,Γαλλική Πολυνησία,,country_pf
-152,Γαλλικά νότια εδάφη,,country_tf
 153,Γκαμπόν,,country_ga
 154,Γκάμπια,,country_gm
 155,Γεωργία,,country_ge
 156,Γερμανία,,country_de
 157,Γκάνα,,country_gh
-158,Γιβραλτάρ,,country_gi
 159,Ελλάδα,,country_gr
-160,Γροιλανδία,,country_gl
 161,Γρενοδά,,country_gd
-162,Γουαδελούπη,,country_gp
-163,Γκουάμ,,country_gu
 164,Γουατεμάλα,,country_gt
-165,Γκαζιού,,country_gg
 166,Γκινέα,,country_gn
 167,Γουινέα-Μπίσαου,,country_gw
 168,Γουιάνα,,country_gy
 169,Αΐτη,,country_ht
-170,Ακούστηκαν νησιά και νησιά McDonald,,country_hm
-171,Ιερά βλέμμα (κράτος της πόλης του Βατικανού),,country_va
 172,Ονδούρα,,country_hn
 173,Χονγκ Κονγκ,,country_hk
 174,Ουγγαρία,,country_hu
@@ -161,31 +138,28 @@ code,text,status,key
 178,"Ιράν, Ισλαμική Δημοκρατία του",,country_ir
 179,Ιράκ,,country_iq
 180,Ιρλανδία,,country_ie
-181,Νήσος του ανθρώπου,,country_im
 182,Ισραήλ,,country_il
 183,Ιταλία,,country_it
 184,Ιαμαϊκή,,country_jm
 185,Ιαπωνία,,country_jp
-186,Φανέλα,,country_je
 187,Ιορδανία,,country_jo
 188,Καζακστάν,,country_kz
 189,Κενύα,,country_ke
 190,Κιριμπάτι,,country_ki
-191,"Κορέα, Δημοκρατική Λαϊκή Δημοκρατία του",,COUNTRY_KP
-192,"Κορέα, Δημοκρατία της",,COUNTRY_KR
+191,Βόρεια Κορέα,,country_kp
+192,Νότια Κορέα,,country_kr
 193,Κουβέιτ,,country_kw
 194,Κιργιζία,,country_kg
-195,Λαϊκή Λαϊκή Δημοκρατία,,COUNTRY_LA
-196,Λατβία,,COUNTRY_LV
+195,Λάος,,country_la
+196,Λατβία,,country_lv
 197,Λίβανος,,country_lb
 198,Λεσόθο,,country_ls
 199,Λιβερία,,country_lr
-200,Λιβυκός Αραβικός Jamahiriya,,country_ly
+200,Λιβύη,,country_ly
 201,Λιχτενστάιν,,country_li
 202,Λιθουανία,,country_lt
 203,Λουξεμβούργο,,country_lu
-204,Μακάο,,country_mo
-205,"Η Μακεδονία, η πρώην Γιουγκοσλαβική Δημοκρατία της",,country_mk
+205,Βόρεια Μακεδονία,,country_mk
 206,Μαδαγασκάρη,,country_mg
 207,Μαλάουι,,country_mw
 208,Μαλαισία,,country_my
@@ -193,16 +167,13 @@ code,text,status,key
 210,Μάλι,,country_ml
 211,Μάλτα,,country_mt
 212,Νησιά Μάρσαλ,,country_mh
-213,Μαρτυρία,,country_mq
 214,Μαυριτανία,,country_mr
 215,Μαυρίκιος,,country_mu
-216,Μαγιόττα,,country_yt
 217,Μεξικό,,country_mx
 218,"Micronesia, ομοσπονδιακά κράτη του",,country_fm
-219,"Μολδαβία, Δημοκρατία της",,country_md
+219,Μολδαβία,,country_md
 220,Μονακό,,country_mc
 221,Μογγολία,,country_mn
-222,Μοντσέρρατ,,country_ms
 223,Μαρόκο,,country_ma
 224,Μοζαμβίκη,,country_mz
 225,Μυανμάρ,,country_mm
@@ -210,45 +181,33 @@ code,text,status,key
 227,Ναυρό,,country_nr
 228,Νεπάλ,,country_np
 229,Ολλανδία,,country_nl
-230,Ολλανδία Αντίλλες,,country_an
-231,Νέα Καληδονία,,country_nc
 232,Νέα Ζηλανδία,,country_nz
 233,Νικαράγουα,,country_ni
 234,Νίγηρας,,country_ne
 235,Νιγηρία,,country_ng
-236,Νιφάδα,,country_nu
-237,Νησί Νόρφολκ,,country_nf
-238,Νησιά της Βόρειας Μαρίας,,country_mp
 239,Νορβηγία,,country_no
 240,Οθμάν,,country_om
 241,Πακιστάν,,country_pk
 242,Παλάμης,,country_pw
-243,"Παλαιστινιακό έδαφος, κατεχόμενο",,country_ps
 244,Παναμάς,,country_pa
 245,Παπούα Νέα Γουινέα,,country_pg
 246,Παραγουάη,,country_py
 247,Περού,,country_pe
 248,Φιλιππίνες,,country_ph
-249,Κηλίδα,,country_pn
 250,Πολωνία,,country_pl
 251,Πορτογαλία,,country_pt
-252,Πορτορικό,,country_pr
 253,Κατάρ,,country_qa
-254,Ξανασμίξιμο,,country_re
 255,Ρουμανία,,country_ro
-256,Ρωσική Ομοσπονδία,,country_ru
+256,Ρωσία,,country_ru
 257,Ρουάντα,,country_rw
-258,Άγιος Ελένη,,country_sh
 259,Άγιος Kitts και Nevis,,country_kn
 260,Άγιος Λουκία,,country_lc
-261,Άγιος Pierre και Miquelon,,country_pm
 262,Άγιος Βικέντιος και Γρεναδίνες,,country_vc
 263,Σαμόα,,country_ws
 264,Σαν Μαρίνο,,country_sm
 265,Sao Tome και Principe,,country_st
 266,Σαουδική Αραβία,,country_sa
 267,Σενεγάλη,,country_sn
-268,Σερβία και Μαυροβούνιο,,country_cs
 269,Σεϋχέλλες,,country_sc
 270,Σιέρα Λεόνε,,country_sl
 271,Σιγκαπούρη,,country_sg
@@ -257,45 +216,40 @@ code,text,status,key
 274,Νησιά Σολομώντος,,country_sb
 275,Σομαλία,,country_so
 276,Νότια Αφρική,,country_za
-277,Νότια Γεωργία και τα νησιά του Νότιου Σάντουιτς,,country_gs
 278,Ισπανία,,country_es
 279,Σρι Λάνκα,,country_lk
 280,Σουδάν,,country_sd
 281,Σουρινό,,country_sr
-282,Svalbard και Jan Mayen,,country_sj
 283,Σουαζιλάνδη,,country_sz
 284,Σουηδία,,country_se
 285,Ελβετία,,country_ch
-286,Συριακή Αραβική Δημοκρατία,,country_sy
-287,"Ταϊβάν, επαρχία της Κίνας",,country_tw
+286,Συρία,,country_sy
+287,Ταϊβάν,,country_tw
 288,Τατζικιστάν,,country_tj
-289,"Τανζανία, Ηνωμένη Δημοκρατία της",,country_tz
+289,Τανζανία,,country_tz
 290,Σιάμ,,country_th
-291,Τιμόρ-Λέστερ,,country_tl
+291,Ανατολικός Τιμόρ,,country_tl
 292,Τόγκο,,country_tg
-293,Τακέλαου,,country_tk
 294,Τόνγκα,,country_to
 295,Τρινιντάντ και Τομπάγκο,,country_tt
 296,Τυνησία,,country_tn
 297,Τουρκία,,country_tr
 298,Τουρκμενιστάν,,country_tm
-299,Τούρκοι και Νήσοι του Καΐου,,country_tc
 300,Τούβαλου,,country_tv
 301,Ουγκάντα,,country_ug
 302,Ουκρανία,,country_ua
 303,Ηνωμένα Αραβικά Εμιράτα,,country_ae
 304,Ηνωμένο Βασίλειο,,country_gb
 305,Ηνωμένες Πολιτείες,,country_us
-306,Μικρές απομακρυσμένες νησί των Ηνωμένων Πολιτειών,,country_um
 307,Ουρουγουάη,,country_uy
 308,Ουζμπεκιστάν,,country_uz
 309,Βανουάτου,,country_vu
 310,Βενεζουέλα,,country_ve
 311,Βιετνάμ,,country_vn
-312,"Παρθένοι Νήσοι, Βρετανοί",,country_vg
-313,"Παρθένοι Νήσοι, Η.Π.Α.",,country_vi
-314,Wallis και Futuna,,country_wf
-315,Δυτική Σαχάρα,,country_eh
 316,Γέμενη,,country_ye
 317,Ζάμπια,,country_zm
 318,Ζιμπάμπουε,,country_zw
+319,Μαυροβούνιο,,country_me
+321,Σερβία,,country_rs
+322,Κοσσυφοπέδιο,,country_xk
+324,Νότιο Σουδάν,,country_ss

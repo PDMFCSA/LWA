@@ -1,6 +1,6 @@
 code,text,status,key
 1,Dobrodošli u PharmaLedger.,ok,welcome
-2,Pronađite DataMatrix barkod na svojem lijeku kako biste skenirali i pregledali informacije.,ok,scan_explain
+2,Pronađite Datamatrix na svom lijeku. Pogledajte gornji primjer.,,scan_explain
 3,Skeniraj DataMatrix.,ok,scan_button
 4,Promjena kamere,ok,change_camera
 5,Otkaži,ok,cancel
@@ -40,6 +40,7 @@ code,text,status,key
 45,"Nažalost, nema učitanih informacija o proizvodu.",ok,product_not_loaded
 46,Kôd pogreške:,ok,err_code
 47,"Sustav je zauzet, molimo pokušajte ponovno kasnije.",ok,system_busy
+48,Ispis,,leaflet_print
 61,Informacije o ispisu,,leaflet_print_title
 62,Trenutne odabrane informacije bit će ispisane kao PDF.,,leaflet_print_description
 63,Želite li nastaviti?,,leaflet_print_description2
@@ -56,18 +57,13 @@ code,text,status,key
 74,Odaberite svoju zemlju,,epi_markets_modal_message
 75,Nijedna zemlja,,epi_markets_modal_no_market
 76,Afganistan,,country_af
-77,Åland Islands,,country_ax
 78,Albanija,,country_al
 79,Alžir,,country_dz
-80,Američka Samova,,country_as
 81,Andora,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarktika,,country_aq
 85,Antigva i Barbuda,,country_ag
 86,Argentina,,country_ar
 87,Armenija,,country_am
-88,Aruba,,country_aw
 89,Australija,,country_au
 90,Austrija,,country_at
 91,Azerbejdžan,,country_az
@@ -79,15 +75,12 @@ code,text,status,key
 97,Belgija,,country_be
 98,Izbiti,,country_bz
 99,Benin,,country_bj
-100,Bermud,,country_bm
 101,Butan,,country_bt
 102,Bolivija,,country_bo
 103,Bosna i Hercegovina,,country_ba
 104,Bocvana,,country_bw
-105,Otok buvet,,country_bv
 106,Brazil,,country_br
-107,Britanski teritorij Indijskog oceana,,country_io
-108,Brunej Darussalam,,country_bn
+108,Brunej,,country_bn
 109,Bugarska,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundi,,country_bi
@@ -95,20 +88,16 @@ code,text,status,key
 113,Kamerun,,country_cm
 114,Kanada,,country_ca
 115,Rt verde,,country_cv
-116,Kajmanski otoci,,country_ky
 117,Srednjoafrička republika,,country_cf
 118,Čad,,country_td
 119,Čile,,country_cl
 120,Kina,,country_cn
-121,Božićni otok,,country_cx
-122,Otoci Cocos (Keeling),,country_cc
 123,Kolumbija,,country_co
 124,Komori,,country_km
-125,Kongo,,country_cg
+125,"Kongo, Republika",,country_cg
 126,"Kongo, Demokratska Republika",,country_cd
-127,Kuhati otoci,,country_ck
 128,Kostarika,,country_cr
-129,Cote d'Ovoire,,country_ci
+129,Obala bjelokosti,,country_ci
 130,Hrvatska,,country_hr
 131,Kuba,,country_cu
 132,Cipar,,country_cy
@@ -124,33 +113,21 @@ code,text,status,key
 142,Eritreja,,country_er
 143,Estonija,,country_ee
 144,Etiopija,,country_et
-145,Falklandski otoci (Malvinas),,country_fk
-146,Ferojski otoci,,country_fo
 147,Fidži,,country_fj
 148,Finska,,country_fi
 149,Francuska,,country_fr
-150,Francuska Gvajana,,country_gf
-151,Francuska Polinezija,,country_pf
-152,Francuski južni teritoriji,,country_tf
 153,Gabon,,country_ga
 154,Gambija,,country_gm
 155,Gruzija,,country_ge
 156,Njemačka,,country_de
 157,Gana,,country_gh
-158,Gibraltar,,country_gi
 159,Grčka,,country_gr
-160,Grenland,,country_gl
 161,Grenada,,country_gd
-162,Guadeloupa,,country_gp
-163,Gumba,,country_gu
 164,Gvatemala,,country_gt
-165,Guernsey,,country_gg
 166,Gvineja,,country_gn
 167,Zamorca,,country_gw
 168,Gvajana,,country_gy
 169,Haiti,,country_ht
-170,Čuo otok i McDonald Islands,,country_hm
-171,Sveta vidi (država Vatikana),,country_va
 172,Honduras,,country_hn
 173,Hong Kong,,country_hk
 174,Mađarska,,country_hu
@@ -160,31 +137,28 @@ code,text,status,key
 178,"Iran, Islamska Republika",,country_ir
 179,Irak,,country_iq
 180,Irska,,country_ie
-181,Otok čovjeka,,country_im
 182,Izrael,,country_il
 183,Italija,,country_it
 184,Jamajka,,country_jm
 185,Japan,,country_jp
-186,Dres,,country_je
 187,Jordan,,country_jo
 188,Kazakhstan,,country_kz
 189,Kenija,,country_ke
 190,Kiribati,,country_ki
-191,"Koreja, Demokratska narodna Republika",,COUNTRY_KP
-192,"Koreja, Republika",,COUNTRY_KR
+191,Sjeverna Koreja,,country_kp
+192,Južna Koreja,,country_kr
 193,Kuvajt,,country_kw
 194,Kirgijski,,country_kg
-195,Lao narodna demokratska republika,,COUNTRY_LA
-196,Latvija,,COUNTRY_LV
+195,Laos,,country_la
+196,Latvija,,country_lv
 197,Libanon,,country_lb
 198,Lesoto,,country_ls
 199,Liberija,,country_lr
-200,Libijska Arapska Jamahiriya,,country_ly
+200,Libija,,country_ly
 201,Lihtenštajn,,country_li
 202,Litvanija,,country_lt
 203,Luksemburg,,country_lu
-204,Makao,,country_mo
-205,"Makedonija, bivša Jugoslavenska Republika",,country_mk
+205,Sjeverna Makedonija,,country_mk
 206,Madagaskar,,country_mg
 207,Malavi,,country_mw
 208,Malezija,,country_my
@@ -192,16 +166,13 @@ code,text,status,key
 210,Mali,,country_ml
 211,Malta,,country_mt
 212,Marshall Islands,,country_mh
-213,Martikin,,country_mq
 214,Mauritanija,,country_mr
 215,Mauricijus,,country_mu
-216,Mayotte,,country_yt
 217,Meksiko,,country_mx
 218,"Mikronezija, federalne države",,country_fm
-219,"Moldava, Republika",,country_md
+219,Moldavija,,country_md
 220,Monako,,country_mc
 221,Mongolija,,country_mn
-222,Montserrat,,country_ms
 223,Maroko,,country_ma
 224,Mozambik,,country_mz
 225,Mjanmar,,country_mm
@@ -209,45 +180,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepal,,country_np
 229,Nizozemska,,country_nl
-230,Nizozemska Antila,,country_an
-231,Nova Kaledonija,,country_nc
 232,Novi Zeland,,country_nz
 233,Nikaragva,,country_ni
 234,Niger,,country_ne
 235,Nigerija,,country_ng
-236,Niue,,country_nu
-237,Otok Norfolk,,country_nf
-238,Sjeverni Mariana Otoci,,country_mp
 239,Norveška,,country_no
 240,Oman,,country_om
 241,Pakistan,,country_pk
 242,Palau,,country_pw
-243,"Palestinski teritorij, zauzet",,country_ps
 244,Panama,,country_pa
 245,Papua Nova Gvineja,,country_pg
 246,Paragvaj,,country_py
 247,Peru,,country_pe
 248,Filipini,,country_ph
-249,Pitcairn,,country_pn
 250,Poljska,,country_pl
 251,Portugal,,country_pt
-252,Portoriko,,country_pr
 253,Katar,,country_qa
-254,Ponovno spajanje,,country_re
 255,Rumunija,,country_ro
-256,Ruska Federacija,,country_ru
+256,Rusija,,country_ru
 257,Ruanda,,country_rw
-258,Sveta Helena,,country_sh
 259,Sveti Kitts i Nevis,,country_kn
 260,Sveta Lucia,,country_lc
-261,Saint Pierre i Miquelon,,country_pm
 262,Sveti Vincent i Grenadine,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome i Principe,,country_st
 266,Saudijska Arabija,,country_sa
 267,Senegal,,country_sn
-268,Srbija i Crna Gora,,country_cs
 269,Sejšeli,,country_sc
 270,Sierra Leone,,country_sl
 271,Singapur,,country_sg
@@ -256,45 +215,40 @@ code,text,status,key
 274,Salomonski otoci,,country_sb
 275,Somalija,,country_so
 276,Južna Afrika,,country_za
-277,Južna Gruzija i Južni sendvič otoci,,country_gs
 278,Španjolska,,country_es
 279,Šri Lanka,,country_lk
 280,Sudan,,country_sd
 281,Surum,,country_sr
-282,Svalbard i Jan Mayen,,country_sj
 283,Svaziland,,country_sz
 284,Švedska,,country_se
 285,Švicarska,,country_ch
-286,Sirijska Arapska republika,,country_sy
-287,"Tajvan, pokrajina Kine",,country_tw
+286,Sirija,,country_sy
+287,Tajvan,,country_tw
 288,Tajkistan,,country_tj
-289,"Tanzanija, Ujedinjena Republika",,country_tz
+289,Tanzanija,,country_tz
 290,Tajland,,country_th
-291,Timor-Leste,,country_tl
+291,Istočni Timor,,country_tl
 292,Togo,,country_tg
-293,Tokelau,,country_tk
 294,Laka dvokolica,,country_to
 295,Trinidad i Tobago,,country_tt
 296,Tunis,,country_tn
 297,Turska,,country_tr
 298,Turkmenistan,,country_tm
-299,Otoci Turaka i Caicosa,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukrajina,,country_ua
 303,Ujedinjeni Arapski Emirati,,country_ae
 304,Ujedinjeno Kraljevstvo,,country_gb
 305,Sjedinjene Države,,country_us
-306,Manji vanjski otoci Sjedinjenih Država,,country_um
 307,Urugvaj,,country_uy
 308,Uzbekistan,,country_uz
 309,Vanuatu,,country_vu
 310,Venezuela,,country_ve
 311,Vijetnam,,country_vn
-312,"Djevičanski otoci, Britanci",,country_vg
-313,"Djevičanski otoci, U.S.",,country_vi
-314,Wallis i futuna,,country_wf
-315,Zapadna Sahara,,country_eh
 316,Jemen,,country_ye
 317,Zambija,,country_zm
 318,Zimbabve,,country_zw
+319,Crna Gora,,country_me
+321,Srbija,,country_rs
+322,Kosov,,country_xk
+324,Južni Sudan,,country_ss

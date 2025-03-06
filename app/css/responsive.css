@@ -81,6 +81,10 @@ b {
     font-weight: 700;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 .bold {
     font-weight: 700;
 }

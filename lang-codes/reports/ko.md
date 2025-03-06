@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | PharmaLedger에 오신 것을 환영합니다 | ok | 1 |
-| scan_explain | 의약품의 데이터 매트릭스 바코드(DataMatrix Barcode)를 스캔하여 자세한 정보를 확인할 수 있습니다. | ok | 2 |
+| scan_explain | 약에서 Datamatrix를 찾으십시오. 위의 예를 참조하십시오. |  | 2 |
 | scan_button | 데이터 매트릭스 스캔하기 | ok | 3 |
 | change_camera | 카메라를 바꾸세요 | ok | 4 |
 | cancel | 취소 | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | 죄송합니다. 제품 정보가 입력되지 않았습니다. | ok | 45 |
 | err_code | 코드 오류 | ok | 46 |
 | system_busy | 시스템이 사용 중입니다. 나중에 다시 시도하십시오. | ok | 47 |
+| leaflet_print | 인쇄 |  | 48 |
 | error_subtitle | 인증되지 않은 제품 |  | 49 |
 | leaflet_incorrect_date_title | 잘못된 날짜 |  | 50 |
 | leaflet_incorrect_date_subtitle | 스캔한 날짜가 잘못되었습니다 |  | 51 |
@@ -66,18 +67,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | 국가를 선택하십시오 |  | 74 |
 | epi_markets_modal_no_market | 나라도 없습니다 |  | 75 |
 | country_af | 아프가니스탄 |  | 76 |
-| country_ax | Åland Islands |  | 77 |
 | country_al | 알바니아 |  | 78 |
 | country_dz | 알제리 |  | 79 |
-| country_as | 미국 사모아 |  | 80 |
 | country_ad | 안도라 |  | 81 |
 | country_ao | 앙골라 |  | 82 |
-| country_ai | 앵 guilla |  | 83 |
-| country_aq | 남극 대륙 |  | 84 |
 | country_ag | 안티구아와 바부 다 |  | 85 |
 | country_ar | 아르헨티나 |  | 86 |
 | country_am | 아르메니아 |  | 87 |
-| country_aw | 아루바 |  | 88 |
 | country_au | 호주 |  | 89 |
 | country_at | 오스트리아 |  | 90 |
 | country_az | 아제르바이잔 |  | 91 |
@@ -89,15 +85,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | 벨기에 |  | 97 |
 | country_bz | 벨리즈 |  | 98 |
 | country_bj | 베닌 |  | 99 |
-| country_bm | 버뮤다 |  | 100 |
 | country_bt | 부탄 |  | 101 |
 | country_bo | 볼리비아 |  | 102 |
 | country_ba | 보스니아와 헤르체고비나 |  | 103 |
 | country_bw | 보츠와나 |  | 104 |
-| country_bv | Bouvet Island |  | 105 |
 | country_br | 브라질 |  | 106 |
-| country_io | 영국 인도양 영토 |  | 107 |
-| country_bn | 브루나이 다 루살람 |  | 108 |
+| country_bn | 브루나이 |  | 108 |
 | country_bg | 불가리아 |  | 109 |
 | country_bf | 부르 키나 파소 |  | 110 |
 | country_bi | 부룬디 |  | 111 |
@@ -105,20 +98,16 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | 카메룬 |  | 113 |
 | country_ca | 캐나다 |  | 114 |
 | country_cv | 케이프 베르데 |  | 115 |
-| country_ky | 케이맨 제도 |  | 116 |
 | country_cf | 중앙 아프리카 공화국 |  | 117 |
 | country_td | 차드 |  | 118 |
 | country_cl | 칠레 |  | 119 |
 | country_cn | 중국 |  | 120 |
-| country_cx | 크리스마스 섬 |  | 121 |
-| country_cc | 코코 (킬링) 섬 |  | 122 |
 | country_co | 콜롬비아 |  | 123 |
 | country_km | 코 모로 |  | 124 |
-| country_cg | 콩고 |  | 125 |
+| country_cg | 콩고, 공화국 |  | 125 |
 | country_cd | 콩고, 민주 공화국 |  | 126 |
-| country_ck | 쿡 제도 |  | 127 |
 | country_cr | 코스타리카 |  | 128 |
-| country_ci | 코트 디부 아르 |  | 129 |
+| country_ci | 상아 해안 |  | 129 |
 | country_hr | 크로아티아 |  | 130 |
 | country_cu | 쿠바 |  | 131 |
 | country_cy | 키프로스 |  | 132 |
@@ -134,33 +123,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | 에리트레아 |  | 142 |
 | country_ee | 에스토니아 |  | 143 |
 | country_et | 에티오피아 |  | 144 |
-| country_fk | 포클랜드 제도 (Malvinas) |  | 145 |
-| country_fo | Faroe Islands |  | 146 |
 | country_fj | 피지 |  | 147 |
 | country_fi | 핀란드 |  | 148 |
 | country_fr | 프랑스 |  | 149 |
-| country_gf | 프랑스 기아나 |  | 150 |
-| country_pf | 프랑스 폴리네시아 |  | 151 |
-| country_tf | 프랑스 남부 영토 |  | 152 |
 | country_ga | 가봉 |  | 153 |
 | country_gm | 감비아 |  | 154 |
 | country_ge | 그루지야 |  | 155 |
 | country_de | 독일 |  | 156 |
 | country_gh | 가나 |  | 157 |
-| country_gi | 지브롤터 |  | 158 |
 | country_gr | 그리스 |  | 159 |
-| country_gl | 그린란드 |  | 160 |
 | country_gd | 그레나다 |  | 161 |
-| country_gp | 과드루프 |  | 162 |
-| country_gu | 괌 |  | 163 |
 | country_gt | 과테말라 |  | 164 |
-| country_gg | 건지 |  | 165 |
 | country_gn | 기니 |  | 166 |
 | country_gw | 기니 비시 |  | 167 |
 | country_gy | 가이아나 |  | 168 |
 | country_ht | 아이티 |  | 169 |
-| country_hm | 섬과 맥도날드 제도가 들렸다 |  | 170 |
-| country_va | 거룩한 참조 (바티칸 시티 주) |  | 171 |
 | country_hn | 온두라스 |  | 172 |
 | country_hk | 홍콩 |  | 173 |
 | country_hu | 헝가리 |  | 174 |
@@ -170,31 +147,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | 이란, 이슬람 공화국 |  | 178 |
 | country_iq | 이라크 |  | 179 |
 | country_ie | 아일랜드 |  | 180 |
-| country_im | 사람의 섬 |  | 181 |
 | country_il | 이스라엘 |  | 182 |
 | country_it | 이탈리아 |  | 183 |
 | country_jm | 자메이카 |  | 184 |
 | country_jp | 일본 |  | 185 |
-| country_je | 저지 |  | 186 |
 | country_jo | 요르단 |  | 187 |
 | country_kz | 카자흐스탄 |  | 188 |
 | country_ke | 케냐 |  | 189 |
 | country_ki | 키리 바티 |  | 190 |
-| COUNTRY_KP | 한국, 민주당 인민 공화국 |  | 191 |
-| COUNTRY_KR | 한국, 공화국 |  | 192 |
+| country_kp | 북한 |  | 191 |
+| country_kr | 대한민국 |  | 192 |
 | country_kw | 쿠웨이트 |  | 193 |
 | country_kg | 키르기스스탄 |  | 194 |
-| COUNTRY_LA | 라오스 민주 공화국 |  | 195 |
-| COUNTRY_LV | 라트비아 |  | 196 |
+| country_la | 라오스 |  | 195 |
+| country_lv | 라트비아 |  | 196 |
 | country_lb | 레바논 |  | 197 |
 | country_ls | 레소토 |  | 198 |
 | country_lr | 라이베리아 |  | 199 |
-| country_ly | 리비아 아랍 자마 이리 야 |  | 200 |
+| country_ly | 리비아 |  | 200 |
 | country_li | 리히텐슈타인 |  | 201 |
 | country_lt | 리투아니아 |  | 202 |
 | country_lu | 룩셈부르크 |  | 203 |
-| country_mo | 마카오 |  | 204 |
-| country_mk | 마케도니아, 전 유고 슬라비아 공화국 |  | 205 |
+| country_mk | 노스 마케도니아 |  | 205 |
 | country_mg | 마다가스카르 |  | 206 |
 | country_mw | 말라위 |  | 207 |
 | country_my | 말레이시아 |  | 208 |
@@ -202,16 +176,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | 말리 |  | 210 |
 | country_mt | 몰타 |  | 211 |
 | country_mh | 마샬 제도 |  | 212 |
-| country_mq | 마르티니크 |  | 213 |
 | country_mr | 모리타니 |  | 214 |
 | country_mu | 모리셔스 |  | 215 |
-| country_yt | Mayotte |  | 216 |
 | country_mx | 멕시코 |  | 217 |
 | country_fm | 미크로네시아, 연합 상태 |  | 218 |
-| country_md | 몰도바, 공화국 |  | 219 |
+| country_md | 몰도바 |  | 219 |
 | country_mc | 모나코 |  | 220 |
 | country_mn | 몽골리아 |  | 221 |
-| country_ms | Montserrat |  | 222 |
 | country_ma | 모로코 가죽 |  | 223 |
 | country_mz | 모잠비크 |  | 224 |
 | country_mm | 미얀마 |  | 225 |
@@ -219,45 +190,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | 나우루 |  | 227 |
 | country_np | 네팔 |  | 228 |
 | country_nl | 네덜란드 |  | 229 |
-| country_an | 네덜란드 앤 틸리 스 |  | 230 |
-| country_nc | 뉴 칼레도니아 |  | 231 |
 | country_nz | 뉴질랜드 |  | 232 |
 | country_ni | 니카라과 |  | 233 |
 | country_ne | 니제르 |  | 234 |
 | country_ng | 나이지리아 |  | 235 |
-| country_nu | 니우 |  | 236 |
-| country_nf | 노퍽 섬 |  | 237 |
-| country_mp | 북부 마리아나 제도 |  | 238 |
 | country_no | 노르웨이 |  | 239 |
 | country_om | 오만 |  | 240 |
 | country_pk | 파키스탄 |  | 241 |
 | country_pw | 팔라우 |  | 242 |
-| country_ps | 팔레스타인 영토, 점령 |  | 243 |
 | country_pa | 파나마 |  | 244 |
 | country_pg | 파푸아 뉴기니 |  | 245 |
 | country_py | 파라과이 |  | 246 |
 | country_pe | 페루 |  | 247 |
 | country_ph | 필리핀 제도 |  | 248 |
-| country_pn | 핏 케언 |  | 249 |
 | country_pl | 폴란드 |  | 250 |
 | country_pt | 포르투갈 |  | 251 |
-| country_pr | 푸에르토 리코 |  | 252 |
 | country_qa | 카타르 |  | 253 |
-| country_re | 재결합 |  | 254 |
 | country_ro | 루마니아 |  | 255 |
-| country_ru | 러시아 연맹 |  | 256 |
+| country_ru | 러시아 제국 |  | 256 |
 | country_rw | 르완다 |  | 257 |
-| country_sh | 세인트 헬레나 |  | 258 |
 | country_kn | 세인트 키츠와 네비스 |  | 259 |
 | country_lc | 세인트 루시아 |  | 260 |
-| country_pm | 세인트 피에르와 미 킬론 |  | 261 |
 | country_vc | 세인트 빈센트와 그레나딘 |  | 262 |
 | country_ws | 사모아 |  | 263 |
 | country_sm | 산 마리노 |  | 264 |
 | country_st | Sao Tome과 Principe |  | 265 |
 | country_sa | 사우디 아라비아 |  | 266 |
 | country_sn | 세네갈 |  | 267 |
-| country_cs | 세르비아와 몬테네그로 |  | 268 |
 | country_sc | 세이셸 |  | 269 |
 | country_sl | 시에라 리온 |  | 270 |
 | country_sg | 싱가포르 |  | 271 |
@@ -266,45 +225,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | 솔로몬 제도 |  | 274 |
 | country_so | 소말리아 |  | 275 |
 | country_za | 남아프리카 |  | 276 |
-| country_gs | 사우스 조지아와 사우스 샌드위치 제도 |  | 277 |
 | country_es | 스페인 |  | 278 |
 | country_lk | 스리랑카 |  | 279 |
 | country_sd | 수단 |  | 280 |
 | country_sr | 수리남 |  | 281 |
-| country_sj | Svalbard와 Jan Mayen |  | 282 |
 | country_sz | 스와질란드 |  | 283 |
 | country_se | 스웨덴 |  | 284 |
 | country_ch | 스위스 |  | 285 |
-| country_sy | 시리아 아랍 공화국 |  | 286 |
-| country_tw | 대만, 중국 지방 |  | 287 |
+| country_sy | 시리아 |  | 286 |
+| country_tw | 대만 |  | 287 |
 | country_tj | 타지키스탄 |  | 288 |
-| country_tz | 탄자니아, 연합 공화국 |  | 289 |
+| country_tz | 탄자니아 |  | 289 |
 | country_th | 태국 |  | 290 |
 | country_tl | 동 티모르 |  | 291 |
 | country_tg | 토고 |  | 292 |
-| country_tk | Tokelau |  | 293 |
 | country_to | 통가 |  | 294 |
 | country_tt | 트리니다드 토바고 |  | 295 |
 | country_tn | 튀니지 |  | 296 |
 | country_tr | 칠면조 |  | 297 |
 | country_tm | 투르크 메니스탄 |  | 298 |
-| country_tc | 터키와 카이코스 제도 |  | 299 |
 | country_tv | 투발루 |  | 300 |
 | country_ug | 우간다 |  | 301 |
 | country_ua | 우크라이나 |  | 302 |
 | country_ae | 아랍 에미리트 연합 |  | 303 |
 | country_gb | 영국 |  | 304 |
 | country_us | 미국 |  | 305 |
-| country_um | 미국 미성년 섬 |  | 306 |
 | country_uy | 우루과이 |  | 307 |
 | country_uz | 우즈베키스탄 |  | 308 |
 | country_vu | 바누아투 |  | 309 |
 | country_ve | 베네수엘라 |  | 310 |
 | country_vn | 베트남 |  | 311 |
-| country_vg | 버진 아일랜드, 영국 |  | 312 |
-| country_vi | 버진 아일랜드, 미국 |  | 313 |
-| country_wf | Wallis와 Futuna |  | 314 |
-| country_eh | 서부 사하라 |  | 315 |
 | country_ye | 예멘 아랍 공화국 |  | 316 |
 | country_zm | 잠비아 |  | 317 |
 | country_zw | 짐바브웨 |  | 318 |
+| country_me | 몬테네그로 |  | 319 |
+| country_rs | 세르비아 |  | 321 |
+| country_xk | 코소보 |  | 322 |
+| country_ss | 남 수단 |  | 324 |

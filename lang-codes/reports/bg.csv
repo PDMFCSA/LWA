@@ -1,6 +1,6 @@
 code,text,status,key
 1,Добре дошли във PharmaLedger,ok,welcome
-2,"Намерете баркода DataMatrix на Вашето лекарство, за да сканирате и видите информацията.",ok,scan_explain
+2,Намерете Datamatrix на вашето лекарство. Вижте пример по -горе.,,scan_explain
 3,Сканирайте DataMatrix,ok,scan_button
 4,Сменете камерата,ok,change_camera
 5,Отказ,ok,cancel
@@ -40,6 +40,7 @@ code,text,status,key
 45,За съжаление не е заредена информация за продукта.,ok,product_not_loaded
 46,Код за грешка,ok,err_code
 47,"Системата е претоварена, моля, опитайте отново по-късно.",ok,system_busy
+48,Печат,,leaflet_print
 61,Информация за отпечатване,,leaflet_print_title
 62,Текущата избрана информация ще бъде отпечатана като PDF.,,leaflet_print_description
 63,Искате ли да продължите?,,leaflet_print_description2
@@ -56,18 +57,13 @@ code,text,status,key
 74,"Моля, изберете вашата страна",,epi_markets_modal_message
 75,Няма държава,,epi_markets_modal_no_market
 76,Афганистан,,country_af
-77,Острови Åland,,country_ax
 78,Албания,,country_al
 79,Алжир,,country_dz
-80,Американска Самоа,,country_as
 81,Андора,,country_ad
 82,Ангола,,country_ao
-83,Ангила,,country_ai
-84,Антарктида,,country_aq
 85,Антигуа и Барбуда,,country_ag
 86,Аржентина,,country_ar
 87,Армения,,country_am
-88,Аруба,,country_aw
 89,Австралия,,country_au
 90,Австрия,,country_at
 91,Азербайджан,,country_az
@@ -79,15 +75,12 @@ code,text,status,key
 97,Белгия,,country_be
 98,Белиз,,country_bz
 99,Бенин,,country_bj
-100,Бермуда,,country_bm
 101,Бутан,,country_bt
 102,Боливия,,country_bo
 103,Босна и Херцеговина,,country_ba
 104,Ботсвана,,country_bw
-105,Остров Бувет,,country_bv
 106,Бразилия,,country_br
-107,Британска територия на Индийския океан,,country_io
-108,Бруней Дарусалам,,country_bn
+108,Бруней,,country_bn
 109,България,,country_bg
 110,Буркина Фасо,,country_bf
 111,Бурунди,,country_bi
@@ -95,20 +88,16 @@ code,text,status,key
 113,Камерун,,country_cm
 114,Канада,,country_ca
 115,Кабо Верде,,country_cv
-116,Каймански острови,,country_ky
 117,Централноафриканска република,,country_cf
 118,Чад,,country_td
 119,Чили,,country_cl
 120,Китай,,country_cn
-121,Коледният остров,,country_cx
-122,Острови Кокос (Килинг),,country_cc
 123,Колумбия,,country_co
 124,Коморос,,country_km
-125,Конго,,country_cg
+125,"Конго, Република",,country_cg
 126,"Конго, Демократична република",,country_cd
-127,Кук острови,,country_ck
 128,Коста Рика,,country_cr
-129,Кот д'Ивоар,,country_ci
+129,Котче на слонова кост,,country_ci
 130,Хърватия,,country_hr
 131,Куба,,country_cu
 132,Кипър,,country_cy
@@ -124,33 +113,21 @@ code,text,status,key
 142,Еритрея,,country_er
 143,Естония,,country_ee
 144,Етиопия,,country_et
-145,Фолклендските острови (Малвинас),,country_fk
-146,Фарьорски острови,,country_fo
 147,Фиджи,,country_fj
 148,Финландия,,country_fi
 149,Франция,,country_fr
-150,Френска Гвиана,,country_gf
-151,Френска Полинезия,,country_pf
-152,Френски южни територии,,country_tf
 153,Габон,,country_ga
 154,Гамбия,,country_gm
 155,Джорджия,,country_ge
 156,Германия,,country_de
 157,Гана,,country_gh
-158,Гибралтар,,country_gi
 159,Гърция,,country_gr
-160,Гренландия,,country_gl
 161,Гренада,,country_gd
-162,Гваделупа,,country_gp
-163,Гуам,,country_gu
 164,Гватемала,,country_gt
-165,Гърнси,,country_gg
 166,Гвинея,,country_gn
 167,Гвинея-Бисау,,country_gw
 168,Гаяна,,country_gy
 169,Хаити,,country_ht
-170,Остров Хърд и Макдоналдските острови,,country_hm
-171,Свети прегледи (държава на Ватикана)),,country_va
 172,Хондурас,,country_hn
 173,Хонконг,,country_hk
 174,Унгария,,country_hu
@@ -160,31 +137,28 @@ code,text,status,key
 178,"Иран, Ислямска република",,country_ir
 179,Ирак,,country_iq
 180,Ирландия,,country_ie
-181,Остров на човека,,country_im
 182,Израел,,country_il
 183,Италия,,country_it
 184,Ямайка,,country_jm
 185,Япония,,country_jp
-186,Джърси,,country_je
 187,Йордания,,country_jo
 188,Казахстан,,country_kz
 189,Кения,,country_ke
 190,Кирибати,,country_ki
-191,"Корея, демократична народна република",,COUNTRY_KP
-192,"Корея, Република",,COUNTRY_KR
+191,Северна Корея,,country_kp
+192,Южна Корея,,country_kr
 193,Кувейт,,country_kw
 194,Киргизстан,,country_kg
-195,Демократичната република на Лаото,,COUNTRY_LA
-196,Латвия,,COUNTRY_LV
+195,Лаос,,country_la
+196,Латвия,,country_lv
 197,Ливан,,country_lb
 198,Лесото,,country_ls
 199,Либерия,,country_lr
-200,Либийски арабски Джамахирия,,country_ly
+200,Либия,,country_ly
 201,Лихтенщайн,,country_li
 202,Литва,,country_lt
 203,Люксембург,,country_lu
-204,Макао,,country_mo
-205,"Македония, бившата югославска република на",,country_mk
+205,Северна Македония,,country_mk
 206,Мадагаскар,,country_mg
 207,Малави,,country_mw
 208,Малайзия,,country_my
@@ -192,16 +166,13 @@ code,text,status,key
 210,Мали,,country_ml
 211,Малта,,country_mt
 212,Маршаловите острови,,country_mh
-213,Мартиника,,country_mq
 214,Мавритания,,country_mr
 215,Мавриций,,country_mu
-216,Майота,,country_yt
 217,Мексико,,country_mx
 218,"Микронезия, федерални държави на",,country_fm
-219,"Молдова, Република",,country_md
+219,Молдова,,country_md
 220,Монако,,country_mc
 221,Монголия,,country_mn
-222,Монсерат,,country_ms
 223,Мароко,,country_ma
 224,Мозамбик,,country_mz
 225,Мианмар,,country_mm
@@ -209,45 +180,33 @@ code,text,status,key
 227,Науру,,country_nr
 228,Непал,,country_np
 229,Холандия,,country_nl
-230,Холандия Антили,,country_an
-231,Нова Каледония,,country_nc
 232,Нова Зеландия,,country_nz
 233,Никарагуа,,country_ni
 234,Нигер,,country_ne
 235,Нигерия,,country_ng
-236,Niue,,country_nu
-237,Остров Норфолк,,country_nf
-238,Северни острови Мариана,,country_mp
 239,Норвегия,,country_no
 240,Оман,,country_om
 241,Пакистан,,country_pk
 242,Палау,,country_pw
-243,"Палестинска територия, окупирана",,country_ps
 244,Панама,,country_pa
 245,Папуа Нова Гвинея,,country_pg
 246,Парагвай,,country_py
 247,Перу,,country_pe
 248,Филипини,,country_ph
-249,Pitcairn,,country_pn
 250,Полша,,country_pl
 251,Португалия,,country_pt
-252,Пуерто Рико,,country_pr
 253,Катар,,country_qa
-254,Събиране,,country_re
 255,Румъния,,country_ro
-256,Руска федерация,,country_ru
+256,Русия,,country_ru
 257,Руанда,,country_rw
-258,Света Елена,,country_sh
 259,Сейнт Китс и Невис,,country_kn
 260,Свети Лусия,,country_lc
-261,Свети Пиер и Микелон,,country_pm
 262,Сейнт Винсент и гренадините,,country_vc
 263,Самоа,,country_ws
 264,Сан Марино,,country_sm
 265,Сао Томе и Принсипи,,country_st
 266,Саудитска Арабия,,country_sa
 267,Сенегал,,country_sn
-268,Сърбия и Черна гора,,country_cs
 269,Сейшели,,country_sc
 270,Сиера Леоне,,country_sl
 271,Сингапур,,country_sg
@@ -256,45 +215,40 @@ code,text,status,key
 274,Соломонски острови,,country_sb
 275,Сомалия,,country_so
 276,Южна Африка,,country_za
-277,Южна Джорджия и Южните сандвич острови,,country_gs
 278,Испания,,country_es
 279,Шри Ланка,,country_lk
 280,Судан,,country_sd
 281,Суринам,,country_sr
-282,Свалбард и Ян Маййн,,country_sj
 283,Свазиленд,,country_sz
 284,Швеция,,country_se
 285,Швейцария,,country_ch
-286,Сирийска арабска република,,country_sy
-287,"Тайван, провинция Китай",,country_tw
+286,Сирия,,country_sy
+287,Тайван,,country_tw
 288,Таджикистан,,country_tj
-289,"Танзания, Обединена република",,country_tz
+289,Танзания,,country_tz
 290,Тайланд,,country_th
-291,Тимор-Лесте,,country_tl
+291,Източен Тимор,,country_tl
 292,Того,,country_tg
-293,Токелау,,country_tk
 294,Тонга,,country_to
 295,Тринидад и Тобаго,,country_tt
 296,Тунис,,country_tn
 297,Турция,,country_tr
 298,Туркменистан,,country_tm
-299,Острови турци и Кайкос,,country_tc
 300,Тувалу,,country_tv
 301,Уганда,,country_ug
 302,Украйна,,country_ua
 303,Обединени арабски емирства,,country_ae
 304,Обединеното кралство,,country_gb
 305,САЩ,,country_us
-306,Съединените щати Незначителни острови,,country_um
 307,Уругвай,,country_uy
 308,Узбекистан,,country_uz
 309,Вануату,,country_vu
 310,Венецуела,,country_ve
 311,Виетнам,,country_vn
-312,"Вирджински острови, британски",,country_vg
-313,"Вирджински острови, САЩ",,country_vi
-314,Уолис и Футуна,,country_wf
-315,Западна Сахара,,country_eh
 316,Йемен,,country_ye
 317,Замбия,,country_zm
 318,Зимбабве,,country_zw
+319,Черна гора,,country_me
+321,Сърбия,,country_rs
+322,Косово,,country_xk
+324,Южен Судан,,country_ss

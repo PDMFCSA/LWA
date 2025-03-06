@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Dobrodošli u PharmaLedger. | ok | 1 |
-| scan_explain | Pronađite DataMatrix barkod na svojem lijeku kako biste skenirali i pregledali informacije. | ok | 2 |
+| scan_explain | Pronađite Datamatrix na svom lijeku. Pogledajte gornji primjer. |  | 2 |
 | scan_button | Skeniraj DataMatrix. | ok | 3 |
 | change_camera | Promjena kamere | ok | 4 |
 | cancel | Otkaži | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | Nažalost, nema učitanih informacija o proizvodu. | ok | 45 |
 | err_code | Kôd pogreške: | ok | 46 |
 | system_busy | Sustav je zauzet, molimo pokušajte ponovno kasnije. | ok | 47 |
+| leaflet_print | Ispis |  | 48 |
 | leaflet_print_title | Informacije o ispisu |  | 61 |
 | leaflet_print_description | Trenutne odabrane informacije bit će ispisane kao PDF. |  | 62 |
 | leaflet_print_description2 | Želite li nastaviti? |  | 63 |
@@ -62,18 +63,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | Odaberite svoju zemlju |  | 74 |
 | epi_markets_modal_no_market | Nijedna zemlja |  | 75 |
 | country_af | Afganistan |  | 76 |
-| country_ax | Åland Islands |  | 77 |
 | country_al | Albanija |  | 78 |
 | country_dz | Alžir |  | 79 |
-| country_as | Američka Samova |  | 80 |
 | country_ad | Andora |  | 81 |
 | country_ao | Angola |  | 82 |
-| country_ai | Anguilla |  | 83 |
-| country_aq | Antarktika |  | 84 |
 | country_ag | Antigva i Barbuda |  | 85 |
 | country_ar | Argentina |  | 86 |
 | country_am | Armenija |  | 87 |
-| country_aw | Aruba |  | 88 |
 | country_au | Australija |  | 89 |
 | country_at | Austrija |  | 90 |
 | country_az | Azerbejdžan |  | 91 |
@@ -85,15 +81,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | Belgija |  | 97 |
 | country_bz | Izbiti |  | 98 |
 | country_bj | Benin |  | 99 |
-| country_bm | Bermud |  | 100 |
 | country_bt | Butan |  | 101 |
 | country_bo | Bolivija |  | 102 |
 | country_ba | Bosna i Hercegovina |  | 103 |
 | country_bw | Bocvana |  | 104 |
-| country_bv | Otok buvet |  | 105 |
 | country_br | Brazil |  | 106 |
-| country_io | Britanski teritorij Indijskog oceana |  | 107 |
-| country_bn | Brunej Darussalam |  | 108 |
+| country_bn | Brunej |  | 108 |
 | country_bg | Bugarska |  | 109 |
 | country_bf | Burkina Faso |  | 110 |
 | country_bi | Burundi |  | 111 |
@@ -101,20 +94,16 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | Kamerun |  | 113 |
 | country_ca | Kanada |  | 114 |
 | country_cv | Rt verde |  | 115 |
-| country_ky | Kajmanski otoci |  | 116 |
 | country_cf | Srednjoafrička republika |  | 117 |
 | country_td | Čad |  | 118 |
 | country_cl | Čile |  | 119 |
 | country_cn | Kina |  | 120 |
-| country_cx | Božićni otok |  | 121 |
-| country_cc | Otoci Cocos (Keeling) |  | 122 |
 | country_co | Kolumbija |  | 123 |
 | country_km | Komori |  | 124 |
-| country_cg | Kongo |  | 125 |
+| country_cg | Kongo, Republika |  | 125 |
 | country_cd | Kongo, Demokratska Republika |  | 126 |
-| country_ck | Kuhati otoci |  | 127 |
 | country_cr | Kostarika |  | 128 |
-| country_ci | Cote d'Ovoire |  | 129 |
+| country_ci | Obala bjelokosti |  | 129 |
 | country_hr | Hrvatska |  | 130 |
 | country_cu | Kuba |  | 131 |
 | country_cy | Cipar |  | 132 |
@@ -130,33 +119,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | Eritreja |  | 142 |
 | country_ee | Estonija |  | 143 |
 | country_et | Etiopija |  | 144 |
-| country_fk | Falklandski otoci (Malvinas) |  | 145 |
-| country_fo | Ferojski otoci |  | 146 |
 | country_fj | Fidži |  | 147 |
 | country_fi | Finska |  | 148 |
 | country_fr | Francuska |  | 149 |
-| country_gf | Francuska Gvajana |  | 150 |
-| country_pf | Francuska Polinezija |  | 151 |
-| country_tf | Francuski južni teritoriji |  | 152 |
 | country_ga | Gabon |  | 153 |
 | country_gm | Gambija |  | 154 |
 | country_ge | Gruzija |  | 155 |
 | country_de | Njemačka |  | 156 |
 | country_gh | Gana |  | 157 |
-| country_gi | Gibraltar |  | 158 |
 | country_gr | Grčka |  | 159 |
-| country_gl | Grenland |  | 160 |
 | country_gd | Grenada |  | 161 |
-| country_gp | Guadeloupa |  | 162 |
-| country_gu | Gumba |  | 163 |
 | country_gt | Gvatemala |  | 164 |
-| country_gg | Guernsey |  | 165 |
 | country_gn | Gvineja |  | 166 |
 | country_gw | Zamorca |  | 167 |
 | country_gy | Gvajana |  | 168 |
 | country_ht | Haiti |  | 169 |
-| country_hm | Čuo otok i McDonald Islands |  | 170 |
-| country_va | Sveta vidi (država Vatikana) |  | 171 |
 | country_hn | Honduras |  | 172 |
 | country_hk | Hong Kong |  | 173 |
 | country_hu | Mađarska |  | 174 |
@@ -166,31 +143,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | Iran, Islamska Republika |  | 178 |
 | country_iq | Irak |  | 179 |
 | country_ie | Irska |  | 180 |
-| country_im | Otok čovjeka |  | 181 |
 | country_il | Izrael |  | 182 |
 | country_it | Italija |  | 183 |
 | country_jm | Jamajka |  | 184 |
 | country_jp | Japan |  | 185 |
-| country_je | Dres |  | 186 |
 | country_jo | Jordan |  | 187 |
 | country_kz | Kazakhstan |  | 188 |
 | country_ke | Kenija |  | 189 |
 | country_ki | Kiribati |  | 190 |
-| COUNTRY_KP | Koreja, Demokratska narodna Republika |  | 191 |
-| COUNTRY_KR | Koreja, Republika |  | 192 |
+| country_kp | Sjeverna Koreja |  | 191 |
+| country_kr | Južna Koreja |  | 192 |
 | country_kw | Kuvajt |  | 193 |
 | country_kg | Kirgijski |  | 194 |
-| COUNTRY_LA | Lao narodna demokratska republika |  | 195 |
-| COUNTRY_LV | Latvija |  | 196 |
+| country_la | Laos |  | 195 |
+| country_lv | Latvija |  | 196 |
 | country_lb | Libanon |  | 197 |
 | country_ls | Lesoto |  | 198 |
 | country_lr | Liberija |  | 199 |
-| country_ly | Libijska Arapska Jamahiriya |  | 200 |
+| country_ly | Libija |  | 200 |
 | country_li | Lihtenštajn |  | 201 |
 | country_lt | Litvanija |  | 202 |
 | country_lu | Luksemburg |  | 203 |
-| country_mo | Makao |  | 204 |
-| country_mk | Makedonija, bivša Jugoslavenska Republika |  | 205 |
+| country_mk | Sjeverna Makedonija |  | 205 |
 | country_mg | Madagaskar |  | 206 |
 | country_mw | Malavi |  | 207 |
 | country_my | Malezija |  | 208 |
@@ -198,16 +172,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | Mali |  | 210 |
 | country_mt | Malta |  | 211 |
 | country_mh | Marshall Islands |  | 212 |
-| country_mq | Martikin |  | 213 |
 | country_mr | Mauritanija |  | 214 |
 | country_mu | Mauricijus |  | 215 |
-| country_yt | Mayotte |  | 216 |
 | country_mx | Meksiko |  | 217 |
 | country_fm | Mikronezija, federalne države |  | 218 |
-| country_md | Moldava, Republika |  | 219 |
+| country_md | Moldavija |  | 219 |
 | country_mc | Monako |  | 220 |
 | country_mn | Mongolija |  | 221 |
-| country_ms | Montserrat |  | 222 |
 | country_ma | Maroko |  | 223 |
 | country_mz | Mozambik |  | 224 |
 | country_mm | Mjanmar |  | 225 |
@@ -215,45 +186,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | Nauru |  | 227 |
 | country_np | Nepal |  | 228 |
 | country_nl | Nizozemska |  | 229 |
-| country_an | Nizozemska Antila |  | 230 |
-| country_nc | Nova Kaledonija |  | 231 |
 | country_nz | Novi Zeland |  | 232 |
 | country_ni | Nikaragva |  | 233 |
 | country_ne | Niger |  | 234 |
 | country_ng | Nigerija |  | 235 |
-| country_nu | Niue |  | 236 |
-| country_nf | Otok Norfolk |  | 237 |
-| country_mp | Sjeverni Mariana Otoci |  | 238 |
 | country_no | Norveška |  | 239 |
 | country_om | Oman |  | 240 |
 | country_pk | Pakistan |  | 241 |
 | country_pw | Palau |  | 242 |
-| country_ps | Palestinski teritorij, zauzet |  | 243 |
 | country_pa | Panama |  | 244 |
 | country_pg | Papua Nova Gvineja |  | 245 |
 | country_py | Paragvaj |  | 246 |
 | country_pe | Peru |  | 247 |
 | country_ph | Filipini |  | 248 |
-| country_pn | Pitcairn |  | 249 |
 | country_pl | Poljska |  | 250 |
 | country_pt | Portugal |  | 251 |
-| country_pr | Portoriko |  | 252 |
 | country_qa | Katar |  | 253 |
-| country_re | Ponovno spajanje |  | 254 |
 | country_ro | Rumunija |  | 255 |
-| country_ru | Ruska Federacija |  | 256 |
+| country_ru | Rusija |  | 256 |
 | country_rw | Ruanda |  | 257 |
-| country_sh | Sveta Helena |  | 258 |
 | country_kn | Sveti Kitts i Nevis |  | 259 |
 | country_lc | Sveta Lucia |  | 260 |
-| country_pm | Saint Pierre i Miquelon |  | 261 |
 | country_vc | Sveti Vincent i Grenadine |  | 262 |
 | country_ws | Samoa |  | 263 |
 | country_sm | San Marino |  | 264 |
 | country_st | Sao Tome i Principe |  | 265 |
 | country_sa | Saudijska Arabija |  | 266 |
 | country_sn | Senegal |  | 267 |
-| country_cs | Srbija i Crna Gora |  | 268 |
 | country_sc | Sejšeli |  | 269 |
 | country_sl | Sierra Leone |  | 270 |
 | country_sg | Singapur |  | 271 |
@@ -262,45 +221,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | Salomonski otoci |  | 274 |
 | country_so | Somalija |  | 275 |
 | country_za | Južna Afrika |  | 276 |
-| country_gs | Južna Gruzija i Južni sendvič otoci |  | 277 |
 | country_es | Španjolska |  | 278 |
 | country_lk | Šri Lanka |  | 279 |
 | country_sd | Sudan |  | 280 |
 | country_sr | Surum |  | 281 |
-| country_sj | Svalbard i Jan Mayen |  | 282 |
 | country_sz | Svaziland |  | 283 |
 | country_se | Švedska |  | 284 |
 | country_ch | Švicarska |  | 285 |
-| country_sy | Sirijska Arapska republika |  | 286 |
-| country_tw | Tajvan, pokrajina Kine |  | 287 |
+| country_sy | Sirija |  | 286 |
+| country_tw | Tajvan |  | 287 |
 | country_tj | Tajkistan |  | 288 |
-| country_tz | Tanzanija, Ujedinjena Republika |  | 289 |
+| country_tz | Tanzanija |  | 289 |
 | country_th | Tajland |  | 290 |
-| country_tl | Timor-Leste |  | 291 |
+| country_tl | Istočni Timor |  | 291 |
 | country_tg | Togo |  | 292 |
-| country_tk | Tokelau |  | 293 |
 | country_to | Laka dvokolica |  | 294 |
 | country_tt | Trinidad i Tobago |  | 295 |
 | country_tn | Tunis |  | 296 |
 | country_tr | Turska |  | 297 |
 | country_tm | Turkmenistan |  | 298 |
-| country_tc | Otoci Turaka i Caicosa |  | 299 |
 | country_tv | Tuvalu |  | 300 |
 | country_ug | Uganda |  | 301 |
 | country_ua | Ukrajina |  | 302 |
 | country_ae | Ujedinjeni Arapski Emirati |  | 303 |
 | country_gb | Ujedinjeno Kraljevstvo |  | 304 |
 | country_us | Sjedinjene Države |  | 305 |
-| country_um | Manji vanjski otoci Sjedinjenih Država |  | 306 |
 | country_uy | Urugvaj |  | 307 |
 | country_uz | Uzbekistan |  | 308 |
 | country_vu | Vanuatu |  | 309 |
 | country_ve | Venezuela |  | 310 |
 | country_vn | Vijetnam |  | 311 |
-| country_vg | Djevičanski otoci, Britanci |  | 312 |
-| country_vi | Djevičanski otoci, U.S. |  | 313 |
-| country_wf | Wallis i futuna |  | 314 |
-| country_eh | Zapadna Sahara |  | 315 |
 | country_ye | Jemen |  | 316 |
 | country_zm | Zambija |  | 317 |
 | country_zw | Zimbabve |  | 318 |
+| country_me | Crna Gora |  | 319 |
+| country_rs | Srbija |  | 321 |
+| country_xk | Kosov |  | 322 |
+| country_ss | Južni Sudan |  | 324 |

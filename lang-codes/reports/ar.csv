@@ -1,6 +1,6 @@
 code,text,status,key
 1,مرحبا بك في فارما ليدجر,ok,welcome
-2,ابحث عن باركود داتا ماتركس الموجود على دوائك لمسحه وعرض المعلومات الخاصة بالدواء. ,ok,scan_explain
+2,ابحث عن Datamatrix على الطب الخاص بك. انظر المثال أعلاه.,,scan_explain
 3,امسح الداتا ماتركس,ok,scan_button
 4,بدل الكاميرا,ok,change_camera
 5,الغاء,ok,cancel
@@ -40,6 +40,7 @@ code,text,status,key
 45,للأسف، لم يتم تحميل أي معلومات عن المنتج.,ok,product_not_loaded
 46,خطأ بالكود,ok,err_code
 47,النظام مشغول، يرجى إعادة المحاولة لاحقا.,ok,system_busy
+48,مطبعة,,leaflet_print
 49,منتج غير موثوق,,error_subtitle
 50,تاريخ خاطئ,,leaflet_incorrect_date_title
 51,تاريخ المسح غير صحيح,,leaflet_incorrect_date_subtitle
@@ -60,18 +61,13 @@ code,text,status,key
 74,الرجاء تحديد بلدك,,epi_markets_modal_message
 75,لا بلد,,epi_markets_modal_no_market
 76,أفغانستان,,country_af
-77,جزر Åland,,country_ax
 78,ألبانيا,,country_al
 79,الجزائر,,country_dz
-80,ساموا الأمريكية,,country_as
 81,أندورا,,country_ad
 82,أنغولا,,country_ao
-83,أنغيلا,,country_ai
-84,أنتاركتيكا,,country_aq
 85,أنتيغوا وبربودا,,country_ag
 86,الأرجنتين,,country_ar
 87,أرمينيا,,country_am
-88,أروبا,,country_aw
 89,أستراليا,,country_au
 90,النمسا,,country_at
 91,أذربيجان,,country_az
@@ -83,15 +79,12 @@ code,text,status,key
 97,بلجيكا,,country_be
 98,بليز,,country_bz
 99,بنين,,country_bj
-100,برمودا,,country_bm
 101,بوتان,,country_bt
 102,بوليفيا,,country_bo
 103,البوسنة والهرسك,,country_ba
 104,بوتسوانا,,country_bw
-105,جزيرة بوفيت,,country_bv
 106,البرازيل,,country_br
-107,أراضي المحيط الهندي البريطاني,,country_io
-108,بروناي داروسالام,,country_bn
+108,بروناي,,country_bn
 109,بلغاريا,,country_bg
 110,بوركينا فاسو,,country_bf
 111,بوروندي,,country_bi
@@ -99,20 +92,16 @@ code,text,status,key
 113,الكاميرون,,country_cm
 114,كندا,,country_ca
 115,كيب فيردي,,country_cv
-116,جزر كايمان,,country_ky
 117,جمهورية وسط إفريقيا,,country_cf
 118,تشاد,,country_td
 119,تشيلي,,country_cl
 120,الصين,,country_cn
-121,جزيرة عيد الميلاد,,country_cx
-122,جزر كوكوس (كيلينغ),,country_cc
 123,كولومبيا,,country_co
 124,COMOROS,,country_km
-125,الكونغو,,country_cg
+125,الكونغو ، جمهورية,,country_cg
 126,الكونغو ، جمهورية الديمقراطية,,country_cd
-127,كوك جزر,,country_ck
 128,كوستاريكا,,country_cr
-129,كوت ديفوار,,country_ci
+129,ساحل العاج,,country_ci
 130,كرواتيا,,country_hr
 131,كوبا,,country_cu
 132,قبرص,,country_cy
@@ -128,33 +117,21 @@ code,text,status,key
 142,إريتريا,,country_er
 143,إستونيا,,country_ee
 144,أثيوبيا,,country_et
-145,جزر فوكلاند (مالفيناس),,country_fk
-146,جزر فارو,,country_fo
 147,فيجي,,country_fj
 148,فنلندا,,country_fi
 149,فرنسا,,country_fr
-150,غويانا الفرنسية,,country_gf
-151,بولينيزيا الفرنسية,,country_pf
-152,الأراضي الجنوبية الفرنسية,,country_tf
 153,الجابون,,country_ga
 154,غامبيا,,country_gm
 155,جورجيا,,country_ge
 156,ألمانيا,,country_de
 157,غانا,,country_gh
-158,جبل طارق,,country_gi
 159,اليونان,,country_gr
-160,غرينلاند,,country_gl
 161,غرينادا,,country_gd
-162,غواديلوب,,country_gp
-163,غوام,,country_gu
 164,غواتيمالا,,country_gt
-165,غيرنسي,,country_gg
 166,غينيا,,country_gn
 167,غينيا بيساو,,country_gw
 168,غيانا,,country_gy
 169,هايتي,,country_ht
-170,سمعت جزيرة وجزر ماكدونالد,,country_hm
-171,الكرسي الرسولي (ولاية مدينة الفاتيكان),,country_va
 172,هندوراس,,country_hn
 173,هونغ كونغ,,country_hk
 174,هنغاريا,,country_hu
@@ -164,31 +141,28 @@ code,text,status,key
 178,إيران ، جمهورية الإسلامية,,country_ir
 179,العراق,,country_iq
 180,أيرلندا,,country_ie
-181,جزيرة الإنسان,,country_im
 182,إسرائيل,,country_il
 183,إيطاليا,,country_it
 184,جامايكا,,country_jm
 185,اليابان,,country_jp
-186,جيرسي,,country_je
 187,الأردن,,country_jo
 188,كازاخستان,,country_kz
 189,كينيا,,country_ke
 190,كيريباتي,,country_ki
-191,كوريا ، جمهورية الشعب الديمقراطي,,COUNTRY_KP
-192,كوريا ، جمهورية,,COUNTRY_KR
+191,كوريا الشمالية,,country_kp
+192,كوريا الجنوبية,,country_kr
 193,الكويت,,country_kw
 194,قيرغيزستان,,country_kg
-195,جمهورية لاو الديمقراطية الشعبية,,COUNTRY_LA
-196,لاتفيا,,COUNTRY_LV
+195,لاوس,,country_la
+196,لاتفيا,,country_lv
 197,لبنان,,country_lb
 198,ليسوتو,,country_ls
 199,ليبيريا,,country_lr
-200,العربية الليبية Jamahiriya,,country_ly
+200,ليبيا,,country_ly
 201,ليختنشتاين,,country_li
 202,ليتوانيا,,country_lt
 203,لوكسمبورغ,,country_lu
-204,ماكاو,,country_mo
-205,مقدونيا ، جمهورية يوغسلاف السابقة,,country_mk
+205,شمال مقدونيا,,country_mk
 206,مدغشقر,,country_mg
 207,ملاوي,,country_mw
 208,ماليزيا,,country_my
@@ -196,16 +170,13 @@ code,text,status,key
 210,مالي,,country_ml
 211,مالطا,,country_mt
 212,جزر مارشال,,country_mh
-213,مارتينيك,,country_mq
 214,موريتانيا,,country_mr
 215,موريشيوس,,country_mu
-216,مايوت,,country_yt
 217,المكسيك,,country_mx
 218,ميكرونيزيا ، ولايات اتحادية,,country_fm
-219,مولدوفا ، جمهورية,,country_md
+219,مولدوفا,,country_md
 220,موناكو,,country_mc
 221,منغوليا,,country_mn
-222,مونتسيرات,,country_ms
 223,المغرب,,country_ma
 224,موزمبيق,,country_mz
 225,ميانمار,,country_mm
@@ -213,45 +184,33 @@ code,text,status,key
 227,ناورو,,country_nr
 228,نيبال,,country_np
 229,هولندا,,country_nl
-230,هولندا الأنتيل,,country_an
-231,كاليدونيا الجديدة,,country_nc
 232,نيوزيلندا,,country_nz
 233,نيكاراغوا,,country_ni
 234,النيجر,,country_ne
 235,نيجيريا,,country_ng
-236,نيو,,country_nu
-237,جزيرة نورفولك,,country_nf
-238,جزر ماريانا الشمالية,,country_mp
 239,النرويج,,country_no
 240,عمان,,country_om
 241,باكستان,,country_pk
 242,بالاو,,country_pw
-243,الأراضي الفلسطينية ، احتلت,,country_ps
 244,بنما,,country_pa
 245,بابوا غينيا الجديدة,,country_pg
 246,باراجواي,,country_py
 247,بيرو,,country_pe
 248,فيلبيني,,country_ph
-249,بيتكيرن,,country_pn
 250,بولندا,,country_pl
 251,البرتغال,,country_pt
-252,بورتوريكو,,country_pr
 253,قطر,,country_qa
-254,جمع شمل,,country_re
 255,رومانيا,,country_ro
-256,الاتحاد الروسي,,country_ru
+256,روسيا,,country_ru
 257,رواندا,,country_rw
-258,القديس هيلينا,,country_sh
 259,سانت كيتس ونيفيس,,country_kn
 260,سانت لوسيا,,country_lc
-261,القديس بيير وميكلون,,country_pm
 262,القديس فنسنت وجرينادين,,country_vc
 263,ساموا,,country_ws
 264,سان مارينو,,country_sm
 265,ساو تومي وبرينسيبي,,country_st
 266,المملكة العربية السعودية,,country_sa
 267,السنغال,,country_sn
-268,صربيا والجبل الأسود,,country_cs
 269,سيشيل,,country_sc
 270,سيراليون,,country_sl
 271,سنغافورة,,country_sg
@@ -260,45 +219,40 @@ code,text,status,key
 274,جزر سليمان,,country_sb
 275,الصومال,,country_so
 276,جنوب أفريقيا,,country_za
-277,جنوب جورجيا وجزر ساندويتش الجنوبية,,country_gs
 278,إسبانيا,,country_es
 279,سري لانكا,,country_lk
 280,السودان,,country_sd
 281,سورينام,,country_sr
-282,سفالبارد وجان ماين,,country_sj
 283,سوازيلاند,,country_sz
 284,السويد,,country_se
 285,سويسرا,,country_ch
-286,الجمهورية العربية السورية,,country_sy
-287,تايوان ، مقاطعة الصين,,country_tw
+286,سوريا,,country_sy
+287,تايوان,,country_tw
 288,طاجيكستان,,country_tj
-289,تنزانيا ، جمهورية موحدة,,country_tz
+289,تنزانيا,,country_tz
 290,تايلاند,,country_th
-291,تيمور-ليشتي,,country_tl
+291,تيمور الشرقية,,country_tl
 292,توغو,,country_tg
-293,توكيلاو,,country_tk
 294,تونغا,,country_to
 295,ترينيداد وتوباغو,,country_tt
 296,تونس,,country_tn
 297,ديك رومى,,country_tr
 298,تركمانستان,,country_tm
-299,جزر الأتراك وكايكوس,,country_tc
 300,توفالو,,country_tv
 301,أوغندا,,country_ug
 302,أوكرانيا,,country_ua
 303,الإمارات العربية المتحدة,,country_ae
 304,المملكة المتحدة,,country_gb
 305,الولايات المتحدة,,country_us
-306,الولايات المتحدة الجزر البعيدة الصغرى,,country_um
 307,أوروغواي,,country_uy
 308,أوزبكستان,,country_uz
 309,فانواتو,,country_vu
 310,فنزويلا,,country_ve
 311,فيتنام,,country_vn
-312,جزر فيرجن ، البريطانية,,country_vg
-313,جزر فيرجن ، الولايات المتحدة,,country_vi
-314,واليس و فوتونا,,country_wf
-315,الصحراء الغربية,,country_eh
 316,اليمن,,country_ye
 317,زامبيا,,country_zm
 318,زيمبابوي,,country_zw
+319,الجبل الأسود,,country_me
+321,صربيا,,country_rs
+322,كوسوفو,,country_xk
+324,جنوب السودان,,country_ss

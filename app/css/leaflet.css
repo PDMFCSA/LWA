@@ -5,7 +5,6 @@ button:not([disabled]) {
     cursor: pointer !important;
 }
 
-
 .product-name {
     font-size: var(--font-size--XL);
     font-weight: 700;
@@ -14,6 +13,7 @@ button:not([disabled]) {
     text-overflow: ellipsis;
     -ms-text-overflow:ellipsis;
     margin: 0;
+    text-transform: uppercase;
 }
 
 /*.product-description {
@@ -211,6 +211,10 @@ button:not([disabled]) {
     width: 80px;
     text-align: center;
     background-position: center top;
+}
+
+#recalled-modal {
+    z-index: 10000;
 }
 
 /* Blur leaft left of recalled product/batch until user confirm  */

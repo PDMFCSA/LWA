@@ -1,6 +1,6 @@
 code,text,status,key
 1,Willkommen bei PharmaLedger,ok,welcome
-2,"Suchen und scannen Sie den DataMatrix Barcode auf Ihrem Arzneimittel, um die Packungsbeilage anzuzeigen.",ok,scan_explain
+2,Identifiizieren Sie den DataMatrix Code auf Ihrem Arzneimittel. Ein Beispiel ist oben dargestellt.,,scan_explain
 3,DataMatrix Scannen,ok,scan_button
 4,Kamera wechseln,ok,change_camera
 5,Abbrechen,ok,cancel
@@ -40,38 +40,34 @@ code,text,status,key
 45,Es wurden leider keine Produktinformationen zu diesem Arzneimittel zur Verfügung gestellt.,ok,product_not_loaded
 46,Fehler,ok,err_code
 47,"Das System ist beschäftigt, bitte versuchen Sie es später noch einmal.",ok,system_busy
+48,Drucken,,leaflet_print
 49,,,error_subtitle
 50,,,leaflet_incorrect_date_title
 51,,,leaflet_incorrect_date_subtitle
 52,<b> </b>.,,leaflet_incorrect_date_message
-61,Informationen drucken,,leaflet_print_title
-62,Die aktuellen ausgewählten Informationen werden als PDF gedruckt.,,leaflet_print_description
+61,Dokument Drucken,,leaflet_print_title
+62,Das aktuelle Dokument wird als PDF gedruckt.,,leaflet_print_description
 63,Möchten Sie fortfahren?,,leaflet_print_description2
 64,Fortfahren,,leaflet_print_button
-65,Geh zurück,,leaflet_print_button_back
+65,Zurück,,leaflet_print_button_back
 66,Bitte wählen Sie,,document_modal_title
 67,"Bitte wählen Sie aus, welches Dokument angezeigt werden soll",,document_modal_message
 68,Patienteninformationen,,document_patient_info
 69,Produktinformationen für Patienten,,document_product_info
-70,Produktinformationen sind nur in Englisch verfügbar,,document_lang_select_message
-71,Beachten,,document_lang_select_title
+70,Produktinformationen sind nur in englischer Sprache verfügbar,,document_lang_select_message
+71,Hinweis,,document_lang_select_title
 72,Information für medizinisches Fachpersonal,,document_prescribing_info
 73,Wählen Sie Land aus,,epi_markets_modal_title
 74,Bitte wählen Sie Ihr Land aus,,epi_markets_modal_message
-75,Kein Land,,epi_markets_modal_no_market
+75,Keines dieser Länder,,epi_markets_modal_no_market
 76,Afghanistan,,country_af
-77,Ålandinseln,,country_ax
 78,Albanien,,country_al
 79,Algerien,,country_dz
-80,Amerikaner Samoa,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarktis,,country_aq
 85,Antigua und Barbuda,,country_ag
 86,Argentinien,,country_ar
 87,Armenien,,country_am
-88,Aruba,,country_aw
 89,Australien,,country_au
 90,Österreich,,country_at
 91,Aserbaidschan,,country_az
@@ -79,19 +75,16 @@ code,text,status,key
 93,Bahrain,,country_bh
 94,Bangladesch,,country_bd
 95,Barbados,,country_bb
-96,Weißrussland,,country_by
+96,Belarus,,country_by
 97,Belgien,,country_be
 98,Belize,,country_bz
 99,Benin,,country_bj
-100,Bermuda,,country_bm
 101,Bhutan,,country_bt
 102,Bolivien,,country_bo
 103,Bosnien und Herzegowina,,country_ba
 104,Botswana,,country_bw
-105,Bouvet Island,,country_bv
 106,Brasilien,,country_br
-107,Gebiet des britischen Indischen Ozeans,,country_io
-108,Brunei Darussalam,,country_bn
+108,Brunei,,country_bn
 109,Bulgarien,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundi,,country_bi
@@ -99,20 +92,16 @@ code,text,status,key
 113,Kamerun,,country_cm
 114,Kanada,,country_ca
 115,Kap Verde,,country_cv
-116,Cayman -Inseln,,country_ky
 117,Zentralafrikanische Republik,,country_cf
 118,Tschad,,country_td
 119,Chile,,country_cl
 120,China,,country_cn
-121,Weihnachtsinsel,,country_cx
-122,Cocos (Keeling) Inseln,,country_cc
 123,Kolumbien,,country_co
-124,Komoros,,country_km
-125,Kongo,,country_cg
-126,"Kongo, die Demokratische Republik der",,country_cd
-127,Kochinseln,,country_ck
+124,Komoren,,country_km
+125,"Kongo, Republik der",,country_cg
+126,"Kongo, Demokratische Republik",,country_cd
 128,Costa Rica,,country_cr
-129,Cote d'Ivoire,,country_ci
+129,Elfenbeinküste,,country_ci
 130,Kroatien,,country_hr
 131,Kuba,,country_cu
 132,Zypern,,country_cy
@@ -128,84 +117,66 @@ code,text,status,key
 142,Eritrea,,country_er
 143,Estland,,country_ee
 144,Äthiopien,,country_et
-145,Falklandinseln (Malvinas),,country_fk
-146,Färöer,,country_fo
 147,Fidschi,,country_fj
 148,Finnland,,country_fi
 149,Frankreich,,country_fr
-150,Französische Guayana,,country_gf
-151,Französisch -Polynesien,,country_pf
-152,Französische südliche Gebiete,,country_tf
 153,Gabon,,country_ga
 154,Gambia,,country_gm
 155,Georgia,,country_ge
 156,Deutschland,,country_de
 157,Ghana,,country_gh
-158,Gibraltar,,country_gi
 159,Griechenland,,country_gr
-160,Grönland,,country_gl
 161,Grenada,,country_gd
-162,Guadeloupe,,country_gp
-163,Guam,,country_gu
 164,Guatemala,,country_gt
-165,Guernsey,,country_gg
 166,Guinea,,country_gn
 167,Guinea-Bissau,,country_gw
 168,Guyana,,country_gy
 169,Haiti,,country_ht
-170,Hörte Island und McDonald Islands,,country_hm
-171,Heiliges Stadium (Staat des Vatikanischen Stadt),,country_va
 172,Honduras,,country_hn
 173,Hongkong,,country_hk
 174,Ungarn,,country_hu
 175,Island,,country_is
 176,Indien,,country_in
 177,Indonesien,,country_id
-178,"Iran, Islamische Republik von",,country_ir
+178,Iran,,country_ir
 179,Irak,,country_iq
 180,Irland,,country_ie
-181,Isle of Man,,country_im
 182,Israel,,country_il
 183,Italien,,country_it
 184,Jamaika,,country_jm
 185,Japan,,country_jp
-186,Jersey,,country_je
 187,Jordanien,,country_jo
 188,Kasachstan,,country_kz
 189,Kenia,,country_ke
 190,Kiribati,,country_ki
-191,"Korea, demokratische Volksrepublik von",,COUNTRY_KP
-192,"Korea, Republik von",,COUNTRY_KR
+191,Nordkorea,,country_kp
+192,Südkorea,,country_kr
 193,Kuwait,,country_kw
 194,Kirgisistan,,country_kg
-195,Lao Volks demokratische Republik,,COUNTRY_LA
-196,Lettland,,COUNTRY_LV
+195,Laos,,country_la
+196,Lettland,,country_lv
 197,Libanon,,country_lb
 198,Lesotho,,country_ls
 199,Liberia,,country_lr
-200,Libyan arabischer Jamahiriya,,country_ly
+200,Libyen,,country_ly
 201,Liechtenstein,,country_li
 202,Litauen,,country_lt
 203,Luxemburg,,country_lu
-204,Macao,,country_mo
-205,"Mazedonien, die ehemalige jugoslawische Republik von",,country_mk
+205,Nordmazedonien,,country_mk
 206,Madagaskar,,country_mg
 207,Malawi,,country_mw
 208,Malaysia,,country_my
 209,Malediven,,country_mv
 210,Mali,,country_ml
 211,Malta,,country_mt
-212,Marshall Islands,,country_mh
-213,Martinique,,country_mq
+212,Marshallinseln,,country_mh
 214,Mauretanien,,country_mr
 215,Mauritius,,country_mu
-216,Mayotte,,country_yt
 217,Mexiko,,country_mx
-218,"Mikronesien, Föderierte Zustände von",,country_fm
-219,"Moldawien, Republik von",,country_md
+218,Mikronesien,,country_fm
+219,Moldau,,country_md
 220,Monaco,,country_mc
 221,Mongolei,,country_mn
-222,Montserrat,,country_ms
 223,Marokko,,country_ma
 224,Mosambik,,country_mz
 225,Myanmar,,country_mm
@@ -213,45 +184,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepal,,country_np
 229,Niederlande,,country_nl
-230,Niederlande Antillen,,country_an
-231,Neukaledonien,,country_nc
 232,Neuseeland,,country_nz
 233,Nicaragua,,country_ni
 234,Niger,,country_ne
 235,Nigeria,,country_ng
-236,Niue,,country_nu
-237,Norfolk Island,,country_nf
-238,Nordmariana -Inseln,,country_mp
 239,Norwegen,,country_no
 240,Oman,,country_om
 241,Pakistan,,country_pk
 242,Palau,,country_pw
-243,"Palästinensisches Territorium, besetzt",,country_ps
 244,Panama,,country_pa
-245,Papua -Neuguinea,,country_pg
+245,Papua-Neuguinea,,country_pg
 246,Paraguay,,country_py
 247,Peru,,country_pe
 248,Philippinen,,country_ph
-249,Pitcairn,,country_pn
 250,Polen,,country_pl
 251,Portugal,,country_pt
-252,Puerto Rico,,country_pr
 253,Katar,,country_qa
-254,Wiedervereinigung,,country_re
 255,Rumänien,,country_ro
-256,Russische Föderation,,country_ru
+256,Russland,,country_ru
 257,Ruanda,,country_rw
-258,Saint Helena,,country_sh
 259,Saint Kitts und Nevis,,country_kn
 260,Saint Lucia,,country_lc
-261,Saint Pierre und Miquelon,,country_pm
 262,Saint Vincent und die Grenadinen,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome und Principe,,country_st
 266,Saudi-Arabien,,country_sa
 267,Senegal,,country_sn
-268,Serbien und Montenegro,,country_cs
 269,Seychellen,,country_sc
 270,Sierra Leone,,country_sl
 271,Singapur,,country_sg
@@ -260,45 +219,40 @@ code,text,status,key
 274,Solomonen,,country_sb
 275,Somalia,,country_so
 276,Südafrika,,country_za
-277,Südgeorgien und die Südsandwichinseln,,country_gs
 278,Spanien,,country_es
 279,Sri Lanka,,country_lk
 280,Sudan,,country_sd
 281,Suriname,,country_sr
-282,Svalbard und Jan Mayen,,country_sj
 283,Swasiland,,country_sz
 284,Schweden,,country_se
 285,Schweiz,,country_ch
-286,Syrische arabische Republik,,country_sy
-287,"Taiwan, Provinz China",,country_tw
+286,Syrien,,country_sy
+287,Taiwan (Republik China),,country_tw
 288,Tadschikistan,,country_tj
-289,"Tansania, Vereinigte Republik von",,country_tz
+289,Tansania,,country_tz
 290,Thailand,,country_th
-291,Timor-Leste,,country_tl
+291,Osttimor,,country_tl
 292,Togo,,country_tg
-293,ToKelau,,country_tk
 294,Tonga,,country_to
 295,Trinidad und Tobago,,country_tt
 296,Tunesien,,country_tn
-297,Truthahn,,country_tr
+297,Türkei,,country_tr
 298,Turkmenistan,,country_tm
-299,Türken und Caicos -Inseln,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukraine,,country_ua
 303,Vereinigte Arabische Emirate,,country_ae
 304,Vereinigtes Königreich,,country_gb
 305,Vereinigte Staaten,,country_us
-306,United States Minderjährige Außeninseln,,country_um
 307,Uruguay,,country_uy
 308,Usbekistan,,country_uz
 309,Vanuatu,,country_vu
 310,Venezuela,,country_ve
 311,Vietnam,,country_vn
-312,"Jungferninseln, Britisch",,country_vg
-313,"Jungferninseln, USA",,country_vi
-314,Wallis und Futuna,,country_wf
-315,Westsahara,,country_eh
 316,Jemen,,country_ye
 317,Sambia,,country_zm
 318,Simbabwe,,country_zw
+319,Montenegro,,country_me
+321,Serbien,,country_rs
+322,Kosovo,,country_xk
+324,Südsudan,,country_ss

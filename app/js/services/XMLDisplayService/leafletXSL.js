@@ -91,6 +91,8 @@ const defaultXslContent = `<?xml version="1.0" encoding="UTF-8"?>
                                     select="concat($firstLetter,translate($partialTitle,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'))"/>
                         </xsl:variable>
                         <xsl:value-of select="$modifiedTitle"/>
+                        <span class="invisible"><xsl:value-of select="'.'"/></span>
+
                     </h2>
                     <div class="leaflet-accordion-item-content">
                         <xsl:apply-templates select="@*|node()"/>
@@ -238,6 +240,18 @@ const acodisXslContent =  `<?xml version="1.0" encoding="UTF-8"?>
             <xsl:attribute name="src">
                 <xsl:value-of select="concat($resources_path, $_src)"/>
             </xsl:attribute>
+            <xsl:choose>
+                <xsl:when test="@alt">
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="@alt"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="following-sibling::*[1]"/>
+                    </xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:apply-templates select="node()"/>
         </img>
     </xsl:template>
@@ -282,6 +296,7 @@ const acodisXslContent =  `<?xml version="1.0" encoding="UTF-8"?>
     <xsl:template match="document/section/header">
         <h2 tabindex="0">
             <xsl:apply-templates select="node()" />
+            <span class="invisible"><xsl:value-of select="'.'"/></span>
         </h2>
     </xsl:template>
 </xsl:stylesheet>`;

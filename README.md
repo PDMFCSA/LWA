@@ -34,5 +34,13 @@ Note: when no langs are provided, report are generated for all languages
 `npm run translate -- delete <key>`<br>
 eg: `npm run translate -- delete leaflet_print` (not implemented)
 
+- `certify`: changes a text from non-certified to certified<br>
+`npm run translate -- certify <key>`<br>
+eg: `npm run translate -- certify leaflet_print` 
+
+- `decertify`: changes a text from certified to non-certified<br>
+`npm run translate -- decertify <key>`<br>
+eg: `npm run translate -- decertify leaflet_print` 
+
 
 LIMITATIONS: This does not properly translate HTML, just plain strings

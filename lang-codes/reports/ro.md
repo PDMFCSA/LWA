@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Bine ați venit la PharmaLedger | ok | 1 |
-| scan_explain | Găsiți Codul de Bare DataMatrix pe medicament pentru a îl scana și vedea informația | ok | 2 |
+| scan_explain | Găsiți DataMatrix pe medicamentul dvs. Vezi exemplul de mai sus. |  | 2 |
 | scan_button | Scanați DataMatrix | ok | 3 |
 | change_camera | Schimbați camera | ok | 4 |
 | cancel | Anulați | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | Din păcate, nu au fost încărcate informații despre produs. | ok | 45 |
 | err_code | Cod de eroare | ok | 46 |
 | system_busy | Sistemul este ocupat, vă rugăm să încercați din nou mai târziu. | ok | 47 |
+| leaflet_print | Imprimare |  | 48 |
 | leaflet_print_title | Informații tipărite |  | 61 |
 | leaflet_print_description | Informațiile selectate curente vor fi tipărite ca PDF. |  | 62 |
 | leaflet_print_description2 | Doriți să continuați? |  | 63 |
@@ -62,18 +63,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | Vă rugăm să selectați țara dvs. |  | 74 |
 | epi_markets_modal_no_market | Nici o țară |  | 75 |
 | country_af | Afganistan |  | 76 |
-| country_ax | Insulele Åland |  | 77 |
 | country_al | Albania |  | 78 |
 | country_dz | Algeria |  | 79 |
-| country_as | Samoa americană |  | 80 |
 | country_ad | Andorra |  | 81 |
 | country_ao | Angola |  | 82 |
-| country_ai | Anguilla |  | 83 |
-| country_aq | Antarctica |  | 84 |
 | country_ag | Antigua și Barbuda |  | 85 |
 | country_ar | Argentina |  | 86 |
 | country_am | Armenia |  | 87 |
-| country_aw | Aruba |  | 88 |
 | country_au | Australia |  | 89 |
 | country_at | Austria |  | 90 |
 | country_az | Azerbaidjan |  | 91 |
@@ -85,15 +81,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | Belgia |  | 97 |
 | country_bz | Belize |  | 98 |
 | country_bj | Benin |  | 99 |
-| country_bm | Bermuda |  | 100 |
 | country_bt | Bhutan |  | 101 |
 | country_bo | Bolivia |  | 102 |
 | country_ba | Bosnia și Herțegovina |  | 103 |
 | country_bw | Botswana |  | 104 |
-| country_bv | Insula Bouvet |  | 105 |
 | country_br | Brazilia |  | 106 |
-| country_io | Teritoriul Oceanului Indian Britanic |  | 107 |
-| country_bn | Brunei Darussalam |  | 108 |
+| country_bn | Brunei |  | 108 |
 | country_bg | Bulgaria |  | 109 |
 | country_bf | Burkina Faso |  | 110 |
 | country_bi | Burundi |  | 111 |
@@ -101,20 +94,16 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | Camerun |  | 113 |
 | country_ca | Canada |  | 114 |
 | country_cv | Capul Verde |  | 115 |
-| country_ky | Insulele Cayman |  | 116 |
 | country_cf | Republica Centrafricană |  | 117 |
 | country_td | Ciad |  | 118 |
 | country_cl | Chile |  | 119 |
 | country_cn | China |  | 120 |
-| country_cx | Insula de Crăciun |  | 121 |
-| country_cc | Insulele Cocos (Keeling) |  | 122 |
 | country_co | Columbia |  | 123 |
 | country_km | Comoros |  | 124 |
-| country_cg | Congo |  | 125 |
+| country_cg | Congo, Republica |  | 125 |
 | country_cd | Congo, Republica Democrată a |  | 126 |
-| country_ck | Insulele Cook |  | 127 |
 | country_cr | Costa Rica |  | 128 |
-| country_ci | Cote d'Ivoire |  | 129 |
+| country_ci | Coasta de fildeș |  | 129 |
 | country_hr | Croaţia |  | 130 |
 | country_cu | Cuba |  | 131 |
 | country_cy | Cipru |  | 132 |
@@ -130,33 +119,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | Eritrea |  | 142 |
 | country_ee | Estonia |  | 143 |
 | country_et | Etiopia |  | 144 |
-| country_fk | Insulele Falkland (Malvinas) |  | 145 |
-| country_fo | Insulele Feroe |  | 146 |
 | country_fj | Fiji |  | 147 |
 | country_fi | Finlanda |  | 148 |
 | country_fr | Franţa |  | 149 |
-| country_gf | Guyana franceză |  | 150 |
-| country_pf | Polinezia franceză |  | 151 |
-| country_tf | Teritoriile sudice franceze |  | 152 |
 | country_ga | Gabon |  | 153 |
 | country_gm | Gambia |  | 154 |
 | country_ge | Georgia |  | 155 |
 | country_de | Germania |  | 156 |
 | country_gh | Ghana |  | 157 |
-| country_gi | Gibraltar |  | 158 |
 | country_gr | Grecia |  | 159 |
-| country_gl | Groenlanda |  | 160 |
 | country_gd | Grenada |  | 161 |
-| country_gp | Guadelupe |  | 162 |
-| country_gu | Guam |  | 163 |
 | country_gt | Guatemala |  | 164 |
-| country_gg | Guernsey |  | 165 |
 | country_gn | Guineea |  | 166 |
 | country_gw | Guinea-Bissau |  | 167 |
 | country_gy | Guyana |  | 168 |
 | country_ht | Haiti |  | 169 |
-| country_hm | Insula Heard Island și McDonald |  | 170 |
-| country_va | Sfântul See (statul orașului Vatican) |  | 171 |
 | country_hn | Honduras |  | 172 |
 | country_hk | Hong Kong |  | 173 |
 | country_hu | Ungaria |  | 174 |
@@ -166,31 +143,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | Iran, Republica Islamică a |  | 178 |
 | country_iq | Irak |  | 179 |
 | country_ie | Irlanda |  | 180 |
-| country_im | Insula omului |  | 181 |
 | country_il | Israel |  | 182 |
 | country_it | Italia |  | 183 |
 | country_jm | Jamaica |  | 184 |
 | country_jp | Japonia |  | 185 |
-| country_je | Jersey |  | 186 |
 | country_jo | Iordania |  | 187 |
 | country_kz | Kazahstan |  | 188 |
 | country_ke | Kenya |  | 189 |
 | country_ki | Kiribati |  | 190 |
-| COUNTRY_KP | Coreea, Republica Populară Democrată |  | 191 |
-| COUNTRY_KR | Coreea, Republica din |  | 192 |
+| country_kp | Coreea de Nord |  | 191 |
+| country_kr | Coreea de Sud |  | 192 |
 | country_kw | Kuweit |  | 193 |
 | country_kg | Kirgazistan |  | 194 |
-| COUNTRY_LA | Republica Democrată a Poporului Lao |  | 195 |
-| COUNTRY_LV | Letonia |  | 196 |
+| country_la | Laos |  | 195 |
+| country_lv | Letonia |  | 196 |
 | country_lb | Liban |  | 197 |
 | country_ls | Lesotho |  | 198 |
 | country_lr | Liberia |  | 199 |
-| country_ly | Jamahiriya arabă libiană |  | 200 |
+| country_ly | Libia |  | 200 |
 | country_li | Liechtenstein |  | 201 |
 | country_lt | Lituania |  | 202 |
 | country_lu | Luxemburg |  | 203 |
-| country_mo | Macao |  | 204 |
-| country_mk | Macedonia, fosta Republica Iugoslavă |  | 205 |
+| country_mk | Macedonia de Nord |  | 205 |
 | country_mg | Madagascar |  | 206 |
 | country_mw | Malawi |  | 207 |
 | country_my | Malaezia |  | 208 |
@@ -198,16 +172,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | Mali |  | 210 |
 | country_mt | Malta |  | 211 |
 | country_mh | Insulele Marshall |  | 212 |
-| country_mq | Martinica |  | 213 |
 | country_mr | Mauritania |  | 214 |
 | country_mu | Mauritius |  | 215 |
-| country_yt | Mayotte |  | 216 |
 | country_mx | Mexic |  | 217 |
 | country_fm | Micronezie, state federate ale |  | 218 |
-| country_md | Moldova, Republica din |  | 219 |
+| country_md | Moldova |  | 219 |
 | country_mc | Monaco |  | 220 |
 | country_mn | Mongolia |  | 221 |
-| country_ms | Montserrat |  | 222 |
 | country_ma | Maroc |  | 223 |
 | country_mz | Mozambic |  | 224 |
 | country_mm | Myanmar |  | 225 |
@@ -215,45 +186,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | Nauru |  | 227 |
 | country_np | Nepal |  | 228 |
 | country_nl | Olanda |  | 229 |
-| country_an | Olanda Antilele |  | 230 |
-| country_nc | Noua Caledonie |  | 231 |
 | country_nz | Noua Zeelandă |  | 232 |
 | country_ni | Nicaragua |  | 233 |
 | country_ne | Niger |  | 234 |
 | country_ng | Nigeria |  | 235 |
-| country_nu | Niue |  | 236 |
-| country_nf | Insula Norfolk |  | 237 |
-| country_mp | Insulele Mariana de Nord |  | 238 |
 | country_no | Norvegia |  | 239 |
 | country_om | Oman |  | 240 |
 | country_pk | Pakistan |  | 241 |
 | country_pw | Palau |  | 242 |
-| country_ps | Teritoriul palestinian, ocupat |  | 243 |
 | country_pa | Panama |  | 244 |
 | country_pg | Papua Noua Guinee |  | 245 |
 | country_py | Paraguay |  | 246 |
 | country_pe | Peru |  | 247 |
 | country_ph | Filipine |  | 248 |
-| country_pn | Pitcairn |  | 249 |
 | country_pl | Polonia |  | 250 |
 | country_pt | Portugalia |  | 251 |
-| country_pr | Puerto Rico |  | 252 |
 | country_qa | Qatar |  | 253 |
-| country_re | Reuniune |  | 254 |
 | country_ro | România |  | 255 |
-| country_ru | Federația rusă |  | 256 |
+| country_ru | Rusia |  | 256 |
 | country_rw | Rwanda |  | 257 |
-| country_sh | Sfânta Elena |  | 258 |
 | country_kn | Saint Kitts și Nevis |  | 259 |
 | country_lc | Sfânta Lucia |  | 260 |
-| country_pm | Saint Pierre și Miquelon |  | 261 |
 | country_vc | Sfântul Vincent și Grenadinele |  | 262 |
 | country_ws | Samoa |  | 263 |
 | country_sm | San Marino |  | 264 |
 | country_st | Sao Tome și Principe |  | 265 |
 | country_sa | Arabia Saudită |  | 266 |
 | country_sn | Senegal |  | 267 |
-| country_cs | Serbia și Muntenegru |  | 268 |
 | country_sc | Seychelles |  | 269 |
 | country_sl | Sierra Leone |  | 270 |
 | country_sg | Singapore |  | 271 |
@@ -262,45 +221,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | Insulele Solomon |  | 274 |
 | country_so | Somalia |  | 275 |
 | country_za | Africa de Sud |  | 276 |
-| country_gs | Georgia de Sud și Insulele Sandwich de Sud |  | 277 |
 | country_es | Spania |  | 278 |
 | country_lk | Sri Lanka |  | 279 |
 | country_sd | Sudan |  | 280 |
 | country_sr | Surinam |  | 281 |
-| country_sj | Svalbard și Jan Mayen |  | 282 |
 | country_sz | Swaziland |  | 283 |
 | country_se | Suedia |  | 284 |
 | country_ch | Elveţia |  | 285 |
-| country_sy | Republica arabă siriană |  | 286 |
-| country_tw | Taiwan, provincia Chinei |  | 287 |
+| country_sy | Siria |  | 286 |
+| country_tw | Taiwan |  | 287 |
 | country_tj | Tadjikistan |  | 288 |
-| country_tz | Tanzania, Republica Unite |  | 289 |
+| country_tz | Tanzania |  | 289 |
 | country_th | Tailanda |  | 290 |
-| country_tl | Timor-Leste |  | 291 |
+| country_tl | Timorul de Est |  | 291 |
 | country_tg | Togo |  | 292 |
-| country_tk | Tokelau |  | 293 |
 | country_to | Tonga |  | 294 |
 | country_tt | Trinidad și Tobago |  | 295 |
 | country_tn | Tunisia |  | 296 |
 | country_tr | Curcan |  | 297 |
 | country_tm | Turkmenistan |  | 298 |
-| country_tc | Insulele Turks și Caicos |  | 299 |
 | country_tv | Tuvalu |  | 300 |
 | country_ug | Uganda |  | 301 |
 | country_ua | Ucraina |  | 302 |
 | country_ae | Emiratele Arabe Unite |  | 303 |
 | country_gb | Regatul Unit |  | 304 |
 | country_us | Statele Unite |  | 305 |
-| country_um | Insulele periferice minore din Statele Unite |  | 306 |
 | country_uy | Uruguay |  | 307 |
 | country_uz | Uzbekistan |  | 308 |
 | country_vu | Vanuatu |  | 309 |
 | country_ve | Venezuela |  | 310 |
 | country_vn | Vietnam |  | 311 |
-| country_vg | Insulele Virgine, britanici |  | 312 |
-| country_vi | Insulele Virgine, S.U.A. |  | 313 |
-| country_wf | Wallis și Futuna |  | 314 |
-| country_eh | Sahara de Vest |  | 315 |
 | country_ye | Yemen |  | 316 |
 | country_zm | Zambia |  | 317 |
 | country_zw | Zimbabwe |  | 318 |
+| country_me | Muntenegru |  | 319 |
+| country_rs | Serbia |  | 321 |
+| country_xk | Kosovo |  | 322 |
+| country_ss | Sudanul de Sud |  | 324 |

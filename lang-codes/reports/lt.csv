@@ -1,6 +1,6 @@
 code,text,status,key
 1,Sveiki atvykę į „PharmaLedger“,ok,welcome
-2,Raskite „DataMatrix“ brūkšninį kodą ant vaisto ir nuskaitykite bei peržiūrėkite informaciją.,ok,scan_explain
+2,Raskite „Datamatrix“ apie savo vaistą. Žr. Aukščiau pateiktą pavyzdį.,,scan_explain
 3,Nuskaityti „DataMatrix“,ok,scan_button
 4,Keisti kamerą,ok,change_camera
 5,Atšaukti,ok,cancel
@@ -41,6 +41,7 @@ code,text,status,key
 45,"Deja, nebuvo įkelta jokia informacija apie produktą.",ok,product_not_loaded
 46,Klaidos kodas,ok,err_code
 47,"Sistema užimta, pabandykite vėliau.",ok,system_busy
+48,Spausdinti,,leaflet_print
 49,Unverified Product,,error_subtitle
 50,Incorrect date,,leaflet_incorrect_date_title
 51,Scanned date is incorrect,,leaflet_incorrect_date_subtitle
@@ -61,18 +62,13 @@ code,text,status,key
 74,Pasirinkite savo šalį,,epi_markets_modal_message
 75,Nėra šalies,,epi_markets_modal_no_market
 76,Afganistanas,,country_af
-77,Åland salos,,country_ax
 78,Albanija,,country_al
 79,Alžyras,,country_dz
-80,Amerikos Samoa,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Angilija,,country_ai
-84,Antarktida,,country_aq
 85,Antigva ir Barbuda,,country_ag
 86,Argentina,,country_ar
 87,Armėnija,,country_am
-88,Aruba,,country_aw
 89,Australija,,country_au
 90,Austrija,,country_at
 91,Azerbaidžanas,,country_az
@@ -84,15 +80,12 @@ code,text,status,key
 97,Belgija,,country_be
 98,Belizas,,country_bz
 99,Beninas,,country_bj
-100,Bermuda,,country_bm
 101,Butanas,,country_bt
 102,Bolivija,,country_bo
 103,Bosnija ir Hercegovina,,country_ba
 104,Botsvana,,country_bw
-105,Bouveto sala,,country_bv
 106,Brazilija,,country_br
-107,Britanijos Indijos vandenyno teritorija,,country_io
-108,Brunei Darussalam,,country_bn
+108,Brunei,,country_bn
 109,Bulgarija,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundis,,country_bi
@@ -100,20 +93,16 @@ code,text,status,key
 113,Kamerūnas,,country_cm
 114,Kanada,,country_ca
 115,Kyšulio kyšulys,,country_cv
-116,Kaimanų salos,,country_ky
 117,Centrinės Afrikos Respublika,,country_cf
 118,Čadas,,country_td
 119,Čilė,,country_cl
 120,Kinija,,country_cn
-121,Kalėdinė sala,,country_cx
-122,Cocos (Keeling) salos,,country_cc
 123,Kolumbija,,country_co
 124,Komoros,,country_km
-125,Kongo,,country_cg
+125,Kongo Respublika,,country_cg
 126,"Kongo, Demokratinė Respublika",,country_cd
-127,Kuko salos,,country_ck
 128,Kosta Rika,,country_cr
-129,Cote d'Voire,,country_ci
+129,Dramblio Kaulo Krantas,,country_ci
 130,Kroatija,,country_hr
 131,Kuba,,country_cu
 132,Kipras,,country_cy
@@ -129,33 +118,21 @@ code,text,status,key
 142,Eritrėja,,country_er
 143,Estija,,country_ee
 144,Etiopija,,country_et
-145,Folklando salos (Malvinas),,country_fk
-146,Faroe salos,,country_fo
 147,Fiji,,country_fj
 148,Suomija,,country_fi
 149,Prancūzija,,country_fr
-150,Prancūzijos Gviana,,country_gf
-151,Prancūzijos Polinezija,,country_pf
-152,Prancūzijos pietų teritorijos,,country_tf
 153,Gabonas,,country_ga
 154,Gambija,,country_gm
 155,Gruzija,,country_ge
 156,Vokietija,,country_de
 157,Gana,,country_gh
-158,Gibraltaras,,country_gi
 159,Graikija,,country_gr
-160,Grenlandija,,country_gl
 161,Grenada,,country_gd
-162,Gvadelupė,,country_gp
-163,Guamas,,country_gu
 164,Gvatemala,,country_gt
-165,Gernsey,,country_gg
 166,Gvinėja,,country_gn
 167,Gvinėjos-Bisau,,country_gw
 168,Gajana,,country_gy
 169,Haitis,,country_ht
-170,Hear Island ir McDonald salos,,country_hm
-171,Šventasis Sostas (Vatikano miesto valstija),,country_va
 172,Hondūras,,country_hn
 173,Honkongas,,country_hk
 174,Vengrija,,country_hu
@@ -165,31 +142,28 @@ code,text,status,key
 178,"Iranas, Islamo Respublika",,country_ir
 179,Irakas,,country_iq
 180,Airija,,country_ie
-181,Meno sala,,country_im
 182,Izraelis,,country_il
 183,Italija,,country_it
 184,Jamaika,,country_jm
 185,Japonija,,country_jp
-186,Džersis,,country_je
 187,Jordanija,,country_jo
 188,Kazachstanas,,country_kz
 189,Kenija,,country_ke
 190,Kiribati,,country_ki
-191,"Korėja, Demokratinės liaudies Respublika",,COUNTRY_KP
-192,"Korėja, Respublika",,COUNTRY_KR
+191,Šiaurės Korėja,,country_kp
+192,Pietų Korėja,,country_kr
 193,Kuveitas,,country_kw
 194,Kirgizija,,country_kg
-195,Laoso liaudies demokratinė respublika,,COUNTRY_LA
-196,Latvija,,COUNTRY_LV
+195,Laosas,,country_la
+196,Latvija,,country_lv
 197,Libanas,,country_lb
 198,Lesotas,,country_ls
 199,Liberija,,country_lr
-200,Libijos arabų Jamahiriya,,country_ly
+200,Libija,,country_ly
 201,Lichtenšteinas,,country_li
 202,Lietuva,,country_lt
 203,Liuksemburgas,,country_lu
-204,Makao,,country_mo
-205,"Makedonija, buvusi Jugoslavijos Respublika",,country_mk
+205,Šiaurės Makedonija,,country_mk
 206,Madagaskaras,,country_mg
 207,Malavis,,country_mw
 208,Malaizija,,country_my
@@ -197,16 +171,13 @@ code,text,status,key
 210,Mali,,country_ml
 211,Malta,,country_mt
 212,Maršalo salos,,country_mh
-213,Martinika,,country_mq
 214,Mauritanija,,country_mr
 215,Mauricijus,,country_mu
-216,Mayotte,,country_yt
 217,Meksika,,country_mx
 218,"Mikronezija, federalinės valstybės",,country_fm
-219,"Moldova, Respublika",,country_md
+219,Moldova,,country_md
 220,Monakas,,country_mc
 221,Mongolija,,country_mn
-222,Montserratas,,country_ms
 223,Marokas,,country_ma
 224,Mozambikas,,country_mz
 225,Mianmaras,,country_mm
@@ -214,45 +185,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepalas,,country_np
 229,Nyderlandai,,country_nl
-230,Nyderlandų Antilai,,country_an
-231,Naujoji Kaledonija,,country_nc
 232,Naujoji Zelandija,,country_nz
 233,Nikaragva,,country_ni
 234,Nigeris,,country_ne
 235,Nigerija,,country_ng
-236,Niuue,,country_nu
-237,Norfolko sala,,country_nf
-238,Šiaurės Marianos salos,,country_mp
 239,Norvegija,,country_no
 240,Omanas,,country_om
 241,Pakistanas,,country_pk
 242,Palau,,country_pw
-243,"Palestinos teritorija, užimta",,country_ps
 244,Panama,,country_pa
 245,Papua Naujoji Gvinėja,,country_pg
 246,Paragvajus,,country_py
 247,Peru,,country_pe
 248,Filipinai,,country_ph
-249,Pitcairnas,,country_pn
 250,Lenkija,,country_pl
 251,Portugalija,,country_pt
-252,Puerto Rikas,,country_pr
 253,Kataras,,country_qa
-254,Susivienijimas,,country_re
 255,Rumunija,,country_ro
-256,Rusijos federacija,,country_ru
+256,Rusija,,country_ru
 257,Ruanda,,country_rw
-258,Saint Helena,,country_sh
 259,Saint Kitts ir Nevis,,country_kn
 260,Saint Lucia,,country_lc
-261,Saint Pierre ir Miquelon,,country_pm
 262,Šventasis Vincentas ir Grenadinai,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome ir Principe,,country_st
 266,Saudo Arabija,,country_sa
 267,Senegalas,,country_sn
-268,Serbija ir Juodkalnija,,country_cs
 269,Seišelės,,country_sc
 270,Siera Leonė,,country_sl
 271,Singapūras,,country_sg
@@ -261,45 +220,40 @@ code,text,status,key
 274,Saliamono salos,,country_sb
 275,Somalis,,country_so
 276,Pietų Afrika,,country_za
-277,Pietų Džordžija ir Pietų sumuštinių salos,,country_gs
 278,Ispanija,,country_es
 279,Šri Lanka,,country_lk
 280,Sudanas,,country_sd
 281,Surinamas,,country_sr
-282,Svalbardas ir Janas Mayenas,,country_sj
 283,Svazilandas,,country_sz
 284,Švedija,,country_se
 285,Šveicarija,,country_ch
-286,Sirijos Arabų Respublika,,country_sy
-287,"Taivanas, Kinijos provincija",,country_tw
+286,Sirija,,country_sy
+287,Taivanas,,country_tw
 288,Tadžikistanas,,country_tj
-289,"Tanzanija, Jungtinė Respublika",,country_tz
+289,Tanzanija,,country_tz
 290,Tailandas,,country_th
-291,Timor-Leste,,country_tl
+291,Rytų Timoras,,country_tl
 292,Togo,,country_tg
-293,Tokelau,,country_tk
 294,Tonga,,country_to
 295,Trinidadas ir Tobagas,,country_tt
 296,Tunisas,,country_tn
 297,Turkija,,country_tr
 298,Turkmėnistanas,,country_tm
-299,Turkų ir Kaikoso salos,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukraina,,country_ua
 303,Jungtiniai Arabų Emyratai,,country_ae
 304,Jungtinė Karalystė,,country_gb
 305,JAV,,country_us
-306,Jungtinės Valstijos Mažosios atokios salos,,country_um
 307,Urugvajus,,country_uy
 308,Uzbekistanas,,country_uz
 309,Vanuatu,,country_vu
 310,Venesuela,,country_ve
 311,Vietnamas,,country_vn
-312,"Mergelių salos, britai",,country_vg
-313,"Mergelių salos, JAV",,country_vi
-314,Wallis ir Futuna,,country_wf
-315,Vakarų Sachara,,country_eh
 316,Jemenas,,country_ye
 317,Zambija,,country_zm
 318,Zimbabvė,,country_zw
+319,Juodkalnija,,country_me
+321,Serbija,,country_rs
+322,Kosovas,,country_xk
+324,Pietų Sudanas,,country_ss

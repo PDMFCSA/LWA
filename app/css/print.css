@@ -133,6 +133,10 @@
         border: none !important;
     }
 
+    .leaflet-accordion-item:before {
+        display: none !important;
+    }
+
     button {
         display: none !important;
     }

@@ -1,6 +1,6 @@
 code,text,status,key
 1,Witaj w PharmaLedger,ok,welcome
-2,W celu wyświetlenia informacji odszukaj i zeskanuj kod DataMatrix na swoim produkcie leczniczym.,ok,scan_explain
+2,Znajdź datamatrix w swoim leku. Patrz przykład powyżej.,,scan_explain
 3,Skanuj kod DataMatrix,ok,scan_button
 4,Zmień aparat,ok,change_camera
 5,Anuluj,ok,cancel
@@ -41,6 +41,7 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 45,"Niestety, nie pobrano żadnych informacji o produkcie.",ok,product_not_loaded
 46,Kod błędu,ok,err_code
 47,"System jest przeciążony, spróbuj ponownie później.",ok,system_busy
+48,Wydrukować,,leaflet_print
 61,Drukuj informacje,,leaflet_print_title
 62,Obecne wybrane informacje zostaną wydrukowane jako PDF.,,leaflet_print_description
 63,Chcesz kontynuować?,,leaflet_print_description2
@@ -57,18 +58,13 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 74,Wybierz swój kraj,,epi_markets_modal_message
 75,Brak kraju,,epi_markets_modal_no_market
 76,Afganistan,,country_af
-77,Wyspy Åland,,country_ax
 78,Albania,,country_al
 79,Algieria,,country_dz
-80,Samoa American,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarktyda,,country_aq
 85,Antigua i Barbuda,,country_ag
 86,Argentyna,,country_ar
 87,Armenia,,country_am
-88,Aruba,,country_aw
 89,Australia,,country_au
 90,Austria,,country_at
 91,Azerbejdżan,,country_az
@@ -80,15 +76,12 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 97,Belgia,,country_be
 98,Belize,,country_bz
 99,Benin,,country_bj
-100,Bermudy,,country_bm
 101,Bhutan,,country_bt
 102,Boliwia,,country_bo
 103,Bośnia i Hercegowina,,country_ba
 104,Botswana,,country_bw
-105,Wyspa Bouvet,,country_bv
 106,Brazylia,,country_br
-107,Terytorium Brytyjskiego Oceanu Indyjskiego,,country_io
-108,Brunei Darussalam,,country_bn
+108,Brunei,,country_bn
 109,Bułgaria,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundi,,country_bi
@@ -96,20 +89,16 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 113,Kamerun,,country_cm
 114,Kanada,,country_ca
 115,Cape Verde,,country_cv
-116,Wyspy Kajmanowe,,country_ky
 117,Republika Środkowoafrykańska,,country_cf
 118,Chad,,country_td
 119,Chile,,country_cl
 120,Chiny,,country_cn
-121,Wyspa Bożego Narodzenia,,country_cx
-122,Wyspy Cocos (Keeling),,country_cc
 123,Kolumbia,,country_co
 124,Comoros,,country_km
-125,Kongo,,country_cg
+125,"Kongo, Republika",,country_cg
 126,"Kongo, demokratyczna Republika",,country_cd
-127,Wyspy kucharza,,country_ck
 128,Kostaryka,,country_cr
-129,Cote d'Ovoire,,country_ci
+129,Wybrzeże Kości Słoniowej,,country_ci
 130,Chorwacja,,country_hr
 131,Kuba,,country_cu
 132,Cypr,,country_cy
@@ -125,33 +114,21 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 142,Erytrea,,country_er
 143,Estonia,,country_ee
 144,Etiopia,,country_et
-145,Wyspy Falkland (Malvinas),,country_fk
-146,Wyspy Faroe,,country_fo
 147,Fidżi,,country_fj
 148,Finlandia,,country_fi
 149,Francja,,country_fr
-150,Gujana Francuska,,country_gf
-151,Polinezja francuska,,country_pf
-152,Francuskie terytoria południowe,,country_tf
 153,Gabon,,country_ga
 154,Gambia,,country_gm
 155,Gruzja,,country_ge
 156,Niemcy,,country_de
 157,Ghana,,country_gh
-158,Gibraltar,,country_gi
 159,Grecja,,country_gr
-160,Grenlandia,,country_gl
 161,Grenada,,country_gd
-162,Gwadelupa,,country_gp
-163,Guam,,country_gu
 164,Gwatemala,,country_gt
-165,Guernsey,,country_gg
 166,Gwinea,,country_gn
 167,Gwinea-Bissau,,country_gw
 168,Gujana,,country_gy
 169,Haiti,,country_ht
-170,Wyspy wyspowe i McDonald Islands,,country_hm
-171,Święta patrz (stan miasta Watykański),,country_va
 172,Honduras,,country_hn
 173,Hongkong,,country_hk
 174,Węgry,,country_hu
@@ -161,31 +138,28 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 178,"Iran, islamska Republika",,country_ir
 179,Irak,,country_iq
 180,Irlandia,,country_ie
-181,Wyspa Man,,country_im
 182,Izrael,,country_il
 183,Włochy,,country_it
 184,Jamajka,,country_jm
 185,Japonia,,country_jp
-186,Golf,,country_je
 187,Jordania,,country_jo
 188,Kazachstan,,country_kz
 189,Kenia,,country_ke
 190,Kiribati,,country_ki
-191,"Korea, demokratyczna Republika Ludowa",,COUNTRY_KP
-192,"Korea, Republika",,COUNTRY_KR
+191,Korea Północna,,country_kp
+192,Korea Południowa,,country_kr
 193,Kuwejt,,country_kw
 194,Kirgistan,,country_kg
-195,Demokratyczna Republika Lao People,,COUNTRY_LA
-196,Łotwa,,COUNTRY_LV
+195,Laos,,country_la
+196,Łotwa,,country_lv
 197,Liban,,country_lb
 198,Lesotho,,country_ls
 199,Liberia,,country_lr
-200,Libian Arab Jamahiriya,,country_ly
+200,Libia,,country_ly
 201,Liechtenstein,,country_li
 202,Litwa,,country_lt
 203,Luksemburg,,country_lu
-204,Makao,,country_mo
-205,"Macedonia, była Jugosłowiańska Republika",,country_mk
+205,Północna Macedonia,,country_mk
 206,Madagaskar,,country_mg
 207,Malawi,,country_mw
 208,Malezja,,country_my
@@ -193,16 +167,13 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 210,Mali,,country_ml
 211,Malta,,country_mt
 212,Wyspy Marshalla,,country_mh
-213,Martinique,,country_mq
 214,Mauritania,,country_mr
 215,Mauritius,,country_mu
-216,Mayotte,,country_yt
 217,Meksyk,,country_mx
 218,"Mikronezja, stany federacyjne",,country_fm
-219,"Mołdawia, Republika",,country_md
+219,Moldova,,country_md
 220,Monako,,country_mc
 221,Mongolia,,country_mn
-222,Montserrat,,country_ms
 223,Maroko,,country_ma
 224,Mozambik,,country_mz
 225,Myanmar,,country_mm
@@ -210,45 +181,33 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 227,Nauru,,country_nr
 228,Nepal,,country_np
 229,Niderlandy,,country_nl
-230,Holandia Antyli,,country_an
-231,Nowa Kaledonia,,country_nc
 232,Nowa Zelandia,,country_nz
 233,Nikaragua,,country_ni
 234,Niger,,country_ne
 235,Nigeria,,country_ng
-236,Niue,,country_nu
-237,Wyspa Norfolk,,country_nf
-238,Północne Wyspy Mariany,,country_mp
 239,Norwegia,,country_no
 240,Oman,,country_om
 241,Pakistan,,country_pk
 242,Palau,,country_pw
-243,"Terytorium Palestyńskie, zajęte",,country_ps
 244,Panama,,country_pa
 245,Papua Nowa Gwinea,,country_pg
 246,Paragwaj,,country_py
 247,Peru,,country_pe
 248,Filipiny,,country_ph
-249,Pitcairn,,country_pn
 250,Polska,,country_pl
 251,Portugalia,,country_pt
-252,Puerto Rico,,country_pr
 253,Katar,,country_qa
-254,Zjazd,,country_re
 255,Rumunia,,country_ro
-256,Federacja Rosyjska,,country_ru
+256,Rosja,,country_ru
 257,Rwanda,,country_rw
-258,Saint Helena,,country_sh
 259,Saint Kitts i Nevis,,country_kn
 260,Saint Lucia,,country_lc
-261,Saint Pierre i Miquelon,,country_pm
 262,Saint Vincent i Grenadyny,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome i Principe,,country_st
 266,Arabia Saudyjska,,country_sa
 267,Senegal,,country_sn
-268,Serbia i Czarnogóra,,country_cs
 269,Seszele,,country_sc
 270,Sierra Leone,,country_sl
 271,Singapur,,country_sg
@@ -257,45 +216,40 @@ papierowej ulotki dla pacjenta z informacjami o produkcie, którą zwykle można
 274,Wyspy Salomona,,country_sb
 275,Somali,,country_so
 276,Republika Południowej Afryki,,country_za
-277,Południowa Georgia i wyspy South Sandwich,,country_gs
 278,Hiszpania,,country_es
 279,Sri Lanka,,country_lk
 280,Sudan,,country_sd
 281,Surinam,,country_sr
-282,Svalbard i Jan Mayen,,country_sj
 283,Suaziland,,country_sz
 284,Szwecja,,country_se
 285,Szwajcaria,,country_ch
-286,Syryjska Republika Arabska,,country_sy
-287,"Tajwan, prowincja Chin",,country_tw
+286,Syria,,country_sy
+287,Tajwan,,country_tw
 288,Tadżykistan,,country_tj
-289,"Tanzania, United Republic of",,country_tz
+289,Tanzania,,country_tz
 290,Tajlandia,,country_th
-291,TIMOR-WIELKA,,country_tl
+291,Timor wschodni,,country_tl
 292,Togo,,country_tg
-293,Tokelau,,country_tk
 294,Tonga,,country_to
 295,Trynidad i Tobago,,country_tt
 296,Tunezja,,country_tn
 297,Indyk,,country_tr
 298,Turkmenia,,country_tm
-299,Wyspy Turks i Caicos,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukraina,,country_ua
 303,Emiraty Arabskie,,country_ae
 304,Zjednoczone Królestwo,,country_gb
 305,Stany Zjednoczone,,country_us
-306,Niewielkie wyspy Stanów Zjednoczonych,,country_um
 307,Urugwaj,,country_uy
 308,Uzbekistan,,country_uz
 309,Vanuatu,,country_vu
 310,Wenezuela,,country_ve
 311,Wietnam,,country_vn
-312,"Wyspy Dziewicze, Brytyjczycy",,country_vg
-313,"Wyspy Dziewicze, USA",,country_vi
-314,Wallis i Futuna,,country_wf
-315,Sahara Zachodnia,,country_eh
 316,Jemen,,country_ye
 317,Zambia,,country_zm
 318,Zimbabwe,,country_zw
+319,Czarnogóra,,country_me
+321,Serbia,,country_rs
+322,Kosovo,,country_xk
+324,Sudan Południowy,,country_ss

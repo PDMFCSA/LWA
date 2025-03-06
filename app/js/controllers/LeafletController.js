@@ -104,11 +104,16 @@ function LeafletController() {
                 return goToErrorPage(constants.errorCodes.unsupported_response, new Error("Response unsupported format or contains forbidden content"));
 
             this.metadata = data;
+            setTimeout(() => {
+                showRecalledMessage(data, this.selectedLanguage || this.defaultLanguage);
+            }, 150);
+            
             if(typeof data.availableDocuments === 'string' && data.availableDocuments === "xml_found") {
                 this.selectedLanguage = this.getLanguageFromBrowser();
                 return showDocumentModal(data);
             }
             showAvailableDocuments(data);
+
         }).catch(err => {
             console.error(err);
             goToErrorPage(err.errorCode, err)
@@ -126,7 +131,7 @@ function LeafletController() {
             const tmp = JSON.stringify(result);
             if (!tmp || sanitationRegex.test(tmp))
                 return goToErrorPage(constants.errorCodes.unsupported_response, new Error("Response unsupported format or contains forbidden content"));
-
+            
             try {
                 showDocumentModal(result);
             } catch (e) {
@@ -135,8 +140,6 @@ function LeafletController() {
             } finally {
                 this.showLoader(false);
             }
-
-            // showRecalledMessage(result);
 
         }).catch(err => {
             console.error(err);
@@ -267,8 +270,7 @@ function LeafletController() {
             renderLeaflet(result);
             this.loadPrintContent("settings-modal");
             if (isExpired(this.expiry))
-                return showExpired(this.selectedLanguage);
-            showRecalledMessage(result, this.selectedLanguage);
+                showExpired(this.selectedLanguage);  
             
         } catch (e) {
             console.error(e);
@@ -360,10 +362,6 @@ function LeafletController() {
         })
         container.appendChild(radionParent);
         this.showModal('documents-modal');
-        document.querySelector('#button-exit').addEventListener('click', () => {
-            const {protocol, host} = window.location; 
-            window.location.href = `${protocol}//${host}/${host.includes('localhost') ? 'lwa' : ''}`;
-        });
     };
 
     /**
@@ -502,19 +500,20 @@ function LeafletController() {
         }
     };
 
-    let showRecalledMessage = function (result) {
+    let showRecalledMessage = (result) => {
         const {productData} = result;
         const {productRecall, batchData} = productData;
         const recalled = productRecall || batchData?.batchRecall;
         const recalledContainer = document.querySelector("#recalled-modal");
-        const modalLeaflet = document.getElementById("settings-modal");
+        const activeModal = this.getActiveModal();
         const recalledBar = document.querySelector('#recalled-bar');
-        modalLeaflet.classList.remove('recalled');
+        activeModal.classList.remove('recalled');
+        
         if (recalled) {
             const batchRecalled = batchData?.batchRecall;
             const recalledMessageContainer = document.querySelector(".recalled-message-container");
 
-            modalLeaflet.classList.add('recalled');
+            activeModal.classList.add('recalled');
             recalledBar.classList.add('visible');
             recalledContainer.classList.remove("hiddenElement");
 
@@ -530,11 +529,11 @@ function LeafletController() {
 
             recalledContainer.querySelector(".close-modal").onclick = function() {
                 recalledContainer.classList.add("hiddenElement");
-                modalLeaflet.classList.remove('recalled');
+                activeModal.classList.remove('recalled');
             };
             recalledContainer.querySelector("#recalled-modal-procced").onclick = function() {
                 recalledContainer.classList.add("hiddenElement");
-                modalLeaflet.classList.remove('recalled');
+                activeModal.classList.remove('recalled');
             };
             recalledContainer.querySelector("#recalled-modal-exit").onclick = function() {
                 goToPage("/main.html")
@@ -551,12 +550,15 @@ function LeafletController() {
     }
 
     this.loadPrintContent= (modal = 'settings-modal') => {
-        const content =  document.querySelector(`#${modal} .content-to-print`);
+        
+        setTextDirectionForLanguage(this.selectedLanguage, "#print-content");
+
+        const content =  document.querySelector(`#${modal} .content-to-print`).cloneNode(true);
         const printContent =  document.querySelector('#print-content');
         content.querySelectorAll('[style], [nowrap],video').forEach(element => {
             element.removeAttribute('style');
             element.removeAttribute('nowrap');
-            element.removeAttribute('xmlns');
+            element.removeAttribute('xmlns');  
         });
         printContent.innerHTML = "";
         printContent.innerHTML = content.innerHTML;
@@ -659,8 +661,10 @@ function LeafletController() {
         });
         document.querySelector("#documents-modal #proceed-button").addEventListener("click", () => {
             this.setSelectedDocument();
-        })
-
+        });
+        document.querySelector('#product-modal #button-exit').addEventListener('click', () => {
+            goToPage("/scan.html")
+        });
     }
 
     addEventListeners();

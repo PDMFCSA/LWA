@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Sveiki atvykę į „PharmaLedger“ | ok | 1 |
-| scan_explain | Raskite „DataMatrix“ brūkšninį kodą ant vaisto ir nuskaitykite bei peržiūrėkite informaciją. | ok | 2 |
+| scan_explain | Raskite „Datamatrix“ apie savo vaistą. Žr. Aukščiau pateiktą pavyzdį. |  | 2 |
 | scan_button | Nuskaityti „DataMatrix“ | ok | 3 |
 | change_camera | Keisti kamerą | ok | 4 |
 | cancel | Atšaukti | ok | 5 |
@@ -46,6 +46,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | product_not_loaded | Deja, nebuvo įkelta jokia informacija apie produktą. | ok | 45 |
 | err_code | Klaidos kodas | ok | 46 |
 | system_busy | Sistema užimta, pabandykite vėliau. | ok | 47 |
+| leaflet_print | Spausdinti |  | 48 |
 | error_subtitle | Unverified Product |  | 49 |
 | leaflet_incorrect_date_title | Incorrect date |  | 50 |
 | leaflet_incorrect_date_subtitle | Scanned date is incorrect |  | 51 |
@@ -66,18 +67,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | epi_markets_modal_message | Pasirinkite savo šalį |  | 74 |
 | epi_markets_modal_no_market | Nėra šalies |  | 75 |
 | country_af | Afganistanas |  | 76 |
-| country_ax | Åland salos |  | 77 |
 | country_al | Albanija |  | 78 |
 | country_dz | Alžyras |  | 79 |
-| country_as | Amerikos Samoa |  | 80 |
 | country_ad | Andorra |  | 81 |
 | country_ao | Angola |  | 82 |
-| country_ai | Angilija |  | 83 |
-| country_aq | Antarktida |  | 84 |
 | country_ag | Antigva ir Barbuda |  | 85 |
 | country_ar | Argentina |  | 86 |
 | country_am | Armėnija |  | 87 |
-| country_aw | Aruba |  | 88 |
 | country_au | Australija |  | 89 |
 | country_at | Austrija |  | 90 |
 | country_az | Azerbaidžanas |  | 91 |
@@ -89,15 +85,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_be | Belgija |  | 97 |
 | country_bz | Belizas |  | 98 |
 | country_bj | Beninas |  | 99 |
-| country_bm | Bermuda |  | 100 |
 | country_bt | Butanas |  | 101 |
 | country_bo | Bolivija |  | 102 |
 | country_ba | Bosnija ir Hercegovina |  | 103 |
 | country_bw | Botsvana |  | 104 |
-| country_bv | Bouveto sala |  | 105 |
 | country_br | Brazilija |  | 106 |
-| country_io | Britanijos Indijos vandenyno teritorija |  | 107 |
-| country_bn | Brunei Darussalam |  | 108 |
+| country_bn | Brunei |  | 108 |
 | country_bg | Bulgarija |  | 109 |
 | country_bf | Burkina Faso |  | 110 |
 | country_bi | Burundis |  | 111 |
@@ -105,20 +98,16 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_cm | Kamerūnas |  | 113 |
 | country_ca | Kanada |  | 114 |
 | country_cv | Kyšulio kyšulys |  | 115 |
-| country_ky | Kaimanų salos |  | 116 |
 | country_cf | Centrinės Afrikos Respublika |  | 117 |
 | country_td | Čadas |  | 118 |
 | country_cl | Čilė |  | 119 |
 | country_cn | Kinija |  | 120 |
-| country_cx | Kalėdinė sala |  | 121 |
-| country_cc | Cocos (Keeling) salos |  | 122 |
 | country_co | Kolumbija |  | 123 |
 | country_km | Komoros |  | 124 |
-| country_cg | Kongo |  | 125 |
+| country_cg | Kongo Respublika |  | 125 |
 | country_cd | Kongo, Demokratinė Respublika |  | 126 |
-| country_ck | Kuko salos |  | 127 |
 | country_cr | Kosta Rika |  | 128 |
-| country_ci | Cote d'Voire |  | 129 |
+| country_ci | Dramblio Kaulo Krantas |  | 129 |
 | country_hr | Kroatija |  | 130 |
 | country_cu | Kuba |  | 131 |
 | country_cy | Kipras |  | 132 |
@@ -134,33 +123,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_er | Eritrėja |  | 142 |
 | country_ee | Estija |  | 143 |
 | country_et | Etiopija |  | 144 |
-| country_fk | Folklando salos (Malvinas) |  | 145 |
-| country_fo | Faroe salos |  | 146 |
 | country_fj | Fiji |  | 147 |
 | country_fi | Suomija |  | 148 |
 | country_fr | Prancūzija |  | 149 |
-| country_gf | Prancūzijos Gviana |  | 150 |
-| country_pf | Prancūzijos Polinezija |  | 151 |
-| country_tf | Prancūzijos pietų teritorijos |  | 152 |
 | country_ga | Gabonas |  | 153 |
 | country_gm | Gambija |  | 154 |
 | country_ge | Gruzija |  | 155 |
 | country_de | Vokietija |  | 156 |
 | country_gh | Gana |  | 157 |
-| country_gi | Gibraltaras |  | 158 |
 | country_gr | Graikija |  | 159 |
-| country_gl | Grenlandija |  | 160 |
 | country_gd | Grenada |  | 161 |
-| country_gp | Gvadelupė |  | 162 |
-| country_gu | Guamas |  | 163 |
 | country_gt | Gvatemala |  | 164 |
-| country_gg | Gernsey |  | 165 |
 | country_gn | Gvinėja |  | 166 |
 | country_gw | Gvinėjos-Bisau |  | 167 |
 | country_gy | Gajana |  | 168 |
 | country_ht | Haitis |  | 169 |
-| country_hm | Hear Island ir McDonald salos |  | 170 |
-| country_va | Šventasis Sostas (Vatikano miesto valstija) |  | 171 |
 | country_hn | Hondūras |  | 172 |
 | country_hk | Honkongas |  | 173 |
 | country_hu | Vengrija |  | 174 |
@@ -170,31 +147,28 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ir | Iranas, Islamo Respublika |  | 178 |
 | country_iq | Irakas |  | 179 |
 | country_ie | Airija |  | 180 |
-| country_im | Meno sala |  | 181 |
 | country_il | Izraelis |  | 182 |
 | country_it | Italija |  | 183 |
 | country_jm | Jamaika |  | 184 |
 | country_jp | Japonija |  | 185 |
-| country_je | Džersis |  | 186 |
 | country_jo | Jordanija |  | 187 |
 | country_kz | Kazachstanas |  | 188 |
 | country_ke | Kenija |  | 189 |
 | country_ki | Kiribati |  | 190 |
-| COUNTRY_KP | Korėja, Demokratinės liaudies Respublika |  | 191 |
-| COUNTRY_KR | Korėja, Respublika |  | 192 |
+| country_kp | Šiaurės Korėja |  | 191 |
+| country_kr | Pietų Korėja |  | 192 |
 | country_kw | Kuveitas |  | 193 |
 | country_kg | Kirgizija |  | 194 |
-| COUNTRY_LA | Laoso liaudies demokratinė respublika |  | 195 |
-| COUNTRY_LV | Latvija |  | 196 |
+| country_la | Laosas |  | 195 |
+| country_lv | Latvija |  | 196 |
 | country_lb | Libanas |  | 197 |
 | country_ls | Lesotas |  | 198 |
 | country_lr | Liberija |  | 199 |
-| country_ly | Libijos arabų Jamahiriya |  | 200 |
+| country_ly | Libija |  | 200 |
 | country_li | Lichtenšteinas |  | 201 |
 | country_lt | Lietuva |  | 202 |
 | country_lu | Liuksemburgas |  | 203 |
-| country_mo | Makao |  | 204 |
-| country_mk | Makedonija, buvusi Jugoslavijos Respublika |  | 205 |
+| country_mk | Šiaurės Makedonija |  | 205 |
 | country_mg | Madagaskaras |  | 206 |
 | country_mw | Malavis |  | 207 |
 | country_my | Malaizija |  | 208 |
@@ -202,16 +176,13 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ml | Mali |  | 210 |
 | country_mt | Malta |  | 211 |
 | country_mh | Maršalo salos |  | 212 |
-| country_mq | Martinika |  | 213 |
 | country_mr | Mauritanija |  | 214 |
 | country_mu | Mauricijus |  | 215 |
-| country_yt | Mayotte |  | 216 |
 | country_mx | Meksika |  | 217 |
 | country_fm | Mikronezija, federalinės valstybės |  | 218 |
-| country_md | Moldova, Respublika |  | 219 |
+| country_md | Moldova |  | 219 |
 | country_mc | Monakas |  | 220 |
 | country_mn | Mongolija |  | 221 |
-| country_ms | Montserratas |  | 222 |
 | country_ma | Marokas |  | 223 |
 | country_mz | Mozambikas |  | 224 |
 | country_mm | Mianmaras |  | 225 |
@@ -219,45 +190,33 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_nr | Nauru |  | 227 |
 | country_np | Nepalas |  | 228 |
 | country_nl | Nyderlandai |  | 229 |
-| country_an | Nyderlandų Antilai |  | 230 |
-| country_nc | Naujoji Kaledonija |  | 231 |
 | country_nz | Naujoji Zelandija |  | 232 |
 | country_ni | Nikaragva |  | 233 |
 | country_ne | Nigeris |  | 234 |
 | country_ng | Nigerija |  | 235 |
-| country_nu | Niuue |  | 236 |
-| country_nf | Norfolko sala |  | 237 |
-| country_mp | Šiaurės Marianos salos |  | 238 |
 | country_no | Norvegija |  | 239 |
 | country_om | Omanas |  | 240 |
 | country_pk | Pakistanas |  | 241 |
 | country_pw | Palau |  | 242 |
-| country_ps | Palestinos teritorija, užimta |  | 243 |
 | country_pa | Panama |  | 244 |
 | country_pg | Papua Naujoji Gvinėja |  | 245 |
 | country_py | Paragvajus |  | 246 |
 | country_pe | Peru |  | 247 |
 | country_ph | Filipinai |  | 248 |
-| country_pn | Pitcairnas |  | 249 |
 | country_pl | Lenkija |  | 250 |
 | country_pt | Portugalija |  | 251 |
-| country_pr | Puerto Rikas |  | 252 |
 | country_qa | Kataras |  | 253 |
-| country_re | Susivienijimas |  | 254 |
 | country_ro | Rumunija |  | 255 |
-| country_ru | Rusijos federacija |  | 256 |
+| country_ru | Rusija |  | 256 |
 | country_rw | Ruanda |  | 257 |
-| country_sh | Saint Helena |  | 258 |
 | country_kn | Saint Kitts ir Nevis |  | 259 |
 | country_lc | Saint Lucia |  | 260 |
-| country_pm | Saint Pierre ir Miquelon |  | 261 |
 | country_vc | Šventasis Vincentas ir Grenadinai |  | 262 |
 | country_ws | Samoa |  | 263 |
 | country_sm | San Marino |  | 264 |
 | country_st | Sao Tome ir Principe |  | 265 |
 | country_sa | Saudo Arabija |  | 266 |
 | country_sn | Senegalas |  | 267 |
-| country_cs | Serbija ir Juodkalnija |  | 268 |
 | country_sc | Seišelės |  | 269 |
 | country_sl | Siera Leonė |  | 270 |
 | country_sg | Singapūras |  | 271 |
@@ -266,45 +225,40 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_sb | Saliamono salos |  | 274 |
 | country_so | Somalis |  | 275 |
 | country_za | Pietų Afrika |  | 276 |
-| country_gs | Pietų Džordžija ir Pietų sumuštinių salos |  | 277 |
 | country_es | Ispanija |  | 278 |
 | country_lk | Šri Lanka |  | 279 |
 | country_sd | Sudanas |  | 280 |
 | country_sr | Surinamas |  | 281 |
-| country_sj | Svalbardas ir Janas Mayenas |  | 282 |
 | country_sz | Svazilandas |  | 283 |
 | country_se | Švedija |  | 284 |
 | country_ch | Šveicarija |  | 285 |
-| country_sy | Sirijos Arabų Respublika |  | 286 |
-| country_tw | Taivanas, Kinijos provincija |  | 287 |
+| country_sy | Sirija |  | 286 |
+| country_tw | Taivanas |  | 287 |
 | country_tj | Tadžikistanas |  | 288 |
-| country_tz | Tanzanija, Jungtinė Respublika |  | 289 |
+| country_tz | Tanzanija |  | 289 |
 | country_th | Tailandas |  | 290 |
-| country_tl | Timor-Leste |  | 291 |
+| country_tl | Rytų Timoras |  | 291 |
 | country_tg | Togo |  | 292 |
-| country_tk | Tokelau |  | 293 |
 | country_to | Tonga |  | 294 |
 | country_tt | Trinidadas ir Tobagas |  | 295 |
 | country_tn | Tunisas |  | 296 |
 | country_tr | Turkija |  | 297 |
 | country_tm | Turkmėnistanas |  | 298 |
-| country_tc | Turkų ir Kaikoso salos |  | 299 |
 | country_tv | Tuvalu |  | 300 |
 | country_ug | Uganda |  | 301 |
 | country_ua | Ukraina |  | 302 |
 | country_ae | Jungtiniai Arabų Emyratai |  | 303 |
 | country_gb | Jungtinė Karalystė |  | 304 |
 | country_us | JAV |  | 305 |
-| country_um | Jungtinės Valstijos Mažosios atokios salos |  | 306 |
 | country_uy | Urugvajus |  | 307 |
 | country_uz | Uzbekistanas |  | 308 |
 | country_vu | Vanuatu |  | 309 |
 | country_ve | Venesuela |  | 310 |
 | country_vn | Vietnamas |  | 311 |
-| country_vg | Mergelių salos, britai |  | 312 |
-| country_vi | Mergelių salos, JAV |  | 313 |
-| country_wf | Wallis ir Futuna |  | 314 |
-| country_eh | Vakarų Sachara |  | 315 |
 | country_ye | Jemenas |  | 316 |
 | country_zm | Zambija |  | 317 |
 | country_zw | Zimbabvė |  | 318 |
+| country_me | Juodkalnija |  | 319 |
+| country_rs | Serbija |  | 321 |
+| country_xk | Kosovas |  | 322 |
+| country_ss | Pietų Sudanas |  | 324 |

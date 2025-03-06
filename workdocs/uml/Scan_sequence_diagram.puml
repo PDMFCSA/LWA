@@ -16,6 +16,9 @@ title Leaflet Scan Sequence Diagram
 activate p #FFD1DC
 p o-> l: 2d Matrix  Scanned
 deactivate p
+note right of p
+{gtin, batch, expiry}
+end note
 
 activate l #A7C7E7
 l o-> a : Detect MAH  Domain Owner
@@ -89,6 +92,20 @@ activate l #A7C7E7
 l o-> l #A7C7E7: XML to HTML conversion
 activate l #A7C7E7
 deactivate l
+alt Product/batch is recalled
+l o-> p #FFD1DC: Display product/batch recall popup message
+activate p #FFD1DC
+p o-> l #A7C7E7: confirm
+deactivate p
+end
+
+alt batch is expired
+l o-> p #FFD1DC: Display batch expired popup message
+activate p #FFD1DC
+p o-> l #A7C7E7: confirm
+deactivate p
+end
+
 l -> p #FFD1DC: Display HTML for the Leaflet
 deactivate l
 activate p #FFD1DC

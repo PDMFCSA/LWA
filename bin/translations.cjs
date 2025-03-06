@@ -71,6 +71,7 @@ export default data;`;
 async function addKey(lang, key, str){
   const certified = getCertified();
   const certifiedKeys = Object.keys(certified);
+  key = key.toLowerCase();
   if (certifiedKeys.includes(key))
     throw new Error(`Trying to modify a certified translation ${key}`);
 
@@ -272,6 +273,50 @@ async function  generateCodeSheet(langs, format = "json"){
   }
 }
 
+/**
+ *
+ * @param {string} [key]
+ */
+async function decertify(key) {
+  const certified = getCertified();
+  const certifiedKeys = Object.keys(certified);
+  let lowerCaseKey = key.toLowerCase();
+  if (!certifiedKeys.includes(lowerCaseKey))
+    throw new Error(`${key} is not certified`);
+
+
+
+  const nonCertified = getCertified(false);
+  nonCertified[key] = certified[key];
+
+  updateCertificationTracker(nonCertified,  false);
+
+  delete certified[key]
+  updateCertificationTracker(certified,  true);
+}
+
+/**
+ *
+ * @param {string} [key]
+ */
+async function certify(key) {
+  const nonCertified = getCertified(false);
+  const nonCertifiedKeys = Object.keys(nonCertified);
+  let lowerCaseKey = key.toLowerCase();
+  if (!nonCertifiedKeys.includes(lowerCaseKey))
+    throw new Error(`${key} is not in non certified`);
+
+
+
+  const certified = getCertified();
+  certified[key] = nonCertified[key];
+
+  updateCertificationTracker(certified,  true);
+
+  delete nonCertified[key]
+  updateCertificationTracker(nonCertified,  false);
+}
+
 switch (command) {
   case "codes":
     const format = args.shift()
@@ -302,7 +347,32 @@ switch (command) {
     break;
   case "add":
     // TODO add new language from template
-    break
+    break;
+  case "certify":
+    const certidyKey = args.shift();
+    if (!certidyKey)
+      throw new Error(`no key specified`);
+    certify(certidyKey)
+      .then(() => {
+        console.log(`The key ${certidyKey} was changed to certified texts`)
+      })
+      .catch(e => {
+        throw e
+      })
+    break;
+  case "decertify":
+    const decertifyKey = args.shift();
+    if (!decertifyKey)
+      throw new Error(`no key specified`);
+    decertify(decertifyKey)
+      .then(() => {
+        console.log(`The key ${decertifyKey} was changed to non certified texts`)
+      })
+      .catch(e => {
+        throw e
+      })
+    break;
+
   default:
     throw new Error(`Invalid command: ${command}`);
 }

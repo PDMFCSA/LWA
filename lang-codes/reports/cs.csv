@@ -1,6 +1,6 @@
 code,text,status,key
 1,Vítejte na PharmaLedger,ok,welcome
-2,Naskenujte čárový kód DataMatrix na Vašem léčivém přípravku a přečtěte si  informace.,ok,scan_explain
+2,Najděte datamatrix na lék. Viz příklad výše.,,scan_explain
 3,Naskenujte DataMatrix,ok,scan_button
 4,Zvolit jiný fotoaparát,ok,change_camera
 5,Zrušit,ok,cancel
@@ -40,6 +40,7 @@ code,text,status,key
 45,Bohužel nebyly načteny žádné informace o přípravku.,ok,product_not_loaded
 46,Chybný kód,ok,err_code
 47,"Systém je zatížený, zkuste to, prosím, později.",ok,system_busy
+48,Vytisknout,,leaflet_print
 61,Informace o tisku,,leaflet_print_title
 62,Aktuální vybrané informace budou vytištěny jako PDF.,,leaflet_print_description
 63,Chcete pokračovat?,,leaflet_print_description2
@@ -56,18 +57,13 @@ code,text,status,key
 74,Vyberte prosím svou zemi,,epi_markets_modal_message
 75,Žádná země,,epi_markets_modal_no_market
 76,Afghánistán,,country_af
-77,Ålandské ostrovy,,country_ax
 78,Albánie,,country_al
 79,Alžírsko,,country_dz
-80,Americká Samoa,,country_as
 81,Andorra,,country_ad
 82,Angola,,country_ao
-83,Anguilla,,country_ai
-84,Antarktida,,country_aq
 85,Antigua a Barbuda,,country_ag
 86,Argentina,,country_ar
 87,Arménie,,country_am
-88,Aruba,,country_aw
 89,Austrálie,,country_au
 90,Rakousko,,country_at
 91,Ázerbajdžán,,country_az
@@ -79,15 +75,12 @@ code,text,status,key
 97,Belgie,,country_be
 98,Belize,,country_bz
 99,Benin,,country_bj
-100,Bermudy,,country_bm
 101,Bhútan,,country_bt
 102,Bolívie,,country_bo
 103,Bosna a Hercegovina,,country_ba
 104,Botswana,,country_bw
-105,Ostrov Bouvet,,country_bv
 106,Brazílie,,country_br
-107,Území britského indického oceánu,,country_io
-108,Brunei Darussalam,,country_bn
+108,Brunei,,country_bn
 109,Bulharsko,,country_bg
 110,Burkina Faso,,country_bf
 111,Burundi,,country_bi
@@ -95,20 +88,16 @@ code,text,status,key
 113,Kamerun,,country_cm
 114,Kanada,,country_ca
 115,Kap Verde,,country_cv
-116,Kajmanské ostrovy,,country_ky
 117,Střední Africká republika,,country_cf
 118,Čad,,country_td
 119,Chile,,country_cl
 120,Čína,,country_cn
-121,Vánoční ostrov,,country_cx
-122,Ostrovy Cocos (kýling),,country_cc
 123,Kolumbie,,country_co
 124,Comoros,,country_km
-125,Kongo,,country_cg
+125,"Kongo, republika",,country_cg
 126,"Kongo, Demokratická republika",,country_cd
-127,Cookovy ostrovy,,country_ck
 128,Kostarika,,country_cr
-129,Cote d'ivoire,,country_ci
+129,Pobřeží slonoviny,,country_ci
 130,Chorvatsko,,country_hr
 131,Kuba,,country_cu
 132,Kypr,,country_cy
@@ -124,33 +113,21 @@ code,text,status,key
 142,Eritrea,,country_er
 143,Estonsko,,country_ee
 144,Etiopie,,country_et
-145,Falklandské ostrovy (Malvinas),,country_fk
-146,Faorské ostrovy,,country_fo
 147,Fidži,,country_fj
 148,Finsko,,country_fi
 149,Francie,,country_fr
-150,Francouzská Guiana,,country_gf
-151,Francouzská Polynésie,,country_pf
-152,Francouzská jižní území,,country_tf
 153,Gabon,,country_ga
 154,Gambie,,country_gm
 155,Gruzie,,country_ge
 156,Německo,,country_de
 157,Ghana,,country_gh
-158,Gibraltar,,country_gi
 159,Řecko,,country_gr
-160,Grónsko,,country_gl
 161,Grenada,,country_gd
-162,Guadeloupe,,country_gp
-163,Guam,,country_gu
 164,Guatemala,,country_gt
-165,Guernsey,,country_gg
 166,Guinea,,country_gn
 167,Guinea-Bissau,,country_gw
 168,Guyana,,country_gy
 169,Haiti,,country_ht
-170,Slyšeli ostrova a ostrovy McDonald,,country_hm
-171,Holy SEK (Vatikánský městský stát),,country_va
 172,Honduras,,country_hn
 173,Hongkong,,country_hk
 174,Maďarsko,,country_hu
@@ -160,31 +137,28 @@ code,text,status,key
 178,"Írán, Islámská republika",,country_ir
 179,Irák,,country_iq
 180,Irsko,,country_ie
-181,Isle of Man,,country_im
 182,Izrael,,country_il
 183,Itálie,,country_it
 184,Jamaica,,country_jm
 185,Japonsko,,country_jp
-186,Trikot,,country_je
 187,Jordán,,country_jo
 188,Kazachstán,,country_kz
 189,Keňa,,country_ke
 190,Kiribati,,country_ki
-191,"Korea, Demokratická lidová republika",,COUNTRY_KP
-192,"Korea, republika",,COUNTRY_KR
+191,Severní Korea,,country_kp
+192,Jižní Korea,,country_kr
 193,Kuvajt,,country_kw
 194,Kyrgyzstán,,country_kg
-195,Lao lidová demokratická republika,,COUNTRY_LA
-196,Lotyšsko,,COUNTRY_LV
+195,Laos,,country_la
+196,Lotyšsko,,country_lv
 197,Libanon,,country_lb
 198,Lesotho,,country_ls
 199,Libérie,,country_lr
-200,Libyjská arabská Jamahiriya,,country_ly
+200,Libye,,country_ly
 201,Lichtenstein,,country_li
 202,Litva,,country_lt
 203,Lucembursko,,country_lu
-204,Macao,,country_mo
-205,"Makedonie, bývalá jugoslávská republika",,country_mk
+205,Severní Makedonie,,country_mk
 206,Madagaskar,,country_mg
 207,Malawi,,country_mw
 208,Malajsie,,country_my
@@ -192,16 +166,13 @@ code,text,status,key
 210,Mali,,country_ml
 211,Malta,,country_mt
 212,Marshallovy ostrovy,,country_mh
-213,Martinika,,country_mq
 214,Mauritánie,,country_mr
 215,Mauricius,,country_mu
-216,Mayotte,,country_yt
 217,Mexiko,,country_mx
 218,"Mikronésie, federované státy",,country_fm
-219,"Moldavsko, republika",,country_md
+219,Moldavsko,,country_md
 220,Monako,,country_mc
 221,Mongolsko,,country_mn
-222,Montserrat,,country_ms
 223,Maroko,,country_ma
 224,Mozambik,,country_mz
 225,Myanmar,,country_mm
@@ -209,45 +180,33 @@ code,text,status,key
 227,Nauru,,country_nr
 228,Nepál,,country_np
 229,Nizozemí,,country_nl
-230,Nizozemsko Antilly,,country_an
-231,Nová Kaledonie,,country_nc
 232,Nový Zéland,,country_nz
 233,Nikaragua,,country_ni
 234,Niger,,country_ne
 235,Nigérie,,country_ng
-236,Niue,,country_nu
-237,Norfolk Island,,country_nf
-238,Severní ostrovy Mariana,,country_mp
 239,Norsko,,country_no
 240,Omán,,country_om
 241,Pákistán,,country_pk
 242,Palau,,country_pw
-243,"Palestinské území, obsazené",,country_ps
 244,Panama,,country_pa
 245,Papua -Nová Guinea,,country_pg
 246,Paraguay,,country_py
 247,Peru,,country_pe
 248,Filipíny,,country_ph
-249,Pitcairn,,country_pn
 250,Polsko,,country_pl
 251,Portugalsko,,country_pt
-252,Portoriko,,country_pr
 253,Katar,,country_qa
-254,Shledání,,country_re
 255,Rumunsko,,country_ro
-256,Ruská federace,,country_ru
+256,Rusko,,country_ru
 257,Rwanda,,country_rw
-258,Svatá Helena,,country_sh
 259,Saint Kitts a Nevis,,country_kn
 260,Svatá Lucia,,country_lc
-261,Svatý Pierre a Miquelon,,country_pm
 262,Svatý Vincent a Grenadiny,,country_vc
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome a Principe,,country_st
 266,Saúdská Arábie,,country_sa
 267,Senegal,,country_sn
-268,Srbsko a Černá Hora,,country_cs
 269,Seychely,,country_sc
 270,Sierra Leone,,country_sl
 271,Singapur,,country_sg
@@ -256,45 +215,40 @@ code,text,status,key
 274,Šalamounovy ostrovy,,country_sb
 275,Somálsko,,country_so
 276,Jižní Afrika,,country_za
-277,Jižní Gruzie a jižní sendvičové ostrovy,,country_gs
 278,Španělsko,,country_es
 279,Srí Lanka,,country_lk
 280,Súdán,,country_sd
 281,Surinam,,country_sr
-282,Svalbard a Jan Mayen,,country_sj
 283,Svazijsko,,country_sz
 284,Švédsko,,country_se
 285,Švýcarsko,,country_ch
-286,Sýrská arabská republika,,country_sy
-287,"Tchaj -wan, provincie Čína",,country_tw
+286,Sýrie,,country_sy
+287,Tchaj -wan,,country_tw
 288,Tádžikistán,,country_tj
-289,"Tanzanie, United Republic of",,country_tz
+289,Tanzanie,,country_tz
 290,Thajsko,,country_th
-291,Timor-Leste,,country_tl
+291,East Timor,,country_tl
 292,Togo,,country_tg
-293,Tokelau,,country_tk
 294,Tonga,,country_to
 295,Trinidad a Tobago,,country_tt
 296,Tunisko,,country_tn
 297,Turecko,,country_tr
 298,Turkmenistán,,country_tm
-299,Ostrovy Turků a Caicos,,country_tc
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukrajina,,country_ua
 303,Spojené arabské emiráty,,country_ae
 304,Spojené království,,country_gb
 305,Spojené státy,,country_us
-306,Milé odlehlé ostrovy Spojených států Spojené státy,,country_um
 307,Uruguay,,country_uy
 308,Uzbekistán,,country_uz
 309,Vanuatu,,country_vu
 310,Venezuela,,country_ve
 311,Vietnam,,country_vn
-312,"Panenské ostrovy, Britové",,country_vg
-313,"Panenské ostrovy, USA",,country_vi
-314,Wallis a Futuna,,country_wf
-315,Western Sahara,,country_eh
 316,Jemen,,country_ye
 317,Zambie,,country_zm
 318,Zimbabwe,,country_zw
+319,Černá Hora,,country_me
+321,Srbsko,,country_rs
+322,Kosovo,,country_xk
+324,Jižní Súdán,,country_ss
