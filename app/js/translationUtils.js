@@ -44,7 +44,46 @@ export const supportedLanguageCodesMap = {
     // 'zh': ["zh-cn", "zh-hans", "zh-hant", "zh-hk"]
 }
 
+export const specialLanguageCodesMap = {
+    'es-419': ["es-419", "es-ar", "es-bo", "es-cl", "es-co", "es-cr", "es-do", "es-ec", "es-gt", "es-mx", "es-ni", "es-pa", "es-pe", "es-pr", "es-py", "es-sv", "es-us", "es-uy", "es-ve"],
+    'no': ["nb", "nb-no", "nn", "nn-no"],
+}
+
+export const supportedLanguages = [
+    'ar',
+    'bg',
+    'cs',
+    'da',
+    'de',
+    'el',
+    'en',
+    'es',
+    'es-419',
+    'et',
+    'fi',
+    'fr',
+    'hr',
+    'hu',
+    'it',
+    'ko',
+    'lt',
+    'lv',
+    'nl',
+    'no',,
+    'pl',
+    'pt',
+    'pt-br',
+    'ro',
+    'sk',
+    'sl',
+    'sv',
+    'tr',
+    'uk'
+]
+
 export const langSubtypesMap = getLangSubtypesMap(supportedLanguageCodesMap);
+
+export const specialLangSubtypesMap = getLangSubtypesMap(specialLanguageCodesMap);
 
 
 export function transformToISOStandardLangCode(code) {
@@ -74,12 +113,11 @@ function setDefaultLanguage() {
     const urlParams = new URLSearchParams(queryString);
     let appLang = urlParams.get("lang") || window.navigator.language.toLowerCase() || localStorage.getItem(constants.APP_LANG);
     appLang = transformToISOStandardLangCode(appLang);
-    appLang = langSubtypesMap[appLang.toLowerCase()] || appLang;
-    appLang = Object.keys(supportedLanguageCodesMap).includes(appLang) ? appLang : "en";
-    localStorage.setItem(constants.APP_LANG, appLang);
-    document.querySelector("body").setAttribute("app-lang", appLang);
-    document.documentElement.lang = appLang;
-    setTextDirectionForLanguage(appLang);
+    let lang = getLanguageFallback(appLang);
+    localStorage.setItem(constants.APP_LANG, lang);
+    document.querySelector("body").setAttribute("app-lang", lang);
+    document.documentElement.lang = lang;
+    setTextDirectionForLanguage(lang);
 }
 
 export async function translate() {
@@ -124,6 +162,23 @@ export function stringFormat(text, ...args) {
             : match;
     });
 };
+
+export function getLanguageFallback(appLang) {
+    
+    let specialLang = specialLangSubtypesMap[appLang.toLowerCase()];
+    if(specialLang){
+        return specialLang;
+    }
+    if(supportedLanguages.includes(appLang)){
+        return appLang;
+    }
+    if(supportedLanguages.includes(appLang.split("-")[0])){
+        return appLang.split("-")[0];
+    }
+    return "en";
+
+
+}
 
 export function translateAcessabilityAttributes(){
     ["alt", "title", "aria-label"].forEach((attr) => {
