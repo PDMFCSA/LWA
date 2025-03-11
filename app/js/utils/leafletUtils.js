@@ -149,6 +149,21 @@ let renderLeaflet = function (leafletData) {
       image.setAttribute("src", leafletData.leafletImages[imageSrc]);
     }
   }
+
+  let leafletVideos = resultDocument.querySelectorAll("video");
+  for (let video of leafletVideos) {
+      //imageSrc will contain the name of the imageFile form XML
+      let source = video.querySelector("source");
+      let videoSrc = source.getAttribute("src");
+      let dataUrlRegex = new RegExp(/^\s*data:([a-z]+\/[a-z]+(;[a-z-]+=[a-z-]+)?)?(;base64)?,[a-z0-9!$&',()*+;=\-._~:@/?%\s]*\s*$/i);
+      if (!!videoSrc.match(dataUrlRegex) || videoSrc.startsWith("data:")) {
+          //we don't alter already embedded images
+          continue;
+      }
+      if (leafletData.leafletImages[videoSrc]) {
+        source.setAttribute("src", leafletData.leafletImages[videoSrc]);
+      }
+  }
   let sectionsElements = resultDocument.querySelectorAll(".leaflet-accordion-item");
   let htmlContent = "";
   sectionsElements.forEach(section => {
