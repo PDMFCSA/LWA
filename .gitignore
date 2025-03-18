@@ -8,3 +8,4 @@ lang-codes/reports/*.pdf
 lang-codes/reports/*.zip
 workdocs/uml/*.jpg
 workdocs/uml/*.png
+/workdocs/coverage
