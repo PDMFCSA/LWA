@@ -144,7 +144,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_is | 冰岛 |  | 175 |
 | country_in | 印度 |  | 176 |
 | country_id | 印度尼西亚 |  | 177 |
-| country_ir | 伊朗，伊斯兰共和国 |  | 178 |
+| country_ir | 伊朗 |  | 178 |
 | country_iq | 伊拉克 |  | 179 |
 | country_ie | 爱尔兰 |  | 180 |
 | country_il | 以色列 |  | 182 |

@@ -1,6 +1,6 @@
 code,text,status,key
 1,Velkommen til PharmaLedger,ok,welcome
-2,Finn Datamatrix på medisinen din. Se eksempel ovenfor.,,scan_explain
+2,Finn datamatrikskoden på legemiddelet ditt. Se eksempel ovenfor.,,scan_explain
 3,Skann DataMatrix,ok,scan_button
 4,Endre kamera,ok,change_camera
 5,Avbryt skanning,ok,cancel
@@ -44,18 +44,18 @@ code,text,status,key
 49,Ubekreftet produkt,,error_subtitle
 50,Feil dato,,leaflet_incorrect_date_title
 51,Skannet dato er feil,,leaflet_incorrect_date_subtitle
-61,Skriv ut informasjon,,leaflet_print_title
+61,Skriv ut,,leaflet_print_title
 62,Den gjeldende valgte informasjonen vil bli skrevet ut som PDF.,,leaflet_print_description
 63,Vil du fortsette?,,leaflet_print_description2
-64,Fortsette,,leaflet_print_button
+64,Fortsett,,leaflet_print_button
 65,Gå tilbake,,leaflet_print_button_back
 66,Vennligst velg,,document_modal_title
-67,Velg hvilket dokument du vil vise,,document_modal_message
+67,Velg hvilket dokument som skal vises,,document_modal_message
 68,Pasientinformasjon,,document_patient_info
 69,Produktinformasjon for pasienter,,document_product_info
 70,Produktinformasjon er bare tilgjengelig på engelsk,,document_lang_select_message
 71,Legg merke til,,document_lang_select_title
-72,Foreskrive informasjon for helsepersonell,,document_prescribing_info
+72,Forskrivningsinformasjon for helsepersonell,,document_prescribing_info
 73,Velg land,,epi_markets_modal_title
 74,Vennligst velg ditt land,,epi_markets_modal_message
 75,Ingen land,,epi_markets_modal_no_market
@@ -132,12 +132,12 @@ code,text,status,key
 168,Guyana,,country_gy
 169,Haiti,,country_ht
 172,Honduras,,country_hn
-173,Hong Kong,,country_hk
+173,Hongkong,,country_hk
 174,Ungarn,,country_hu
 175,Island,,country_is
 176,India,,country_in
 177,Indonesia,,country_id
-178,"Iran, den islamske republikken",,country_ir
+178,Iran,,country_ir
 179,Irak,,country_iq
 180,Irland,,country_ie
 182,Israel,,country_il
@@ -208,7 +208,7 @@ code,text,status,key
 263,Samoa,,country_ws
 264,San Marino,,country_sm
 265,Sao Tome og Principe,,country_st
-266,Saudi -Arabia,,country_sa
+266,Saudi-Arabia,,country_sa
 267,Senegal,,country_sn
 269,Seychellene,,country_sc
 270,Sierra Leone,,country_sl
@@ -217,7 +217,7 @@ code,text,status,key
 273,Slovenia,,country_si
 274,Salomonøyene,,country_sb
 275,Somalia,,country_so
-276,Sør -Afrika,,country_za
+276,Sør-Afrika,,country_za
 278,Spania,,country_es
 279,Sri Lanka,,country_lk
 280,Sudan,,country_sd
@@ -230,17 +230,17 @@ code,text,status,key
 288,Tadsjikistan,,country_tj
 289,Tanzania,,country_tz
 290,Thailand,,country_th
-291,Øst -Timor,,country_tl
+291,Øst-Timor,,country_tl
 292,Togo,,country_tg
 294,Tonga,,country_to
 295,Trinidad og Tobago,,country_tt
 296,Tunisia,,country_tn
-297,Kalkun,,country_tr
+297,Tyrkia,,country_tr
 298,Turkmenistan,,country_tm
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug
 302,Ukraina,,country_ua
-303,United Arab Emirates,,country_ae
+303,De forente arabiske emirater,,country_ae
 304,Storbritannia,,country_gb
 305,USA,,country_us
 307,Uruguay,,country_uy

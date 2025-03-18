@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Benvenuti a PharmaLedger | ok | 1 |
-| scan_explain | Trova la datamatrix sul tuo medicinale. Vedi l'esempio sopra. |  | 2 |
+| scan_explain | Trova il codice datamatrix sul tuo medicinale. Vedi l'esempio sopra. |  | 2 |
 | scan_button | Scannerizza il DataMatrix | ok | 3 |
 | change_camera | Cambia la fotocamera | ok | 4 |
 | cancel | Cancella | ok | 5 |
@@ -50,18 +50,18 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | error_subtitle | Prodotto non verificato |  | 49 |
 | leaflet_incorrect_date_title | Data errata |  | 50 |
 | leaflet_incorrect_date_subtitle | La data scansionata non è corretta |  | 51 |
-| leaflet_print_title | Informazioni di stampa |  | 61 |
-| leaflet_print_description | Le attuali informazioni selezionate verranno stampate come PDF. |  | 62 |
+| leaflet_print_title | Informazioni per la stampa |  | 61 |
+| leaflet_print_description | Le informazioni attualmente selezionate verranno stampate come PDF. |  | 62 |
 | leaflet_print_description2 | Vuoi procedere? |  | 63 |
-| leaflet_print_button | Procedere |  | 64 |
+| leaflet_print_button | Procedi |  | 64 |
 | leaflet_print_button_back | Torna indietro |  | 65 |
 | document_modal_title | Si prega di scegliere |  | 66 |
-| document_modal_message | Seleziona quale documento da visualizzare |  | 67 |
-| document_patient_info | Informazioni sul paziente |  | 68 |
+| document_modal_message | Seleziona quale documento visualizzare |  | 67 |
+| document_patient_info | Informazioni per il paziente |  | 68 |
 | document_product_info | Informazioni sul prodotto per i pazienti |  | 69 |
 | document_lang_select_message | Le informazioni sul prodotto sono disponibili solo in inglese |  | 70 |
 | document_lang_select_title | Avviso |  | 71 |
-| document_prescribing_info | Prescrivere informazioni per gli operatori sanitari |  | 72 |
+| document_prescribing_info | Informazioni per gli operatori sanitari |  | 72 |
 | epi_markets_modal_title | Seleziona il paese |  | 73 |
 | epi_markets_modal_message | Seleziona il tuo paese |  | 74 |
 | epi_markets_modal_no_market | Nessun paese |  | 75 |
@@ -143,7 +143,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_is | Islanda |  | 175 |
 | country_in | India |  | 176 |
 | country_id | Indonesia |  | 177 |
-| country_ir | Iran, Repubblica islamica di |  | 178 |
+| country_ir | Iran |  | 178 |
 | country_iq | Iraq |  | 179 |
 | country_ie | Irlanda |  | 180 |
 | country_il | Israele |  | 182 |
@@ -170,7 +170,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_mk | Macedonia settentrionale |  | 205 |
 | country_mg | Madagascar |  | 206 |
 | country_mw | Malawi |  | 207 |
-| country_my | Malaysia |  | 208 |
+| country_my | Malesia |  | 208 |
 | country_mv | Maldive |  | 209 |
 | country_ml | Mali |  | 210 |
 | country_mt | Malta |  | 211 |
@@ -241,7 +241,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_to | Tonga |  | 294 |
 | country_tt | Trinidad e Tobago |  | 295 |
 | country_tn | Tunisia |  | 296 |
-| country_tr | Tacchina |  | 297 |
+| country_tr | Turchia |  | 297 |
 | country_tm | Turkmenistan |  | 298 |
 | country_tv | Tuvalu |  | 300 |
 | country_ug | Uganda |  | 301 |

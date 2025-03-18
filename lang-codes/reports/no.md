@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Velkommen til PharmaLedger | ok | 1 |
-| scan_explain | Finn Datamatrix på medisinen din. Se eksempel ovenfor. |  | 2 |
+| scan_explain | Finn datamatrikskoden på legemiddelet ditt. Se eksempel ovenfor. |  | 2 |
 | scan_button | Skann DataMatrix | ok | 3 |
 | change_camera | Endre kamera | ok | 4 |
 | cancel | Avbryt skanning | ok | 5 |
@@ -50,18 +50,18 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | error_subtitle | Ubekreftet produkt |  | 49 |
 | leaflet_incorrect_date_title | Feil dato |  | 50 |
 | leaflet_incorrect_date_subtitle | Skannet dato er feil |  | 51 |
-| leaflet_print_title | Skriv ut informasjon |  | 61 |
+| leaflet_print_title | Skriv ut |  | 61 |
 | leaflet_print_description | Den gjeldende valgte informasjonen vil bli skrevet ut som PDF. |  | 62 |
 | leaflet_print_description2 | Vil du fortsette? |  | 63 |
-| leaflet_print_button | Fortsette |  | 64 |
+| leaflet_print_button | Fortsett |  | 64 |
 | leaflet_print_button_back | Gå tilbake |  | 65 |
 | document_modal_title | Vennligst velg |  | 66 |
-| document_modal_message | Velg hvilket dokument du vil vise |  | 67 |
+| document_modal_message | Velg hvilket dokument som skal vises |  | 67 |
 | document_patient_info | Pasientinformasjon |  | 68 |
 | document_product_info | Produktinformasjon for pasienter |  | 69 |
 | document_lang_select_message | Produktinformasjon er bare tilgjengelig på engelsk |  | 70 |
 | document_lang_select_title | Legg merke til |  | 71 |
-| document_prescribing_info | Foreskrive informasjon for helsepersonell |  | 72 |
+| document_prescribing_info | Forskrivningsinformasjon for helsepersonell |  | 72 |
 | epi_markets_modal_title | Velg land |  | 73 |
 | epi_markets_modal_message | Vennligst velg ditt land |  | 74 |
 | epi_markets_modal_no_market | Ingen land |  | 75 |
@@ -138,12 +138,12 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_gy | Guyana |  | 168 |
 | country_ht | Haiti |  | 169 |
 | country_hn | Honduras |  | 172 |
-| country_hk | Hong Kong |  | 173 |
+| country_hk | Hongkong |  | 173 |
 | country_hu | Ungarn |  | 174 |
 | country_is | Island |  | 175 |
 | country_in | India |  | 176 |
 | country_id | Indonesia |  | 177 |
-| country_ir | Iran, den islamske republikken |  | 178 |
+| country_ir | Iran |  | 178 |
 | country_iq | Irak |  | 179 |
 | country_ie | Irland |  | 180 |
 | country_il | Israel |  | 182 |
@@ -214,7 +214,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ws | Samoa |  | 263 |
 | country_sm | San Marino |  | 264 |
 | country_st | Sao Tome og Principe |  | 265 |
-| country_sa | Saudi -Arabia |  | 266 |
+| country_sa | Saudi-Arabia |  | 266 |
 | country_sn | Senegal |  | 267 |
 | country_sc | Seychellene |  | 269 |
 | country_sl | Sierra Leone |  | 270 |
@@ -223,7 +223,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_si | Slovenia |  | 273 |
 | country_sb | Salomonøyene |  | 274 |
 | country_so | Somalia |  | 275 |
-| country_za | Sør -Afrika |  | 276 |
+| country_za | Sør-Afrika |  | 276 |
 | country_es | Spania |  | 278 |
 | country_lk | Sri Lanka |  | 279 |
 | country_sd | Sudan |  | 280 |
@@ -236,17 +236,17 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_tj | Tadsjikistan |  | 288 |
 | country_tz | Tanzania |  | 289 |
 | country_th | Thailand |  | 290 |
-| country_tl | Øst -Timor |  | 291 |
+| country_tl | Øst-Timor |  | 291 |
 | country_tg | Togo |  | 292 |
 | country_to | Tonga |  | 294 |
 | country_tt | Trinidad og Tobago |  | 295 |
 | country_tn | Tunisia |  | 296 |
-| country_tr | Kalkun |  | 297 |
+| country_tr | Tyrkia |  | 297 |
 | country_tm | Turkmenistan |  | 298 |
 | country_tv | Tuvalu |  | 300 |
 | country_ug | Uganda |  | 301 |
 | country_ua | Ukraina |  | 302 |
-| country_ae | United Arab Emirates |  | 303 |
+| country_ae | De forente arabiske emirater |  | 303 |
 | country_gb | Storbritannia |  | 304 |
 | country_us | USA |  | 305 |
 | country_uy | Uruguay |  | 307 |

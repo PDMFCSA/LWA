@@ -1,6 +1,6 @@
 code,text,status,key
 1,Καλωσήρθατε στην PharmaLedger,ok,welcome
-2,Βρείτε το DataMatrix στο φάρμακό σας. Δείτε το παραπάνω παράδειγμα.,,scan_explain
+2,Βρείτε τα δεδομένα Matrix στο φάρμακό σας. Δείτε το παράδειγμα παραπάνω.,,scan_explain
 3,Σαρώστε το DataMatrix,ok,scan_button
 4,Αλλάξτε κάμερα,ok,change_camera
 5,Ακύρωση,ok,cancel
@@ -45,21 +45,21 @@ code,text,status,key
 49,Μη επαληθευμένο προϊόν,,error_subtitle
 50,Εσφαλμένη ημερομηνία,,leaflet_incorrect_date_title
 51,Η ημερομηνία σαρωτής είναι λανθασμένη,,leaflet_incorrect_date_subtitle
-61,Πληροφορίες εκτύπωσης,,leaflet_print_title
-62,Οι τρέχουσες επιλεγμένες πληροφορίες θα εκτυπωθούν ως PDF.,,leaflet_print_description
+61,Εκτύπωση φυλλαδίου,,leaflet_print_title
+62,Οι τρέχουσες επιλεγμένες πληροφορίες θα εκτυπωθούν σε PDF.,,leaflet_print_description
 63,Θέλετε να προχωρήσετε;,,leaflet_print_description2
-64,Προχωρώ,,leaflet_print_button
-65,Πάω πίσω,,leaflet_print_button_back
-66,Επιλέξτε,,document_modal_title
-67,Επιλέξτε ποιο έγγραφο θα εμφανιστεί,,document_modal_message
-68,Πληροφορίες ασθενούς,,document_patient_info
+64,Προχωρήστε,,leaflet_print_button
+65,Επιστροφή,,leaflet_print_button_back
+66,Παρακαλώ επιλέξτε,,document_modal_title
+67,Παρακαλώ επιλέξτε ποιο έγγραφο να εμφανιστεί,,document_modal_message
+68,Πληροφορίες Ασθενούς,,document_patient_info
 69,Πληροφορίες προϊόντος για ασθενείς,,document_product_info
-70,Οι πληροφορίες προϊόντων είναι διαθέσιμα μόνο στα Αγγλικά,,document_lang_select_message
-71,Ανακοίνωση,,document_lang_select_title
-72,ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΗΝ ΥΠΟΔΟΤΗΤΑΣ,,document_prescribing_info
-73,Επιλεγμένη χώρα,,epi_markets_modal_title
-74,Επιλέξτε τη χώρα σας,,epi_markets_modal_message
-75,Χωρίς χώρα,,epi_markets_modal_no_market
+70,Οι πληροφορίες προϊόντος είναι διαθέσιμες μόνο στα Αγγλικά,,document_lang_select_message
+71,Ειδοποίηση,,document_lang_select_title
+72,Πληροφορίες συνταγογράφησης για επαγγελματίες υγείας,,document_prescribing_info
+73,Επιλέξτε Χώρα,,epi_markets_modal_title
+74,Παρακαλώ επιλέξτε τη χώρα σας,,epi_markets_modal_message
+75,Καμία χώρα,,epi_markets_modal_no_market
 76,Αφγανιστάν,,country_af
 78,Αλβανία,,country_al
 79,Αλγερία,,country_dz
@@ -138,7 +138,7 @@ code,text,status,key
 175,Ισλανδία,,country_is
 176,Ινδία,,country_in
 177,Ινδονησία,,country_id
-178,"Ιράν, Ισλαμική Δημοκρατία του",,country_ir
+178,Ιράν,,country_ir
 179,Ιράκ,,country_iq
 180,Ιρλανδία,,country_ie
 182,Ισραήλ,,country_il
@@ -179,7 +179,7 @@ code,text,status,key
 221,Μογγολία,,country_mn
 223,Μαρόκο,,country_ma
 224,Μοζαμβίκη,,country_mz
-225,Μυανμάρ,,country_mm
+225,Μιανμάρ,,country_mm
 226,Ναμίμπια,,country_na
 227,Ναυρό,,country_nr
 228,Νεπάλ,,country_np
@@ -189,7 +189,7 @@ code,text,status,key
 234,Νίγηρας,,country_ne
 235,Νιγηρία,,country_ng
 239,Νορβηγία,,country_no
-240,Οθμάν,,country_om
+240,Ομάν,,country_om
 241,Πακιστάν,,country_pk
 242,Παλάμης,,country_pw
 244,Παναμάς,,country_pa
@@ -249,7 +249,7 @@ code,text,status,key
 309,Βανουάτου,,country_vu
 310,Βενεζουέλα,,country_ve
 311,Βιετνάμ,,country_vn
-316,Γέμενη,,country_ye
+316,Υεμένη,,country_ye
 317,Ζάμπια,,country_zm
 318,Ζιμπάμπουε,,country_zw
 319,Μαυροβούνιο,,country_me

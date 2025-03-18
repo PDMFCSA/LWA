@@ -1,6 +1,6 @@
 code,text,status,key
 1,Benvenuti a PharmaLedger,ok,welcome
-2,Trova la datamatrix sul tuo medicinale. Vedi l'esempio sopra.,,scan_explain
+2,Trova il codice datamatrix sul tuo medicinale. Vedi l'esempio sopra.,,scan_explain
 3,Scannerizza il DataMatrix,ok,scan_button
 4,Cambia la fotocamera,ok,change_camera
 5,Cancella,ok,cancel
@@ -44,18 +44,18 @@ code,text,status,key
 49,Prodotto non verificato,,error_subtitle
 50,Data errata,,leaflet_incorrect_date_title
 51,La data scansionata non è corretta,,leaflet_incorrect_date_subtitle
-61,Informazioni di stampa,,leaflet_print_title
-62,Le attuali informazioni selezionate verranno stampate come PDF.,,leaflet_print_description
+61,Informazioni per la stampa,,leaflet_print_title
+62,Le informazioni attualmente selezionate verranno stampate come PDF.,,leaflet_print_description
 63,Vuoi procedere?,,leaflet_print_description2
-64,Procedere,,leaflet_print_button
+64,Procedi,,leaflet_print_button
 65,Torna indietro,,leaflet_print_button_back
 66,Si prega di scegliere,,document_modal_title
-67,Seleziona quale documento da visualizzare,,document_modal_message
-68,Informazioni sul paziente,,document_patient_info
+67,Seleziona quale documento visualizzare,,document_modal_message
+68,Informazioni per il paziente,,document_patient_info
 69,Informazioni sul prodotto per i pazienti,,document_product_info
 70,Le informazioni sul prodotto sono disponibili solo in inglese,,document_lang_select_message
 71,Avviso,,document_lang_select_title
-72,Prescrivere informazioni per gli operatori sanitari,,document_prescribing_info
+72,Informazioni per gli operatori sanitari,,document_prescribing_info
 73,Seleziona il paese,,epi_markets_modal_title
 74,Seleziona il tuo paese,,epi_markets_modal_message
 75,Nessun paese,,epi_markets_modal_no_market
@@ -137,7 +137,7 @@ code,text,status,key
 175,Islanda,,country_is
 176,India,,country_in
 177,Indonesia,,country_id
-178,"Iran, Repubblica islamica di",,country_ir
+178,Iran,,country_ir
 179,Iraq,,country_iq
 180,Irlanda,,country_ie
 182,Israele,,country_il
@@ -164,7 +164,7 @@ code,text,status,key
 205,Macedonia settentrionale,,country_mk
 206,Madagascar,,country_mg
 207,Malawi,,country_mw
-208,Malaysia,,country_my
+208,Malesia,,country_my
 209,Maldive,,country_mv
 210,Mali,,country_ml
 211,Malta,,country_mt
@@ -235,7 +235,7 @@ code,text,status,key
 294,Tonga,,country_to
 295,Trinidad e Tobago,,country_tt
 296,Tunisia,,country_tn
-297,Tacchina,,country_tr
+297,Turchia,,country_tr
 298,Turkmenistan,,country_tm
 300,Tuvalu,,country_tv
 301,Uganda,,country_ug

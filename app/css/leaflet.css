@@ -5,6 +5,9 @@ button:not([disabled]) {
     cursor: pointer !important;
 }
 
+.modal-body:focus {
+    outline: none;
+}
 .product-name {
     font-size: var(--font-size--XL);
     font-weight: 700;

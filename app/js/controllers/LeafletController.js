@@ -81,6 +81,7 @@ function LeafletController() {
             activeModal.classList.add("hiddenElement");
         setTimeout(() => {
             modal.classList.remove("hiddenElement");
+            modal.querySelector('.modal-body').focus();
         }, 0);
         return this.activeModal = modal;
     };
@@ -105,9 +106,7 @@ function LeafletController() {
                 return goToErrorPage(constants.errorCodes.unsupported_response, new Error("Response unsupported format or contains forbidden content"));
 
             this.metadata = data;
-            setTimeout(() => {
-                showRecalledMessage(data, this.selectedLanguage || this.defaultLanguage);
-            }, 150);
+            setTimeout(() => { showRecalledMessage(data) }, 100);
             
             if(typeof data.availableDocuments === 'string' && data.availableDocuments === "xml_found") {
                 this.selectedLanguage = this.getLanguageFromBrowser();
@@ -190,7 +189,7 @@ function LeafletController() {
                 return a;
             if(b.item === "unspecified")
                 return b.item;
-            return a.item.localeCompare(b.item, this.defaultLanguage, { sensitivity: 'base' });
+            return a.name.localeCompare(b.name, this.defaultLanguage, { sensitivity: 'base' });
         }).forEach((pair, index) => {
             const {item, name} = pair;
 
@@ -239,9 +238,7 @@ function LeafletController() {
         })
         container.appendChild(radionParent);
         this.showModal('epi-markets-modal');
-        modal.querySelector('#epi-market-go-back-button').addEventListener('click', () => {
-            window.location.href = decodeURIComponent(window.location.href);
-        });
+        modal.querySelector('#epi-market-go-back-button').addEventListener('click', () => this.goHome());
 
         modal.querySelector('#epi-market-proceed-button').addEventListener('click', () => {
             const value = modal.querySelector("input[name='epi-market']:checked")?.value;
@@ -506,11 +503,14 @@ function LeafletController() {
         const {productRecall, batchData} = productData;
         const recalled = productRecall || batchData?.batchRecall;
         const recalledContainer = document.querySelector("#recalled-modal");
-        const activeModal = this.getActiveModal();
         const recalledBar = document.querySelector('#recalled-bar');
-        activeModal.classList.remove('recalled');
         
         if (recalled) {
+            const activeModal = this.getActiveModal();
+
+            if(!activeModal) 
+                return setTimeout(() => { showRecalledMessage(result) }, 200);
+
             const batchRecalled = batchData?.batchRecall;
             const recalledMessageContainer = document.querySelector(".recalled-message-container");
 
@@ -539,6 +539,8 @@ function LeafletController() {
             recalledContainer.querySelector("#recalled-modal-exit").onclick = function() {
                 goToPage("/main.html")
             };
+
+            recalledContainer.querySelector(".modal-body").focus();
         }
 
     }
@@ -548,6 +550,7 @@ function LeafletController() {
         const modal = document.querySelector("#print-modal")
         modal.classList.remove("hiddenElement");
         document.querySelector(".proceed-button.no-leaflet").classList.add("hiddenElement");
+        modal.querySelector('.modal-body').focus();
     }
 
     this.loadPrintContent= (modal = 'settings-modal') => {
@@ -578,7 +581,7 @@ function LeafletController() {
     const setVideoFramesForPrint = async(element) => {
         let chapters = element.querySelectorAll('chapter');
         for (let chapter of chapters) {
-            // get timestamp from the chapter atribute
+            // get timestamp from the chapter attribute
             let timestamp = timeToSeconds(chapter.getAttribute("timestamp"));
             let label = chapter.getAttribute("label");
             if(timestamp){

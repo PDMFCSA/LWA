@@ -57,6 +57,13 @@ note left of b
 }
 end note
 deactivate b
+activate l #A7C7E7
+alt Product/batch is recalled
+l o-> p #FFD1DC: Display product/batch recall popup message
+activate p #FFD1DC
+p o-> l #A7C7E7: confirm
+deactivate p
+end
 
 activate l #A7C7E7
 
@@ -67,14 +74,14 @@ p o-> l #A7C7E7: Choose document type
 deactivate p
 end
 
-alt Document type is 'leaflet'\nand there is more than one market available for the select
+alt There is more than one market available for the selected document type
 l o-> p #FFD1DC: Display market selection modal
 activate p #FFD1DC
 p o-> l #A7C7E7: Choose market
 deactivate p
 end
 
-alt Document type is 'leaflet' and there is more than one\nlanguage available for selection (and none match the browser's)
+alt There is more than one\nlanguage available for selection \n (and none match the browser's) for the selected document type/market
 l o-> p #FFD1DC: Display language selection modal
 activate p #FFD1DC
 p o-> l #A7C7E7: Choose language
@@ -92,12 +99,7 @@ activate l #A7C7E7
 l o-> l #A7C7E7: XML to HTML conversion
 activate l #A7C7E7
 deactivate l
-alt Product/batch is recalled
-l o-> p #FFD1DC: Display product/batch recall popup message
-activate p #FFD1DC
-p o-> l #A7C7E7: confirm
-deactivate p
-end
+
 
 alt batch is expired
 l o-> p #FFD1DC: Display batch expired popup message

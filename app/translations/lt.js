@@ -132,7 +132,7 @@ const data = {
   "country_is": "Islandija",
   "country_in": "Indija",
   "country_id": "Indonezija",
-  "country_ir": "Iranas, Islamo Respublika",
+  "country_ir": "Iranas",
   "country_iq": "Irakas",
   "country_ie": "Airija",
   "country_il": "Izraelis",

@@ -152,7 +152,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_is | Islândia |  | 175 |
 | country_in | Índia |  | 176 |
 | country_id | Indonésia |  | 177 |
-| country_ir | República Islâmica do Irã |  | 178 |
+| country_ir | Irã |  | 178 |
 | country_iq | Iraque |  | 179 |
 | country_ie | Irlanda |  | 180 |
 | country_il | Israel |  | 182 |

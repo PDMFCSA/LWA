@@ -143,7 +143,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_is | Islandia |  | 175 |
 | country_in | Indie |  | 176 |
 | country_id | Indonezja |  | 177 |
-| country_ir | Iran, islamska Republika |  | 178 |
+| country_ir | Iran |  | 178 |
 | country_iq | Irak |  | 179 |
 | country_ie | Irlandia |  | 180 |
 | country_il | Izrael |  | 182 |

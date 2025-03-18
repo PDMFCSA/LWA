@@ -81,7 +81,7 @@ export const countries = [
     {"name": "Iceland", "code": "IS"},
     {"name": "India", "code": "IN"},
     {"name": "Indonesia", "code": "ID"},
-    {"name": "Iran, Islamic Republic Of", "code": "IR"},
+    {"name": "Iran", "code": "IR"}, // After 406, old value Iran, Islamic Republic Of
     {"name": "Iraq", "code": "IQ"},
     {"name": "Ireland", "code": "IE"},
     {"name": "Israel", "code": "IL"},

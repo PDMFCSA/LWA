@@ -132,7 +132,7 @@ const data = {
   "country_is": "أيسلندا",
   "country_in": "الهند",
   "country_id": "أندونيسيا",
-  "country_ir": "إيران ، جمهورية الإسلامية",
+  "country_ir": "إيران",
   "country_iq": "العراق",
   "country_ie": "أيرلندا",
   "country_il": "إسرائيل",

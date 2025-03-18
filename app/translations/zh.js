@@ -132,7 +132,7 @@ const data = {
   "country_is": "冰岛",
   "country_in": "印度",
   "country_id": "印度尼西亚",
-  "country_ir": "伊朗，伊斯兰共和国",
+  "country_ir": "伊朗",
   "country_iq": "伊拉克",
   "country_ie": "爱尔兰",
   "country_il": "以色列",

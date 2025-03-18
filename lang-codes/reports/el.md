@@ -6,7 +6,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | Key | Text | Status | Code |
 | --- | ---- | ------ | ---- |
 | welcome | Καλωσήρθατε στην PharmaLedger | ok | 1 |
-| scan_explain | Βρείτε το DataMatrix στο φάρμακό σας. Δείτε το παραπάνω παράδειγμα. |  | 2 |
+| scan_explain | Βρείτε τα δεδομένα Matrix στο φάρμακό σας. Δείτε το παράδειγμα παραπάνω. |  | 2 |
 | scan_button | Σαρώστε το DataMatrix | ok | 3 |
 | change_camera | Αλλάξτε κάμερα | ok | 4 |
 | cancel | Ακύρωση | ok | 5 |
@@ -50,21 +50,21 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | error_subtitle | Μη επαληθευμένο προϊόν |  | 49 |
 | leaflet_incorrect_date_title | Εσφαλμένη ημερομηνία |  | 50 |
 | leaflet_incorrect_date_subtitle | Η ημερομηνία σαρωτής είναι λανθασμένη |  | 51 |
-| leaflet_print_title | Πληροφορίες εκτύπωσης |  | 61 |
-| leaflet_print_description | Οι τρέχουσες επιλεγμένες πληροφορίες θα εκτυπωθούν ως PDF. |  | 62 |
+| leaflet_print_title | Εκτύπωση φυλλαδίου |  | 61 |
+| leaflet_print_description | Οι τρέχουσες επιλεγμένες πληροφορίες θα εκτυπωθούν σε PDF. |  | 62 |
 | leaflet_print_description2 | Θέλετε να προχωρήσετε; |  | 63 |
-| leaflet_print_button | Προχωρώ |  | 64 |
-| leaflet_print_button_back | Πάω πίσω |  | 65 |
-| document_modal_title | Επιλέξτε |  | 66 |
-| document_modal_message | Επιλέξτε ποιο έγγραφο θα εμφανιστεί |  | 67 |
-| document_patient_info | Πληροφορίες ασθενούς |  | 68 |
+| leaflet_print_button | Προχωρήστε |  | 64 |
+| leaflet_print_button_back | Επιστροφή |  | 65 |
+| document_modal_title | Παρακαλώ επιλέξτε |  | 66 |
+| document_modal_message | Παρακαλώ επιλέξτε ποιο έγγραφο να εμφανιστεί |  | 67 |
+| document_patient_info | Πληροφορίες Ασθενούς |  | 68 |
 | document_product_info | Πληροφορίες προϊόντος για ασθενείς |  | 69 |
-| document_lang_select_message | Οι πληροφορίες προϊόντων είναι διαθέσιμα μόνο στα Αγγλικά |  | 70 |
-| document_lang_select_title | Ανακοίνωση |  | 71 |
-| document_prescribing_info | ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΗΝ ΥΠΟΔΟΤΗΤΑΣ |  | 72 |
-| epi_markets_modal_title | Επιλεγμένη χώρα |  | 73 |
-| epi_markets_modal_message | Επιλέξτε τη χώρα σας |  | 74 |
-| epi_markets_modal_no_market | Χωρίς χώρα |  | 75 |
+| document_lang_select_message | Οι πληροφορίες προϊόντος είναι διαθέσιμες μόνο στα Αγγλικά |  | 70 |
+| document_lang_select_title | Ειδοποίηση |  | 71 |
+| document_prescribing_info | Πληροφορίες συνταγογράφησης για επαγγελματίες υγείας |  | 72 |
+| epi_markets_modal_title | Επιλέξτε Χώρα |  | 73 |
+| epi_markets_modal_message | Παρακαλώ επιλέξτε τη χώρα σας |  | 74 |
+| epi_markets_modal_no_market | Καμία χώρα |  | 75 |
 | country_af | Αφγανιστάν |  | 76 |
 | country_al | Αλβανία |  | 78 |
 | country_dz | Αλγερία |  | 79 |
@@ -143,7 +143,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_is | Ισλανδία |  | 175 |
 | country_in | Ινδία |  | 176 |
 | country_id | Ινδονησία |  | 177 |
-| country_ir | Ιράν, Ισλαμική Δημοκρατία του |  | 178 |
+| country_ir | Ιράν |  | 178 |
 | country_iq | Ιράκ |  | 179 |
 | country_ie | Ιρλανδία |  | 180 |
 | country_il | Ισραήλ |  | 182 |
@@ -184,7 +184,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_mn | Μογγολία |  | 221 |
 | country_ma | Μαρόκο |  | 223 |
 | country_mz | Μοζαμβίκη |  | 224 |
-| country_mm | Μυανμάρ |  | 225 |
+| country_mm | Μιανμάρ |  | 225 |
 | country_na | Ναμίμπια |  | 226 |
 | country_nr | Ναυρό |  | 227 |
 | country_np | Νεπάλ |  | 228 |
@@ -194,7 +194,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_ne | Νίγηρας |  | 234 |
 | country_ng | Νιγηρία |  | 235 |
 | country_no | Νορβηγία |  | 239 |
-| country_om | Οθμάν |  | 240 |
+| country_om | Ομάν |  | 240 |
 | country_pk | Πακιστάν |  | 241 |
 | country_pw | Παλάμης |  | 242 |
 | country_pa | Παναμάς |  | 244 |
@@ -254,7 +254,7 @@ To ease the translation the Code refers where it is used on our app screen, see 
 | country_vu | Βανουάτου |  | 309 |
 | country_ve | Βενεζουέλα |  | 310 |
 | country_vn | Βιετνάμ |  | 311 |
-| country_ye | Γέμενη |  | 316 |
+| country_ye | Υεμένη |  | 316 |
 | country_zm | Ζάμπια |  | 317 |
 | country_zw | Ζιμπάμπουε |  | 318 |
 | country_me | Μαυροβούνιο |  | 319 |

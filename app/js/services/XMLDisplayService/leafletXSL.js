@@ -262,7 +262,8 @@ const acodisXslContent =  `<?xml version="1.0" encoding="UTF-8"?>
             <xsl:if test="not(@controls)">
                 <xsl:attribute name="controls">true</xsl:attribute>
             </xsl:if>
-
+            <xsl:attribute name="playsinline"></xsl:attribute>
+            <xsl:attribute name="preload">metadata</xsl:attribute>
             <xsl:apply-templates/>
         </video>
     </xsl:template>

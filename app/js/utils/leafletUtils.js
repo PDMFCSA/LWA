@@ -178,7 +178,8 @@ const renderProductInformation = function (result) {
     const modal = document.querySelector('#product-modal');
 
     modal.querySelector(".product-name").innerText = result.productData.inventedName || result.productData.name;
-    modal.querySelector(".product-description").innerText = result.productData.nameMedicinalProduct || result.productData.description;
+    const productDescriptionName = upperCaseProductDescriptionProductName(result.productData.nameMedicinalProduct || result.productData.description, result.productData.inventedName || result.productData.name);
+    modal.querySelector(".product-description").innerText = productDescriptionName;
      /* document.querySelector(".leaflet-title-icon").classList.remove("hiddenElement");*/
 
      let list = undefined;

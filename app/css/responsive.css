@@ -690,7 +690,7 @@ b {
 
 @media(min-width: 301px) {
     .control-container {
-        margin: -20px auto 20px auto !important;
+        margin: -5px auto 20px auto !important;
     }
     .jsgif canvas {
         width: 324px !important;

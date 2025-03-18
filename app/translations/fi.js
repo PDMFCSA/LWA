@@ -128,7 +128,7 @@ const data = {
   "country_is": "Islanti",
   "country_in": "Intia",
   "country_id": "Indonesia",
-  "country_ir": "Iran, islamilainen tasavalta",
+  "country_ir": "Iranin",
   "country_iq": "Irak",
   "country_ie": "Irlanti",
   "country_il": "Israel",
