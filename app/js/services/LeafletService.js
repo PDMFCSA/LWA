@@ -46,7 +46,7 @@ const buildQueryParams = function (gtin, batchNumber, lang, leafletType, epiMark
     append.call(converter.searchParams, name, value);
   }
 
-  if((!epiMarket && leafletType === DocumentsTypes.LEAFLET && batchNumber !== "undefined"))
+  if((!epiMarket && leafletType === DocumentsTypes.LEAFLET)) // && batchNumber !== "undefined"))
     converter.searchParams.append("batch", batchNumber);
   converter.searchParams.append("lang", lang);
   converter.searchParams.append("gtin", gtin);
@@ -230,29 +230,29 @@ class LeafletService {
       urlPart += `/${subDomain}`;
     }
 
-    let isBatchLevel = true;
-    let batch = this.batch;
+    // let isBatchLevel = true;
+    // let batch = this.batch;
 
     // Check batch level
-    if(this.metadata
-      && this.metadata.availableDocuments
-      && this.metadata.availableDocuments[this.leafletType]
-      && this.metadata.availableDocuments[this.leafletType][this.epiMarket ? this.epiMarket : "unspecified"]) {
+    // if(this.metadata
+    //   && this.metadata.availableDocuments
+    //   && this.metadata.availableDocuments[this.leafletType]
+    //   && this.metadata.availableDocuments[this.leafletType][this.epiMarket ? this.epiMarket : "unspecified"]) {
+    //
+    //     const docs = this.metadata.availableDocuments[this.leafletType][this.epiMarket? this.epiMarket : "unspecified"];
+    //     const doc = docs.find((d) => {
+    //       return d.value === this.leafletLang;
+    //     })
+    //
+    //     if(doc){
+    //       isBatchLevel = doc.batch || false;
+    //     }
+    //
+    //   }
 
-        const docs = this.metadata.availableDocuments[this.leafletType][this.epiMarket? this.epiMarket : "unspecified"];
-        const doc = docs.find((d) => {
-          return d.value === this.leafletLang;
-        })
 
-        if(doc){
-          isBatchLevel = doc.batch || false;
-        }
-
-      }
-
-
-    if(!isBatchLevel)
-      batch = undefined;
+    // if(!isBatchLevel)
+    //   batch = undefined;
 
     let queryParams = buildQueryParams(this.gtin, this.batch, this.leafletLang, this.leafletType, this.epiMarket);
     if (!this.availableKeys.includes(queryParams)) {

@@ -102,7 +102,7 @@ function LeafletController() {
 
             this.metadata = data;
             this.leafletService.availableKeys = Array.isArray(data?.availableKeys) ? data.availableKeys : [];
-            this.leafletService.metadata = data;
+            // this.leafletService.metadata = data;
             setTimeout(() => { showRecalledMessage(data) }, 100);
             
             if(typeof data.availableDocuments === 'string' && data.availableDocuments === "xml_found") {
