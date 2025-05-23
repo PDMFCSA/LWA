@@ -46,7 +46,7 @@ const buildQueryParams = function (gtin, batchNumber, lang, leafletType, epiMark
     append.call(converter.searchParams, name, value);
   }
 
-  if((!epiMarket && leafletType === DocumentsTypes.LEAFLET))
+  if((!epiMarket && leafletType === DocumentsTypes.LEAFLET && batchNumber !== "undefined"))
     converter.searchParams.append("batch", batchNumber);
   converter.searchParams.append("lang", lang);
   converter.searchParams.append("gtin", gtin);
@@ -112,6 +112,7 @@ class LeafletService {
     this.epiDomain = epiDomain;
     this.epiMarket = epiMarket;
     this.leafletType = "leaflet";
+    this.metadata = undefined;
 
     this.bdnsCache = undefined;
     this.gtinOwnerCache = new Map();
@@ -228,7 +229,31 @@ class LeafletService {
       urlPart += `/${subDomain}`;
     }
 
-    const queryParams = buildQueryParams(this.gtin, this.batch, this.leafletLang, this.leafletType, this.epiMarket);
+    let isBatchLevel = true;
+    let batch = this.batch;
+
+    // Check batch level
+    if(this.metadata 
+      && this.metadata.availableDocuments 
+      && this.metadata.availableDocuments[this.leafletType] 
+      && this.metadata.availableDocuments[this.leafletType][this.epiMarket ? this.epiMarket : "unspecified"]) {
+
+        const docs = this.metadata.availableDocuments[this.leafletType][this.epiMarket? this.epiMarket : "unspecified"];
+        const doc = docs.find((d) => {
+          return d.value === this.leafletLang;
+        })
+
+        if(doc){
+          isBatchLevel = doc.batch || false;
+        }
+
+      }
+    
+
+    if(!isBatchLevel)
+      batch = undefined;
+
+    const queryParams = buildQueryParams(this.gtin, batch, this.leafletLang, this.leafletType, this.epiMarket);
     smartUrl = smartUrl.concatWith(`${urlPart}?${queryParams}`);
 
     let header = {"epiProtocolVersion": environment.epiProtocolVersion || "1"};
