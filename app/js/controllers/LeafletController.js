@@ -101,6 +101,7 @@ function LeafletController() {
                 return goToErrorPage(constants.errorCodes.unsupported_response, new Error("Response unsupported format or contains forbidden content"));
 
             this.metadata = data;
+            this.leafletService.availableKeys = Array.isArray(data?.availableKeys) ? data.availableKeys : [];
             this.leafletService.metadata = data;
             setTimeout(() => { showRecalledMessage(data) }, 100);
             

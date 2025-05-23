@@ -112,6 +112,7 @@ class LeafletService {
     this.epiDomain = epiDomain;
     this.epiMarket = epiMarket;
     this.leafletType = "leaflet";
+    this.availableKeys = [];
     this.metadata = undefined;
 
     this.bdnsCache = undefined;
@@ -233,9 +234,9 @@ class LeafletService {
     let batch = this.batch;
 
     // Check batch level
-    if(this.metadata 
-      && this.metadata.availableDocuments 
-      && this.metadata.availableDocuments[this.leafletType] 
+    if(this.metadata
+      && this.metadata.availableDocuments
+      && this.metadata.availableDocuments[this.leafletType]
       && this.metadata.availableDocuments[this.leafletType][this.epiMarket ? this.epiMarket : "unspecified"]) {
 
         const docs = this.metadata.availableDocuments[this.leafletType][this.epiMarket? this.epiMarket : "unspecified"];
@@ -248,12 +249,16 @@ class LeafletService {
         }
 
       }
-    
+
 
     if(!isBatchLevel)
       batch = undefined;
 
-    const queryParams = buildQueryParams(this.gtin, batch, this.leafletLang, this.leafletType, this.epiMarket);
+    let queryParams = buildQueryParams(this.gtin, this.batch, this.leafletLang, this.leafletType, this.epiMarket);
+    if (!this.availableKeys.includes(queryParams)) {
+      queryParams = buildQueryParams(this.gtin, undefined, this.leafletLang, this.leafletType, this.epiMarket);
+    }
+
     smartUrl = smartUrl.concatWith(`${urlPart}?${queryParams}`);
 
     let header = {"epiProtocolVersion": environment.epiProtocolVersion || "1"};
