@@ -90,7 +90,7 @@ function ScanController() {
     try {
       /* FIXME: CHANGE WHEN EMA'S GTINS START BEEING VALID BACK TO parseGS1Code() */
       gs1Fields = parseGS1DataMatrix(scanResultText); 
-      const page = `/leaflet.html?gtin=${gs1Fields.gtin}&batch=${gs1Fields.batchNumber}&expiry=${gs1Fields.expiry}`;
+      const page = `/leaflet.html?gtin=${gs1Fields.gtin}&batch=${gs1Fields.batch}&expiry=${gs1Fields.expiry}`;
       goToPage(page);
     } catch (err) {
       if (err.message) {
