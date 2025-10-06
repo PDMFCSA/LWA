@@ -447,9 +447,64 @@ svg {
     stroke-opacity:1
 } 
 
+.available-languages-dropdown {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 0px 20px;
+}
+
 #path980 {
     fill: white !important;
     fill-opacity:1;
     fill-rule:nonzero;
     stroke:none
 } 
+
+/* select::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    right: 0px;
+    top: -19px;
+} */
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+select {
+    padding: 10px 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: var(--font-size--basic);
+    border-radius: 6px;
+    border: 0.5px solid var(--olivegreen);
+    background-color: var(--olivegreen); 
+    color: #fff;
+    cursor: pointer;
+  }
+
+  
+  select:hover {
+    outline: none;
+    box-shadow: none;
+    filter: brightness(0.85);
+  }
+
+  select:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  option {
+    color: var(--olivegreen);
+    background-color: #fff;
+    border: none;
+    font-size: var(--font-size--basic);
+  }

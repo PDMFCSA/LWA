@@ -52,6 +52,7 @@ function LeafletController() {
     this.selectedEpiMarket;
     this.lastModal;
     this.metadata = undefined;
+    this.availableLanguages = [];
 
     this.defaultLanguage = localStorage.getItem(constants.APP_LANG) || "en";
     this.leafletService = new LeafletService(this.gtin, this.batch, this.expiry, this.defaultLanguage, this.lsEpiDomain);
@@ -261,6 +262,7 @@ function LeafletController() {
             }
             setTextDirectionForLanguage(this.selectedLanguage, "#settings-modal");
             this.showModal("settings-modal");
+            this.LoadAvailableLanguagesDropdown()
             renderLeaflet(result, this.metadata);
             this.loadPrintContent("settings-modal");
             if (isExpired(this.expiry))
@@ -414,6 +416,8 @@ function LeafletController() {
     const showAvailableLanguages = (languages) => {
         
         this.showLoader(true);
+        
+        this.availableLanguages = languages;
 
         const browserLang = this.getLanguageFromBrowser(false);
         if (languages.length >= 1) {
@@ -552,6 +556,19 @@ function LeafletController() {
         modalClose(document.querySelector("#print-modal"));
     }
 
+    this.LoadAvailableLanguagesDropdown = () => {
+        const dropdown = document.getElementById("languages-dropdown");
+        dropdown.innerHTML = "";
+        const languages = this.availableLanguages;
+        languages.forEach((lang, index) => {
+            let option = document.createElement('option');
+            option.textContent = escapeHTML(`${lang.nativeName}`);
+            option.value = lang.value;
+            dropdown.appendChild(option);
+        });
+        dropdown.value = this.selectedLanguage;
+    }
+
     this.loadPrintContent= (modal = 'settings-modal') => {
         
         setTextDirectionForLanguage(this.selectedLanguage, "#print-content");
@@ -654,6 +671,11 @@ function LeafletController() {
         }
     };
 
+    this.changeLanguage = function(language) {
+        this.selectedLanguage = language;
+        getLeafletXML()
+    }
+
     const addEventListeners = () => {
         document.getElementById("scan-again-button").addEventListener("click", this.scanAgainHandler);
         document.getElementById("modal-print-button").addEventListener("click", this.printContent.bind(this));
@@ -669,6 +691,9 @@ function LeafletController() {
         });
         document.querySelector('#product-modal #button-exit').addEventListener('click', () => {
             goToPage("/scan.html")
+        });
+        document.getElementById("languages-dropdown").addEventListener("change", (event) =>{
+            this.changeLanguage(event.target.value);
         });
     }
 

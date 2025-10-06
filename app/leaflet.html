@@ -36,7 +36,11 @@
                             <h1 class="product-name bold-title" id="product-leaf-title"></h1>
                             <div class="product-description" id="product-leaf-description"></div>
                         </div>
-                        <button id="print-modal-button" class="modal-icon menu-print-icon" aria-label="leaflet_print"></button>
+                        <div class="header-right">
+                            <button id="print-modal-button" class="modal-icon menu-print-icon" aria-label="leaflet_print"></button>
+                            <select name="Languages" id="languages-dropdown" onchange="changeLanguage(event.target)"></select>
+
+                        </div>
                     </div>
                 </div>
                 <div class="modal-content" id="product-leaf-message">
