@@ -266,7 +266,9 @@ const data = {
   "leaflet_available_doc": "Lehtisen käytettävissä olevat asiakirjat",
   "leaflet_available_lang": "Lehteisen kielet",
   "leaflet_page_title": "Asiakirjat",
-  "controlled_substance": "Hallittu aine"
+  "controlled_substance": "Hallittu aine",
+  "document_change_lang_title": "Muuttaa kielen",
+  "document_change_lang_message": "Vaihda asiakirjan kieli."
 }
 
 export default data;

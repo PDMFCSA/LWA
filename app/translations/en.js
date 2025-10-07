@@ -275,7 +275,9 @@ const data = {
   "leaflet_available_doc": "Leaflet's available documents",
   "leaflet_available_lang": "Leaflet's available languages",
   "leaflet_page_title": "Documents",
-  "controlled_substance": "Controlled Substance"
+  "controlled_substance": "Controlled Substance",
+  "document_change_lang_title": "Change language",
+  "document_change_lang_message": "Change the language of the document."
 }
 
 export default data;

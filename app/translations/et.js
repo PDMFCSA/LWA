@@ -266,7 +266,9 @@ const data = {
   "leaflet_available_doc": "Voldiku saadaolevad dokumendid",
   "leaflet_available_lang": "Voldiku saadaolevad keeled",
   "leaflet_page_title": "Dokumendid",
-  "controlled_substance": "Kontrollitav aine"
+  "controlled_substance": "Kontrollitav aine",
+  "document_change_lang_title": "Keelevahetus",
+  "document_change_lang_message": "Muutke dokumendi keelt."
 }
 
 export default data;

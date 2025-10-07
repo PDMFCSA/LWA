@@ -267,7 +267,9 @@ const data = {
   "leaflet_available_doc": "Die verfügbaren Dokumente von Broschüren",
   "leaflet_available_lang": "Die verfügbaren Sprachen von Broschüren",
   "leaflet_page_title": "Unterlagen",
-  "controlled_substance": "Kontrollierte Substanz"
+  "controlled_substance": "Kontrollierte Substanz",
+  "document_change_lang_title": "Sprache ändern",
+  "document_change_lang_message": "Ändern Sie die Sprache des Dokuments."
 }
 
 export default data;

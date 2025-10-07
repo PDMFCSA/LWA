@@ -266,7 +266,9 @@ const data = {
   "leaflet_available_doc": "Documenti disponibili del volantino",
   "leaflet_available_lang": "Le lingue disponibili del volantino",
   "leaflet_page_title": "Documenti",
-  "controlled_substance": "Sostanza controllata"
+  "controlled_substance": "Sostanza controllata",
+  "document_change_lang_title": "Cambia il linguaggio",
+  "document_change_lang_message": "Cambia il linguaggio del documento."
 }
 
 export default data;

@@ -266,7 +266,9 @@ const data = {
   "leaflet_available_doc": "Brosjyrens tilgjengelige dokumenter",
   "leaflet_available_lang": "Brosjyrens tilgjengelige språk",
   "leaflet_page_title": "Dokumenter",
-  "controlled_substance": "Kontrollert stoff"
+  "controlled_substance": "Kontrollert stoff",
+  "document_change_lang_title": "Endre språk",
+  "document_change_lang_message": "Endre språket i dokumentet."
 }
 
 export default data;

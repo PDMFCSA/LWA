@@ -267,7 +267,9 @@ const data = {
   "leaflet_available_doc": "Lankstinukas turimi dokumentai",
   "leaflet_available_lang": "Lankstinukas turimas kalbas",
   "leaflet_page_title": "Dokumentai",
-  "controlled_substance": "Kontroliuojama medžiaga"
+  "controlled_substance": "Kontroliuojama medžiaga",
+  "document_change_lang_title": "Keisti kalbą",
+  "document_change_lang_message": "Pakeiskite dokumento kalbą."
 }
 
 export default data;

@@ -31,14 +31,19 @@
         <div id="settings-modal" class="page-container fill-available-width leaflet-page info-modal hiddenElement" aria-modal="true" role="dialog" aria-labelledby="product-leaf-title" tabindex="0">
             <div class="modal-body">
                 <div class="page-header modal-header centered-header leaftlet-header">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button id="languages-modal-button" class="modal-language" aria-label="languages"></button>
+                    </div>
                     <div class="icon-title-container">
                         <div>
                             <h1 class="product-name bold-title" id="product-leaf-title"></h1>
                             <div class="product-description" id="product-leaf-description"></div>
                         </div>
                         <div class="header-right">
+                            
                             <button id="print-modal-button" class="modal-icon menu-print-icon" aria-label="leaflet_print"></button>
-                            <select name="Languages" id="languages-dropdown" onchange="changeLanguage(event.target)"></select>
+                            
+                            <!-- <select name="Languages" id="languages-dropdown" onchange="changeLanguage(event.target)"></select> -->
 
                         </div>
                     </div>
@@ -258,6 +263,26 @@
                     <button id="modal-print-go-back-button" class="go-back-button go-home-button" translate="leaflet_print_button_back"></button>
                 </div>
 
+            </div>
+        </div>
+        <div id="change-language-modal" class="modal-container popup-modal warning-modal hiddenElement" role="dialog" aria-modal="true" aria-labelledby="lang-title" aria-describedby="language-message" tabindex="0">
+            <div class="modal-body">
+                <div class="modal-header centered-header">
+                    <button class="close-modal" modal-id="change-language-modal" aria-label="top_close"></button>
+                    <div class="icon-title-container">
+                        <h2 class="modal-title bold-title" id="change-lang-title"
+                            translate="document_change_lang_title"></h2>
+                    </div>
+                </div>
+                <div class="modal-content">
+                    <fieldset class="available-languages-container" aria-labelledby="language-message" role="radiogroup">
+                        <legend class="text-section has-leaflets" id="change-language-message"
+                        translate="document_change_lang_message"></legend>
+                    </fieldset>
+                    <button id="proceed-button" class="proceed-button has-leaflets" translate="lang_proceed"></button>
+                    <button id="modal-scan-again-button" class="proceed-button no-leaflet" translate="scan_again"></button>
+                    <button id="go-back-button" class="go-back-button go-home-button" translate="go_home"></button>
+                </div>
             </div>
         </div>
     </main>

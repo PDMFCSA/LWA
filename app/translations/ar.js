@@ -267,7 +267,9 @@ const data = {
   "leaflet_available_doc": "مستندات النشرة المتاحة",
   "leaflet_available_lang": "اللغات المتاحة للنشرة",
   "leaflet_page_title": "وثائق",
-  "controlled_substance": "مادة خاضعة للرقابة"
+  "controlled_substance": "مادة خاضعة للرقابة",
+  "document_change_lang_title": "تغيير اللغة",
+  "document_change_lang_message": "تغيير لغة المستند."
 }
 
 export default data;

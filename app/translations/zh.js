@@ -267,7 +267,9 @@ const data = {
   "leaflet_available_doc": "传单的可用文件",
   "leaflet_available_lang": "传单的可用语言",
   "leaflet_page_title": "文件",
-  "controlled_substance": "受控物质"
+  "controlled_substance": "受控物质",
+  "document_change_lang_title": "更改语言",
+  "document_change_lang_message": "更改文档的语言。"
 }
 
 export default data;

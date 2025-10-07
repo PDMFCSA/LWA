@@ -266,7 +266,9 @@ const data = {
   "leaflet_available_doc": "Broşürün Mevcut Belgeleri",
   "leaflet_available_lang": "Broşürün Mevcut Dilleri",
   "leaflet_page_title": "Belgeler",
-  "controlled_substance": "Kontrollü madde"
+  "controlled_substance": "Kontrollü madde",
+  "document_change_lang_title": "Dili Değiştir",
+  "document_change_lang_message": "Belgenin dilini değiştirin."
 }
 
 export default data;

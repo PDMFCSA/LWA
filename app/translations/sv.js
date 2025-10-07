@@ -267,7 +267,9 @@ const data = {
   "leaflet_available_doc": "Broschyrens tillgängliga dokument",
   "leaflet_available_lang": "Broschyrens tillgängliga språk",
   "leaflet_page_title": "Dokument",
-  "controlled_substance": "Kontrollerad substans"
+  "controlled_substance": "Kontrollerad substans",
+  "document_change_lang_title": "Ändra språk",
+  "document_change_lang_message": "Ändra dokumentets språk."
 }
 
 export default data;

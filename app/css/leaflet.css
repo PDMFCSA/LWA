@@ -447,12 +447,6 @@ svg {
     stroke-opacity:1
 } 
 
-.available-languages-dropdown {
-    display: flex;
-    justify-content: flex-end; 
-    padding: 0px 20px;
-}
-
 #path980 {
     fill: white !important;
     fill-opacity:1;
@@ -478,33 +472,31 @@ svg {
     flex-direction: column;
     align-items: flex-end;
 }
-select {
-    padding: 10px 5px;
+
+.leaflet-page  #languages-modal-button {
+    background-position: center top;
+    border: none;   
+}
+
+.modal-language {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
     margin-top: auto;
     margin-bottom: auto;
+    text-align: center;
+    height: auto;
     font-size: var(--font-size--basic);
     border-radius: 6px;
-    border: 0.5px solid var(--olivegreen);
     background-color: var(--olivegreen); 
     color: #fff;
     cursor: pointer;
   }
 
   
-  select:hover {
-    outline: none;
-    box-shadow: none;
-    filter: brightness(0.85);
-  }
+.modal-language:hover {
+  outline: none;
+  box-shadow: none;
+  filter: brightness(0.85);
+}
 
-  select:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  option {
-    color: var(--olivegreen);
-    background-color: #fff;
-    border: none;
-    font-size: var(--font-size--basic);
-  }
