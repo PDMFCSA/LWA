@@ -238,6 +238,7 @@ button:not([disabled]) {
 }
 
 .leaflet-page .icon-title-container #print-modal-button,
+.leaflet-page .icon-title-container #languages-modal-button,
 .leaflet-page .icon-title-container .print-icon-container {
     width: 80px;
     text-align: center;
@@ -454,49 +455,5 @@ svg {
     stroke:none
 } 
 
-/* select::before{
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 10px solid transparent;
-    border-right: 10px solid #fff;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid #fff;
-    right: 0px;
-    top: -19px;
-} */
 
-.header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.leaflet-page  #languages-modal-button {
-    background-position: center top;
-    border: none;   
-}
-
-.modal-language {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-    height: auto;
-    font-size: var(--font-size--basic);
-    border-radius: 6px;
-    background-color: var(--olivegreen); 
-    color: #fff;
-    cursor: pointer;
-  }
-
-  
-.modal-language:hover {
-  outline: none;
-  box-shadow: none;
-  filter: brightness(0.85);
-}
 

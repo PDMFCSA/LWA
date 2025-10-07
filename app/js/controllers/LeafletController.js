@@ -261,8 +261,6 @@ function LeafletController() {
                 return;
             }
             setTextDirectionForLanguage(this.selectedLanguage, "#settings-modal");
-
-            this.setChangeLanguage()
             this.showModal("settings-modal");
             renderLeaflet(result, this.metadata);
             this.loadPrintContent("settings-modal");
