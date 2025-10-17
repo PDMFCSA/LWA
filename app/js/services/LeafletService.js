@@ -514,6 +514,7 @@ class LeafletService {
         } catch (err) {
           if (err.code && err.code === ERROR_TYPES.MISCONFIGURATION) {
             try {
+              this.batch = null;
               const prodLeaflet = await this.getLeafletResult(timePerCall, totalWaitTime, gto_TimePerCall, gto_TotalWaitTime);
               resolve(prodLeaflet);
             } catch (err) {
