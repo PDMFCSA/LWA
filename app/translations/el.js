@@ -265,7 +265,8 @@ const data = {
   "alert_icon": "Εικονίδιο ειδοποίησης",
   "leaflet_available_doc": "Τα διαθέσιμα έγγραφα του φυλλαδίου",
   "leaflet_available_lang": "Οι διαθέσιμες γλώσσες του φυλλαδίου",
-  "leaflet_page_title": "Εγγραφα"
+  "leaflet_page_title": "Εγγραφα",
+  "controlled_substance": "Ελεγχόμενη Ουσία"
 }
 
 export default data;

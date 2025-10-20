@@ -266,7 +266,8 @@ const data = {
   "alert_icon": "Alert pictogram",
   "leaflet_available_doc": "De beschikbare documenten van folder",
   "leaflet_available_lang": "De beschikbare talen van folder",
-  "leaflet_page_title": "Documenten"
+  "leaflet_page_title": "Documenten",
+  "controlled_substance": "Gecontroleerde stof"
 }
 
 export default data;

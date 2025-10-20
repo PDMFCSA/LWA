@@ -266,7 +266,8 @@ const data = {
   "alert_icon": "경고 아이콘",
   "leaflet_available_doc": "리플렛의 사용 가능한 문서",
   "leaflet_available_lang": "리플렛의 사용 가능한 언어",
-  "leaflet_page_title": "서류"
+  "leaflet_page_title": "서류",
+  "controlled_substance": "규제 물질"
 }
 
 export default data;

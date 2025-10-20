@@ -265,7 +265,8 @@ const data = {
   "alert_icon": "Hoiatusikoon",
   "leaflet_available_doc": "Voldiku saadaolevad dokumendid",
   "leaflet_available_lang": "Voldiku saadaolevad keeled",
-  "leaflet_page_title": "Dokumendid"
+  "leaflet_page_title": "Dokumendid",
+  "controlled_substance": "Kontrollitav aine"
 }
 
 export default data;

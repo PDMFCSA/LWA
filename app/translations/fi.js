@@ -265,7 +265,8 @@ const data = {
   "alert_icon": "Hälytyskuvake",
   "leaflet_available_doc": "Lehtisen käytettävissä olevat asiakirjat",
   "leaflet_available_lang": "Lehteisen kielet",
-  "leaflet_page_title": "Asiakirjat"
+  "leaflet_page_title": "Asiakirjat",
+  "controlled_substance": "Valvottu aine"
 }
 
 export default data;

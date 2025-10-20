@@ -266,7 +266,8 @@ const data = {
   "alert_icon": "أيقونة التنبيه",
   "leaflet_available_doc": "مستندات النشرة المتاحة",
   "leaflet_available_lang": "اللغات المتاحة للنشرة",
-  "leaflet_page_title": "وثائق"
+  "leaflet_page_title": "وثائق",
+  "controlled_substance": "مادة خاضعة للرقابة"
 }
 
 export default data;

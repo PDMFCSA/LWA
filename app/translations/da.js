@@ -265,7 +265,8 @@ const data = {
   "alert_icon": "Alertikon",
   "leaflet_available_doc": "Poles ledige dokumenter",
   "leaflet_available_lang": "Poles ledige sprog",
-  "leaflet_page_title": "Dokumenter"
+  "leaflet_page_title": "Dokumenter",
+  "controlled_substance": "kontrolleret stof"
 }
 
 export default data;

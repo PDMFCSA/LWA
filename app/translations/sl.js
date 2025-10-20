@@ -266,7 +266,8 @@ const data = {
   "alert_icon": "Ikona opozorila",
   "leaflet_available_doc": "Na voljo dokumenti z letaki",
   "leaflet_available_lang": "Na voljo jezikov",
-  "leaflet_page_title": "Dokumenti"
+  "leaflet_page_title": "Dokumenti",
+  "controlled_substance": "Nadzorovana snov"
 }
 
 export default data;

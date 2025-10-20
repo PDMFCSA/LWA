@@ -2,6 +2,8 @@ import XMLDisplayService from "../services/XMLDisplayService/XMLDisplayService.j
 import constants from "../../../constants.js";
 import {setTextDirectionForLanguage} from "../../../utils.js";
 import {observerVideos, mediaUrlRegex} from "../services/XMLDisplayService/leafletXSL.js"
+import { getTranslation } from "../translationUtils.js";
+
 
 
 const TITLES = {

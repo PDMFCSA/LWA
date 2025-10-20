@@ -274,7 +274,8 @@ const data = {
   "menu_button": "Menu",
   "leaflet_available_doc": "Leaflet's available documents",
   "leaflet_available_lang": "Leaflet's available languages",
-  "leaflet_page_title": "Documents"
+  "leaflet_page_title": "Documents",
+  "controlled_substance": "Controlled Substance"
 }
 
 export default data;
