@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Beamplet pieejamās valodas",
   "leaflet_page_title": "Dokumenti",
   "document_change_lang_title": "Mainīt valodu",
-  "document_change_lang_message": "Mainiet dokumenta valodu."
+  "document_change_lang_message": "Mainiet dokumenta valodu.",
+  "controlled_substance": "Kontrolējama viela"
 }
 
 export default data;

@@ -268,7 +268,8 @@ const data = {
   "leaflet_available_lang": "Наявні мови листівки",
   "leaflet_page_title": "Документи",
   "document_change_lang_title": "Змінити мову",
-  "document_change_lang_message": "Змінити мову документа."
+  "document_change_lang_message": "Змінити мову документа.",
+  "controlled_substance": "Контрольована речовина"
 }
 
 export default data;

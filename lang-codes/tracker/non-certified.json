@@ -288,5 +288,6 @@
   "leaflet_available_lang": 334,
   "leaflet_page_title": 335,
   "document_change_lang_title": 336,
-  "document_change_lang_message": 337
+  "document_change_lang_message": 337,
+  "controlled_substance": 338
 }

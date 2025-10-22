@@ -276,7 +276,8 @@ const data = {
   "recalled_batch_message": "Este lote {0} ha sido retirado, por favor retorne el producto a su farmacia o póngase en contacto con atención al cliente - consulte en número de teléfono en el envase.",
   "leaflet_page_title": "Documentos",
   "document_change_lang_title": "Cambiar idioma",
-  "document_change_lang_message": "Cambiar el idioma del documento."
+  "document_change_lang_message": "Cambiar el idioma del documento.",
+  "controlled_substance": "Sustancia controlada"
 }
 
 export default data;

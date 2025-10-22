@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Poles ledige sprog",
   "leaflet_page_title": "Dokumenter",
   "document_change_lang_title": "Skift sprog",
-  "document_change_lang_message": "Skift dokumentets sprog."
+  "document_change_lang_message": "Skift dokumentets sprog.",
+  "controlled_substance": "kontrolleret stof"
 }
 
 export default data;

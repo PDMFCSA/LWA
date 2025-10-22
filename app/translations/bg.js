@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Наличните езици на листовка",
   "leaflet_page_title": "Документи",
   "document_change_lang_title": "Променете езика",
-  "document_change_lang_message": "Променете езика на документа."
+  "document_change_lang_message": "Променете езика на документа.",
+  "controlled_substance": "Контролирано вещество"
 }
 
 export default data;

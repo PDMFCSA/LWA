@@ -268,7 +268,8 @@ const data = {
   "leaflet_available_lang": "리플렛의 사용 가능한 언어",
   "leaflet_page_title": "서류",
   "document_change_lang_title": "언어를 변경하십시오",
-  "document_change_lang_message": "문서의 언어를 변경하십시오."
+  "document_change_lang_message": "문서의 언어를 변경하십시오.",
+  "controlled_substance": "규제 물질"
 }
 
 export default data;

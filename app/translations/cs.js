@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Dostupné jazyky letáku",
   "leaflet_page_title": "Dokumenty",
   "document_change_lang_title": "Změnit jazyk",
-  "document_change_lang_message": "Změnit jazyk dokumentu."
+  "document_change_lang_message": "Změnit jazyk dokumentu.",
+  "controlled_substance": "Kontrolovaná látka"
 }
 
 export default data;

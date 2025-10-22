@@ -268,7 +268,8 @@ const data = {
   "leaflet_available_lang": "A szórólap rendelkezésre álló nyelvei",
   "leaflet_page_title": "Dokumentumok",
   "document_change_lang_title": "Változtassa meg a nyelvet",
-  "document_change_lang_message": "Változtassa meg a dokumentum nyelvét."
+  "document_change_lang_message": "Változtassa meg a dokumentum nyelvét.",
+  "controlled_substance": "Ellenőrzött anyag"
 }
 
 export default data;

@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Limbile disponibile ale prospectului",
   "leaflet_page_title": "Documente",
   "document_change_lang_title": "Schimbați limbajul",
-  "document_change_lang_message": "Schimbați limbajul documentului."
+  "document_change_lang_message": "Schimbați limbajul documentului.",
+  "controlled_substance": "Substanță controlată"
 }
 
 export default data;

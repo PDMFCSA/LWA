@@ -268,7 +268,8 @@ const data = {
   "leaflet_available_lang": "اللغات المتاحة للنشرة",
   "leaflet_page_title": "وثائق",
   "document_change_lang_title": "تغيير اللغة",
-  "document_change_lang_message": "تغيير لغة المستند."
+  "document_change_lang_message": "تغيير لغة المستند.",
+  "controlled_substance": "مادة خاضعة للرقابة"
 }
 
 export default data;

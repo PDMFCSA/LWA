@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Dostępne języki ulotki",
   "leaflet_page_title": "Dokumenty",
   "document_change_lang_title": "Zmień język",
-  "document_change_lang_message": "Zmień język dokumentu."
+  "document_change_lang_message": "Zmień język dokumentu.",
+  "controlled_substance": "Substancja kontrolowana"
 }
 
 export default data;

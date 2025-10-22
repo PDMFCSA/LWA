@@ -46,7 +46,7 @@ const buildQueryParams = function (gtin, batchNumber, lang, leafletType, epiMark
     append.call(converter.searchParams, name, value);
   }
 
-  if((!epiMarket && leafletType === DocumentsTypes.LEAFLET))
+  if(batchNumber && (!epiMarket && leafletType === DocumentsTypes.LEAFLET))
     converter.searchParams.append("batch", batchNumber);
   converter.searchParams.append("lang", lang);
   converter.searchParams.append("gtin", gtin);
@@ -513,7 +513,13 @@ class LeafletService {
           }
         } catch (err) {
           if (err.code && err.code === ERROR_TYPES.MISCONFIGURATION) {
-            reject({errorCode: constants.errorCodes.misconfiguration});
+            try {
+              this.batch = null;
+              const prodLeaflet = await this.getLeafletResult(timePerCall, totalWaitTime, gto_TimePerCall, gto_TotalWaitTime);
+              resolve(prodLeaflet);
+            } catch (err) {
+              reject({errorCode: constants.errorCodes.misconfiguration});
+            }
             return;
           }
           if (err.code && err.code === ERROR_TYPES.TIMEOUT) {

@@ -267,7 +267,8 @@ const data = {
   "leaflet_available_lang": "Οι διαθέσιμες γλώσσες του φυλλαδίου",
   "leaflet_page_title": "Εγγραφα",
   "document_change_lang_title": "Μεταβολή της γλώσσας",
-  "document_change_lang_message": "Αλλάξτε τη γλώσσα του εγγράφου."
+  "document_change_lang_message": "Αλλάξτε τη γλώσσα του εγγράφου.",
+  "controlled_substance": "Ελεγχόμενη Ουσία"
 }
 
 export default data;

@@ -268,7 +268,8 @@ const data = {
   "leaflet_available_lang": "Broschyrens tillgängliga språk",
   "leaflet_page_title": "Dokument",
   "document_change_lang_title": "Ändra språk",
-  "document_change_lang_message": "Ändra dokumentets språk."
+  "document_change_lang_message": "Ändra dokumentets språk.",
+  "controlled_substance": "Kontrollerat ämne"
 }
 
 export default data;
