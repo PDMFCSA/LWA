@@ -91,11 +91,9 @@ button:not([disabled]) {
     width: 100%;
 }
 
-@media(max-width: 768px) {
-    #leaflet-content table {
-        min-width: 768px !important;
-    } 
-}
+#leaflet-content table:not(.preserve) {
+    min-width: 768px !important;
+} 
 
 #leaflet-content figure {
     display: block;
