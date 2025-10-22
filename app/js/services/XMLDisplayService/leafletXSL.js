@@ -418,8 +418,12 @@ const acodisXslContent =  `<?xml version="1.0" encoding="UTF-8"?>
     </xsl:template>
     
     <xsl:template match="//table">
-        <table><xsl:apply-templates select="node()" /></table>
+        <table>
+            <xsl:copy-of select="@class" />
+            <xsl:apply-templates select="node()" />
+        </table>
     </xsl:template>
+
 
     <xsl:template match="//tr">
         <tr><xsl:apply-templates select="node()" /></tr>
