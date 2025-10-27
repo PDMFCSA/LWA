@@ -553,7 +553,7 @@ function LeafletController() {
 
     this.loadPrintContent= (modal = 'settings-modal') => {
         
-        setTextDirectionForLanguage(this.selectedLanguage, "#print-content");
+         setTextDirectionForLanguage(this.selectedLanguage, "#print-content");
 
         const contentContainer = document.querySelector(`#${modal} .content-to-print`);
         const content = contentContainer.cloneNode(true);
@@ -565,9 +565,10 @@ function LeafletController() {
             element.removeAttribute('nowrap');
             element.removeAttribute('xmlns');  
         });
+        
         printContent.innerHTML = "";
         printContent.innerHTML = content.innerHTML;
-
+        
         // Setup the printing images of the videos
         printContent.querySelectorAll('video').forEach(async(element) => {
             if(element.tagName === 'VIDEO') {

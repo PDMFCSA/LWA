@@ -79,6 +79,7 @@
         display: table-row-group;
         width: 100%;
     }
+
     tfooter {
         display: table-footer-group;
         width: 100%;
@@ -116,10 +117,18 @@
         margin: 0 auto;
     }
 
+    table figure {
+        font-size: 0px !important;
+    }
+
+    figure *:not(img) {
+        display: none;
+    }
+
     .invisible {
         visibility: hidden;
     }
-
+    
     .voiceover-pause {
         display: none !important;
     }
@@ -160,7 +169,7 @@
     }
 
     #print-content {
-         unset: all;
+        unset: all;
         display: block !important;
     }
 
@@ -175,5 +184,9 @@
         margin: 0 auto;
         text-align: center;
         font-size: 10pt;
+    }
+
+    figure p {
+      display: none;
     }
 }

@@ -1,5 +1,9 @@
 @import "prerequisites.css";
 
+html {
+    -webkit-text-size-adjust: none;
+}
+
 .voiceover-pause {
     opacity: 0;
 }
@@ -91,10 +95,8 @@ button:not([disabled]) {
     width: 100%;
 }
 
-@media(max-width: 768px) {
-    #leaflet-content table {
-        min-width: 768px !important;
-    } 
+#leaflet-content table:not(.preserve) {
+    min-width: 768px !important;
 }
 
 #leaflet-content figure {
@@ -302,6 +304,7 @@ button:not([disabled]) {
 
 
 
+
 /* Zoom at 250% */
 @media(max-width: 150px) {
     .leaflet-page #recalled-bar {
@@ -362,31 +365,6 @@ video {
     margin: 0 auto;
 }
 
-/* Search On Top 
-
-  #search-input-container {
-    display: none;
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-} 
-
-#search-input-container.active {
-    display: inline-block;
-}
-
-#search-input-container input {
-  height: 40px;
-  min-width: 100px;
-  padding: 0 1rem;
-  width: 100%;
-  font-size: var(--font-size--basic);
-  border: none;
-  outline: none;
-  border: 0px !important;
-  outline: none !important; 
-} */
-
 /* Search Below Title */
 #search-input-container {
     display: none;
@@ -412,37 +390,3 @@ video {
   border: 0px !important;
   outline: none !important;
 }
-
-/* .modal-container:not(#print-modal).hiddenElement > div,
-.page-container.hiddenElement > div{
-    animation: fadeOut .2s forwards;
-}
-
-.modal-container:not(#print-modal):not(.hiddenElement) > div,
-.page-container:not(.hiddenElement) > div{
-    animation: fadeIn .4s forwards;
-}
-
-
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: .25;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: .25;
-    }
-    to {
-        opacity: 1;
-    }
-} */
-
-/* #recalled-modal.warning-modal .modal-header .modal-icon {
-    background: url(./../images/modal-info-icon.svg) no-repeat center;
-} */
