@@ -369,15 +369,25 @@ video {
 #search-input-container {
     display: none;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0;
+    padding-bottom: 1rem;
     box-sizing: border-box;
 } 
 
+
+
 #search-input-container.active {
     display: inline-block;
-    top: -80px;
+    top: -100px;
     position: relative;
 }
+
+@media(max-width: 1200px) {
+    #search-input-container.active {
+        top: -75px;
+    }
+}
+
 
 #search-input-container input {
   height: 40px;

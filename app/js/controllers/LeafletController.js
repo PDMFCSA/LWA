@@ -676,18 +676,33 @@ function LeafletController() {
         const content = document.querySelector(".content-to-print.active");
         // clean up previous highlights
         content.innerHTML = content.innerHTML.replace(/<\/?mark>/g, "");
+
+        // collapse searched sections
+        if(value.length === 0) {
+            const sections = content.querySelectorAll(".section.searched");
+            sections.forEach(section => {
+                section.classList.remove("active", "searched");
+            });
+        }
         if (value.length >= 2) {
             const regex = new RegExp(`(${value})`, "gi");
-            function search(node) {
+            function search(node, element) {
                 if (node.nodeType === Node.TEXT_NODE) {
                     const replaced = node.textContent.replace(regex, '<mark>$1</mark>');
+
                     if (replaced !== node.textContent) {
                         const span = document.createElement("span");
                         span.innerHTML = replaced;
                         node.replaceWith(span);
+                        if(element) {
+                            const section = element.closest(".section.leaflet-accordion-item");
+                            if(section && !section.classList.contains("active")) 
+                                section.classList.add("active", "searched");
+                        }
+                    
                     }
                 } else if (node.nodeType === Node.ELEMENT_NODE) {
-                    node.childNodes.forEach(search);
+                    node.childNodes.forEach(child => search(child, node));
                 }
             }
             search(content);
