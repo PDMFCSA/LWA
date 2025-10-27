@@ -1,7 +1,7 @@
 @import "prerequisites.css";
 
 html {
-    -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none !important;
 }
 
 .voiceover-pause {
