@@ -471,7 +471,7 @@ function parseGS1Code(scannedBarcode) {
     try {
         gs1FormatFields = interpretGS1scan.interpretScan(scannedBarcode);
     } catch (e) {
-        if(validateGTIN(scannedBarcode)){
+        if(validateGTIN(scannedBarcode).isValid){
             gs1FormatFields={};
             gs1FormatFields.ol=[{ai: '01', label: 'GTIN', value: scannedBarcode}];
         } else {
