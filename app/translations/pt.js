@@ -268,7 +268,10 @@ const data = {
   "leaflet_available_lang": "Línguas disponíveis do folheto",
   "leaflet_page_title": "Documentos",
   "leaflet_search": "Procurar",
-  "leaflet_search_input": "Digite para pesquisar"
+  "leaflet_search_input": "Digite para pesquisar",
+  "document_change_lang_title": "Mudar a linguagem",
+  "document_change_lang_message": "Altere o idioma do documento.",
+  "controlled_substance": "Substância Controlada"
 }
 
 export default data;

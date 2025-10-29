@@ -267,7 +267,10 @@ const data = {
   "leaflet_available_lang": "Lehteisen kielet",
   "leaflet_page_title": "Asiakirjat",
   "leaflet_search": "Haku",
-  "leaflet_search_input": "Kirjoita haku"
+  "leaflet_search_input": "Kirjoita haku",
+  "document_change_lang_title": "Muuttaa kielen",
+  "document_change_lang_message": "Vaihda asiakirjan kieli.",
+  "controlled_substance": "Valvottu aine"
 }
 
 export default data;

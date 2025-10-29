@@ -177,6 +177,11 @@
         display: none;
     }
 
+    .controlled-substance-p {
+        display: inline !important;
+        min-width: min-content !important;
+    }
+
     video { display: none !important; }
 
     figcaption {

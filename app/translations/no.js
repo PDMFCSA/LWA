@@ -267,7 +267,10 @@ const data = {
   "leaflet_available_lang": "Brosjyrens tilgjengelige språk",
   "leaflet_page_title": "Dokumenter",
   "leaflet_search": "Søk",
-  "leaflet_search_input": "Skriv for å søke"
+  "leaflet_search_input": "Skriv for å søke",
+  "document_change_lang_title": "Endre språk",
+  "document_change_lang_message": "Endre språket i dokumentet.",
+  "controlled_substance": "Kontrollert stoff"
 }
 
 export default data;

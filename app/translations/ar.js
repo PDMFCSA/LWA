@@ -268,7 +268,10 @@ const data = {
   "leaflet_available_lang": "اللغات المتاحة للنشرة",
   "leaflet_page_title": "وثائق",
   "leaflet_search": "يبحث",
-  "leaflet_search_input": "اكتب للبحث"
+  "leaflet_search_input": "اكتب للبحث",
+  "document_change_lang_title": "تغيير اللغة",
+  "document_change_lang_message": "تغيير لغة المستند.",
+  "controlled_substance": "مادة خاضعة للرقابة"
 }
 
 export default data;

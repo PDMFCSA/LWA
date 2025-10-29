@@ -267,7 +267,10 @@ const data = {
   "leaflet_available_lang": "Poles ledige sprog",
   "leaflet_page_title": "Dokumenter",
   "leaflet_search": "Søge",
-  "leaflet_search_input": "Skriv for at søge"
+  "leaflet_search_input": "Skriv for at søge",
+  "document_change_lang_title": "Skift sprog",
+  "document_change_lang_message": "Skift dokumentets sprog.",
+  "controlled_substance": "kontrolleret stof"
 }
 
 export default data;

@@ -1119,6 +1119,10 @@ body[dir="RTL"] .modal-content .languages-container .language-item-container .la
 }
 
 
+.info-modal .modal-header  .modal-icon.language-icon {
+    background: url(./../images/globe.svg) no-repeat;
+}
+
 /* .proceed-button.print-button {
     width: unset;
 } */

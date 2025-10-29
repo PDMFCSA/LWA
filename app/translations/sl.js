@@ -268,7 +268,10 @@ const data = {
   "leaflet_available_lang": "Na voljo jezikov",
   "leaflet_page_title": "Dokumenti",
   "leaflet_search": "Iskanje",
-  "leaflet_search_input": "Tip za iskanje"
+  "leaflet_search_input": "Tip za iskanje",
+  "document_change_lang_title": "Spremeni jezik",
+  "document_change_lang_message": "Spremenite jezik dokumenta.",
+  "controlled_substance": "Nadzorovana snov"
 }
 
 export default data;

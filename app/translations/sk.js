@@ -268,7 +268,10 @@ const data = {
   "leaflet_available_lang": "Dostupné jazyky letákov",
   "leaflet_page_title": "Dokumenty",
   "leaflet_search": "Prehliadka",
-  "leaflet_search_input": "Zadajte vyhľadávanie"
+  "leaflet_search_input": "Zadajte vyhľadávanie",
+  "document_change_lang_title": "Meniť jazyk",
+  "document_change_lang_message": "Zmeňte jazyk dokumentu.",
+  "controlled_substance": "Kontrolovaná látka"
 }
 
 export default data;

@@ -268,7 +268,10 @@ const data = {
   "leaflet_available_lang": "Langues disponibles de la dépliante",
   "leaflet_page_title": "Documents",
   "leaflet_search": "Recherche",
-  "leaflet_search_input": "Type à rechercher"
+  "leaflet_search_input": "Type à rechercher",
+  "document_change_lang_title": "Changer la langue",
+  "document_change_lang_message": "Changer la langue du document.",
+  "controlled_substance": "Substance contrôlée"
 }
 
 export default data;

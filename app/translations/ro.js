@@ -267,7 +267,10 @@ const data = {
   "leaflet_available_lang": "Limbile disponibile ale prospectului",
   "leaflet_page_title": "Documente",
   "leaflet_search": "Căutare",
-  "leaflet_search_input": "Tip de căutare"
+  "leaflet_search_input": "Tip de căutare",
+  "document_change_lang_title": "Schimbați limbajul",
+  "document_change_lang_message": "Schimbați limbajul documentului.",
+  "controlled_substance": "Substanță controlată"
 }
 
 export default data;

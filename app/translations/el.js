@@ -267,7 +267,10 @@ const data = {
   "leaflet_available_lang": "Οι διαθέσιμες γλώσσες του φυλλαδίου",
   "leaflet_page_title": "Εγγραφα",
   "leaflet_search": "Ερευνα",
-  "leaflet_search_input": "Πληκτρολογήστε για αναζήτηση"
+  "leaflet_search_input": "Πληκτρολογήστε για αναζήτηση",
+  "document_change_lang_title": "Μεταβολή της γλώσσας",
+  "document_change_lang_message": "Αλλάξτε τη γλώσσα του εγγράφου.",
+  "controlled_substance": "Ελεγχόμενη Ουσία"
 }
 
 export default data;

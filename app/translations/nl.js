@@ -268,7 +268,10 @@ const data = {
   "leaflet_available_lang": "De beschikbare talen van folder",
   "leaflet_page_title": "Documenten",
   "leaflet_search": "Zoekopdracht",
-  "leaflet_search_input": "Type om te zoeken"
+  "leaflet_search_input": "Type om te zoeken",
+  "document_change_lang_title": "Verander taal",
+  "document_change_lang_message": "Wijzig de taal van het document.",
+  "controlled_substance": "Gecontroleerde stof"
 }
 
 export default data;

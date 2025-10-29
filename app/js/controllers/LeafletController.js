@@ -52,6 +52,7 @@ function LeafletController() {
     this.selectedEpiMarket;
     this.lastModal;
     this.metadata = undefined;
+    this.availableLanguages = [];
 
     this.defaultLanguage = localStorage.getItem(constants.APP_LANG) || "en";
     this.leafletService = new LeafletService(this.gtin, this.batch, this.expiry, this.defaultLanguage, this.lsEpiDomain);
@@ -258,6 +259,9 @@ function LeafletController() {
                 this.loadPrintContent("product-modal");
                 return;
             }
+            if(this.availableLanguages.length > 1) {
+                document.querySelector(`#languages-modal-button`).hidden = false;
+            }
             setTextDirectionForLanguage(this.selectedLanguage, "#settings-modal");
             this.showModal("settings-modal");
             renderLeaflet(result, this.metadata);
@@ -414,6 +418,8 @@ function LeafletController() {
         
         this.showLoader(true);
 
+        this.availableLanguages = languages;
+
         const browserLang = this.getLanguageFromBrowser(false);
         if (languages.length >= 1) {
             if (languages.map(r => r.value.toLowerCase()).includes(browserLang)) {
@@ -495,6 +501,86 @@ function LeafletController() {
             /*      document.querySelector(".proceed-button.has-leaflets").setAttribute('style', 'display:none');
                   document.querySelector(".text-section.has-leaflets").setAttribute('style', 'display:none');*/
         }
+    };
+
+    const changeAvailableLanguages = (languages) => {
+        
+        this.showLoader(true);
+        
+        this.availableLanguages = languages;
+
+        const modal = this.showModal('change-language-modal',true);
+        
+        modal.querySelector('#change-language-message').textContent = getTranslation("document_change_lang_message")
+        modal.querySelector('#change-lang-title').textContent = getTranslation("document_change_lang_title");
+
+        modal.querySelector("#proceed-button").addEventListener("click", () => {
+            let lang = document.querySelector("input[name='languages']:checked").value;
+            if(lang !== this.selectedLanguage) 
+                setSelectedLanguage(lang);
+            this.closeModal(modal.id);
+        })
+
+            // modal.querySelector("#go-back-button").addEventListener("click", () => {
+            //     this.showModal('documents-modal');
+            // });
+
+        modal.querySelector(".proceed-button.no-leaflet").classList.add("hiddenElement");
+        //  document.querySelector(".text-section.no-leaflet").setAttribute('style', 'display:none');
+        let languagesContainer = document.querySelector(".available-languages-container");
+        languagesContainer.querySelectorAll('label').forEach(label => label.remove());
+        /* site for flags https://flagpedia.net/download */
+        let selectedItem = null;
+        languages.forEach((lang, index) => {
+
+            // Create the radio input element
+            let radioInput = document.createElement('input');
+            radioInput.setAttribute("type", "radio");
+            radioInput.setAttribute("name", "languages");
+            radioInput.setAttribute("value", escapeHTMLAttribute(lang.value));
+            radioInput.setAttribute("tabindex", "-1");
+            radioInput.setAttribute("id", escapeHTMLAttribute(lang.value));
+            radioInput.defaultChecked = lang.value === this.selectedLanguage;
+
+            // Create the div element for the label
+            let labelDiv = document.createElement('div');
+            labelDiv.classList.add("radio-label");
+            labelDiv.setAttribute("radio-label", escapeHTMLAttribute(lang.label));
+            labelDiv.textContent = escapeHTML(`${lang.label} - (${lang.nativeName})`);
+
+            let radioFragment = document.createElement('label');
+            radioFragment.classList.add("radio-item-container");
+            // radioFragment.setAttribute("role", "radio");
+            radioFragment.setAttribute("tabindex", "0");
+            radioFragment.setAttribute("aria-checked", new Boolean(index === 0).toString());
+            // radioFragment.setAttribute("aria-label", escapeHTMLAttribute(lang.label) + " language");
+
+            // Append the radioInput and label elements to the container
+            radioFragment.appendChild(radioInput);
+            radioFragment.appendChild(labelDiv);
+
+            if (index === 0) {
+                selectedItem = radioFragment;
+            }
+
+            radioFragment.querySelector("input").addEventListener("change", (event) => {
+                if (selectedItem) {
+                    selectedItem.setAttribute("aria-checked", "false");
+                }
+                radioFragment.setAttribute("aria-checked", "true");
+                selectedItem = radioFragment;
+            })
+
+            radioFragment.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    radioFragment.querySelector("input").checked = true;
+                }
+            })
+
+            languagesContainer.appendChild(radioFragment);
+        });
+        this.showLoader(false);
+        focusModalHeader();
     };
 
     let showRecalledMessage = (result) => {
@@ -710,6 +796,10 @@ function LeafletController() {
         handleLeafletAccordion();
     });
 
+    this.LoadAvailableLanguages = () => {
+        changeAvailableLanguages(this.availableLanguages)
+    }
+
     const addEventListeners = () => {
         document.getElementById("search-modal-button").addEventListener("click", this.toggleSearch);
         document.getElementById("search-input").addEventListener("input", this.handleSearch);
@@ -717,6 +807,7 @@ function LeafletController() {
         document.getElementById("scan-again-button").addEventListener("click", this.scanAgainHandler);
         document.getElementById("modal-print-button").addEventListener("click", this.printContent.bind(this));
         document.querySelectorAll("#print-modal-button").forEach(button => button.addEventListener("click", this.showPrintModal));
+        document.querySelectorAll("#languages-modal-button").forEach(button => button.addEventListener("click", this.LoadAvailableLanguages));
         document.getElementById("modal-scan-again-button").addEventListener("click", this.scanAgainHandler);
         document.querySelectorAll("#go-back-button").forEach(button =>  button.addEventListener("click", this.goHome));
         document.getElementById("modal-print-go-back-button").addEventListener("click", this.closePrintModal);
