@@ -96,6 +96,10 @@ function LeafletController() {
 
     const getLeafletMetadata = () => {
         this.showLoader(true);
+        this.scantype = urlParams.get("scantype");
+        if(this.scantype === "1") {
+            const scanAgainButton = document.getElementById("scan-again-button").style.display = "none";
+        }
         this.leafletService.getLeafletMetadata(this.timePerCall, this.totalWaitTime, this.gto_TimePerCall, this.gto_TotalWaitTime).then((data) => {
             //check for injections in result
             const tmp = JSON.stringify(data);
