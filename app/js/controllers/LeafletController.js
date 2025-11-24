@@ -118,7 +118,7 @@ function LeafletController() {
         }).catch(err => {
             console.error(err);
             goToErrorPage(err.errorCode, err)
-        }).finally(() =>  this.showLoader(false)) 
+        })
     };
 
     const getLeafletXML = () => {

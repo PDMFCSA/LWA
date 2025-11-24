@@ -177,9 +177,9 @@ let renderLeaflet = function (leafletData, metadata) {
   let leafletLinks = document.querySelectorAll(".leaflet-link");
   xmlService.activateLeafletInnerLinks(leafletLinks);
   handleLeafletAccordion();
-  document.querySelector(".loader-container").setAttribute('style', 'display:none');
   focusModalHeader();
   renderControlledSubstancesSymbol(leafletData);
+  document.querySelector(".loader-container").setAttribute('style', 'display:none');
 };
 
 const upperCaseProductDescriptionProductName = function (text , searchText) {
