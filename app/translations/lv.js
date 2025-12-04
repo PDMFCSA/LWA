@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Lūdzu, izvēlieties",
   "document_modal_message": "Lūdzu, atlasiet, kuru dokumentu parādīt",
   "document_patient_info": "Informācija pacientam",
-  "document_product_info": "Informācija par produktu pacientiem",
+  "document_product_info": "Informācija par produktu",
   "document_lang_select_message": "Informācija par produktu ir pieejama tikai angļu valodā",
   "document_lang_select_title": "Pamanīt",
   "document_prescribing_info": "Zāļu informācija veselības aprūpes speciālistiem",

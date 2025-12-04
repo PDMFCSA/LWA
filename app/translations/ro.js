@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Vă rugăm să alegeți",
   "document_modal_message": "Vă rugăm să selectați ce document este de afișat",
   "document_patient_info": "Informații despre pacient",
-  "document_product_info": "Informații despre produs pentru pacienți",
+  "document_product_info": "Informații despre produs",
   "document_lang_select_message": "Informațiile despre produs sunt disponibile numai în engleză",
   "document_lang_select_title": "Observa",
   "document_prescribing_info": "Prescrierea informațiilor pentru profesioniștii din domeniul sănătății",

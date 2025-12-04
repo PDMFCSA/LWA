@@ -47,7 +47,7 @@ const data = {
   "document_modal_title": "Veuillez choisir",
   "document_modal_message": "Veuillez sélectionner le document à afficher",
   "document_patient_info": "Informations sur les patients",
-  "document_product_info": "Informations sur le produit pour les patients",
+  "document_product_info": "Informations sur le produit",
   "document_lang_select_message": "Les informations sur les produits sont uniquement disponibles en anglais",
   "document_lang_select_title": "Avis",
   "document_prescribing_info": "Informations pour les professionnels de la santé",

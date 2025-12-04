@@ -47,7 +47,7 @@ const data = {
   "document_modal_title": "الرجاء الاختيار",
   "document_modal_message": "الرجاء تحديد أي مستند لعرضه",
   "document_patient_info": "معلومات المريض",
-  "document_product_info": "معلومات المنتج للمرضى",
+  "document_product_info": "معلومات المنتج",
   "document_lang_select_message": "معلومات المنتج متوفرة فقط باللغة الإنجليزية",
   "document_lang_select_title": "ملاحظة",
   "document_prescribing_info": "معلومات لأخصائيي الرعاية الصحية",

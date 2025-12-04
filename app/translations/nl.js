@@ -47,7 +47,7 @@ const data = {
   "document_modal_title": "Kies alstublieft",
   "document_modal_message": "Selecteer welk document moet worden weergegeven",
   "document_patient_info": "Patiëntinformatie",
-  "document_product_info": "Productinformatie voor patiënten",
+  "document_product_info": "Productinformatie",
   "document_lang_select_message": "Productinformatie is alleen beschikbaar in het Engels",
   "document_lang_select_title": "Kennisgeving",
   "document_prescribing_info": "Voorschrijfinformatie voor professionals in de gezondheidszorg",

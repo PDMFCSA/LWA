@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Vyberte",
   "document_modal_message": "Vyberte prosím, který dokument se má zobrazit",
   "document_patient_info": "Informace o pacientu",
-  "document_product_info": "Informace o produktu pro pacienty",
+  "document_product_info": "Informace o produktu",
   "document_lang_select_message": "Informace o produktu jsou k dispozici pouze v angličtině",
   "document_lang_select_title": "Oznámení",
   "document_prescribing_info": "Informace o předepisování pro zdravotnické pracovníky",

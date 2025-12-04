@@ -47,7 +47,7 @@ const data = {
   "document_modal_title": "Prašome pasirinkti",
   "document_modal_message": "Pasirinkite, kurį dokumentą rodyti",
   "document_patient_info": "Informacija pacientui",
-  "document_product_info": "Informacija apie vaistą pacientams",
+  "document_product_info": "Informacija apie produktą",
   "document_lang_select_message": "Informacija apie vaistą galima tik anglų kalba",
   "document_lang_select_title": "Atkreipkite dėmesį Svarbu",
   "document_prescribing_info": "Informacija apie vaistinį preparatą  sveikatos priežiūros specialistams",

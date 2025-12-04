@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Vennligst velg",
   "document_modal_message": "Velg hvilket dokument som skal vises",
   "document_patient_info": "Pasientinformasjon",
-  "document_product_info": "Produktinformasjon for pasienter",
+  "document_product_info": "Produktinformasjon",
   "document_lang_select_message": "Produktinformasjon er bare tilgjengelig på engelsk",
   "document_lang_select_title": "Legg merke til",
   "document_prescribing_info": "Forskrivningsinformasjon for helsepersonell",

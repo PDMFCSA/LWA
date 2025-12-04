@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Παρακαλώ επιλέξτε",
   "document_modal_message": "Παρακαλώ επιλέξτε ποιο έγγραφο να εμφανιστεί",
   "document_patient_info": "Πληροφορίες Ασθενούς",
-  "document_product_info": "Πληροφορίες προϊόντος για ασθενείς",
+  "document_product_info": "Πληροφορίες προϊόντος",
   "document_lang_select_message": "Οι πληροφορίες προϊόντος είναι διαθέσιμες μόνο στα Αγγλικά",
   "document_lang_select_title": "Ειδοποίηση",
   "document_prescribing_info": "Πληροφορίες συνταγογράφησης για επαγγελματίες υγείας",

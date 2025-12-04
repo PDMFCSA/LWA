@@ -251,7 +251,7 @@ const renderProductInformation = function (result, product) {
 
     modal.querySelector(".product-name").innerText = result.productData.inventedName || result.productData.name;
     const productDescriptionName = upperCaseProductDescriptionProductName(result.productData.nameMedicinalProduct || result.productData.description, result.productData.inventedName || result.productData.name);
-    modal.querySelector(".product-description").innerText = productDescriptionName;
+    // modal.querySelector(".product-description").innerText = productDescriptionName;
      /* document.querySelector(".leaflet-title-icon").classList.remove("hiddenElement");*/
 
      let list = undefined;

@@ -47,7 +47,7 @@ const data = {
   "document_modal_title": "Будь ласка, виберіть",
   "document_modal_message": "Будь ласка, виберіть документ для відображення",
   "document_patient_info": "Інформація про пацієнта",
-  "document_product_info": "Інформація про лікарський засіб для пацієнтів",
+  "document_product_info": "Інформація про продукт",
   "document_lang_select_message": "Інформація про лікарський засіб  доступна лише англійською мовою",
   "document_lang_select_title": "Примітки",
   "document_prescribing_info": "Інформації для медичних працівників",

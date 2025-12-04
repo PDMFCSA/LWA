@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Lütfen Seçin",
   "document_modal_message": "Lütfen hangi belgeyi görüntüleyeceğinizi seçin",
   "document_patient_info": "Hasta bilgileri",
-  "document_product_info": "Hastalar için ürün bilgileri",
+  "document_product_info": "Ürün Bilgileri",
   "document_lang_select_message": "Ürün bilgileri yalnızca İngilizce olarak mevcuttur",
   "document_lang_select_title": "Fark etme",
   "document_prescribing_info": "Sağlık uzmanları için bilgi reçete etmek",

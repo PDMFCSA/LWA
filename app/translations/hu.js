@@ -47,7 +47,7 @@ const data = {
   "document_modal_title": "Kérjük, válasszon",
   "document_modal_message": "Kérjük, válassza ki, hogy melyik dokumentumot jelenítse meg",
   "document_patient_info": "Beteginformációk",
-  "document_product_info": "Termékinformációk a betegek számára",
+  "document_product_info": "Termékinformáció",
   "document_lang_select_message": "A termékinformációk csak angolul érhetők el",
   "document_lang_select_title": "Értesítés",
   "document_prescribing_info": "Információ előírása az egészségügyi szakemberek számára",

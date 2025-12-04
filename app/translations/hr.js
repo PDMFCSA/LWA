@@ -43,7 +43,7 @@ const data = {
   "document_modal_title": "Molimo odaberite",
   "document_modal_message": "Odaberite koji dokument želite prikazati",
   "document_patient_info": "Informacije za pacijenta",
-  "document_product_info": "Informacije o proizvodu za pacijente",
+  "document_product_info": "Informacije o proizvodu",
   "document_lang_select_message": "Informacije o proizvodu dostupne su samo na engleskom jeziku",
   "document_lang_select_title": "Obavijest",
   "document_prescribing_info": "Informacije o propisivanju za zdravstvene radnike",
