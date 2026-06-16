@@ -9,20 +9,20 @@
           "type": "smartClone",
           "target": "./app/lib",
           "collectLog": false,
-          "commit": "500a3b840cd5e793df80ad944cf4159e8bb7eafd"
+          "commit": "31e469157172d6ffaa050f8d9347f6a170920402"
         }
       ]
     },
     {
-        "name": "libgif-js",
-        "src": "https://github.com/buzzfeed/libgif-js",
-        "actions": [
-          {
-            "type": "smartClone",
-            "target": "./app/lib",
-            "collectLog": false
-          }
-        ]
-      }
+      "name": "libgif-js",
+      "src": "https://github.com/buzzfeed/libgif-js",
+      "actions": [
+        {
+          "type": "smartClone",
+          "target": "./app/lib",
+          "collectLog": false
+        }
+      ]
+    }
   ]
 }
